@@ -1,37 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Project MANAS</title>
     <meta name="descriptions" content="AI Robotics Project" />
-    <link type="text/css" rel="stylesheet" href="css/foundation.css"/>
-  </head>
-  <body>
-    <div class="grid-container full" style="background-color: grey;">
-      <div class="grid-x">
-        <div class="cell large-3" style="background-color: AQUA; height: 100vh;">
-          <div class="grid-y" style="height: 100vh">
-            <div class="cell large-3" style="background-color: red;"></div>
-            <div class="cell large-4 large-offset-3" style="background-color: GREEN;">
-              <img src="images/png/manas-logo.png" width="85%" height="85%"/>
+    <link type="text/css" rel="stylesheet" href="css/foundation.css" />
+    <style>
+        [data-sticky] {
+            width: 100%;
+        }
+
+        .top-bar {
+            padding: 1rem;
+            transition: padding .25s ease;
+        }
+
+        .is-stuck .top-bar {
+            padding: 0.0rem;
+            transition: padding .25s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container full" style="background-color: grey; position: fixed; z-index: 2;">
+        <div class="grid-x">
+            <div class="cell large-3" style="background-color: AQUA; height: 100vh;">
+                <div class="grid-y" style="height: 100vh">
+                    <div class="cell large-3" style="background-color: red;"></div>
+                    <div class="cell large-4 large-offset-3" style="background-color: GREEN;">
+                        <img src="images/png/manas-logo.png" width="85%" height="85%" />
+                    </div>
+                    <div class="cell large-5" style="background-color: BLUE;"></div>
+                </div>
             </div>
-            <div class="cell large-5" style="background-color: BLUE;"></div>
+            <div class="cell large-9" style="background-color: black; height: 100vh; border-top: 0vh solid transparent; border-bottom: 100vh solid transparent; border-left: 300px solid grey;">
+                <div class="grid-y" style="height: 100vh">
+                    <div class="cell auto" style="background-color: red;"></div>
+                    <div class="cell auto" style="background-color: green; color: white;">
+                        <center>
+                            <h1>PROJECT MANAS<h1>
+                    <h3>Bringing Bits To Life</h3>
+                  </center>
+                </div>
+                <div class="cell auto" style="background-color: blue;"></div>
+              </div>
+            </div>
+            </div>
+          </div>
+      <div class="grid-y" id="main" style="position: relative; z-index: 2; top: 100vh;">
+        <div data-sticky-container>
+          <div data-sticky data-margin-top='0' data-top-anchor="main:top">
+            <div class="top-bar" style="background-color:grey;">
+              <div class="top-bar-title">
+                <img src="images/png/manas-logo.png" width="50px" />
+                <img src="images/png/project-manas.png" width="100px" />
+              </div>
+              <div class="top-bar-right">
+                <ul class="menu">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Our Work</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="cell large-9" style="background-color: black; height: 100vh; border-top: 0vh solid transparent; border-bottom: 100vh solid transparent; border-left: 300px solid grey;">
-          <div class="grid-y" style="height: 100vh">
-            <div class="cell auto" style="background-color: red;"></div>
-            <div class="cell auto" style="background-color: green; color: white;">
-              <center>
-                <h1>PROJECT MANAS<h1>
-                <h3>Bringing Bits To Life</h3>
-              </center>
-            </div>
-            <div class="cell auto" style="background-color: blue;"></div>
-          </div>
-        </div>
-        </div>
+        <div class="cell large-6" style="background-color: maroon; height: 50vh;"></div>
+        <div class="cell large-6" style="background-color: green; height: 50vh;"></div>
       </div>
-    </div>
   </body>
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script>
+  $(document).foundation();
+  $('.top-bar').on('sticky.zf.stuckto:top', function(){
+  $(this).addClass('shrink');
+}).on('sticky.zf.unstuckfrom:top', function(){
+  $(this).removeClass('shrink');
+})
+
+  </script>
 </html>
 <!-- Gradient to be added linear-gradient(to bottom, rgb(252,173,63) 22%,rgb(254,88,49) 100%); -->
