@@ -5,18 +5,15 @@
     <meta name="descriptions" content="AI Robotics Project" />
 
     <link type="text/css" rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/aos.css" />
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/aos.css" />
     <link type="text/css" rel="stylesheet" href="css/style.css" />
-
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
 </head>
 
 <body>
 
   <div class="jumbotron jumbotron-main" id="home">
-      <div id="particles-js" style="position: fixed;"><canvas class="particles-js-canvas-el" width="1409" height="319" style="width: 100%; height: 100%;"></canvas></div><!-- /.particles div -->
+      <div id="particles-js" style="position: fixed;"><canvas class="particles-js-canvas-el" width="1409" height="319" style="width: 100%; height: 100%;"></canvas></div>
       <div class="grid-container full" style="background-color: rgba(0, 0, 0, 0.75); position: fixed; z-index: 2;">
           <div class="grid-x">
               <div class="cell large-3" style="height: 100vh; background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%);">
@@ -52,41 +49,43 @@
       <div class="grid-y" id="main" style="position: relative; z-index: 2; top: calc(100vh - 100px);">
         <div data-sticky-container>
           <div data-sticky data-margin-top='0' data-top-anchor="main:top">
-            <div class="top-bar" style="background-color:rgba(0, 0, 0, 0.8); -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(30px); z-index: 3;">
+            <div class="top-bar" id="navigation-bar">
               <div class="top-bar-title" data-aos="fade-zoom-in" data-aos-duration="600" data-aos-offset="200" data-aos-anchor-placement="main">
                 <img src="images/png/manas-logo.png" width="50px" />
                 <img src="images/png/project-manas.png" width="100px" />
               </div>
               <div class="top-bar-right">
-                <ul class="menu" style="background-color:rgba(0, 0, 0, 0); ">
-                  <li><a class="nav-link" href="#">Home</a></li>
-                  <li><a class="nav-link" href="#">About Us</a></li>
-                  <li><a class="nav-link" href="#">Sponsors</a></li>
-                  <li><a class="nav-link" href="#">Projects</a></li>
+                <ul class="menu" style="background-color:rgba(0, 0, 0, 0)" data-smooth-scroll>
+                  <li><a class="nav-link" href="#home">Home</a></li>
+                  <li><a class="nav-link" href="#about">About Us</a></li>
+                  <li><a class="nav-link" href="#sponsors">Sponsors</a></li>
+                  <li><a class="nav-link" href="#projects">Projects</a></li>
                   <li><a class="nav-link" href="#">Blog</a></li>
-                  <li><a class="nav-link" href="#">Contact Us</a></li>
+                  <li><a class="nav-link" href="#contact">Contact Us</a></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="cell large-8" style="background: #fefefe; padding-bottom: 4rem;">
-          <center>
-            <br><br>
-            <h1 style="color: black;">About <span style="color: rgb(254,88,49);">Us</span></h1>
-            <br>
-            <p style="width: 75vw;">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac elit est. Integer fermentum, lacus eu porta eleifend, mauris diam convallis ex, sit amet ornare enim enim vitae risus. Ut fermentum metus hendrerit augue eleifend interdum. Ut pulvinar tempus orci cursus placerat. Nullam consequat, ex quis sodales mollis, dolor nunc rutrum sapien, suscipit hendrerit nulla dui dictum lorem. Praesent scelerisque bibendum enim, a eleifend erat ornare vel. Vestibulum vestibulum sem diam, sed ornare lorem convallis id. Donec ornare id tellus id rutrum. Nulla sodales risus neque, vitae vulputate leo malesuada sed. Praesent eget tellus magna. Sed ut congue turpis. Praesent maximus vel felis sit amet tristique. In mollis vulputate ligula nec eleifend. Ut dui ligula, volutpat nec volutpat blandit, bibendum at est. Nullam molestie convallis rutrum.
-            </p>
-            <p style="width: 75vw;">
-            Proin tristique laoreet dolor nec pretium. Nulla facilisi. Aliquam laoreet erat in urna volutpat blandit. Pellentesque convallis gravida tortor id luctus. Maecenas sit amet purus a sapien accumsan dapibus. Fusce rhoncus rutrum fringilla. Cras efficitur non eros vel venenatis. Duis neque orci, consequat sed augue vitae, posuere vulputate mauris. Vestibulum fermentum lacinia justo eget sagittis.
-            </p>
-          </center>
+        <div class="cell large-8 bg-white about-section" id="about">
+          <div class="grid-y grid-padding-y">
+            <div class="cell large-2">
+              <h1 class="black">About <span style="color: rgb(254,88,49);">Us</span></h1>
+            </div>
+            <div class="cell large-10">
+              <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac elit est. Integer fermentum, lacus eu porta eleifend, mauris diam convallis ex, sit amet ornare enim enim vitae risus. Ut fermentum metus hendrerit augue eleifend interdum. Ut pulvinar tempus orci cursus placerat. Nullam consequat, ex quis sodales mollis, dolor nunc rutrum sapien, suscipit hendrerit nulla dui dictum lorem. Praesent scelerisque bibendum enim, a eleifend erat ornare vel. Vestibulum vestibulum sem diam, sed ornare lorem convallis id. Donec ornare id tellus id rutrum. Nulla sodales risus neque, vitae vulputate leo malesuada sed. Praesent eget tellus magna. Sed ut congue turpis. Praesent maximus vel felis sit amet tristique. In mollis vulputate ligula nec eleifend. Ut dui ligula, volutpat nec volutpat blandit, bibendum at est. Nullam molestie convallis rutrum.
+              </p>
+              <p>
+              Proin tristique laoreet dolor nec pretium. Nulla facilisi. Aliquam laoreet erat in urna volutpat blandit. Pellentesque convallis gravida tortor id luctus. Maecenas sit amet purus a sapien accumsan dapibus. Fusce rhoncus rutrum fringilla. Cras efficitur non eros vel venenatis. Duis neque orci, consequat sed augue vitae, posuere vulputate mauris. Vestibulum fermentum lacinia justo eget sagittis.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="cell large-4" style="background-color: black;">
+        <div class="cell large-4 bg-black sponsors-section" id="sponsors">
           <div class="grid-y grid-padding-x" style="text-align: center;">
-            <div class="cell large-1" style="color: white; padding-top: 2.5rem; padding-bottom: 0.5rem;">
-              <center><h1>Sponsors</h1></center>
+            <div class="cell large-1 white">
+              <h1>Sponsors</h1>
             </div>
             <div class="cell large-5">
               <div class="grid-x  grid-padding-x" style="margin-top: 1.5rem; margin-bottom: 0rem; height: 6rem;">
@@ -139,86 +138,91 @@
                   </div>
                 </div>
               </div>
-              <div class="cell large-1" style="color: white; padding-top: 1rem;">
+              <div class="cell large-1 white">
                 <button class="hollow button" id="sponsorship-button" href="#">Apply For Sponsorship</button>
               </div>
           </div>
         </div>
-        <div class="cell large-3" style="background-color: #f0f0f0;">
+        <div class="cell large-3 bg-white projects-section" id="projects">
           <div class="grid-y grid-padding-y">
-            <div class="cell large-1" style="padding-top: 3rem;">
-              <center><h1 style="color: white;"><span style="color: rgb(254,88,49);">Projects</span></h1></center>
+            <div class="cell large-1">
+              <h1 style="color: white;"><span style="color: rgb(254,88,49);">Projects</span></h1>
             </div>
             <div class="cell large-10">
-              <div class="grid-x grid-padding-x" style="padding-bottom: 0rem; padding-top: 2rem; padding-right: 1.5rem; padding-left: 1.5rem;">
+              <div class="grid-x grid-padding-x">
                 <div class="cell large-3">
-                  <div class="card" id="wall-e" style="height: 19rem; width: 20rem; border-radius: 10px;">
+                  <div class="card project-card" id="wall-e">
                     <div class="card-section">
-                      <h1 style="color: #f0f0f0">Wall-E</h1>
+                      <h1>Wall-E</h1>
                     </div>
                   </div>
                 </div>
                 <div class="cell large-3">
-                  <div class="card" id="mahindra" style="height: 19rem; width: 20rem; border-radius: 10px;">
+                  <div class="card project-card" id="mahindra">
                     <div class="card-section">
-                      <h1 style="color: #f0f0f0">Mahindra Rise Prize</h1>
+                      <h1>Mahindra Rise Prize</h1>
                     </div>
                   </div>
                 </div>
                 <div class="cell large-3">
-                  <div class="card" id="igvc" style="height: 19rem; width: 20rem; border-radius: 10px;">
+                  <div class="card project-card" id="igvc">
                     <div class="card-section">
-                      <h1 style="color: #f0f0f0">IGVC</h1>
+                      <a href="#" data-toggle="igvc-info"><h1>IGVC</h1></a>
                     </div>
+                  </div>
+                  <div class="full reveal" id="igvc-info" data-reveal data-close-on-click="true" data-animation-in="scale-in-up" data-animation-out="scale-out-down">
+                    <button class="close-button" data-close aria-label="Close reveal" type="button">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
                   </div>
                 </div>
                 <div class="cell large-3">
-                  <div class="card" id="wall-e" style="height: 19rem; width: 20rem; border-radius: 10px;">
+                  <div class="card project-card" id="wall-e">
                     <div class="card-section">
-                      <h1 style="color: #f0f0f0">Wall-E</h1>
+                      <h1>Wall-E</h1>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="cell large-1" style="color: white; text-align: center; padding-bottom: 0rem;">
+            <div class="cell large-1">
               <button class="hollow button" id="projects-button" href="#">View More</button>
             </div>
           </div>
         </div>
-        <div class="cell large-3" style="background: url(images/png/bg/map.PNG); background-repeat:no-repeat; background-size: cover; height: 90vh;">
+        <div class="cell large-3 contact-section" id="contact">
           <div class="grid-y grid-padding-y">
             <div class="cell large-1">
-              <center><h1 style="color: white;"><span style="color: rgb(254,88,49);">Contact</span> Us</h1></center>
+              <center><h1 class="white"><span style="color: rgb(254,88,49);">Contact</span> Us</h1></center>
             </div>
-            <div class="cell large-11" >
+            <div class="cell large-11">
               <div class="grid-x">
                 <div class="cell large-4" ></div>
                 <div class="cell large-4" >
                   <form>
                     <div class="grid-container" class="contact-form">
-                          <label><h3 style="color: white;">Name</h3>
+                          <label><h3 class="white">Name</h3>
                             <input type="text">
                           </label>
-                          <label><h3 style="color: white;">Email</h3>
+                          <label><h3 class="white">Email</h3>
                             <input type="text">
                           </label>
-                          <label><h3 style="color: white;">Subject</h3>
+                          <label><h3 class="white">Subject</h3>
                             <input type="text">
                           </label>
-                          <label><h3 style="color: white;">Message</h3>
+                          <label><h3 class="white">Message</h3>
                             <textarea rows="6"></textarea>
                           </label>
-                          <input type="submit" class="button float-right" id="submit-button" value="Submit" style="right: 0;">
+                          <input type="submit" class="button float-right" id="submit-button" value="Submit">
                     </div>
                   </form>
                 </div>
                 <div class="cell large-3">
-                  <div style="position: absolute; top: 87%; right: 18%">
+                  <div class="location-marker">
                     <i class="fa fa-map-marker" style="font-size:48px; color: rgb(254,88,49);"><h3>Project Manas</h3></i>
-                    <h3 style="color: #f0f0f0">Automobile Workshop,</h3>
-                    <h3 style="color: #f0f0f0">Manipal</h3>
-                    <h3 style="color: #f0f0f0">Karnatka - 576104</h3>
+                    <h3 class="white">Automobile Workshop,</h3>
+                    <h3 class="white">Manipal</h3>
+                    <h3 class="white">Karnatka - 576104</h3>
                   </div>
                 </div>
               </div>
@@ -231,6 +235,9 @@
   <script src="js/vendor/what-input.js"></script>
   <script src="js/vendor/foundation.js"></script>
   <script src="js/aos.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script src="js/stats.min.js"></script>
+  <script src="js/particles-settings.js"></script>
   <script>
   $(document).foundation();
   AOS.init();
@@ -239,118 +246,5 @@
 }).on('sticky.zf.unstuckfrom:top', function(){
   $(this).removeClass('shrink');
 })
-
-//
-// particlesJS("particles-js", {
-//     "particles": {
-// 		"number": {
-// 			"value": 80,
-// 			"density": {
-// 				"enable": true,
-// 				"value_area": 800
-// 			}
-// 		},
-// 		"color": {
-// 			"value": "#ffffff"
-// 		},
-// 		"shape": {
-// 			"type": "circle",
-// 			"stroke": {
-// 				"width": 0,
-// 				"color": "#000000"
-// 			},
-// 			"polygon": {
-// 				"nb_sides": 5
-// 			},
-// 			"image": {
-// 				"src": "img/github.svg",
-// 				"width": 100,
-// 				"height": 100
-// 			}
-// 		},
-// 		"opacity": {
-// 			"value": 1.0,
-// 			"random": false,
-// 			"anim": {
-// 				"enable": false,
-// 				"speed": 1,
-// 				"opacity_min": 0.1,
-// 				"sync": false
-// 			}
-// 		},
-// 		"size": {
-// 			"value": 3,
-// 			"random": true,
-// 			"anim": {
-// 				"enable": false,
-// 				"speed": 40,
-// 				"size_min": 0.1,
-// 				"sync": false
-// 			}
-// 		},
-// 		"line_linked": {
-// 			"enable": true,
-// 			"distance": 150,
-// 			"color": "#ffffff",
-// 			"opacity": 1,
-// 			"width": 2
-// 		},
-// 		"move": {
-// 			"enable": true,
-// 			"speed": 6,
-// 			"direction": "none",
-// 			"random": false,
-// 			"straight": false,
-// 			"out_mode": "out",
-// 			"bounce": false,
-// 			"attract": {
-// 				"enable": false,
-// 				"rotateX": 600,
-// 				"rotateY": 1200
-// 			}
-// 		}
-// 	},
-// 	"interactivity": {
-// 		"detect_on": "canvas",
-// 		"events": {
-// 			"onhover": {
-// 				"enable": false,
-// 				"mode": "grab"
-// 			},
-// 			"onclick": {
-// 				"enable": true,
-// 				"mode": "push"
-// 			},
-// 			"resize": true
-// 		},
-// 		"modes": {
-// 			"grab": {
-// 				"distance": 140,
-// 				"line_linked": {
-// 					"opacity": 1
-// 				}
-// 			},
-// 			"bubble": {
-// 				"distance": 400,
-// 				"size": 40,
-// 				"duration": 2,
-// 				"opacity": 8,
-// 				"speed": 3
-// 			},
-// 			"repulse": {
-// 				"distance": 200,
-// 				"duration": 0.4
-// 			},
-// 			"push": {
-// 				"particles_nb": 4
-// 			},
-// 			"remove": {
-// 				"particles_nb": 2
-// 			}
-// 		}
-// 	},
-// 	"retina_detect": true
-// });
-
   </script>
 </html>
