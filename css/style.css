@@ -78,6 +78,23 @@ input[type="text"], textarea{
   background-color: #f0f0f0;
 }
 
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: rgb(254,88,49);
+}
+
+::selection {
+    color: white;
+    background: rgb(254,88,49);
+}
+
+#projects-button{
+  border: 2px solid #000000;
+  background-color: transparent;
+  color: #000000;
+  transition: all 0.3s;
+}
+
 #submit-button, #sponsorship-button{
   border: 2px solid #f0f0f0;
   background-color: transparent;
@@ -85,16 +102,58 @@ input[type="text"], textarea{
   transition: all 0.3s;
 }
 
-#submit-button:hover, #sponsorship-button:hover{
+#submit-button:hover, #sponsorship-button:hover, #projects-button:hover{
   background: rgb(254,88,49);
   border: 2px solid rgb(254,88,49);
   color: #ffffff;
   transform: scale(1.1);
 }
 
+.card{
+  box-shadow: 5px 5px 25px grey;
+  border: 0;
+}
+
+#wall-e{
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)), url(../images/png/bg/bossard.png);
+  background-repeat:no-repeat;
+  background-size: cover;
+  transition: all 0.3s;
+}
+#wall-e:hover{
+  background: linear-gradient(to top, rgba(252,173,63, 0.7) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/bossard.png);
+  background-repeat:no-repeat;
+  background-size: cover;
+  transform: scale(1.1);
+}
+#mahindra{
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)), url(../images/png/bg/mahindra.png);
+  background-repeat:no-repeat;
+  background-size: cover;
+  transition: all 0.3s;
+}
+#mahindra:hover{
+  background: linear-gradient(to top, rgba(252,173,63, 0.7) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/mahindra.png);
+  background-repeat:no-repeat;
+  background-size: cover;
+  transform: scale(1.1);
+}
+#igvc{
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)), url(../images/png/bg/sica.png);
+  background-repeat:no-repeat;
+  background-size: cover;
+  transition: all 0.3s;
+
+}
+#igvc:hover{
+  background: linear-gradient(to top, rgba(252,173,63, 0.7) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/sica.png);
+  background-repeat:no-repeat;
+  background-size: cover;
+  transform: scale(1.1);
+}
 
 #bossard{
-  background: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/bossard.png);
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)), url(../images/png/bg/bossard.png);
   background-repeat:no-repeat;
   background-size: cover;
   transition: all 0.3s;
@@ -106,7 +165,7 @@ input[type="text"], textarea{
   transform: scale(1.1);
 }
 #sica{
-  background: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/sica.png);
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)), url(../images/png/bg/sica.png);
   background-repeat:no-repeat;
   background-size: cover;
   transition: all 0.3s;
@@ -117,6 +176,7 @@ input[type="text"], textarea{
   background-repeat:no-repeat;
   background-size: cover;
   transform: scale(1.1);
+  box-shadow: 0px 0px 25px grey;
 }
 #indian-bank{
   background: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/indian-bank.png);
@@ -130,6 +190,8 @@ input[type="text"], textarea{
   background-repeat:no-repeat;
   background-size: cover;
   transform: scale(1.1);
+  box-shadow: 0px 0px 25px grey;
+
 }
 #pepperl-fuchs{
   background: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/pepperl-fuchs.png);
@@ -143,6 +205,8 @@ input[type="text"], textarea{
   background-repeat:no-repeat;
   background-size: cover;
   transform: scale(1.1);
+  box-shadow: 0px 0px 25px grey;
+
 }
 #gigabyte{
   background: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/gigabyte.png);
@@ -156,6 +220,7 @@ input[type="text"], textarea{
   background-repeat:no-repeat;
   background-size: cover;
   transform: scale(1.1);
+  box-shadow: 0px 0px 25px grey;
 }
 #vector{
   background: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/vector.png);
@@ -169,6 +234,7 @@ input[type="text"], textarea{
   background-repeat:no-repeat;
   background-size: cover;
   transform: scale(1.1);
+  box-shadow: 0px 0px 25px grey;
 }
 #cooler-master{
   background: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/cooler-master.png);
@@ -182,6 +248,7 @@ input[type="text"], textarea{
   background-repeat:no-repeat;
   background-size: cover;
   transform: scale(1.1);
+  box-shadow: 0px 0px 25px grey;
 }
 #microsoft{
   background: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/microsoft.png);
@@ -195,6 +262,7 @@ input[type="text"], textarea{
   background-repeat:no-repeat;
   background-size: cover;
   transform: scale(1.1);
+  box-shadow: 0px 0px 25px grey;
 }
 #ximea{
   background: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/ximea.png);
@@ -208,6 +276,7 @@ input[type="text"], textarea{
   background-repeat:no-repeat;
   background-size: cover;
   transform: scale(1.1);
+  box-shadow: 0px 0px 25px grey;
 }
 #national-instruments{
   background: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/national-instruments.png);
@@ -221,6 +290,7 @@ input[type="text"], textarea{
   background-repeat:no-repeat;
   background-size: cover;
   transform: scale(1.1);
+  box-shadow: 0px 0px 25px grey;
 }
 #nvidia{
   background: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/nvidia.png);
@@ -234,6 +304,7 @@ input[type="text"], textarea{
   background-repeat:no-repeat;
   background-size: cover;
   transform: scale(1.1);
+  box-shadow: 0px 0px 25px grey;
 }
 #sick{
   background: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/sick.png);
@@ -247,6 +318,7 @@ input[type="text"], textarea{
   background-repeat:no-repeat;
   background-size: cover;
   transform: scale(1.1);
+  box-shadow: 0px 0px 25px grey;
 }
 #mahindra-rise{
   background: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/mahindra.png);
@@ -260,6 +332,7 @@ input[type="text"], textarea{
   background-repeat:no-repeat;
   background-size: cover;
   transform: scale(1.1);
+  box-shadow: 0px 0px 25px grey;
 }
 #continental{
   background: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/continental.png);
@@ -273,4 +346,5 @@ input[type="text"], textarea{
   background-repeat:no-repeat;
   background-size: cover;
   transform: scale(1.1);
+  box-shadow: 0px 0px 25px grey;
 }
