@@ -68,17 +68,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
   color: #f0f0f0;
 }
 .nav-link:hover{
-  color: #bfbcbc;
+  color: rgb(254,88,49);
+}
+input[type="text"], textarea{
+  background-color: transparent;
+  border: 2px solid #f0f0f0;
+}
+ input[type="text"]:focus, textarea:focus{
+  background-color: #f0f0f0;
 }
 
-#sponsorship-button{
+#submit-button, #sponsorship-button{
   border: 2px solid #f0f0f0;
+  background-color: transparent;
   color: #f0f0f0;
   transition: all 0.3s;
-
 }
 
-#sponsorship-button:hover{
+#submit-button:hover, #sponsorship-button:hover{
   background: rgb(254,88,49);
   border: 2px solid rgb(254,88,49);
   color: #ffffff;
