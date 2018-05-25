@@ -5,6 +5,8 @@
     <meta name="descriptions" content="AI Robotics Project" />
 
     <link type="text/css" rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/aos.css" />
     <link type="text/css" rel="stylesheet" href="css/style.css" />
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -47,16 +49,16 @@
             </div>
   </div>
 
-      <div class="grid-y" id="main" style="position: relative; z-index: 2; top: 100vh;">
+      <div class="grid-y" id="main" style="position: relative; z-index: 2; top: calc(100vh - 100px);">
         <div data-sticky-container>
           <div data-sticky data-margin-top='0' data-top-anchor="main:top">
-            <div class="top-bar" style="background-color:rgba(0, 0, 0, 0.8); -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(30px);">
-              <div class="top-bar-title">
+            <div class="top-bar" style="background-color:rgba(0, 0, 0, 0.8); -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(30px); z-index: 3;">
+              <div class="top-bar-title" data-aos="fade-zoom-in" data-aos-duration="600" data-aos-offset="200" data-aos-anchor-placement="main">
                 <img src="images/png/manas-logo.png" width="50px" />
                 <img src="images/png/project-manas.png" width="100px" />
               </div>
               <div class="top-bar-right">
-                <ul class="menu" style="background-color:rgba(0, 0, 0, 0); -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(30px);">
+                <ul class="menu" style="background-color:rgba(0, 0, 0, 0); ">
                   <li><a class="nav-link" href="#">Home</a></li>
                   <li><a class="nav-link" href="#">About Us</a></li>
                   <li><a class="nav-link" href="#">Our Work</a></li>
@@ -140,129 +142,173 @@
           </div>
         </div>
       </div>
+      <div class="grid-y" id="main" style="position: relative; z-index: 2; top: calc(100vh - 100px);">
+        <div class="cell large-6" style="background: url(images/png/bg/map.PNG); background-repeat:no-repeat; background-size: cover; height: 90vh;">
+          <div class="grid-y grid-padding-y">
+            <div class="cell large-1">
+              <center><h1 style="color: white;"><span style="color: rgb(254,88,49);">Contact</span> Us</h1></center>
+            </div>
+            <div class="cell large-11" >
+              <div class="grid-x">
+                <div class="cell large-4" ></div>
+                <div class="cell large-4" >
+                  <form>
+                    <div class="grid-container">
+                          <label><h3 style="color: white;">Name</h3>
+                            <input type="text">
+                          </label>
+                          <label><h3 style="color: white;">Email</h3>
+                            <input type="text">
+                          </label>
+                          <label><h3 style="color: white;">Subject</h3>
+                            <input type="text">
+                          </label>
+                          <label><h3 style="color: white;">Message</h3>
+                            <textarea rows="6"></textarea>
+                          </label>
+                          <input type="submit" class="button float-right" value="Submit" style="right: 0;">
+                    </div>
+                  </form>
+                </div>
+                <div class="cell large-4">
+                  <div style="position: absolute; top: 57%; right: 18%">
+                    <i class="fa fa-map-marker" style="font-size:48px; color: rgb(254,88,49);"><h3>Project Manas</h3></i>
+                    <h3 style="color: #f0f0f0">Automobile Workshop,</h3>
+                    <h3 style="color: #f0f0f0">Manipal</h3>
+                    <h3 style="color: #f0f0f0">Karnatka - 576104</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cell large-6"></div>
+      </div>
   </body>
   <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/what-input.js"></script>
   <script src="js/vendor/foundation.js"></script>
+  <script src="js/aos.js"></script>
   <script>
   $(document).foundation();
+  AOS.init();
   $('.top-bar').on('sticky.zf.stuckto:top', function(){
   $(this).addClass('shrink');
 }).on('sticky.zf.unstuckfrom:top', function(){
   $(this).removeClass('shrink');
 })
 
-
-particlesJS("particles-js", {
-    "particles": {
-		"number": {
-			"value": 80,
-			"density": {
-				"enable": true,
-				"value_area": 800
-			}
-		},
-		"color": {
-			"value": "#ffffff"
-		},
-		"shape": {
-			"type": "circle",
-			"stroke": {
-				"width": 0,
-				"color": "#000000"
-			},
-			"polygon": {
-				"nb_sides": 5
-			},
-			"image": {
-				"src": "img/github.svg",
-				"width": 100,
-				"height": 100
-			}
-		},
-		"opacity": {
-			"value": 1.0,
-			"random": false,
-			"anim": {
-				"enable": false,
-				"speed": 1,
-				"opacity_min": 0.1,
-				"sync": false
-			}
-		},
-		"size": {
-			"value": 3,
-			"random": true,
-			"anim": {
-				"enable": false,
-				"speed": 40,
-				"size_min": 0.1,
-				"sync": false
-			}
-		},
-		"line_linked": {
-			"enable": true,
-			"distance": 150,
-			"color": "#ffffff",
-			"opacity": 1,
-			"width": 2
-		},
-		"move": {
-			"enable": true,
-			"speed": 6,
-			"direction": "none",
-			"random": false,
-			"straight": false,
-			"out_mode": "out",
-			"bounce": false,
-			"attract": {
-				"enable": false,
-				"rotateX": 600,
-				"rotateY": 1200
-			}
-		}
-	},
-	"interactivity": {
-		"detect_on": "canvas",
-		"events": {
-			"onhover": {
-				"enable": true,
-				"mode": "grab"
-			},
-			"onclick": {
-				"enable": true,
-				"mode": "push"
-			},
-			"resize": true
-		},
-		"modes": {
-			"grab": {
-				"distance": 140,
-				"line_linked": {
-					"opacity": 1
-				}
-			},
-			"bubble": {
-				"distance": 400,
-				"size": 40,
-				"duration": 2,
-				"opacity": 8,
-				"speed": 3
-			},
-			"repulse": {
-				"distance": 200,
-				"duration": 0.4
-			},
-			"push": {
-				"particles_nb": 4
-			},
-			"remove": {
-				"particles_nb": 2
-			}
-		}
-	},
-	"retina_detect": true
-});
+//
+// particlesJS("particles-js", {
+//     "particles": {
+// 		"number": {
+// 			"value": 80,
+// 			"density": {
+// 				"enable": true,
+// 				"value_area": 800
+// 			}
+// 		},
+// 		"color": {
+// 			"value": "#ffffff"
+// 		},
+// 		"shape": {
+// 			"type": "circle",
+// 			"stroke": {
+// 				"width": 0,
+// 				"color": "#000000"
+// 			},
+// 			"polygon": {
+// 				"nb_sides": 5
+// 			},
+// 			"image": {
+// 				"src": "img/github.svg",
+// 				"width": 100,
+// 				"height": 100
+// 			}
+// 		},
+// 		"opacity": {
+// 			"value": 1.0,
+// 			"random": false,
+// 			"anim": {
+// 				"enable": false,
+// 				"speed": 1,
+// 				"opacity_min": 0.1,
+// 				"sync": false
+// 			}
+// 		},
+// 		"size": {
+// 			"value": 3,
+// 			"random": true,
+// 			"anim": {
+// 				"enable": false,
+// 				"speed": 40,
+// 				"size_min": 0.1,
+// 				"sync": false
+// 			}
+// 		},
+// 		"line_linked": {
+// 			"enable": true,
+// 			"distance": 150,
+// 			"color": "#ffffff",
+// 			"opacity": 1,
+// 			"width": 2
+// 		},
+// 		"move": {
+// 			"enable": true,
+// 			"speed": 6,
+// 			"direction": "none",
+// 			"random": false,
+// 			"straight": false,
+// 			"out_mode": "out",
+// 			"bounce": false,
+// 			"attract": {
+// 				"enable": false,
+// 				"rotateX": 600,
+// 				"rotateY": 1200
+// 			}
+// 		}
+// 	},
+// 	"interactivity": {
+// 		"detect_on": "canvas",
+// 		"events": {
+// 			"onhover": {
+// 				"enable": false,
+// 				"mode": "grab"
+// 			},
+// 			"onclick": {
+// 				"enable": true,
+// 				"mode": "push"
+// 			},
+// 			"resize": true
+// 		},
+// 		"modes": {
+// 			"grab": {
+// 				"distance": 140,
+// 				"line_linked": {
+// 					"opacity": 1
+// 				}
+// 			},
+// 			"bubble": {
+// 				"distance": 400,
+// 				"size": 40,
+// 				"duration": 2,
+// 				"opacity": 8,
+// 				"speed": 3
+// 			},
+// 			"repulse": {
+// 				"distance": 200,
+// 				"duration": 0.4
+// 			},
+// 			"push": {
+// 				"particles_nb": 4
+// 			},
+// 			"remove": {
+// 				"particles_nb": 2
+// 			}
+// 		}
+// 	},
+// 	"retina_detect": true
+// });
 
   </script>
 </html>
