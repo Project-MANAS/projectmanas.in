@@ -41,6 +41,12 @@ font-style: normal;
 font-variant: normal;
 font-weight: 400;
 }
+button {
+font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+font-style: normal;
+font-variant: normal;
+font-weight: 500;
+}
 
 
 #particles-js {
@@ -56,4 +62,20 @@ background-position: 50% 50%;
 background: -webkit-linear-gradient(to top, rgb(252,173,63) 22%,rgb(254,88,49) 100%);
 background: linear-gradient(to top, rgb(0, 0, 0) 22%,rgb(0, 0, 0) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#2f2f30',GradientType=1 );
+}
+
+
+#sponsorship-button{
+  border: 2px solid #f0f0f0;
+  color: #f0f0f0;
+}
+
+#sponsorship-button:hover{
+  background-color: #f0f0f0;
+  color: #0000008;
+}
+
+.sponsor-logo:hover{
+  background: linear-gradient(to top, rgba(252,173,63, 0.9) 22%,rgba(254,88,49, 0.9) 100%);
+  background-color: white;
 }
