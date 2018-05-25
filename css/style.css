@@ -1,0 +1,59 @@
+[data-sticky] {
+    width: 100%;
+}
+
+.top-bar {
+    padding: 1rem;
+    transition: padding .25s ease;
+}
+
+.is-stuck .top-bar {
+    padding: 0.5rem 1.5rem;
+    transition: padding .25s ease;
+}
+h1 {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 100;
+  line-height: 44px;
+}
+h3 {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 15.4px;
+}
+p {
+font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+font-size: 14px;
+font-style: normal;
+font-variant: normal;
+font-weight: 400;
+line-height: 20px;
+}
+a {
+font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+font-style: normal;
+font-variant: normal;
+font-weight: 400;
+}
+
+
+#particles-js {
+position: absolute;
+width: 100%;
+height: 100%;
+background-image: url("");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: 50% 50%;
+/* background: #6819e8;  */
+/* background: -moz-linear-gradient(left, #6819e8 0%, #7437d0 35%, #615fde 68%, #6980f2 100%); */
+background: -webkit-linear-gradient(to top, rgb(252,173,63) 22%,rgb(254,88,49) 100%);
+background: linear-gradient(to top, rgb(0, 0, 0) 22%,rgb(0, 0, 0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#2f2f30',GradientType=1 );
+}

@@ -1,63 +1,62 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Project MANAS</title>
     <meta name="descriptions" content="AI Robotics Project" />
+
     <link type="text/css" rel="stylesheet" href="css/foundation.css" />
-    <style>
-        [data-sticky] {
-            width: 100%;
-        }
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
 
-        .top-bar {
-            padding: 1rem;
-            transition: padding .25s ease;
-        }
-
-        .is-stuck .top-bar {
-            padding: 0.0rem;
-            transition: padding .25s ease;
-        }
-    </style>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
 </head>
 
 <body>
-    <div class="grid-container full" style="background-color: grey; position: fixed; z-index: 2;">
-        <div class="grid-x">
-            <div class="cell large-3" style="background-color: AQUA; height: 100vh;">
-                <div class="grid-y" style="height: 100vh">
-                    <div class="cell large-3" style="background-color: red;"></div>
-                    <div class="cell large-4 large-offset-3" style="background-color: GREEN;">
-                        <img src="images/png/manas-logo.png" width="85%" height="85%" />
-                    </div>
-                    <div class="cell large-5" style="background-color: BLUE;"></div>
+
+  <div class="jumbotron jumbotron-main" id="home">
+      <div id="particles-js" style="position: fixed;"><canvas class="particles-js-canvas-el" width="1409" height="319" style="width: 100%; height: 100%;"></canvas></div><!-- /.particles div -->
+      <div class="grid-container full" style="background-color: rgba(0, 0, 0, 0.75); position: fixed; z-index: 2;">
+          <div class="grid-x">
+              <div class="cell large-3" style="height: 100vh; background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%);">
+                  <div class="grid-y" style="height: 100vh; text-align: right;">
+                      <div class="cell large-4"></div>
+                      <div class="cell large-2 large-offset-3"  style="padding-right: 0px;">
+                          <img src="images/png/manas-logo-transparent.png" width="85%" height="85%"/>
+                      </div>
+                      <div class="cell large-6"></div>
+                  </div>
+              </div>
+              <div class="cell large-2"style="background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%); height: 100vh;   clip-path: polygon(0% 100%, 100% 0%, 0% 0%);">
+                <div style="height: 100vh;"></div>
+              </div>
+              <div class="cell large-7" >
+                  <div class="grid-y" style="height: 100vh">
+                      <div class="cell large-5" style="text-align:right;">
+                        <img src="images/png/mit-60.png" width="100px" />
+                        <img src="images/png/mit-logo.png" width="100px" />
+                      </div>
+                      <div class="cell large-3" style="color: white;">
+                      <center>
+                      <img src="images/png/project-manas.png" width="60%"/>
+                    </center>
+                  </div>
+                  <div class="cell auto"></div>
                 </div>
-            </div>
-            <div class="cell large-9" style="background-color: black; height: 100vh; border-top: 0vh solid transparent; border-bottom: 100vh solid transparent; border-left: 300px solid grey;">
-                <div class="grid-y" style="height: 100vh">
-                    <div class="cell auto" style="background-color: red;"></div>
-                    <div class="cell auto" style="background-color: green; color: white;">
-                        <center>
-                            <h1>PROJECT MANAS<h1>
-                    <h3>Bringing Bits To Life</h3>
-                  </center>
-                </div>
-                <div class="cell auto" style="background-color: blue;"></div>
+              </div>
               </div>
             </div>
-            </div>
-          </div>
+  </div>
+
       <div class="grid-y" id="main" style="position: relative; z-index: 2; top: 100vh;">
         <div data-sticky-container>
           <div data-sticky data-margin-top='0' data-top-anchor="main:top">
-            <div class="top-bar" style="background-color:grey;">
+            <div class="top-bar" style="background-color:#f0f0f0;">
               <div class="top-bar-title">
                 <img src="images/png/manas-logo.png" width="50px" />
-                <img src="images/png/project-manas.png" width="100px" />
+                <img src="images/png/project-manas-black.png" width="100px" />
               </div>
               <div class="top-bar-right">
-                <ul class="menu">
+                <ul class="menu" style="background-color:#f0f0f0;">
                   <li><a href="#">Home</a></li>
                   <li><a href="#">About Us</a></li>
                   <li><a href="#">Our Work</a></li>
@@ -66,8 +65,21 @@
             </div>
           </div>
         </div>
-        <div class="cell large-6" style="background-color: maroon; height: 50vh;"></div>
-        <div class="cell large-6" style="background-color: green; height: 50vh;"></div>
+        <div class="cell large-7" style="background: #fefefe; height: 70vh;">
+          <center>
+            <br><br>
+            <h1>ABOUT US<h1>
+            <br>
+            <p style="width: 75vw;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac elit est. Integer fermentum, lacus eu porta eleifend, mauris diam convallis ex, sit amet ornare enim enim vitae risus. Ut fermentum metus hendrerit augue eleifend interdum. Ut pulvinar tempus orci cursus placerat. Nullam consequat, ex quis sodales mollis, dolor nunc rutrum sapien, suscipit hendrerit nulla dui dictum lorem. Praesent scelerisque bibendum enim, a eleifend erat ornare vel. Vestibulum vestibulum sem diam, sed ornare lorem convallis id. Donec ornare id tellus id rutrum. Nulla sodales risus neque, vitae vulputate leo malesuada sed. Praesent eget tellus magna. Sed ut congue turpis. Praesent maximus vel felis sit amet tristique. In mollis vulputate ligula nec eleifend. Ut dui ligula, volutpat nec volutpat blandit, bibendum at est. Nullam molestie convallis rutrum.
+            </p>
+            <p style="width: 75vw;">
+            Proin tristique laoreet dolor nec pretium. Nulla facilisi. Aliquam laoreet erat in urna volutpat blandit. Pellentesque convallis gravida tortor id luctus. Maecenas sit amet purus a sapien accumsan dapibus. Fusce rhoncus rutrum fringilla. Cras efficitur non eros vel venenatis. Duis neque orci, consequat sed augue vitae, posuere vulputate mauris. Vestibulum fermentum lacinia justo eget sagittis.
+            </p>
+          </center>
+        </div>
+        <div class="cell large-2" style="background-color: black; height: 30vh;">
+        </div>
       </div>
   </body>
   <script src="js/vendor/jquery.js"></script>
@@ -81,6 +93,117 @@
   $(this).removeClass('shrink');
 })
 
+
+particlesJS("particles-js", {
+    "particles": {
+		"number": {
+			"value": 80,
+			"density": {
+				"enable": true,
+				"value_area": 800
+			}
+		},
+		"color": {
+			"value": "#ffffff"
+		},
+		"shape": {
+			"type": "circle",
+			"stroke": {
+				"width": 0,
+				"color": "#000000"
+			},
+			"polygon": {
+				"nb_sides": 5
+			},
+			"image": {
+				"src": "img/github.svg",
+				"width": 100,
+				"height": 100
+			}
+		},
+		"opacity": {
+			"value": 1.0,
+			"random": false,
+			"anim": {
+				"enable": false,
+				"speed": 1,
+				"opacity_min": 0.1,
+				"sync": false
+			}
+		},
+		"size": {
+			"value": 3,
+			"random": true,
+			"anim": {
+				"enable": false,
+				"speed": 40,
+				"size_min": 0.1,
+				"sync": false
+			}
+		},
+		"line_linked": {
+			"enable": true,
+			"distance": 150,
+			"color": "#ffffff",
+			"opacity": 1,
+			"width": 2
+		},
+		"move": {
+			"enable": true,
+			"speed": 6,
+			"direction": "none",
+			"random": false,
+			"straight": false,
+			"out_mode": "out",
+			"bounce": false,
+			"attract": {
+				"enable": false,
+				"rotateX": 600,
+				"rotateY": 1200
+			}
+		}
+	},
+	"interactivity": {
+		"detect_on": "canvas",
+		"events": {
+			"onhover": {
+				"enable": true,
+				"mode": "grab"
+			},
+			"onclick": {
+				"enable": true,
+				"mode": "push"
+			},
+			"resize": true
+		},
+		"modes": {
+			"grab": {
+				"distance": 140,
+				"line_linked": {
+					"opacity": 1
+				}
+			},
+			"bubble": {
+				"distance": 400,
+				"size": 40,
+				"duration": 2,
+				"opacity": 8,
+				"speed": 3
+			},
+			"repulse": {
+				"distance": 200,
+				"duration": 0.4
+			},
+			"push": {
+				"particles_nb": 4
+			},
+			"remove": {
+				"particles_nb": 2
+			}
+		}
+	},
+	"retina_detect": true
+});
+
   </script>
 </html>
-<!-- Gradient to be added linear-gradient(to bottom, rgb(252,173,63) 22%,rgb(254,88,49) 100%); -->
