@@ -54,6 +54,11 @@
    padding-left: 1.5rem;
 }
 
+.sponsor-logo{
+  width: 100%;
+  height: 100%;
+}
+
 .project-card{
   height: 19rem;
   width: 20rem;
@@ -182,38 +187,39 @@ input[type="text"], textarea{
 }
 
 #wall-e{
-  background: linear-gradient(0deg,rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)), url(../images/png/bg/bossard.png);
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)), url(../images/png/bg/wall-e-bnw.jpg);
   background-repeat:no-repeat;
   background-size: cover;
   transition: all 0.3s;
 }
 #wall-e:hover{
-  background: linear-gradient(to top, rgba(252,173,63, 0.7) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/bossard.png);
+  /* background: linear-gradient(to top, rgba(252,173,63, 0.7) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/wall-e.jpg); */
+  background: url(../images/png/bg/wall-e.jpg);
   background-repeat:no-repeat;
   background-size: cover;
   transform: scale(1.1);
 }
 #mahindra{
-  background: linear-gradient(0deg,rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)), url(../images/png/bg/mahindra.png);
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)), url(../images/png/bg/eve-bnw.jpg);
   background-repeat:no-repeat;
   background-size: cover;
   transition: all 0.3s;
 }
 #mahindra:hover{
-  background: linear-gradient(to top, rgba(252,173,63, 0.7) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/mahindra.png);
+  background: url(../images/png/bg/eve.jpg);
   background-repeat:no-repeat;
   background-size: cover;
   transform: scale(1.1);
 }
 #igvc{
-  background: linear-gradient(0deg,rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)), url(../images/png/bg/sica.png);
+  background: url(../images/png/bg/adam-bnw.jpg);
   background-repeat:no-repeat;
   background-size: cover;
   transition: all 0.3s;
 
 }
 #igvc:hover{
-  background: linear-gradient(to top, rgba(252,173,63, 0.7) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/sica.png);
+  background: url(../images/png/bg/adam.jpg);
   background-repeat:no-repeat;
   background-size: cover;
   transform: scale(1.1);
