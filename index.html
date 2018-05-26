@@ -69,10 +69,10 @@
         </div>
         <div class="cell large-8 bg-white about-section" id="about">
           <div class="grid-y grid-padding-y">
-            <div class="cell large-2">
+            <div class="cell large-2" style="z-index: 2;">
               <h1 class="black">About <span style="color: rgb(254,88,49);">Us</span></h1>
             </div>
-            <div class="cell large-10">
+            <div class="cell large-10" style="z-index: 2;">
               <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac elit est. Integer fermentum, lacus eu porta eleifend, mauris diam convallis ex, sit amet ornare enim enim vitae risus. Ut fermentum metus hendrerit augue eleifend interdum. Ut pulvinar tempus orci cursus placerat. Nullam consequat, ex quis sodales mollis, dolor nunc rutrum sapien, suscipit hendrerit nulla dui dictum lorem. Praesent scelerisque bibendum enim, a eleifend erat ornare vel. Vestibulum vestibulum sem diam, sed ornare lorem convallis id. Donec ornare id tellus id rutrum. Nulla sodales risus neque, vitae vulputate leo malesuada sed. Praesent eget tellus magna. Sed ut congue turpis. Praesent maximus vel felis sit amet tristique. In mollis vulputate ligula nec eleifend. Ut dui ligula, volutpat nec volutpat blandit, bibendum at est. Nullam molestie convallis rutrum.
               </p>
@@ -299,8 +299,8 @@ var canvas = document.createElement("canvas"),
         background: "#0D4D2B",
         traceColor: "#ffe99b",
         traceFill: "#000000",
-        startTraces : 30,
-        totalTraces : 24,
+        startTraces : 50,
+        totalTraces : 100,
         redraw: function () {
             reinit();
         },
@@ -335,28 +335,28 @@ var schemeSettings = gui.add(settings, 'colorScheme', ['standard', 'green2', 'bl
     traceColorChange = colorSettings.addColor(settings, 'traceColor'),
     traceFillChange = colorSettings.addColor(settings, 'traceFill');
 
-gui.add(settings, 'startTraces');
-gui.add(settings, 'totalTraces');
-gui.add(settings, 'redraw');
+// gui.add(settings, 'startTraces');
+// gui.add(settings, 'totalTraces');
+// gui.add(settings, 'redraw');
 
-// dat gui events
-backgroundChange.onChange(function (value) {
-    document.body.style.backgroundColor = value;
-});
-
-traceColorChange.onChange(function (value) {
-    ctx.strokeStyle = value;
-});
-
-traceFillChange.onChange(function (value) {
-    ctx.fillStyle = value;
-});
-
-schemeSettings.onChange(function (value) {
-    document.body.style.backgroundColor = settings[value].background;
-    ctx.strokeStyle =  settings[value].traceColor;
-    ctx.fillStyle =  settings[value].traceFill;
-});
+// // dat gui events
+// backgroundChange.onChange(function (value) {
+//     document.body.style.backgroundColor = value;
+// });
+//
+// traceColorChange.onChange(function (value) {
+//     ctx.strokeStyle = value;
+// });
+//
+// traceFillChange.onChange(function (value) {
+//     ctx.fillStyle = value;
+// });
+//
+// schemeSettings.onChange(function (value) {
+//     document.body.style.backgroundColor = settings[value].background;
+//     ctx.strokeStyle =  settings[value].traceColor;
+//     ctx.fillStyle =  settings[value].traceFill;
+// });
 
 canvas.width = width;
 canvas.height = height;
@@ -368,8 +368,8 @@ document.getElementById('about').appendChild(canvas);
 
 function Trace(settings) {
     settings = settings || {};
-    this.x = settings.x || Math.ceil((width) / 8) * 0;
-    this.y = settings.y || Math.ceil((height) / 1) * 0;
+    this.x = settings.x || Math.ceil((width) / 2) * 1;
+    this.y = settings.y || Math.ceil((height) / 2) * 1;
 
     this.points = [];
     this.points.push({
