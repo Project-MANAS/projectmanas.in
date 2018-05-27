@@ -113,6 +113,9 @@ color: white;
 a:hover{
   color: white;
 }
+a:visited{
+  color: white;
+}
 button {
 font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 font-style: normal;
@@ -169,8 +172,22 @@ input[type="text"], textarea{
   background-color: transparent;
   border: 2px solid #f0f0f0;
 }
- input[type="text"]:focus, textarea:focus{
-  background-color: #f0f0f0;
+
+input[type="text"]:focus, textarea:focus{
+ background-color: rgba(0, 0, 0, 0.5);
+ border: 2px solid rgb(254,88,49);
+ box-shadow: 0 0 10px rgb(254,88,49);
+}
+
+@supports ((backdrop-filter: blur(20px)) or (-webkit-backdrop-filter: blur(20px)) ) {
+  input[type="text"]:focus, textarea:focus{
+   /* background-color: #f0f0f0; */
+   background-color: rgba(0, 0, 0, 0.3);
+   backdrop-filter: blur(20px);
+   -webkit-backdrop-filter: blur(20px);
+   border: 2px solid rgb(254,88,49);
+   box-shadow: 0 0 10px rgb(254,88,49);
+ }
 }
 
 ::-moz-selection { /* Code for Firefox */
