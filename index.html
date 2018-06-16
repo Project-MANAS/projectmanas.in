@@ -5,17 +5,17 @@
     <meta name="descriptions" content="AI Robotics Project" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link type="text/css" rel="stylesheet" href="css/foundation.min.css" />
+    <!-- <link type="text/css" rel="stylesheet" href="css/foundation.min.css" />
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link type="text/css" rel="stylesheet" href="css/aos.css" />
-    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/aos.css" /> -->
+    <link type="text/css" rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body>
 
   <div class="jumbotron jumbotron-main" id="home">
       <div id="particles-js" style="position: fixed;"><canvas class="particles-js-canvas-el" width="1409" height="319" style="width: 100%; height: 100%;"></canvas></div>
-      <div class="grid-container full"  id="home-container" style="background-color: rgba(0, 0, 0, 0.75); position: fixed; z-index: 2;">
+      <div class="grid-container full"  id="home-container" style="background-color: rgba(0, 0, 0, 0.75); position: fixed; z-index: 2; width: 100%;">
           <div class="grid-x">
               <div class="cell large-3 show-for-large" style="height: 100vh; background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%);">
                   <div class="grid-y" style="height: 100vh; text-align: right;">
@@ -244,28 +244,14 @@
                 </div>
                 <div class="cell large-3">
                 </div>
-                <!-- <div class="cell large-3">
-                  <div class="location-marker">
-                    <i class="fa fa-map-marker" style="font-size:48px; color: rgb(254,88,49);"><h4>Project Manas</h4></i>
-                    <h4 class="white">Automobile Workshop,</h4>
-                    <h4 class="white">Manipal</h4>
-                    <h4 class="white">Karnatka - 576104</h4>
-                  </div>
-                </div> -->
               </div>
             </div>
           </div>
         </div>
       </div>
   </body>
-  <script src="js/vendor/jquery.min.js"></script>
-  <script src="js/vendor/what-input.js"></script>
-  <script src="js/vendor/foundation.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/particles.min.js"></script>
-  <script src="js/stats.min.js"></script>
-  <script type="text/javascript" src="js/dat.gui.min.js"></script>
-  <script src="js/particles-settings.js"></script>
+  <script src="js/vendor/vendor.min.js"></script>
+  <script src="js/combined.min.js"></script>
   <script>
   $(document).foundation();
   AOS.init();
@@ -274,7 +260,6 @@
 }).on('sticky.zf.unstuckfrom:top', function(){
   $(this).removeClass('shrink');
 })
-
 
 $(window).on('scroll', function () {
     var pixs = $(document).scrollTop()
