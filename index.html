@@ -3,6 +3,7 @@
 <head>
     <title>Project MANAS</title>
     <meta name="descriptions" content="AI Robotics Project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link type="text/css" rel="stylesheet" href="css/foundation.css" />
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,7 +15,7 @@
 
   <div class="jumbotron jumbotron-main" id="home">
       <div id="particles-js" style="position: fixed;"><canvas class="particles-js-canvas-el" width="1409" height="319" style="width: 100%; height: 100%;"></canvas></div>
-      <div class="grid-container full" style="background-color: rgba(0, 0, 0, 0.75); position: fixed; z-index: 2;">
+      <div class="grid-container full"  id="home-container" style="background-color: rgba(0, 0, 0, 0.75); position: fixed; z-index: 2;">
           <div class="grid-x">
               <div class="cell large-3 show-for-large" style="height: 100vh; background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%);">
                   <div class="grid-y" style="height: 100vh; text-align: right;">
@@ -28,7 +29,7 @@
               <div class="cell large-2 show-for-large"style="background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%); height: 100vh;   clip-path: polygon(0% 100%, 100% 0%, 0% 0%); -webkit-clip-path: polygon(0% 100%, 100% 0%, 0% 0%);">
                 <div style="height: 100vh;"></div>
               </div>
-              <div class="cell large-7" >
+              <div class="cell large-7 medium-12 small-12" >
                   <div class="grid-y" style="height: 100vh">
                       <div class="cell large-5 medium-3 small-3" style="text-align:right; padding-top: 0.9rem;padding-right: 0.9rem;">
                         <img src="images/png/mit-60.png" width="60px" />
@@ -264,7 +265,7 @@
   <script src="js/particles.min.js"></script>
   <script src="js/stats.min.js"></script>
   <script type="text/javascript" src="js/dat.gui.min.js"></script>
-  <!-- <script src="js/particles-settings.js"></script> -->
+  <script src="js/particles-settings.js"></script>
   <script>
   $(document).foundation();
   AOS.init();

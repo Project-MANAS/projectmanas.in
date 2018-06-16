@@ -79,10 +79,10 @@ background-image:/* Colors */
 }
 @media screen and (max-width: 63.9375em) {
   #home-logo{
-    width: 35vw;
+    width: 25vw;
   }
   #home-logo-heading{
-    width: 60vw;
+    width: 50vw;
   }
 }
 @media screen and (max-width: 39.9375em) {
@@ -93,7 +93,11 @@ background-image:/* Colors */
     width: 60vw;
   }
 }
-
+@media screen and (max-width: 63.9375em) {
+  #home-container{
+    width: 100vw;
+}
+}
 .contact-section{
   text-align: left;
   background: url(../images/png/bg/map.PNG);
