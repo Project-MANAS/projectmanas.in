@@ -1,4 +1,4 @@
-/* Colors */
+background-image:/* Colors */
 
 .black{
   color: black;
@@ -49,21 +49,49 @@
   width: 75%
 }
 
-.projects-section{
-   padding-right: 1.5rem;
-   padding-left: 1.5rem;
-}
-
-.sponsor-logo{
-  width: 100%;
-  height: 100%;
-}
-
 .project-card{
-  height: 19rem;
-  width: 20rem;
+  width: 100%;
   border-radius: 10px;
   color: #f0f0f0
+}
+
+@media screen and (min-width: 64em) {
+  .project-card{
+    height: 20rem;
+  }
+}
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .project-card{
+    height: 17rem;
+  }
+}
+@media screen and (max-width: 39.9375em) {
+  .project-card{
+    height: 14rem;
+  }
+}
+
+
+@media screen and (min-width: 64em) {
+  #home-logo-heading{
+    width: 25rem;
+  }
+}
+@media screen and (max-width: 63.9375em) {
+  #home-logo{
+    width: 35vw;
+  }
+  #home-logo-heading{
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 39.9375em) {
+  #home-logo{
+    width: 40vw;
+  }
+  #home-logo-heading{
+    width: 60vw;
+  }
 }
 
 .contact-section{
@@ -81,7 +109,15 @@
 
 h1 {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-size: 40px;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 100;
+  line-height: 44px;
+}
+h2 {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 2rem;
   font-style: normal;
   font-variant: small-caps;
   font-weight: 100;
@@ -89,9 +125,17 @@ h1 {
 }
 h3 {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-size: 14px;
+  font-size: 1.5rem;
   font-style: normal;
-  font-variant: normal;
+  font-variant: small-caps;
+  font-weight: 500;
+  line-height: 15.4px;
+}
+h4 {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-variant: small-caps;
   font-weight: 500;
   line-height: 15.4px;
 }
@@ -265,199 +309,103 @@ input[type="text"]:focus, textarea:focus{
   transform: scale(1.1);
 }
 
-#bossard{
-  background: linear-gradient(0deg,rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)), url(../images/png/bg/bossard.png);
+/* Sponsor Logos */
+
+.sponsor-logo{
+  width: 100%;
+  height: 6rem;
   background-repeat:no-repeat;
   background-size: cover;
   transition: all 0.3s;
+}
+.sponsor-logo:hover{
+  background-repeat:no-repeat;
+  background-size: cover;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 25px grey;
+}
+
+#bossard{
+  background-image: url(../images/png/bg/bossard.png);
 }
 #bossard:hover{
   background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/bossard.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transform: scale(1.1);
 }
 #sica{
-  background: linear-gradient(0deg,rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)), url(../images/png/bg/sica.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transition: all 0.3s;
+  background-image: url(../images/png/bg/sica.png);
 }
-
 #sica:hover{
-  background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/sica.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transform: scale(1.1);
-  box-shadow: 0px 0px 25px grey;
+  background-image: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/sica.png);
 }
 #indian-bank{
-  background: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/indian-bank.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transition: all 0.3s;
+  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/indian-bank.png);
 }
-
 #indian-bank:hover{
-  background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/indian-bank.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transform: scale(1.1);
-  box-shadow: 0px 0px 25px grey;
-
+  background-image: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/indian-bank.png);
 }
 #pepperl-fuchs{
-  background: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/pepperl-fuchs.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transition: all 0.3s;
+  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/pepperl-fuchs.png);
 }
-
 #pepperl-fuchs:hover{
-  background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/pepperl-fuchs.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transform: scale(1.1);
-  box-shadow: 0px 0px 25px grey;
-
+  background-image: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/pepperl-fuchs.png);
 }
 #gigabyte{
-  background: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/gigabyte.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transition: all 0.3s;
+  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/gigabyte.png);
 }
-
 #gigabyte:hover{
-  background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/vector.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transform: scale(1.1);
-  box-shadow: 0px 0px 25px grey;
+  background-image: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/vector.png);
 }
 #vector{
-  background: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/vector.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transition: all 0.3s;
+  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/vector.png);
 }
-
 #vector:hover{
-  background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/vector.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transform: scale(1.1);
-  box-shadow: 0px 0px 25px grey;
+  background-image: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/vector.png);
 }
 #cooler-master{
-  background: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/cooler-master.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transition: all 0.3s;
+  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/cooler-master.png);
 }
-
 #cooler-master:hover{
-  background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/cooler-master.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transform: scale(1.1);
-  box-shadow: 0px 0px 25px grey;
+  background-image: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/cooler-master.png);
 }
 #microsoft{
-  background: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/microsoft.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transition: all 0.3s;
+  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/microsoft.png);
 }
-
 #microsoft:hover{
-  background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/microsoft.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transform: scale(1.1);
-  box-shadow: 0px 0px 25px grey;
+  background-image: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/microsoft.png);
 }
 #ximea{
-  background: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/ximea.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transition: all 0.3s;
+  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/ximea.png);
 }
-
 #ximea:hover{
-  background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/ximea.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transform: scale(1.1);
-  box-shadow: 0px 0px 25px grey;
+  background-image: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/ximea.png);
 }
 #national-instruments{
-  background: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/national-instruments.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transition: all 0.3s;
+  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/national-instruments.png);
 }
-
 #national-instruments:hover{
-  background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/national-instruments.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transform: scale(1.1);
-  box-shadow: 0px 0px 25px grey;
+  background-image: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/national-instruments.png);
 }
 #nvidia{
-  background: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/nvidia.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transition: all 0.3s;
+  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/nvidia.png);
 }
-
 #nvidia:hover{
-  background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/nvidia.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transform: scale(1.1);
-  box-shadow: 0px 0px 25px grey;
+  background-image: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/nvidia.png);
 }
 #sick{
-  background: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/sick.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transition: all 0.3s;
+  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/sick.png);
 }
-
 #sick:hover{
-  background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/sick.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transform: scale(1.1);
-  box-shadow: 0px 0px 25px grey;
+  background-image: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/sick.png);
 }
 #mahindra-rise{
-  background: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/mahindra.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transition: all 0.3s;
+  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/mahindra.png);
 }
-
 #mahindra-rise:hover{
   background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/mahindra.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transform: scale(1.1);
-  box-shadow: 0px 0px 25px grey;
 }
 #continental{
-  background: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/continental.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transition: all 0.3s;
+  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/continental.png);
 }
-
 #continental:hover{
-  background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/continental.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transform: scale(1.1);
-  box-shadow: 0px 0px 25px grey;
+  background-image: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/continental.png);
 }

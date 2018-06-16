@@ -16,27 +16,28 @@
       <div id="particles-js" style="position: fixed;"><canvas class="particles-js-canvas-el" width="1409" height="319" style="width: 100%; height: 100%;"></canvas></div>
       <div class="grid-container full" style="background-color: rgba(0, 0, 0, 0.75); position: fixed; z-index: 2;">
           <div class="grid-x">
-              <div class="cell large-3" style="height: 100vh; background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%);">
+              <div class="cell large-3 show-for-large" style="height: 100vh; background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%);">
                   <div class="grid-y" style="height: 100vh; text-align: right;">
                       <div class="cell large-4"></div>
-                      <div class="cell large-2 large-offset-3"  style="padding-right: 0px;">
+                      <div class="cell large-2 large-offset-3" style="padding-right: 0px;">
                           <img src="images/png/manas-logo-transparent.png" width="85%" height="85%"/>
                       </div>
                       <div class="cell large-6"></div>
                   </div>
               </div>
-              <div class="cell large-2"style="background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%); height: 100vh;   clip-path: polygon(0% 100%, 100% 0%, 0% 0%); -webkit-clip-path: polygon(0% 100%, 100% 0%, 0% 0%);">
+              <div class="cell large-2 show-for-large"style="background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%); height: 100vh;   clip-path: polygon(0% 100%, 100% 0%, 0% 0%); -webkit-clip-path: polygon(0% 100%, 100% 0%, 0% 0%);">
                 <div style="height: 100vh;"></div>
               </div>
               <div class="cell large-7" >
                   <div class="grid-y" style="height: 100vh">
-                      <div class="cell large-5" style="text-align:right; padding-top: 0.9rem;padding-right: 0.9rem;">
+                      <div class="cell large-5 medium-3 small-3" style="text-align:right; padding-top: 0.9rem;padding-right: 0.9rem;">
                         <img src="images/png/mit-60.png" width="60px" />
                         <img src="images/png/mit-logo.png" width="60px" />
                       </div>
-                      <div class="cell large-3" style="color: white;">
+                      <div class="cell large-3 medium-9 small-9" style="color: white;">
                       <center>
-                      <img src="images/png/project-manas.png" width="60%"/>
+                      <img class="hide-for-large" id="home-logo" src="images/png/manas-logo.png"/>
+                      <img src="images/png/project-manas.png" id="home-logo-heading">
                     </center>
                   </div>
                   <div class="cell auto"></div>
@@ -48,26 +49,35 @@
 
       <div class="grid-y" id="main" style="position: relative; z-index: 2; top: calc(100vh - 100px);">
         <div data-sticky-container>
-          <div data-sticky data-margin-top='0' data-top-anchor="main:top">
+          <div data-sticky data-margin-top='0' data-sticky-on="small" data-top-anchor="main:top">
+            <div class="title-bar" data-responsive-toggle="navigation-bar" data-hide-for="medium" style="background: rgba(0, 0, 0, 0.8)">
+              <div class="title-bar-left">
+                <img src="images/png/manas-logo-gradient.png" width="30px" />
+                <img src="images/png/project-manas.png" width="70px" />
+              </div>
+              <div class="title-bar-right">
+                <button class="menu-icon right" type="button" data-toggle="navigation-bar"></button>
+              </div>
+
+            </div>
             <div class="top-bar" id="navigation-bar">
-              <div class="top-bar-title" style="margin-left: 0.5rem;" data-aos="fade-zoom-in" data-aos-duration="600" data-aos-offset="200" data-aos-anchor-placement="main">
+              <div class="top-bar-title show-for-medium" style="margin-left: 0.5rem;" data-aos="fade-zoom-in" data-aos-duration="600" data-aos-offset="200" data-aos-anchor-placement="main">
                 <img src="images/png/manas-logo-gradient.png" width="50px" />
                 <img src="images/png/project-manas.png" width="100px" />
               </div>
               <div class="top-bar-right">
-                <ul class="menu" data-smooth-scroll data-offset="80" data-threshold="0" style="background-color:rgba(0, 0, 0, 0)" data-smooth-scroll>
+                <ul class="dropdown vertical medium-horizontal menu" data-smooth-scroll data-offset="85" data-threshold="0" style="background-color:rgba(0, 0, 0, 0)">
                   <li><a class="nav-link" href="#home">Home</a></li>
                   <li><a class="nav-link" href="#about">About Us</a></li>
                   <li><a class="nav-link" href="#sponsors">Sponsors</a></li>
                   <li><a class="nav-link" href="#projects">Projects</a></li>
-                  <li><a class="nav-link" href="#">Blog</a></li>
                   <li><a class="nav-link" href="#contact">Contact Us</a></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="cell large-8 bg-white about-section" id="about">
+        <div class="cell large-1 bg-white about-section" id="about">
           <div class="grid-y grid-padding-y">
             <div class="cell large-2" style="z-index: 2;">
               <h1 class="black">About <span style="color: rgb(254,88,49);">Us</span></h1>
@@ -82,89 +92,88 @@
             </div>
           </div>
         </div>
-        <div class="cell large-4 bg-black sponsors-section" id="sponsors">
+        <div class="cell large-1 bg-black sponsors-section" id="sponsors">
           <div class="grid-y grid-padding-x" style="text-align: center;">
-            <div class="cell large-1 white">
+            <div class="cell large-2 white">
               <h1>Sponsors</h1>
             </div>
-            <div class="cell large-5">
-              <div class="grid-x  grid-padding-x" style="margin-top: 1.5rem; margin-bottom: 0rem; height: 6rem;">
-                <div class="cell auto sponsor-logo" id="continental" style="padding-bottom: 0; padding-top: 1.75rem;">
+            <div class="cell large-10">
+              <div class="grid-x grid-padding-x" style="margin-top: 1.5rem; margin-bottom: 0rem;">
+                <div class="cell medium-2 small-4 sponsor-logo" id="continental" style="padding-bottom: 0; padding-top: 1.75rem;">
                   <a href="https://www.continental-corporation.com/en"><img src="images/png/continental.png" style="height: 2rem"/></a>
                 </div>
-                <div class="cell auto sponsor-logo" id="mahindra-rise" style="padding-bottom: 0; padding-top: 1.80rem;">
+                <div class="cell medium-2 small-4 sponsor-logo" id="mahindra-rise" style="padding-bottom: 0; padding-top: 1.80rem;">
                   <a href="#"><img src="images/png/mahindra-rise.png" style="height: 2rem"></a>
                 </div>
-                <div class="cell auto sponsor-logo" id="sick" style="padding-bottom: 0; padding-top: 1.75rem;">
+                <div class="cell medium-2 small-4 sponsor-logo" id="sick" style="padding-bottom: 0; padding-top: 1.75rem;">
                   <a href="#"><img src="images/png/sick.png" style="height: 2rem"/></a>
                 </div>
-                <div class="cell auto sponsor-logo" id="nvidia" style="padding-bottom: 0; padding-top: 1.20rem;">
+                <div class="cell medium-2 small-4 sponsor-logo" id="nvidia" style="padding-bottom: 0; padding-top: 1.20rem;">
                   <a href="#"><img src="images/png/nvidia.png" style="height: 3.5rem"/></a>
                 </div>
-                <div class="cell auto sponsor-logo" id="national-instruments" style="padding-bottom: 0; padding-top: 2.1rem;">
+                <div class="cell medium-2 small-4 sponsor-logo" id="national-instruments" style="padding-bottom: 0; padding-top: 2.1rem;">
                   <a href="#"><img src="images/png/national-instruments.png" style="height: 2rem"/></a>
                 </div>
-                <div class="cell auto sponsor-logo" id="ximea" style="padding-bottom: 0; padding-top: 2.0rem;">
+                <div class="cell medium-2 small-4 sponsor-logo" id="ximea" style="padding-bottom: 0; padding-top: 2.0rem;">
                   <a href="#"><img src="images/png/ximea.png" style="height: 2rem"/></a>
                 </div>
-                <div class="cell auto sponsor-logo" id="microsoft" style="padding-bottom: 0; padding-top: 1.85rem;">
+                <div class="cell medium-2 small-4 sponsor-logo" id="microsoft" style="padding-bottom: 0; padding-top: 1.85rem;">
                   <a href="#"><img src="images/png/microsoft.png" style="height: 2rem"/></a>
+                </div>
+                <div class="cell medium-2 small-4 sponsor-logo" id="cooler-master" style="padding-bottom: 0; padding-top: 1.4rem;">
+                  <a href="#"><img src="images/png/cooler-master.png" style="height: 3.5rem"/></a>
+                </div>
+                <div class="cell medium-2 small-4 sponsor-logo" id="vector" style="padding-bottom: 0; padding-top: 1.90rem;">
+                  <a href="#"><img src="images/png/vector.png" style="height: 2.4rem"></a>
+                </div>
+                <div class="cell medium-2 small-4 sponsor-logo" id="gigabyte" style="padding-bottom: 0; padding-top: 2.1rem;">
+                  <a href="#"><img src="images/png/gigabyte.png" style="height: 1.2rem"/></a>
+                </div>
+                <div class="cell medium-2 small-4 sponsor-logo" id="pepperl-fuchs" style="padding-bottom: 0; padding-top: 0.95rem;">
+                  <a href="#"><img src="images/png/pepperl-fuchs-logo.png" style="height: 2.0rem"/>
+                  <img src="images/png/pepperl-fuchs-text.png" style="height: 1.2rem"/></a>
+                </div>
+                <div class="cell medium-2 small-4 sponsor-logo" id="indian-bank" style="padding-bottom: 0; padding-top: 1.75rem;">
+                  <a href="#"><img src="images/png/indian-bank.png" style="height: 2rem"/></a>
+                </div>
+                <div class="cell medium-2 small-4 sponsor-logo" id="sica" style="padding-bottom: 0; padding-top: 1.35rem;">
+                  <a href="#"><img src="images/png/sica.png" style="height: 3rem"/></a>
+                </div>
+                <div class="cell medium-2 small-4 sponsor-logo" id="bossard" style="padding-bottom: 0; padding-top: 2.15rem;">
+                  <a href="#"><img src="images/png/bossard.png" style="height: 1.6rem"></a>
+                </div>
+                <div class="cell medium-2 small-4 sponsor-logo" id="sponsorship-button" style="padding-bottom: 0; padding-top: 2.0rem;">
+                  <a href="#"><h3 style="color: white;">Sponsor Us  <i class="fa fa-angle-right fa-sm"></i></h3></a>
                 </div>
               </div>
             </div>
-              <div class="cell large-3">
-                <div class="grid-x  grid-padding-x" style="margin-top: 0rem; margin-bottom: 1.5rem; height: 6rem;">
-                  <div class="cell auto sponsor-logo" id="cooler-master" style="padding-bottom: 0; padding-top: 1.4rem;">
-                    <a href="#"><img src="images/png/cooler-master.png" style="height: 3.5rem"/></a>
-                  </div>
-                  <div class="cell auto sponsor-logo" id="vector" style="padding-bottom: 0; padding-top: 1.90rem;">
-                    <a href="#"><img src="images/png/vector.png" style="height: 2.4rem"></a>
-                  </div>
-                  <div class="cell auto sponsor-logo" id="gigabyte" style="padding-bottom: 0; padding-top: 2.1rem;">
-                    <a href="#"><img src="images/png/gigabyte.png" style="height: 1.2rem"/></a>
-                  </div>
-                  <div class="cell auto sponsor-logo" id="pepperl-fuchs" style="padding-bottom: 0; padding-top: 0.95rem;">
-                    <a href="#"><img src="images/png/pepperl-fuchs-logo.png" style="height: 2.0rem"/>
-                    <img src="images/png/pepperl-fuchs-text.png" style="height: 1.2rem"/></a>
-                  </div>
-                  <div class="cell auto sponsor-logo" id="indian-bank" style="padding-bottom: 0; padding-top: 1.75rem;">
-                    <a href="#"><img src="images/png/indian-bank.png" style="height: 2rem"/></a>
-                  </div>
-                  <div class="cell auto sponsor-logo" id="sica" style="padding-bottom: 0; padding-top: 1.35rem;">
-                    <a href="#"><img src="images/png/sica.png" style="height: 3rem"/></a>
-                  </div>
-                  <div class="cell auto sponsor-logo" id="bossard" style="padding-bottom: 0; padding-top: 2.15rem;">
-                    <a href="#"><img src="images/png/bossard.png" style="height: 1.6rem"></a>
-                  </div>
-                </div>
-              </div>
-              <div class="cell large-1 white">
+              <!-- <div class="cell large-1 white">
                 <button class="hollow button" id="sponsorship-button" href="#">Apply For Sponsorship</button>
-              </div>
+              </div> -->
           </div>
         </div>
-        <div class="cell large-3 bg-white projects-section" id="projects">
+        <div class="cell large-1 bg-white projects-section" id="projects">
           <div class="grid-y grid-padding-y">
             <div class="cell large-1">
               <h1 style="color: white;"><span style="color: rgb(254,88,49);">Projects</span></h1>
             </div>
             <div class="cell large-10">
               <div class="grid-x grid-padding-x">
-                <div class="cell large-3">
+                <div class="cell large-3 medium-4 small-6">
                   <div class="card project-card" id="wall-e">
                     <div class="card-section">
                       <h1>Wall-E</h1>
                     </div>
                   </div>
                 </div>
-                <div class="cell large-3">
+                <div class="cell large-3 medium-4 small-6">
                   <div class="card project-card" id="mahindra">
                     <div class="card-section">
                       <h1>Mahindra Rise Prize</h1>
                     </div>
                   </div>
                 </div>
-                <div class="cell large-3">
+                <div class="cell large-3 medium-4 small-6">
                   <div class="card project-card" id="igvc">
                     <div class="card-section">
                       <a href="#" data-toggle="igvc-info"><h1>IGVC</h1></a>
@@ -176,7 +185,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="cell large-3">
+                <div class="cell large-3 medium-4 small-6">
                   <div class="card project-card" id="wall-e">
                     <div class="card-section">
                       <h1>Wall-E</h1>
@@ -190,7 +199,7 @@
             </div>
           </div>
         </div>
-        <div class="cell large-3 contact-section" id="contact">
+        <div class="cell large-1 contact-section" id="contact">
           <div class="grid-y grid-padding-y">
             <div class="cell large-1">
               <center><h1 class="white"><span style="color: rgb(254,88,49);">Contact</span> Us</h1></center>
@@ -198,34 +207,34 @@
             <div class="cell large-11">
               <div class="grid-x">
                 <div class="cell large-4">
-                  <div class="grid-y grid-padding-x grid-padding-y" style="padding-top: 5rem;">
-                    <div class="cell large-6" style="margin: auto; width: 15rem;">
+                  <div class="grid-x grid-padding-x grid-padding-y">
+                    <div class="cell large-12 medium-6" style="margin: auto; width: 15rem; margin-bottom: 2rem; margin-top: 1rem;">
                       <i class="fa fa-envelope fa-lg" style="color: rgb(254,88,49); padding-bottom: 1rem;"></i>
-                      <h3 class="white">team_leader@projectmanas.in</h3>
-                      <h3 class="white">tech_head@projectmanas.in</h3>
-                      <h3 class="white">team_manager@projectmanas.in</h3>
+                      <h4 class="white">team_leader@projectmanas.in</h4>
+                      <h4 class="white">tech_head@projectmanas.in</h4>
+                      <h4 class="white">team_manager@projectmanas.in</h4>
                     </div>
-                    <div class="cell large-6" style="margin: auto; width: 15rem;">
+                    <div class="cell large-12 medium-6" style="margin: auto; width: 15rem; margin-bottom: 2rem; margin-top: 1rem;">
                       <i class="fa fa-phone fa-lg" style="color: rgb(254,88,49); padding-bottom: 1rem;"></i>
-                      <h3 class="white">Dheeraj Reddy: +9192736247</h3>
-                      <h3 class="white">Mukesh Kumar: +9192732437</h3>
-                      <h3 class="white">Sanjeev Nayak: +9192736937</h3>
+                      <h4 class="white">Dheeraj Reddy: +9192736247</h4>
+                      <h4 class="white">Mukesh Kumar: +9192732437</h4>
+                      <h4 class="white">Sanjeev Nayak: +9192736937</h4>
                     </div>
                   </div>
                 </div>
-                <div class="cell large-4" >
+                <div class="cell large-6 medium-8" style="margin: auto; max-width: 35rem;">
                   <form>
                     <div class="grid-container" class="contact-form">
-                          <label><h3 class="white">Name</h3>
+                          <label><h4 class="white">Name</h4>
                             <input class="white" type="text">
                           </label>
-                          <label><h3 class="white">Email</h3>
+                          <label><h4 class="white">Email</h4>
                             <input class="white" type="text">
                           </label>
-                          <label><h3 class="white">Subject</h3>
+                          <label><h4 class="white">Subject</h4>
                             <input class="white" type="text">
                           </label>
-                          <label><h3 class="white">Message</h3>
+                          <label><h4 class="white">Message</h4>
                             <textarea class="white" rows="6"></textarea>
                           </label>
                           <input type="submit" class="button float-right" id="submit-button" value="Submit">
@@ -233,13 +242,15 @@
                   </form>
                 </div>
                 <div class="cell large-3">
-                  <div class="location-marker">
-                    <i class="fa fa-map-marker" style="font-size:48px; color: rgb(254,88,49);"><h3>Project Manas</h3></i>
-                    <h3 class="white">Automobile Workshop,</h3>
-                    <h3 class="white">Manipal</h3>
-                    <h3 class="white">Karnatka - 576104</h3>
-                  </div>
                 </div>
+                <!-- <div class="cell large-3">
+                  <div class="location-marker">
+                    <i class="fa fa-map-marker" style="font-size:48px; color: rgb(254,88,49);"><h4>Project Manas</h4></i>
+                    <h4 class="white">Automobile Workshop,</h4>
+                    <h4 class="white">Manipal</h4>
+                    <h4 class="white">Karnatka - 576104</h4>
+                  </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -253,7 +264,7 @@
   <script src="js/particles.min.js"></script>
   <script src="js/stats.min.js"></script>
   <script type="text/javascript" src="js/dat.gui.min.js"></script>
-  <script src="js/particles-settings.js"></script>
+  <!-- <script src="js/particles-settings.js"></script> -->
   <script>
   $(document).foundation();
   AOS.init();
@@ -277,289 +288,5 @@ $(window).on('scroll', function () {
     $("#navigation-bar").css({"background-color": "rgba(0, 0, 0, "+trans});
 
 });
-// 'use strict';
-//
-// // requestanimation polyfill
-// (function () {
-//     var lastTime = 0;
-//     var vendors = ['webkit', 'moz'];
-//     for (var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
-//         window.requestAnimationFrame = window[vendors[x] + 'RequestAnimationFrame'];
-//         window.cancelAnimationFrame = window[vendors[x] + 'CancelAnimationFrame'] || window[vendors[x] + 'CancelRequestAnimationFrame'];
-//     }
-//
-//     if (!window.requestAnimationFrame) window.requestAnimationFrame = function (callback, element) {
-//         var currTime = new Date().getTime();
-//         var timeToCall = Math.max(0, 16 - (currTime - lastTime));
-//         var id = window.setTimeout(function () {
-//             callback(currTime + timeToCall);
-//         },
-//         timeToCall);
-//         lastTime = currTime + timeToCall;
-//         return id;
-//     };
-//
-//     if (!window.cancelAnimationFrame) window.cancelAnimationFrame = function (id) {
-//         clearTimeout(id);
-//     };
-// }());
-//
-// // setup stuff.
-// var canvas = document.createElement("canvas"),
-//     ctx = canvas.getContext("2d"),
-//     width = 1440,
-//     height = 385,
-//     settings = {
-//         background: "#0D4D2B",
-//         traceColor: "#ffe99b",
-//         traceFill: "#000000",
-//         startTraces : 50,
-//         totalTraces : 100,
-//         redraw: function () {
-//             reinit();
-//         },
-//         standard: {
-//             background: "#0D4D2B",
-//             traceColor: "#ffe99b",
-//             traceFill: "#000000"
-//         },
-//         green2: {
-//             background: "#0d4d2b",
-//             traceColor: "#11ef88",
-//             traceFill: "#fff"
-//         },
-//         blackwhite: {
-//             background: "#fff",
-//             traceColor: "#000",
-//             traceFill: "#000"
-//         },
-//         blue: {
-//             background: "#011880",
-//             traceColor: "#2dace3",
-//             traceFill: "#fff"
-//         },
-//         colorScheme: 0
-//     },
-//     gui = new dat.GUI();
-//     gui.close();
-//
-// var schemeSettings = gui.add(settings, 'colorScheme', ['standard', 'green2', 'blackwhite', 'blue']),
-//     colorSettings = gui.addFolder('Custom Colors'),
-//     backgroundChange = colorSettings.addColor(settings, 'background'),
-//     traceColorChange = colorSettings.addColor(settings, 'traceColor'),
-//     traceFillChange = colorSettings.addColor(settings, 'traceFill');
-
-// gui.add(settings, 'startTraces');
-// gui.add(settings, 'totalTraces');
-// gui.add(settings, 'redraw');
-
-// // dat gui events
-// backgroundChange.onChange(function (value) {
-//     document.body.style.backgroundColor = value;
-// });
-//
-// traceColorChange.onChange(function (value) {
-//     ctx.strokeStyle = value;
-// });
-//
-// traceFillChange.onChange(function (value) {
-//     ctx.fillStyle = value;
-// });
-//
-// schemeSettings.onChange(function (value) {
-//     document.body.style.backgroundColor = settings[value].background;
-//     ctx.strokeStyle =  settings[value].traceColor;
-//     ctx.fillStyle =  settings[value].traceFill;
-// });
-//
-// canvas.width = width;
-// canvas.height = height;
-// canvas.style.position = "absolute";
-// canvas.style.top = "105px";
-// canvas.style.right = "0";
-//
-// document.getElementById('about').appendChild(canvas);
-//
-// function Trace(settings) {
-//     settings = settings || {};
-//     this.x = settings.x || Math.ceil((width) / 2) * 1;
-//     this.y = settings.y || Math.ceil((height) / 2) * 1;
-//
-//     this.points = [];
-//     this.points.push({
-//         x: this.x,
-//         y: this.y,
-//         arc: 0
-//     });
-//
-//     this.trapCount = 0;
-//     this.live = true;
-//
-//     this.lastPoint = this.points[0];
-//
-//     this.angle = settings.angle || (Math.ceil((Math.random() * 360) / 45) * 45) * (Math.PI / 180);
-//     this.speed = 4;
-// }
-//
-// Trace.prototype.update = function () {
-//     var x = this.lastPoint.x,
-//         y = this.lastPoint.y,
-//         dx = this.x - x,
-//         dy = this.y - y;
-//
-//     // if its greater than .01 keep moving
-//     if (Math.random() > 0.01) {
-//         var velX = Math.cos(this.angle) * this.speed,
-//             velY = Math.sin(this.angle) * this.speed,
-//             checkPointX = this.x + (Math.cos(this.angle) * 8),
-//             checkPointY = this.y + (Math.sin(this.angle) * 8),
-//             imageData = ctx.getImageData(checkPointX, checkPointY, 3, 3),
-//             pxlData = imageData.data,
-//             collision = false;
-//
-//         // check if its in bounds.
-//         if (checkPointX > 0 && checkPointX < width && checkPointY > 0 && checkPointY < height) {
-//             // check if the point in front is clear or not.
-//             for (var i = 0, n = pxlData.length; i < n; i += 4) {
-//                 var alpha = imageData.data[i + 3];
-//
-//                 if (alpha !== 0) {
-//                     collision = true;
-//                     break;
-//                 }
-//             }
-//         } else {
-//             collision = true;
-//         }
-//
-//         // no collision keep moving
-//         if (!collision) {
-//             this.trapCount = 0;
-//             this.x += velX;
-//             this.y += velY;
-//         } else {
-//             // collision, assume its not the end
-//             this.trapCount++;
-//             this.angle -= 45 * (Math.PI / 180);
-//
-//             // line is fully trapped make sure to draw an arc and start a new trace.
-//             if (this.trapCount >= 7) {
-//                 this.live = false;
-//
-//                 if (traces.length < settings.totalTraces) {
-//                     traces.push(new Trace({
-//                         cX: 0,
-//                         cY: 0
-//                     }));
-//                 }
-//             }
-//
-//             if (Math.sqrt(dx * dx + dy * dy) > 4) {
-//                 this.points.push({
-//                     x: this.x,
-//                     y: this.y
-//                 });
-//                 this.lastPoint = this.points[this.points.length - 1];
-//             } else {
-//                 this.trapCount++;
-//                 this.x = this.lastPoint.x;
-//                 this.y = this.lastPoint.y;
-//             }
-//         }
-//     } else {
-//         // small chance we might just stop altogether.
-//         if (Math.random() > 0.9) {
-//             this.live = false;
-//         }
-//
-//         // no collision clear any prev trap checks, change the direction and continue on.
-//         this.trapCount = 0;
-//         this.angle += 45 * (Math.PI / 180);
-//
-//         if (Math.sqrt(dx * dx + dy * dy) > 4) {
-//             this.points.push({
-//                 x: this.x,
-//                 y: this.y
-//             });
-//             this.lastPoint = this.points[this.points.length - 1];
-//         } else {
-//             this.x = this.lastPoint.x;
-//             this.y = this.lastPoint.y;
-//         }
-//     }
-// };
-//
-// Trace.prototype.render = function () {
-//     ctx.beginPath();
-//     ctx.moveTo(this.points[0].x, this.points[0].y);
-//
-//     for (var p = 1, plen = this.points.length; p < plen; p++) {
-//         ctx.lineTo(this.points[p].x, this.points[p].y);
-//     }
-//     ctx.lineTo(this.x, this.y);
-//     ctx.stroke();
-//
-//     ctx.beginPath();
-//     ctx.arc(this.points[0].x, this.points[0].y, 4, 0, Math.PI * 2);
-//     ctx.closePath();
-//     ctx.fill();
-//     ctx.stroke();
-//
-//     if (!this.live) {
-//         ctx.beginPath();
-//         ctx.arc(this.points[plen - 1].x, this.points[plen - 1].y, 4, 0, Math.PI * 2);
-//         ctx.closePath();
-//         ctx.fill();
-//         ctx.stroke();
-//     }
-// };
-//
-// // init
-// var traces = [],
-//     traceNum = settings.startTraces,
-//     reqAnimFrameInstance = null;
-//
-// for (var b = 0; b < traceNum; b++) {
-//     traces.push(new Trace({
-//         cX: 0,
-//         cY: 0
-//     }));
-// }
-//
-// function reinit() {
-//     cancelAnimationFrame(reqAnimFrameInstance);
-//     traces = [];
-//     traceNum = settings.startTraces;
-//     ctx.clearRect(0, 0, width, height);
-//
-//     for (var b = 0; b < traceNum; b++) {
-//         traces.push(new Trace({
-//             cX: 0,
-//             cY: 0
-//         }));
-//     }
-//     doTrace();
-// }
-//
-// ctx.strokeStyle = "rgba(195, 195, 195, 0.7)";
-// ctx.fillStyle = "rgba(195, 195, 195, 0.7)";
-// ctx.lineWidth = 2;
-//
-// function doTrace() {
-//     ctx.clearRect(0, 0, width, height);
-//
-//     for (var b = 0; b < traces.length; b++) {
-//         traces[b].render();
-//     }
-//
-//     for (b = 0; b < traces.length; b++) {
-//         if (traces[b].live) {
-//             traces[b].update();
-//         }
-//     }
-//     reqAnimFrameInstance = requestAnimationFrame(doTrace);
-// }
-//
-// doTrace();
   </script>
 </html>
