@@ -5,10 +5,10 @@
     <meta name="descriptions" content="AI Robotics Project" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- <link type="text/css" rel="stylesheet" href="css/foundation.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/foundation.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/aos.css" />
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link type="text/css" rel="stylesheet" href="css/aos.css" /> -->
-    <link type="text/css" rel="stylesheet" href="css/style.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -26,7 +26,7 @@
                       <div class="cell large-6"></div>
                   </div>
               </div>
-              <div class="cell large-2 show-for-large"style="background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%); height: 100vh;   clip-path: polygon(0% 100%, 100% 0%, 0% 0%); -webkit-clip-path: polygon(0% 100%, 100% 0%, 0% 0%);">
+              <div class="cell large-2 show-for-large"style="background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%); height: 100vh;   clip-path: polygon(0% 100%, 100% 0%, -5% 0%); -webkit-clip-path: polygon(0% 100%, 100% 0%, -5% 0%);">
                 <div style="height: 100vh;"></div>
               </div>
               <div class="cell large-7 medium-12 small-12" >
@@ -67,7 +67,7 @@
                 <img src="images/png/project-manas.png" width="100px" />
               </div>
               <div class="top-bar-right">
-                <ul class="dropdown vertical medium-horizontal menu" data-smooth-scroll data-offset="85" data-threshold="0" style="background-color:rgba(0, 0, 0, 0)">
+                <ul class="dropdown vertical medium-horizontal menu" data-smooth-scroll data-offset="88" data-threshold="0" style="background-color:rgba(0, 0, 0, 0)">
                   <li><a class="nav-link" href="#home">Home</a></li>
                   <li><a class="nav-link" href="#about">About Us</a></li>
                   <li><a class="nav-link" href="#sponsors">Sponsors</a></li>
@@ -244,14 +244,52 @@
                 </div>
                 <div class="cell large-3">
                 </div>
+                <!-- <div class="cell large-3">
+                  <div class="location-marker">
+                    <i class="fa fa-map-marker" style="font-size:48px; color: rgb(254,88,49);"><h4>Project Manas</h4></i>
+                    <h4 class="white">Automobile Workshop,</h4>
+                    <h4 class="white">Manipal</h4>
+                    <h4 class="white">Karnatka - 576104</h4>
+                  </div>
+                </div> -->
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="cell large-1 footer-section bg-black white" id="footer">
+          <div class="grid-x grid-padding-x grid-padding-y">
+            <div class="cell large-4"></div>
+            <div class="cell large-4">
+              <center>
+              <i class="fa fa-facebook" style="padding: 0 0.2rem 0 0.2rem;"></i>
+              <i class="fa fa-instagram" style="padding: 0 0.2rem 0 0.2rem;"></i>
+              <i class="fa fa-twitter" style="padding: 0 0.2rem 0 0.2rem;"></i>
+              <i class="fa fa-google-plus" style="padding: 0 0.2rem 0 0.2rem;"></i>
+              <i class="fa fa-youtube" style="padding: 0 0.2rem 0 0.2rem;"></i>
+              <i class="fa fa-linkedin" style="padding: 0 0.2rem 0 0.2rem;"></i>
+            </center>
+            </div>
+            <div class="cell large-4 text-right">
+              <h4>
+                &copy;
+                <script type="text/javascript">
+                var today = new Date()
+                var year = today.getFullYear()
+                document.write(year)
+                </script>
+                Project MANAS
+              </h4>
             </div>
           </div>
         </div>
       </div>
   </body>
   <script src="js/vendor/vendor.min.js"></script>
-  <script src="js/combined.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script src="js/stats.min.js"></script>
+  <script type="text/javascript" src="js/dat.gui.min.js"></script>
+  <script src="js/particles-settings.js"></script>
   <script>
   $(document).foundation();
   AOS.init();
@@ -260,6 +298,7 @@
 }).on('sticky.zf.unstuckfrom:top', function(){
   $(this).removeClass('shrink');
 })
+
 
 $(window).on('scroll', function () {
     var pixs = $(document).scrollTop()
