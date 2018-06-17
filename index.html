@@ -1,276 +1,288 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Project MANAS</title>
-    <meta name="descriptions" content="AI Robotics Project" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-    <link type="text/css" rel="stylesheet" href="css/foundation.min.css" />
-    <link type="text/css" rel="stylesheet" href="css/aos.css" />
-    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link type="text/css" rel="stylesheet" href="css/style.css" />
+<head>
+  <title>Project MANAS</title>
+  <meta charset="UTF-8">
+  <meta name="descriptions" content="AI Robotics Project" />
+  <meta name="keywords" content="AI, Robotics, MIT, Manipal">
+  <meta name="author" content="Shrijit Singh">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link type="text/css" rel="stylesheet" href="css/foundation.min.css" />
+  <link type="text/css" rel="stylesheet" href="css/aos.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
 
   <div class="jumbotron jumbotron-main" id="home">
-      <div id="particles-js" style="position: fixed;"><canvas class="particles-js-canvas-el" width="1409" height="319" style="width: 100%; height: 100%;"></canvas></div>
-      <div class="grid-container full"  id="home-container" style="background-color: rgba(0, 0, 0, 0.75); position: fixed; z-index: 2; width: 100%;">
-          <div class="grid-x">
-              <div class="cell large-3 show-for-large" style="height: 100vh; background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%);">
-                  <div class="grid-y" style="height: 100vh; text-align: right;">
-                      <div class="cell large-4"></div>
-                      <div class="cell large-2 large-offset-3" style="padding-right: 0px;">
-                          <img src="images/png/manas-logo-transparent.png" width="85%" height="85%"/>
-                      </div>
-                      <div class="cell large-6"></div>
-                  </div>
-              </div>
-              <div class="cell large-2 show-for-large"style="background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%); height: 100vh;   clip-path: polygon(0% 100%, 100% 0%, -5% 0%); -webkit-clip-path: polygon(0% 100%, 100% 0%, -5% 0%);">
-                <div style="height: 100vh;"></div>
-              </div>
-              <div class="cell large-7 medium-12 small-12" >
-                  <div class="grid-y" style="height: 100vh">
-                      <div class="cell large-5 medium-3 small-3" style="text-align:right; padding-top: 0.9rem;padding-right: 0.9rem;">
-                        <img src="images/png/mit-60.png" width="60px" />
-                        <img src="images/png/mit-logo.png" width="60px" />
-                      </div>
-                      <div class="cell large-3 medium-9 small-9" style="color: white;">
-                      <center>
-                      <img class="hide-for-large" id="home-logo" src="images/png/manas-logo-gradient.png"/>
-                      <img src="images/png/project-manas.png" id="home-logo-heading">
-                    </center>
-                  </div>
-                  <div class="cell auto"></div>
-                </div>
-              </div>
-              </div>
+    <div id="particles-js"><canvas class="particles-js-canvas-el"></canvas></div>
+    <div class="grid-container full home-container">
+      <div class="grid-x">
+        <div class="cell large-3 show-for-large home-left">
+          <div class="grid-y text-right" style="height: 100vh;">
+            <div class="cell large-4"></div>
+            <div class="cell large-2 large-offset-3">
+              <img src="images/png/manas-logo-transparent.png" width="85%" height="85%" />
             </div>
+            <div class="cell large-6"></div>
+          </div>
+        </div>
+        <div class="cell large-2 show-for-large home-center">
+        </div>
+        <div class="cell large-7 medium-12 small-12">
+          <div class="grid-y grid-padding-y grid-padding-x home-right">
+            <div class="cell large-5 medium-3 small-3 text-right">
+              <img src="images/png/mit-60.png" width="60px" />
+              <img src="images/png/mit-logo.png" width="60px" />
+            </div>
+            <div class="cell large-3 medium-9 small-9" style="color: white;">
+              <center>
+                <img class="hide-for-large" id="home-logo" src="images/png/manas-logo-gradient.png" />
+                <img src="images/png/project-manas.png" id="home-logo-heading">
+              </center>
+            </div>
+            <div class="cell auto"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-      <div class="grid-y" id="main" style="position: relative; z-index: 2; top: calc(100vh - 100px);">
-        <div data-sticky-container>
-          <div data-sticky data-margin-top='0' data-sticky-on="small" data-top-anchor="main:top">
-            <div class="title-bar" data-responsive-toggle="navigation-bar" data-hide-for="medium" style="background: rgba(0, 0, 0, 0.8)">
-              <div class="title-bar-left">
-                <img src="images/png/manas-logo-gradient.png" width="30px" />
-                <img src="images/png/project-manas.png" width="70px" />
-              </div>
-              <div class="title-bar-right">
-                <button class="menu-icon right" type="button" data-toggle="navigation-bar"></button>
-              </div>
+  <!-- Main Container -->
+  <div class="grid-y" id="main-container">
 
+    <!-- Navigation Bar -->
+    <div data-sticky-container>
+      <div data-sticky data-margin-top='0' data-sticky-on="small" data-top-anchor="main-container:top">
+        <div class="title-bar" data-responsive-toggle="navigation-bar" data-hide-for="medium">
+          <div class="title-bar-left">
+            <img src="images/png/manas-logo-gradient.png" width="40px" />
+            <img src="images/png/project-manas.png" width="100px" />
+          </div>
+          <div class="title-bar-right">
+            <button class="menu-icon right" type="button" data-toggle="navigation-bar"></button>
+          </div>
+        </div>
+        <div class="top-bar" id="navigation-bar">
+          <div class="top-bar-title show-for-medium" data-aos="fade-zoom-in" data-aos-duration="600" data-aos-offset="200" data-aos-anchor-placement="main-container">
+            <img src="images/png/manas-logo-gradient.png" width="50px" />
+            <img src="images/png/project-manas.png" width="100px" />
+          </div>
+          <div class="top-bar-right">
+            <ul class="dropdown vertical medium-horizontal menu transparent" data-smooth-scroll data-offset="88" data-threshold="0">
+              <li><a class="nav-link" href="#home">Home</a></li>
+              <li><a class="nav-link" href="#about">About Us</a></li>
+              <li><a class="nav-link" href="#sponsors">Sponsors</a></li>
+              <li><a class="nav-link" href="#projects">Projects</a></li>
+              <li><a class="nav-link" href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- About Section -->
+    <div class="cell large-1 bg-white about-section text-center" id="about">
+      <div class="grid-y grid-padding-y">
+        <div class="cell large-2">
+          <h1 class="black">About <span class="orange">Us</span></h1>
+        </div>
+        <div class="cell large-10">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac elit est. Integer fermentum, lacus eu porta eleifend, mauris diam convallis ex, sit amet ornare enim enim vitae risus. Ut fermentum metus hendrerit augue eleifend interdum. Ut pulvinar
+            tempus orci cursus placerat. Nullam consequat, ex quis sodales mollis, dolor nunc rutrum sapien, suscipit hendrerit nulla dui dictum lorem. Praesent scelerisque bibendum enim, a eleifend erat ornare vel. Vestibulum vestibulum sem diam, sed
+            ornare lorem convallis id. Donec ornare id tellus id rutrum. Nulla sodales risus neque, vitae vulputate leo malesuada sed. Praesent eget tellus magna. Sed ut congue turpis. Praesent maximus vel felis sit amet tristique. In mollis vulputate
+            ligula nec eleifend. Ut dui ligula, volutpat nec volutpat blandit, bibendum at est. Nullam molestie convallis rutrum.
+          </p>
+          <p>
+            Proin tristique laoreet dolor nec pretium. Nulla facilisi. Aliquam laoreet erat in urna volutpat blandit. Pellentesque convallis gravida tortor id luctus. Maecenas sit amet purus a sapien accumsan dapibus. Fusce rhoncus rutrum fringilla. Cras efficitur
+            non eros vel venenatis. Duis neque orci, consequat sed augue vitae, posuere vulputate mauris. Vestibulum fermentum lacinia justo eget sagittis.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Sponsors Section-->
+    <div class="cell large-1 bg-black sponsors-section" id="sponsors">
+      <div class="grid-y grid-padding-y grid-padding-x text-center">
+        <div class="cell large-2 white">
+          <h1>Sponsors</h1>
+        </div>
+        <div class="cell large-10">
+          <div class="grid-x grid-padding-x grid-padding-y">
+            <div class="cell large-2 medium-3 small-4 sponsor-logo" id="continental">
+              <a href="https://www.continental-corporation.com/en"><img src="images/png/continental.png" /></a>
             </div>
-            <div class="top-bar" id="navigation-bar">
-              <div class="top-bar-title show-for-medium" style="margin-left: 0.5rem;" data-aos="fade-zoom-in" data-aos-duration="600" data-aos-offset="200" data-aos-anchor-placement="main">
-                <img src="images/png/manas-logo-gradient.png" width="50px" />
-                <img src="images/png/project-manas.png" width="100px" />
-              </div>
-              <div class="top-bar-right">
-                <ul class="dropdown vertical medium-horizontal menu" data-smooth-scroll data-offset="88" data-threshold="0" style="background-color:rgba(0, 0, 0, 0)">
-                  <li><a class="nav-link" href="#home">Home</a></li>
-                  <li><a class="nav-link" href="#about">About Us</a></li>
-                  <li><a class="nav-link" href="#sponsors">Sponsors</a></li>
-                  <li><a class="nav-link" href="#projects">Projects</a></li>
-                  <li><a class="nav-link" href="#contact">Contact Us</a></li>
-                </ul>
-              </div>
+            <div class="cell large-2 medium-3 small-4 sponsor-logo" id="mahindra-rise">
+              <a href="http://www.mahindra.com/"><img src="images/png/mahindra-rise.png" /></a>
+            </div>
+            <div class="cell large-2 medium-3 small-4 sponsor-logo" id="sick">
+              <a href="https://www.sick.com/in/en/"><img src="images/png/sick.png" /></a>
+            </div>
+            <div class="cell large-2 medium-3 small-4 sponsor-logo" id="nvidia" <a href="http://www.nvidia.in/page/home.html"><img src="images/png/nvidia.png" /></a>
+            </div>
+            <div class="cell large-2 medium-3 small-4 sponsor-logo" id="national-instruments">
+              <a href="http://www.ni.com/en-in.html"><img src="images/png/national-instruments.png" /></a>
+            </div>
+            <div class="cell large-2 medium-3 small-4 sponsor-logo" id="ximea">
+              <a href="https://www.ximea.com/"><img src="images/png/ximea.png" /></a>
+            </div>
+            <div class="cell large-2 medium-3 small-4 sponsor-logo" id="microsoft">
+              <a href="https://www.microsoft.com/en-in"><img src="images/png/microsoft.png" /></a>
+            </div>
+            <div class="cell large-2 medium-3 small-4 sponsor-logo" id="cooler-master">
+              <a href="http://www.coolermaster.com/"><img src="images/png/cooler-master.png" /></a>
+            </div>
+            <div class="cell large-2 medium-3 small-4 sponsor-logo" id="vector">
+              <a href="https://vector.com/"><img src="images/png/vector.png" ></a>
+            </div>
+            <div class="cell large-2 medium-3 small-4 sponsor-logo" id="gigabyte">
+              <a href="https://www.gigabyte.com/in/"><img src="images/png/gigabyte.png" /></a>
+            </div>
+            <div class="cell large-2 medium-3 small-4 sponsor-logo" id="pepperl-fuchs">
+              <a href="https://www.pepperl-fuchs.com/india/hi/index.htm">
+                  <img src="images/png/pepperl-fuchs-logo.png" />
+                  <img src="images/png/pepperl-fuchs-text.png" /></a>
+            </div>
+            <div class="cell large-2 medium-3 small-4 sponsor-logo" id="indian-bank">
+              <a href="http://www.indianbank.in/"><img src="images/png/indian-bank.png" /></a>
+            </div>
+            <div class="cell large-2 medium-3 small-4 sponsor-logo" id="sica">
+              <a href="http://www.sica.in/"><img src="images/png/sica.png" /></a>
+            </div>
+            <div class="cell large-2 medium-3 small-4 sponsor-logo" id="bossard">
+              <a href="https://www.bossard.com/"><img src="images/png/bossard.png" /></a>
+            </div>
+            <div class="cell large-2 medium-3 small-4 sponsor-logo sponsorship-button" data-smooth-scroll data-offset="88" data-threshold="0">
+              <a href="#contact"><h4 class="white">Sponsor Us  <i class="fa fa-angle-right fa-sm"></i></h4></a>
             </div>
           </div>
         </div>
-        <div class="cell large-1 bg-white about-section" id="about">
-          <div class="grid-y grid-padding-y">
-            <div class="cell large-2" style="z-index: 2;">
-              <h1 class="black">About <span style="color: rgb(254,88,49);">Us</span></h1>
-            </div>
-            <div class="cell large-10" style="z-index: 2;">
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac elit est. Integer fermentum, lacus eu porta eleifend, mauris diam convallis ex, sit amet ornare enim enim vitae risus. Ut fermentum metus hendrerit augue eleifend interdum. Ut pulvinar tempus orci cursus placerat. Nullam consequat, ex quis sodales mollis, dolor nunc rutrum sapien, suscipit hendrerit nulla dui dictum lorem. Praesent scelerisque bibendum enim, a eleifend erat ornare vel. Vestibulum vestibulum sem diam, sed ornare lorem convallis id. Donec ornare id tellus id rutrum. Nulla sodales risus neque, vitae vulputate leo malesuada sed. Praesent eget tellus magna. Sed ut congue turpis. Praesent maximus vel felis sit amet tristique. In mollis vulputate ligula nec eleifend. Ut dui ligula, volutpat nec volutpat blandit, bibendum at est. Nullam molestie convallis rutrum.
-              </p>
-              <p>
-              Proin tristique laoreet dolor nec pretium. Nulla facilisi. Aliquam laoreet erat in urna volutpat blandit. Pellentesque convallis gravida tortor id luctus. Maecenas sit amet purus a sapien accumsan dapibus. Fusce rhoncus rutrum fringilla. Cras efficitur non eros vel venenatis. Duis neque orci, consequat sed augue vitae, posuere vulputate mauris. Vestibulum fermentum lacinia justo eget sagittis.
-              </p>
-            </div>
-          </div>
+      </div>
+    </div>
+
+
+    <!-- Projects Section -->
+    <div class="cell large-1 bg-white projects-section text-center" id="projects">
+      <div class="grid-y grid-padding-y">
+        <div class="cell large-1">
+          <h1 class="white"><span class="orange">Projects</span></h1>
         </div>
-        <div class="cell large-1 bg-black sponsors-section" id="sponsors">
-          <div class="grid-y grid-padding-x" style="text-align: center;">
-            <div class="cell large-2 white">
-              <h1>Sponsors</h1>
-            </div>
-            <div class="cell large-10">
-              <div class="grid-x grid-padding-x" style="margin-top: 1.5rem; margin-bottom: 0rem;">
-                <div class="cell medium-2 small-4 sponsor-logo" id="continental" style="padding-bottom: 0; padding-top: 1.75rem;">
-                  <a href="https://www.continental-corporation.com/en"><img src="images/png/continental.png" style="height: 2rem"/></a>
-                </div>
-                <div class="cell medium-2 small-4 sponsor-logo" id="mahindra-rise" style="padding-bottom: 0; padding-top: 1.80rem;">
-                  <a href="#"><img src="images/png/mahindra-rise.png" style="height: 2rem"></a>
-                </div>
-                <div class="cell medium-2 small-4 sponsor-logo" id="sick" style="padding-bottom: 0; padding-top: 1.75rem;">
-                  <a href="#"><img src="images/png/sick.png" style="height: 2rem"/></a>
-                </div>
-                <div class="cell medium-2 small-4 sponsor-logo" id="nvidia" style="padding-bottom: 0; padding-top: 1.20rem;">
-                  <a href="#"><img src="images/png/nvidia.png" style="height: 3.5rem"/></a>
-                </div>
-                <div class="cell medium-2 small-4 sponsor-logo" id="national-instruments" style="padding-bottom: 0; padding-top: 2.1rem;">
-                  <a href="#"><img src="images/png/national-instruments.png" style="height: 2rem"/></a>
-                </div>
-                <div class="cell medium-2 small-4 sponsor-logo" id="ximea" style="padding-bottom: 0; padding-top: 2.0rem;">
-                  <a href="#"><img src="images/png/ximea.png" style="height: 2rem"/></a>
-                </div>
-                <div class="cell medium-2 small-4 sponsor-logo" id="microsoft" style="padding-bottom: 0; padding-top: 1.85rem;">
-                  <a href="#"><img src="images/png/microsoft.png" style="height: 2rem"/></a>
-                </div>
-                <div class="cell medium-2 small-4 sponsor-logo" id="cooler-master" style="padding-bottom: 0; padding-top: 1.4rem;">
-                  <a href="#"><img src="images/png/cooler-master.png" style="height: 3.5rem"/></a>
-                </div>
-                <div class="cell medium-2 small-4 sponsor-logo" id="vector" style="padding-bottom: 0; padding-top: 1.90rem;">
-                  <a href="#"><img src="images/png/vector.png" style="height: 2.4rem"></a>
-                </div>
-                <div class="cell medium-2 small-4 sponsor-logo" id="gigabyte" style="padding-bottom: 0; padding-top: 2.1rem;">
-                  <a href="#"><img src="images/png/gigabyte.png" style="height: 1.2rem"/></a>
-                </div>
-                <div class="cell medium-2 small-4 sponsor-logo" id="pepperl-fuchs" style="padding-bottom: 0; padding-top: 0.95rem;">
-                  <a href="#"><img src="images/png/pepperl-fuchs-logo.png" style="height: 2.0rem"/>
-                  <img src="images/png/pepperl-fuchs-text.png" style="height: 1.2rem"/></a>
-                </div>
-                <div class="cell medium-2 small-4 sponsor-logo" id="indian-bank" style="padding-bottom: 0; padding-top: 1.75rem;">
-                  <a href="#"><img src="images/png/indian-bank.png" style="height: 2rem"/></a>
-                </div>
-                <div class="cell medium-2 small-4 sponsor-logo" id="sica" style="padding-bottom: 0; padding-top: 1.35rem;">
-                  <a href="#"><img src="images/png/sica.png" style="height: 3rem"/></a>
-                </div>
-                <div class="cell medium-2 small-4 sponsor-logo" id="bossard" style="padding-bottom: 0; padding-top: 2.15rem;">
-                  <a href="#"><img src="images/png/bossard.png" style="height: 1.6rem"></a>
-                </div>
-                <div class="cell medium-2 small-4 sponsor-logo" id="sponsorship-button" style="padding-bottom: 0; padding-top: 2.0rem;">
-                  <a href="#"><h3 style="color: white;">Sponsor Us  <i class="fa fa-angle-right fa-sm"></i></h3></a>
+        <div class="cell large-10">
+          <div class="grid-x grid-padding-x">
+            <div class="cell large-3 medium-4 small-6">
+              <div class="card project-card" id="wall-e">
+                <div class="card-section">
+                  <h2 class="white">Wall-E</h2>
                 </div>
               </div>
             </div>
-              <!-- <div class="cell large-1 white">
-                <button class="hollow button" id="sponsorship-button" href="#">Apply For Sponsorship</button>
-              </div> -->
-          </div>
-        </div>
-        <div class="cell large-1 bg-white projects-section" id="projects">
-          <div class="grid-y grid-padding-y">
-            <div class="cell large-1">
-              <h1 style="color: white;"><span style="color: rgb(254,88,49);">Projects</span></h1>
+            <div class="cell large-3 medium-4 small-6">
+              <div class="card project-card" id="mahindra">
+                <div class="card-section">
+                  <h2 class="white">Mahindra Rise Prize</h2>
+                </div>
+              </div>
             </div>
-            <div class="cell large-10">
-              <div class="grid-x grid-padding-x">
-                <div class="cell large-3 medium-4 small-6">
-                  <div class="card project-card" id="wall-e">
-                    <div class="card-section">
-                      <h1>Wall-E</h1>
-                    </div>
-                  </div>
+            <div class="cell large-3 medium-4 small-6">
+              <div class="card project-card" id="igvc">
+                <div class="card-section">
+                  <a data-toggle="igvc-info"><h2 class="white">IGVC</h2></a>
                 </div>
-                <div class="cell large-3 medium-4 small-6">
-                  <div class="card project-card" id="mahindra">
-                    <div class="card-section">
-                      <h1>Mahindra Rise Prize</h1>
-                    </div>
-                  </div>
-                </div>
-                <div class="cell large-3 medium-4 small-6">
-                  <div class="card project-card" id="igvc">
-                    <div class="card-section">
-                      <a href="#" data-toggle="igvc-info"><h1>IGVC</h1></a>
-                    </div>
-                  </div>
-                  <div class="full reveal" id="igvc-info" data-reveal data-close-on-click="true" data-animation-in="scale-in-up" data-animation-out="scale-out-down">
-                    <button class="close-button" data-close aria-label="Close reveal" type="button">
+              </div>
+              <div class="full reveal" id="igvc-info" data-reveal data-close-on-click="true" data-animation-in="scale-in-up" data-animation-out="scale-out-down">
+                <button class="close-button" data-close aria-label="Close reveal" type="button">
                       <span aria-hidden="true">&times;</span>
                     </button>
-                  </div>
-                </div>
-                <div class="cell large-3 medium-4 small-6">
-                  <div class="card project-card" id="wall-e">
-                    <div class="card-section">
-                      <h1>Wall-E</h1>
+              </div>
+            </div>
+            <div class="cell large-3 medium-4 small-6">
+              <div class="card project-card" id="wall-e">
+                <div class="card-section">
+                  <h2 class="white">Wall-E</h12
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="cell large-1">
-              <button class="hollow button" id="projects-button" href="#">View More</button>
+              <button class="hollow-black button" id="projects-button">View More</button>
             </div>
           </div>
         </div>
+      </div>
+
+
+      <!-- Contact Section -->
         <div class="cell large-1 contact-section" id="contact">
           <div class="grid-y grid-padding-y">
             <div class="cell large-1">
-              <center><h1 class="white"><span style="color: rgb(254,88,49);">Contact</span> Us</h1></center>
+              <center><h1 class="white"><span class="orange">Contact</span> Us</h1></center>
             </div>
             <div class="cell large-11">
               <div class="grid-x">
                 <div class="cell large-4">
                   <div class="grid-x grid-padding-x grid-padding-y">
-                    <div class="cell large-12 medium-6" style="margin: auto; width: 15rem; margin-bottom: 2rem; margin-top: 1rem;">
-                      <i class="fa fa-envelope fa-lg" style="color: rgb(254,88,49); padding-bottom: 1rem;"></i>
-                      <h4 class="white">team_leader@projectmanas.in</h4>
-                      <h4 class="white">tech_head@projectmanas.in</h4>
-                      <h4 class="white">team_manager@projectmanas.in</h4>
+                    <div class="cell large-12 medium-6 contact-information">
+                      <i class="fa fa-envelope fa-lg orange"></i>
+                      <h6 class="white">team_leader@projectmanas.in</h6>
+                      <h6 class="white">tech_head@projectmanas.in</h6>
+                      <h6 class="white">team_manager@projectmanas.in</h6>
                     </div>
-                    <div class="cell large-12 medium-6" style="margin: auto; width: 15rem; margin-bottom: 2rem; margin-top: 1rem;">
-                      <i class="fa fa-phone fa-lg" style="color: rgb(254,88,49); padding-bottom: 1rem;"></i>
-                      <h4 class="white">Dheeraj Reddy: +9192736247</h4>
-                      <h4 class="white">Mukesh Kumar: +9192732437</h4>
-                      <h4 class="white">Sanjeev Nayak: +9192736937</h4>
+                    <div class="cell large-12 medium-6 contact-information">
+                      <i class="fa fa-phone fa-lg orange"></i>
+                      <h6 class="white">Dheeraj Reddy: <small>+9192736247</small></h6>
+                      <h6 class="white">Mukesh Kumar: <small>+9192732437</small></h6>
+                      <h6 class="white">Sanjeev Nayak: <small>+9192736937</small></h6>
                     </div>
                   </div>
                 </div>
-                <div class="cell large-6 medium-8" style="margin: auto; max-width: 35rem;">
+                <div class="cell large-6 medium-8 contact-form-container">
                   <form>
                     <div class="grid-container" class="contact-form">
-                          <label><h4 class="white">Name</h4>
+                          <label><h6 class="white">Name</h6>
                             <input class="white" type="text">
                           </label>
-                          <label><h4 class="white">Email</h4>
+                          <label><h6 class="white">Email</h6>
                             <input class="white" type="text">
                           </label>
-                          <label><h4 class="white">Subject</h4>
+                          <label><h6 class="white">Subject</h6>
                             <input class="white" type="text">
                           </label>
-                          <label><h4 class="white">Message</h4>
+                          <label><h6 class="white">Message</h6>
                             <textarea class="white" rows="6"></textarea>
                           </label>
-                          <input type="submit" class="button float-right" id="submit-button" value="Submit">
+                          <input type="submit" class="button hollow-white float-right" id="submit-button" value="Submit">
                     </div>
                   </form>
                 </div>
                 <div class="cell large-3">
                 </div>
-                <!-- <div class="cell large-3">
-                  <div class="location-marker">
-                    <i class="fa fa-map-marker" style="font-size:48px; color: rgb(254,88,49);"><h4>Project Manas</h4></i>
-                    <h4 class="white">Automobile Workshop,</h4>
-                    <h4 class="white">Manipal</h4>
-                    <h4 class="white">Karnatka - 576104</h4>
-                  </div>
-                </div> -->
               </div>
             </div>
           </div>
         </div>
+
+
+        <!-- Footer -->
         <div class="cell large-1 footer-section bg-black white" id="footer">
           <div class="grid-x grid-padding-x grid-padding-y">
             <div class="cell large-4"></div>
-            <div class="cell large-4">
-              <center>
-              <i class="fa fa-facebook" style="padding: 0 0.2rem 0 0.2rem;"></i>
-              <i class="fa fa-instagram" style="padding: 0 0.2rem 0 0.2rem;"></i>
-              <i class="fa fa-twitter" style="padding: 0 0.2rem 0 0.2rem;"></i>
-              <i class="fa fa-google-plus" style="padding: 0 0.2rem 0 0.2rem;"></i>
-              <i class="fa fa-youtube" style="padding: 0 0.2rem 0 0.2rem;"></i>
-              <i class="fa fa-linkedin" style="padding: 0 0.2rem 0 0.2rem;"></i>
-            </center>
+            <div class="cell large-4 text-center">
+              <i class="fa fa-facebook social-icons"></i>
+              <i class="fa fa-instagram social-icons"></i>
+              <i class="fa fa-twitter social-icons"></i>
+              <i class="fa fa-youtube-play social-icons"></i>
+              <i class="fa fa-linkedin social-icons"></i>
+              <i class="fa fa-google-plus social-icons"></i>
             </div>
             <div class="cell large-4 text-right">
-              <h4>
+              <small>
                 &copy;
                 <script type="text/javascript">
                 var today = new Date()
@@ -278,13 +290,16 @@
                 document.write(year)
                 </script>
                 Project MANAS
-              </h4>
+              </small>
             </div>
           </div>
         </div>
+
       </div>
+      
   </body>
   <script src="js/vendor/vendor.min.js"></script>
+  <script src="js/jquery.visible.min.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/particles.min.js"></script>
   <script src="js/stats.min.js"></script>
@@ -292,26 +307,43 @@
   <script src="js/particles-settings.js"></script>
   <script>
   $(document).foundation();
+
   AOS.init();
-  $('.top-bar').on('sticky.zf.stuckto:top', function(){
-  $(this).addClass('shrink');
-}).on('sticky.zf.unstuckfrom:top', function(){
-  $(this).removeClass('shrink');
-})
 
+  $('.top-bar').on('sticky.zf.stuckto:top', function() {
+    $(this).addClass('shrink');
+  }).on('sticky.zf.unstuckfrom:top', function() {
+    $(this).removeClass('shrink');
+  })
 
-$(window).on('scroll', function () {
+  $(window).on('scroll', function() {
+    if ($('.about-section').visible()) {
+      $('.about-section').visible()
+    }
     var pixs = $(document).scrollTop()
     pixs = pixs / 100;
-    if (pixs/4 > 0.8){
+    if (pixs / 4 > 0.8) {
       trans = 0.8;
+    } else {
+      trans = pixs / 4;
     }
-    else {
-      trans = pixs/4;
-    }
-    $("#navigation-bar").css({"-webkit-backdrop-filter": "blur("+pixs+"px)","backdrop-filter": "blur("+pixs+"px)" });
-    $("#navigation-bar").css({"background-color": "rgba(0, 0, 0, "+trans});
+    $("#navigation-bar").css({
+      "-webkit-backdrop-filter": "blur(" + pixs + "px)",
+      "backdrop-filter": "blur(" + pixs + "px)"
+    });
+    $("#navigation-bar").css({
+      "background-color": "rgba(0, 0, 0, " + trans
+    });
+  });
 
-});
+  $(function() {
+    $('.nav-link').on('click', function() {
+      if (!Foundation.MediaQuery.atLeast('large')) {
+        $("#navigation-bar").css({
+          "display": "none"
+        });
+      }
+    });
+  });
   </script>
 </html>

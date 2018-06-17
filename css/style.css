@@ -1,427 +1,711 @@
-background-image:/* Colors */
+/* General */
 
-.black{
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: rgb(254, 88, 49);
+}
+
+::selection {
+  color: white;
+  background: rgb(254, 88, 49);
+}
+
+/* Colors */
+
+.black {
   color: black;
 }
-.white{
+
+.white {
   color: #f0f0f0;
 }
-.bg-black{
+
+.orange {
+  color: rgb(254, 88, 49);
+}
+
+.bg-black {
   background-color: black;
 }
-.bg-white{
+
+.bg-white {
   background-color: #f0f0f0;
+}
+
+.transparent {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+/* Buttons */
+
+.hollow-black {
+  border: 2px solid #000000;
+  color: #000000;
+}
+
+.hollow-white {
+  border: 2px solid #f0f0f0;
+  color: #f0f0f0;
+}
+
+.button {
+  background-color: transparent;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background: rgb(254, 88, 49);
+  border: 2px solid rgb(254, 88, 49);
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+/* Font */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 100;
+}
+
+h2 {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 100;
+}
+
+h3 {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 500;
+}
+
+h4 {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 500;
+}
+
+p {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+}
+
+a {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+button {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+}
+
+/* Home */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background: -webkit-linear-gradient(to top, rgb(252, 173, 63) 22%, rgb(254, 88, 49) 100%);
+  background: linear-gradient(to top, #2c2c2c 22%, #2c2c2c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#2f2f30', GradientType=1);
+}
+
+.home-container{
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  width: 100%;
+}
+
+.home-left{
+  background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%);
+}
+
+.home-center{
+  background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%);
+  clip-path: polygon(0% 100%, 100% 0%, -5% 0%);
+  -webkit-clip-path: polygon(0% 100%, 100% 0%, -5% 0%);
+}
+
+.home-right{
+  height: 100%;
+}
+
+@keyframes breathe {
+  from {
+    -webkit-filter: drop-shadow(0px 0px 3px #f0f0f0);
+    filter: drop-shadow(0px 0px 3px #f0f0f0);
+  }
+  to {
+    -webkit-filter: drop-shadow(0px 0px 10px #f0f0f0);
+    filter: drop-shadow(0px 0px 10px #f0f0f0);
+  }
+}
+
+#home-logo {
+  animation-name: breathe;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 64em) {
+  #home-logo-heading {
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 63.9375em) {
+  #home-logo {
+    width: 25vw;
+  }
+  #home-logo-heading {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  #home-logo {
+    width: 40vw;
+  }
+  #home-logo-heading {
+    width: 60vw;
+  }
+  #main {
+    top: calc(100vh - 60px)
+  }
+}
+
+@media screen and (max-width: 63.9375em) {
+  #home-container {
+    width: 100vw;
+  }
+}
+
+/* Main Container */
+
+#main-container {
+  position: relative;
+  z-index: 2;
+  top: calc(100vh - 100px)
 }
 
 /* Navigation Bar */
 
-#navigation-bar{
-  background-color:rgba(0, 0, 0, 0.0);
+#navigation-bar {
+  background-color: rgba(0, 0, 0, 0.0);
   -webkit-backdrop-filter: blur(0px);
   backdrop-filter: blur(0px);
   z-index: 3;
 }
 
 [data-sticky] {
-    width: 100%;
+  width: 100%;
 }
 
 .top-bar {
-    padding: 1rem;
-    transition: padding .25s ease;
+  padding: 1rem;
+  transition: padding .25s ease;
 }
 
 .is-stuck .top-bar {
-    padding: 0.5rem 1.5rem;
-    transition: padding .25s ease;
+  padding: 0.5rem 1.5rem;
+  transition: padding .25s ease;
 }
 
-/* Sections */
-
-.about-section, .sponsors-section, .projects-section, .contact-section{
-  padding-bottom: 4rem;
-  padding-top: 2rem;
-  text-align: center;
+.title-bar {
+  background: rgba(0, 0, 0, 0.8);
 }
 
-.about-section p{
-  margin: auto;
-  width: 75%
+.top-bar-title {
+  margin-left: 0.5rem;
 }
 
-.project-card{
-  width: 100%;
-  border-radius: 10px;
-  color: #f0f0f0
-}
-
-@media screen and (min-width: 64em) {
-  .project-card{
-    height: 20rem;
-  }
-}
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-  .project-card{
-    height: 17rem;
-  }
-}
-@media screen and (max-width: 39.9375em) {
-  .project-card{
-    height: 14rem;
-  }
-}
-
-
-@media screen and (min-width: 64em) {
-  #home-logo-heading{
-    width: 25rem;
-  }
-}
-@media screen and (max-width: 63.9375em) {
-  #home-logo{
-    width: 25vw;
-  }
-  #home-logo-heading{
-    width: 50vw;
-  }
-}
-@media screen and (max-width: 39.9375em) {
-  #home-logo{
-    width: 40vw;
-  }
-  #home-logo-heading{
-    width: 60vw;
-  }
-}
-@media screen and (max-width: 63.9375em) {
-  #home-container{
-    width: 100vw;
-}
-}
-.contact-section{
-  text-align: left;
-  background: url(../images/png/bg/map.jpg);
-}
-
-.location-marker{
-  position: absolute;
-  top: 85%;
-  right: 22%
-}
-
-/* Font */
-
-h1 {
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-size: 2.5rem;
-  font-style: normal;
-  font-variant: small-caps;
-  font-weight: 100;
-  line-height: 44px;
-}
-h2 {
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-size: 2rem;
-  font-style: normal;
-  font-variant: small-caps;
-  font-weight: 100;
-  line-height: 44px;
-}
-h3 {
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-size: 1.5rem;
-  font-style: normal;
-  font-variant: small-caps;
-  font-weight: 500;
-  line-height: 15.4px;
-}
-h4 {
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-size: 0.8rem;
-  font-style: normal;
-  font-variant: small-caps;
-  font-weight: 500;
-  line-height: 15.4px;
-}
-p {
-font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-font-size: 14px;
-font-style: normal;
-font-variant: normal;
-font-weight: 400;
-line-height: 20px;
-}
-a {
-font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-font-style: normal;
-font-variant: normal;
-font-weight: 400;
-color: white;
-}
-a:hover{
-  color: white;
-}
-a:visited{
-  color: white;
-}
-button {
-font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-font-style: normal;
-font-variant: normal;
-font-weight: 500;
-}
-
-
-#particles-js {
-position: absolute;
-width: 100%;
-height: 100%;
-background-image: url("");
-background-repeat: no-repeat;
-background-size: cover;
-background-position: 50% 50%;
-/* background: #6819e8;  */
-/* background: -moz-linear-gradient(left, #6819e8 0%, #7437d0 35%, #615fde 68%, #6980f2 100%); */
-background: -webkit-linear-gradient(to top, rgb(252,173,63) 22%,rgb(254,88,49) 100%);
-background: linear-gradient(to top, #2c2c2c 22%,#2c2c2c 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#2f2f30',GradientType=1 );
-}
-
- .nav-link:before {
+.nav-link:before {
   content: "";
   position: absolute;
   width: 100%;
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: rgb(254,88,49);
+  background-color: rgb(254, 88, 49);
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-.nav-link{
+
+.nav-link {
   color: #f0f0f0;
   position: relative;
   text-decoration: none;
 }
-.nav-link:hover{
+
+.nav-link:hover {
   /* color: rgb(254,88,49); */
   text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
 }
-.nav-link:hover:before{
+
+.nav-link:hover:before {
   visibility: visible;
--webkit-transform: scaleX(1);
-transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
-input[type="text"], textarea{
-  background-color: transparent;
-  border: 2px solid #f0f0f0;
+/* About Section */
+
+#about {
+  padding-bottom: 2rem;
 }
 
-input[type="text"]:focus, textarea:focus{
- background-color: rgba(0, 0, 0, 0.5);
- border: 2px solid rgb(254,88,49);
- box-shadow: 0 0 10px rgb(254,88,49);
+#about p {
+  margin: auto;
+  width: 75%;
 }
 
-@supports ((backdrop-filter: blur(20px)) or (-webkit-backdrop-filter: blur(20px)) ) {
-  input[type="text"]:focus, textarea:focus{
-   /* background-color: #f0f0f0; */
-   background-color: rgba(0, 0, 0, 0.3);
-   backdrop-filter: blur(20px);
-   -webkit-backdrop-filter: blur(20px);
-   border: 2px solid rgb(254,88,49);
-   box-shadow: 0 0 10px rgb(254,88,49);
- }
-}
+/* Sponsor Section */
 
-::-moz-selection { /* Code for Firefox */
-    color: white;
-    background: rgb(254,88,49);
-}
-
-::selection {
-    color: white;
-    background: rgb(254,88,49);
-}
-
-#projects-button{
-  border: 2px solid #000000;
-  background-color: transparent;
-  color: #000000;
-  transition: all 0.3s;
-}
-
-#submit-button, #sponsorship-button{
-  border: 2px solid #f0f0f0;
-  background-color: transparent;
-  color: #f0f0f0;
-  transition: all 0.3s;
-}
-
-#submit-button:hover, #sponsorship-button:hover, #projects-button:hover{
-  background: rgb(254,88,49);
-  border: 2px solid rgb(254,88,49);
-  color: #ffffff;
-  transform: scale(1.1);
-}
-
-.card{
-  box-shadow: 5px 5px 25px grey;
-  border: 0;
-}
-
-#wall-e{
-  background: linear-gradient(0deg,rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)), url(../images/png/bg/wall-e.jpg);
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transition: all 0.3s;
-}
-#wall-e:hover{
-  /* background: linear-gradient(to top, rgba(252,173,63, 0.7) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/wall-e.jpg); */
-  background: url(../images/png/bg/wall-e.jpg);
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transform: scale(1.1);
-}
-#mahindra{
-  background: linear-gradient(0deg,rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)), url(../images/png/bg/eve.jpg);
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transition: all 0.3s;
-}
-#mahindra:hover{
-  background: url(../images/png/bg/eve.jpg);
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transform: scale(1.1);
-}
-#igvc{
-  background: url(../images/png/bg/adam.jpg);
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transition: all 0.3s;
-
-}
-#igvc:hover{
-  background: url(../images/png/bg/adam.jpg);
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
-  background-repeat:no-repeat;
-  background-size: cover;
-  transform: scale(1.1);
-}
-
-/* Sponsor Logos */
-
-.sponsor-logo{
+.sponsor-logo {
   width: 100%;
   height: 6rem;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.3s;
 }
-.sponsor-logo:hover{
-  background-repeat:no-repeat;
+
+.sponsor-logo:hover {
+  background-repeat: no-repeat;
   background-size: cover;
   transform: scale(1.1);
   box-shadow: 0px 0px 25px grey;
 }
 
-#bossard{
+.sponsorship-button {
+  padding-top: 1.8rem !important;
+  border: 1px solid #f0f0f0;
+}
+
+.sponsorship-button:hover {
+  background-color: rgb(254, 88, 49);
+  border: 1px solid rgb(254, 88, 49);
+}
+
+/* Bossard */
+
+#bossard {
   background-image: url(../images/png/bg/bossard.jpg);
+  padding-top: 2.15rem;
 }
-#bossard:hover{
-  background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/bossard.jpg);
+
+#bossard img {
+  height: 1.6rem;
 }
-#sica{
+
+#bossard:hover {
+  background: linear-gradient(to top, rgba(252, 173, 63, 0.85) 22%, rgba(254, 88, 49, 0.85) 100%), url(../images/png/bg/bossard.jpg);
+}
+
+/* Sica */
+
+#sica {
   background-image: url(../images/png/bg/sica.jpg);
+  padding-top: 1.35rem;
 }
-#sica:hover{
-  background-image: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/sica.jpg);
+
+#sica img {
+  height: 3rem;
 }
-#indian-bank{
-  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/indian-bank.jpg);
+
+#sica:hover {
+  background-image: linear-gradient(to top, rgba(252, 173, 63, 0.85) 22%, rgba(254, 88, 49, 0.85) 100%), url(../images/png/bg/sica.jpg);
 }
-#indian-bank:hover{
-  background-image: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/indian-bank.jpg);
+
+/* Indian Bank */
+
+#indian-bank {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/png/bg/indian-bank.jpg);
+  padding-top: 1.75rem;
 }
-#pepperl-fuchs{
-  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/pepperl-fuchs.jpg);
+
+#indian-bank img {
+  height: 2rem;
 }
-#pepperl-fuchs:hover{
-  background-image: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/pepperl-fuchs.jpg);
+
+#indian-bank:hover {
+  background-image: linear-gradient(to top, rgba(252, 173, 63, 0.85) 22%, rgba(254, 88, 49, 0.85) 100%), url(../images/png/bg/indian-bank.jpg);
 }
-#gigabyte{
-  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/gigabyte.jpg);
+
+/* Pepperl Fuchs */
+
+#pepperl-fuchs {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/png/bg/pepperl-fuchs.jpg);
+  padding-top: 2rem;
 }
-#gigabyte:hover{
-  background-image: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/vector.jpg);
+
+#pepperl-fuchs img {
+  height: 1.2rem;
 }
-#vector{
-  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/vector.jpg);
+
+#pepperl-fuchs:hover {
+  background-image: linear-gradient(to top, rgba(252, 173, 63, 0.85) 22%, rgba(254, 88, 49, 0.85) 100%), url(../images/png/bg/pepperl-fuchs.jpg);
 }
-#vector:hover{
-  background-image: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/vector.jpg);
+
+/* Gigabyte */
+
+#gigabyte {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/png/bg/gigabyte.jpg);
+  padding-top: 2.1rem;
 }
-#cooler-master{
-  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/cooler-master.jpg);
+
+#gigabyte img {
+  height: 1.2rem;
 }
-#cooler-master:hover{
-  background-image: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/cooler-master.jpg);
+
+#gigabyte:hover {
+  background-image: linear-gradient(to top, rgba(252, 173, 63, 0.85) 22%, rgba(254, 88, 49, 0.85) 100%), url(../images/png/bg/vector.jpg);
 }
-#microsoft{
-  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/microsoft.jpg);
+
+/* Vector */
+
+#vector {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/png/bg/vector.jpg);
+  padding-top: 1.9rem;
 }
-#microsoft:hover{
-  background-image: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/microsoft.jpg);
+
+#vector img {
+  height: 2.4rem;
 }
-#ximea{
-  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/ximea.jpg);
+
+#vector:hover {
+  background-image: linear-gradient(to top, rgba(252, 173, 63, 0.85) 22%, rgba(254, 88, 49, 0.85) 100%), url(../images/png/bg/vector.jpg);
 }
-#ximea:hover{
-  background-image: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/ximea.jpg);
+
+/* Cooler Master */
+
+#cooler-master {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/png/bg/cooler-master.jpg);
+  padding-top: 1.4rem;
 }
-#national-instruments{
-  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/national-instruments.jpg);
+
+#cooler-master img {
+  height: 3.5rem;
 }
-#national-instruments:hover{
-  background-image: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/national-instruments.jpg);
+
+#cooler-master:hover {
+  background-image: linear-gradient(to top, rgba(252, 173, 63, 0.85) 22%, rgba(254, 88, 49, 0.85) 100%), url(../images/png/bg/cooler-master.jpg);
 }
-#nvidia{
-  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/nvidia.jpg);
+
+/* Microsoft */
+
+#microsoft {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/png/bg/microsoft.jpg);
+  padding-top: 1.85rem;
 }
-#nvidia:hover{
-  background-image: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/nvidia.jpg);
+
+#microsoft img {
+  height: 2rem;
 }
-#sick{
-  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/sick.jpg);
+
+#microsoft:hover {
+  background-image: linear-gradient(to top, rgba(252, 173, 63, 0.85) 22%, rgba(254, 88, 49, 0.85) 100%), url(../images/png/bg/microsoft.jpg);
 }
-#sick:hover{
-  background-image: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/sick.jpg);
+
+/* Ximea */
+
+#ximea {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/png/bg/ximea.jpg);
+  padding-top: 2rem;
 }
-#mahindra-rise{
-  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/mahindra.jpg);
+
+#ximea img {
+  height: 2rem;
 }
-#mahindra-rise:hover{
-  background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/mahindra.jpg);
+
+#ximea:hover {
+  background-image: linear-gradient(to top, rgba(252, 173, 63, 0.85) 22%, rgba(254, 88, 49, 0.85) 100%), url(../images/png/bg/ximea.jpg);
 }
-#continental{
-  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../images/png/bg/continental.jpg);
+
+/* National Instruments */
+
+#national-instruments {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/png/bg/national-instruments.jpg);
+  padding-top: 2.1rem;
 }
-#continental:hover{
-  background-image: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%), url(../images/png/bg/continental.jpg);
+
+#national-instruments img {
+  height: 2rem;
+}
+
+#national-instruments:hover {
+  background-image: linear-gradient(to top, rgba(252, 173, 63, 0.85) 22%, rgba(254, 88, 49, 0.85) 100%), url(../images/png/bg/national-instruments.jpg);
+}
+
+/* Nvidia */
+
+#nvidia {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/png/bg/nvidia.jpg);
+  padding-top: 1.2rem;
+}
+
+#nvidia img {
+  height: 3.5rem;
+}
+
+#nvidia:hover {
+  background-image: linear-gradient(to top, rgba(252, 173, 63, 0.85) 22%, rgba(254, 88, 49, 0.85) 100%), url(../images/png/bg/nvidia.jpg);
+}
+
+/* Sick */
+
+#sick {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/png/bg/sick.jpg);
+  padding-top: 1.8rem;
+}
+
+#sick img {
+  height: 2rem;
+}
+
+#sick:hover {
+  background-image: linear-gradient(to top, rgba(252, 173, 63, 0.85) 22%, rgba(254, 88, 49, 0.85) 100%), url(../images/png/bg/sick.jpg);
+}
+
+/* Mahindra Rise */
+
+#mahindra-rise {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/png/bg/mahindra.jpg);
+  padding-top: 1.8rem;
+}
+
+#mahindra-rise img {
+  height: 2rem;
+}
+
+#mahindra-rise:hover {
+  background: linear-gradient(to top, rgba(252, 173, 63, 0.85) 22%, rgba(254, 88, 49, 0.85) 100%), url(../images/png/bg/mahindra.jpg);
+}
+
+/* Continental */
+
+#continental {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/png/bg/continental.jpg);
+  padding-top: 1.75rem;
+}
+
+#continental img {
+  height: 2rem
+}
+
+#continental:hover {
+  background-image: linear-gradient(to top, rgba(252, 173, 63, 0.85) 22%, rgba(254, 88, 49, 0.85) 100%), url(../images/png/bg/continental.jpg);
+}
+
+/* Projects Section */
+
+.project-card {
+  width: 100%;
+  border-radius: 10px;
+  color: #f0f0f0 box-shadow: 5px 5px 25px grey;
+  border: 0;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  transition: all 0.3s;
+}
+
+.project-card:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 74em) {
+  .project-card {
+    height: 40vh;
+  }
+}
+
+@media screen and (min-width: 64em) and (max-width: 73.9375em) {
+  .project-card {
+    height: 15rem;
+  }
+}
+
+@media screen and (min-width: 58em) and (max-width: 63.9375em) {
+  .project-card {
+    height: 17rem;
+  }
+}
+
+@media screen and (min-width: 50em) and (max-width: 57.9375em) {
+  .project-card {
+    height: 15rem;
+  }
+}
+
+@media screen and (min-width: 40em) and (max-width: 49.9375em) {
+  .project-card {
+    height: 13rem;
+  }
+}
+
+@media screen and (min-width: 33em) and (max-width: 39.9375em) {
+  .project-card {
+    height: 16rem;
+  }
+}
+
+@media screen and (min-width: 28em) and (max-width: 32.9375em) {
+  .project-card {
+    height: 13rem;
+  }
+}
+
+@media screen and (min-width: 26em) and (max-width: 32.9375em) {
+  .project-card {
+    height: 12rem;
+  }
+}
+
+@media screen and (max-width: 25.9375em) {
+  .project-card {
+    height: 22vh;
+  }
+}
+
+#wall-e {
+  background: url(../images/png/bg/wall-e.jpg);
+}
+
+#wall-e:hover {
+  background: url(../images/png/bg/wall-e.jpg);
+}
+
+#mahindra {
+  background: url(../images/png/bg/eve.jpg);
+}
+
+#mahindra:hover {
+  background: url(../images/png/bg/eve.jpg);
+}
+
+#igvc {
+  background: url(../images/png/bg/adam.jpg);
+}
+
+#igvc:hover {
+  background: url(../images/png/bg/adam.jpg);
+}
+
+/* Contact Section */
+
+.contact-section {
+  background: url(../images/png/bg/map.jpg);
+  padding-bottom: 0.2rem;
+}
+
+.contact-information {
+  margin: auto;
+  width: 15rem !important;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.fa-phone, .fa-envelope {
+  padding-bottom: 1rem;
+}
+
+.contact-form-container {
+  margin: auto;
+  max-width: 35rem;
+}
+
+input[type="text"], textarea {
+  background-color: transparent;
+  border: 2px solid #f0f0f0;
+}
+
+input[type="text"]:focus, textarea:focus {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid rgb(254, 88, 49);
+  box-shadow: 0 0 10px rgb(254, 88, 49);
+}
+
+@supports ((backdrop-filter: blur(20px)) or (-webkit-backdrop-filter: blur(20px))) {
+  input[type="text"]:focus, textarea:focus {
+    /* background-color: #f0f0f0; */
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 2px solid rgb(254, 88, 49);
+    box-shadow: 0 0 10px rgb(254, 88, 49);
+  }
+}
+
+/* Footer */
+
+.social-icons {
+  padding: 0 0.2rem 0 0.2rem;
+}
+
+.fa {
+  transition: all 0.3
+}
+
+.fa:hover {
+  transform: scale(1.5);
+}
+
+.fa-facebook:hover {
+  color: #3B5998;
+}
+
+.fa-instagram:hover {
+  color: #8a3ab9;
+}
+
+.fa-twitter:hover {
+  color: #55acee;
+}
+
+.fa-google-plus:hover {
+  color: #dd4b39;
+}
+
+.fa-youtube-play:hover {
+  color: #ff0000;
+}
+
+.fa-linkedin:hover {
+  color: #007bb5;
 }
