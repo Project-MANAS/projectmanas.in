@@ -66,7 +66,7 @@
           </div>
         </div>
         <div class="top-bar" id="navigation-bar">
-          <div class="top-bar-title show-for-medium" data-aos="fade-zoom-in" data-aos-duration="600" data-aos-offset="200" data-aos-anchor-placement="main-container">
+          <div class="top-bar-title show-for-medium">
             <img src="images/png/manas-logo-gradient.png" width="50px" alt="Project MANAS Logo"/>
             <img src="images/png/project-manas.png" width="100px" alt="Project MANAS"/>
           </div>
@@ -297,15 +297,10 @@
   <script src="js/vendor/jquery.min.js"></script>
   <script src="js/vendor/foundation.min.js"></script>
   <script src="js/particles.min.js"></script>
-  <script type="text/javascript" src="js/dat.gui.min.js"></script>
-  <script src="js/particles-settings.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/stats.min.js"></script>
+  <script src="js/particles-settings.min.js"></script>
   <script src="js/vendor/what-input.min.js"></script>
   <script>
   $(document).foundation();
-
-  AOS.init();
 
   $('.top-bar').on('sticky.zf.stuckto:top', function() {
     $(this).addClass('shrink');

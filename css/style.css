@@ -183,7 +183,7 @@ button {
     width: 60vw;
   }
   #main {
-    top: calc(100vh - 60px)
+    top: calc(100vh - 61px)
   }
 }
 
@@ -347,19 +347,19 @@ button {
   background-image: linear-gradient(to top, rgba(252, 173, 63, 0.85) 22%, rgba(254, 88, 49, 0.85) 100%), url(../images/png/bg/indian-bank.jpg);
 }
 
-/* Pepperl Futura, Futura-Mediumchs */
+/* Pepperl Fuchs */
 
-#pepperl-Futura, Futura-Mediumchs {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/png/bg/pepperl-Futura, Futura-Mediumchs.jpg);
+#pepperl-fuchs {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/png/bg/pepperl-fuchs.jpg);
   padding-top: 2rem;
 }
 
-#pepperl-Futura, Futura-Mediumchs img {
+#pepperl-fuchs img {
   height: 1.2rem;
 }
 
-#pepperl-Futura, Futura-Mediumchs:hover {
-  background-image: linear-gradient(to top, rgba(252, 173, 63, 0.85) 22%, rgba(254, 88, 49, 0.85) 100%), url(../images/png/bg/pepperl-Futura, Futura-Mediumchs.jpg);
+#pepperl-fuchs:hover {
+  background-image: linear-gradient(to top, rgba(252, 173, 63, 0.85) 22%, rgba(254, 88, 49, 0.85) 100%), url(../images/png/bg/pepperl-fuchs.jpg);
 }
 
 /* Gigabyte */
