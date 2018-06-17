@@ -3,6 +3,10 @@ pages:
   script:
   - mkdir .public
   - cp -r * .public
+  - mkdir .gzipped
+  - cp -r * .gzipped
+  - gzip -r .gzipped
+  - cp -r .gzipped/* .public
   - mv .public public
   artifacts:
     paths:
