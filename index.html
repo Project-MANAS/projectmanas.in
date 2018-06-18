@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en" dir="ltr">
 
 <head>
   <title>Project MANAS</title>
@@ -19,7 +19,7 @@
   <meta name="msapplication-config" content="favicons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 
-  <link type="text/css" rel="stylesheet" href="css/foundation.min.css" />
+  <link type="text/css" rel="stylesheet" href="css/foundation.css" />
   <link type="text/css" rel="stylesheet" href="css/style.css" />
   <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -34,7 +34,7 @@
           <div class="grid-y text-right" style="height: 100vh;">
             <div class="cell large-4"></div>
             <div class="cell large-2 large-offset-3">
-              <img src="images/png/manas-logo-transparent.png" width="85%" height="85%" alt"Project MANAS Logo"/>
+              <img src="images/png/manas-logo-transparent.png" width="85%" height="85%" alt "Project MANAS Logo"/>
             </div>
             <div class="cell large-6"></div>
           </div>
@@ -44,13 +44,13 @@
         <div class="cell large-7 medium-12 small-12">
           <div class="grid-y grid-padding-y grid-padding-x home-right">
             <div class="cell large-5 medium-3 small-3 text-right">
-              <img src="images/png/mit-60.png" width="60px" alt="MIT 60 Years Logo"/>
-              <img src="images/png/mit-logo.png" width="60px" alt="Manipal University Logo"/>
+              <img src="images/png/mit-60.png" width="60px" alt="MIT 60 Years Logo" />
+              <img src="images/png/mit-logo.png" width="60px" alt="Manipal University Logo" />
             </div>
             <div class="cell large-3 medium-9 small-9" style="color: white;">
               <center>
-                <img class="hide-for-large" id="home-logo" src="images/png/manas-logo-gradient.png" alt="Project MANAS Logo"/>
-                <img src="images/png/project-manas.png" id="home-logo-heading" alt"Project MANAS">
+                <img class="hide-for-large" id="home-logo" src="images/png/manas-logo-gradient.png" alt="Project MANAS Logo" />
+                <img src="images/png/project-manas.png" id="home-logo-heading" alt "Project MANAS">
               </center>
             </div>
             <div class="cell auto"></div>
@@ -68,8 +68,8 @@
       <div data-sticky data-margin-top='0' data-sticky-on="small" data-top-anchor="main-container:top">
         <div class="title-bar" data-responsive-toggle="navigation-bar" data-hide-for="medium">
           <div class="title-bar-left">
-            <img src="images/png/manas-logo-gradient.png" width="40px" alt="Project MANAS Logo"/>
-            <img src="images/png/project-manas.png" width="100px" alt="Project MANAS"/>
+            <img src="images/png/manas-logo-gradient.png" width="40px" alt="Project MANAS Logo" />
+            <img src="images/png/project-manas.png" width="100px" alt="Project MANAS" />
           </div>
           <div class="title-bar-right">
             <button class="menu-icon right" type="button" data-toggle="navigation-bar"></button>
@@ -77,8 +77,8 @@
         </div>
         <div class="top-bar" id="navigation-bar">
           <div class="top-bar-title show-for-medium">
-            <img src="images/png/manas-logo-gradient.png" width="50px" alt="Project MANAS Logo"/>
-            <img src="images/png/project-manas.png" width="100px" alt="Project MANAS"/>
+            <img src="images/png/manas-logo-gradient.png" width="50px" alt="Project MANAS Logo" />
+            <img src="images/png/project-manas.png" width="100px" alt="Project MANAS" />
           </div>
           <div class="top-bar-right">
             <ul class="dropdown vertical medium-horizontal menu transparent" data-smooth-scroll data-offset="88" data-threshold="0">
@@ -169,7 +169,7 @@
               <a href="https://www.bossard.com/"><img src="images/png/bossard.png" alt="BOSSARD"/></a>
             </div>
             <div class="cell large-2 medium-3 small-4 sponsor-logo sponsorship-button" data-smooth-scroll data-offset="88" data-threshold="0">
-              <a href="#contact"><h4 class="white">Sponsor Us  <i class="fa fa-angle-right fa-sm"></i></h4></a>
+              <a href="#contact" onclick="sponsorshipContactTemplate();"><h4 class="white">Sponsor Us  <i class="fa fa-angle-right fa-sm"></i></h4></a>
             </div>
           </div>
         </div>
@@ -184,7 +184,7 @@
           <h1 class="white"><span class="orange">Projects</span></h1>
         </div>
         <div class="cell large-10">
-          <div class="grid-x grid-padding-x">
+          <div class="grid-x grid-padding-x align-center">
             <div class="cell large-3 medium-4 small-6">
               <div class="card project-card" id="wall-e">
                 <div class="card-section">
@@ -206,105 +206,112 @@
                 </div>
               </div>
             </div>
-            <div class="cell large-3 medium-4 small-6">
-              <div class="card project-card" id="wall-e">
+            <!-- <div class="cell large-3 medium-4 small-6">
+              <div class="card project-card">
                 <div class="card-section">
-                  <h2 class="white">Wall-E</h12
-                    </div>
-                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <div class="cell large-1">
+            <!-- <button class="hollow-black button" id="projects-button">View More</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Contact Section -->
+    <div class="cell large-1 contact-section" id="contact">
+      <div class="grid-y grid-padding-y">
+        <div class="cell large-1">
+          <center>
+            <h1 class="white"><span class="orange">Contact</span> Us</h1></center>
+        </div>
+        <div class="cell large-11">
+          <div class="grid-x">
+            <div class="cell large-4">
+              <div class="grid-x grid-padding-x grid-padding-y">
+                <div class="cell large-12 medium-6 contact-information">
+                  <i class="fa fa-envelope fa-lg orange"></i>
+                  <h6 class="white">team_leader@projectmanas.in</h6>
+                  <h6 class="white">tech_head@projectmanas.in</h6>
+                  <h6 class="white">team_manager@projectmanas.in</h6>
+                </div>
+                <div class="cell large-12 medium-6 contact-information">
+                  <i class="fa fa-phone fa-lg orange"></i>
+                  <h6 class="white">Dheeraj Reddy: <small>+9192736247</small></h6>
+                  <h6 class="white">Mukesh Kumar: <small>+9192732437</small></h6>
+                  <h6 class="white">Sanjeev Nayak: <small>+9192736937</small></h6>
                 </div>
               </div>
             </div>
-            <div class="cell large-1">
-              <button class="hollow-black button" id="projects-button">View More</button>
+            <div class="cell large-6 medium-8 contact-form-container">
+              <div class="callout orange hide" id="sponsorship-alert" data-closable="fade-out">
+                <h5>Sponsorship Information</h5>
+                <p>Read our <u><a class="orange" target="_blank" href="pdf/Project-Manas-Brochure-Web.pdf">brochure</a></u> for more information about sponsorship.</p>
+                <p>For further details regarding the sponsorship please refer to our <u><a class="orange" target="_blank" href="pdf/Terms-and-Conditions-Project-Manas.pdf">terms and conditions</a></u></p>
+                <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <form>
+                <div class="grid-container" class="contact-form">
+                  <label><h6 class="white" >Name</h6>
+                            <input class="white" type="text" id="contact-name" required>
+                          </label>
+                  <label><h6 class="white">Email</h6>
+                            <input class="white" type="email"  id="contact-email" required>
+                          </label>
+                  <label><h6 class="white">Subject</h6>
+                            <input class="white" type="text" id="contact-subject" required>
+                          </label>
+                  <label><h6 class="white">Message</h6>
+                            <textarea class="white" rows="6" id="contact-message" required></textarea>
+                          </label>
+                  <input type="submit" class="button hollow-white float-right" id="submit-button" value="Submit">
+                </div>
+              </form>
+            </div>
+            <div class="cell large-3">
             </div>
           </div>
         </div>
       </div>
+    </div>
 
 
-      <!-- Contact Section -->
-        <div class="cell large-1 contact-section" id="contact">
-          <div class="grid-y grid-padding-y">
-            <div class="cell large-1">
-              <center><h1 class="white"><span class="orange">Contact</span> Us</h1></center>
-            </div>
-            <div class="cell large-11">
-              <div class="grid-x">
-                <div class="cell large-4">
-                  <div class="grid-x grid-padding-x grid-padding-y">
-                    <div class="cell large-12 medium-6 contact-information">
-                      <i class="fa fa-envelope fa-lg orange"></i>
-                      <h6 class="white">team_leader@projectmanas.in</h6>
-                      <h6 class="white">tech_head@projectmanas.in</h6>
-                      <h6 class="white">team_manager@projectmanas.in</h6>
-                    </div>
-                    <div class="cell large-12 medium-6 contact-information">
-                      <i class="fa fa-phone fa-lg orange"></i>
-                      <h6 class="white">Dheeraj Reddy: <small>+9192736247</small></h6>
-                      <h6 class="white">Mukesh Kumar: <small>+9192732437</small></h6>
-                      <h6 class="white">Sanjeev Nayak: <small>+9192736937</small></h6>
-                    </div>
-                  </div>
-                </div>
-                <div class="cell large-6 medium-8 contact-form-container">
-                  <form>
-                    <div class="grid-container" class="contact-form">
-                          <label><h6 class="white">Name</h6>
-                            <input class="white" type="text">
-                          </label>
-                          <label><h6 class="white">Email</h6>
-                            <input class="white" type="text">
-                          </label>
-                          <label><h6 class="white">Subject</h6>
-                            <input class="white" type="text">
-                          </label>
-                          <label><h6 class="white">Message</h6>
-                            <textarea class="white" rows="6"></textarea>
-                          </label>
-                          <input type="submit" class="button hollow-white float-right" id="submit-button" value="Submit">
-                    </div>
-                  </form>
-                </div>
-                <div class="cell large-3">
-                </div>
-              </div>
-            </div>
-          </div>
+    <!-- Footer -->
+    <div class="cell large-1 footer-section bg-black white" id="footer">
+      <div class="grid-x grid-padding-x grid-padding-y">
+        <div class="cell large-4"></div>
+        <div class="cell large-4 text-center">
+          <i class="fa fa-facebook social-icons"></i>
+          <i class="fa fa-instagram social-icons"></i>
+          <i class="fa fa-twitter social-icons"></i>
+          <i class="fa fa-youtube-play social-icons"></i>
+          <i class="fa fa-linkedin social-icons"></i>
+          <i class="fa fa-google-plus social-icons"></i>
         </div>
-
-
-        <!-- Footer -->
-        <div class="cell large-1 footer-section bg-black white" id="footer">
-          <div class="grid-x grid-padding-x grid-padding-y">
-            <div class="cell large-4"></div>
-            <div class="cell large-4 text-center">
-              <i class="fa fa-facebook social-icons"></i>
-              <i class="fa fa-instagram social-icons"></i>
-              <i class="fa fa-twitter social-icons"></i>
-              <i class="fa fa-youtube-play social-icons"></i>
-              <i class="fa fa-linkedin social-icons"></i>
-              <i class="fa fa-google-plus social-icons"></i>
-            </div>
-            <div class="cell large-4 text-right">
-              <small>
+        <div class="cell large-4 text-right">
+          <small>
                 &copy;
                 <span id="year"></span>
                 Project MANAS
               </small>
-            </div>
-          </div>
         </div>
-
       </div>
+    </div>
 
-  </body>
-  <script src="js/vendor/jquery.min.js"></script>
-  <script src="js/vendor/foundation.min.js"></script>
-  <script src="js/particles.min.js"></script>
-  <script src="js/particles-settings.min.js"></script>
-  <script src="js/vendor/what-input.min.js"></script>
-  <script>
+  </div>
+
+</body>
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/particles-settings.min.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script>
   $(document).foundation();
 
   $('.top-bar').on('sticky.zf.stuckto:top', function() {
@@ -341,6 +348,11 @@
   });
   var today = new Date()
   var year = today.getFullYear()
-  document.getElementById("year").innerHTML  = year
-  </script>
+  document.getElementById("year").innerHTML = year
+  function sponsorshipContactTemplate(){
+    document.getElementById("contact-subject").value = "Sponsorship";
+    document.getElementById("sponsorship-alert").classList.remove("hide");
+  }
+</script>
+
 </html>

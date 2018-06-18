@@ -264,6 +264,21 @@ button {
   transform: scaleX(1);
 }
 
+.no-js .top-bar {
+  display: none;
+}
+
+@media screen and (min-width: 40em) {
+  .no-js .top-bar {
+    display: block;
+  }
+
+  .no-js .title-bar {
+    display: none;
+  }
+}
+
+
 /* About Section */
 
 #about {
@@ -274,6 +289,7 @@ button {
   margin: auto;
   width: 75%;
 }
+
 
 /* Sponsor Section */
 
@@ -635,12 +651,12 @@ button {
   max-width: 35rem;
 }
 
-input[type="text"], textarea {
+input[type="text"], input[type="email"], textarea {
   background-color: transparent;
   border: 2px solid #f0f0f0;
 }
 
-input[type="text"]:focus, textarea:focus {
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
   background-color: rgba(0, 0, 0, 0.5);
   border: 2px solid rgb(254, 88, 49);
   box-shadow: 0 0 10px rgb(254, 88, 49);
@@ -655,6 +671,15 @@ input[type="text"]:focus, textarea:focus {
     border: 2px solid rgb(254, 88, 49);
     box-shadow: 0 0 10px rgb(254, 88, 49);
   }
+}
+
+#sponsorship-alert  a:hover {
+  color: rgb(254, 88, 49);
+  font-weight: bold;
+}
+
+#sponsorship-alert a:visited {
+  color: rgb(254, 88, 49);
 }
 
 /* Footer */
