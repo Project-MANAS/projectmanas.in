@@ -63,43 +63,27 @@
 
 /* Font */
 
+@font-face {
+  font-family: Futura-Medium;
+  src: url(../fonts/Futura-Medium.woff);
+}
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-family: Futura, Futura-Medium, "Trebuchet MS", Arial, sans-serif;
   font-style: normal;
   font-variant: small-caps;
   font-weight: 100;
-}
-
-h2 {
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-style: normal;
-  font-variant: small-caps;
-  font-weight: 100;
-}
-
-h3 {
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-style: normal;
-  font-variant: small-caps;
-  font-weight: 500;
-}
-
-h4 {
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-style: normal;
-  font-variant: small-caps;
-  font-weight: 500;
 }
 
 p {
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-family: Futura, Futura-Medium, "Trebuchet MS", Arial, sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
 }
 
 a {
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-family: Futura, Futura-Medium, "Trebuchet MS", Arial, sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
@@ -115,7 +99,7 @@ a:visited {
 }
 
 button {
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-family: Futura, Futura-Medium, "Trebuchet MS", Arial, sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 500;
@@ -136,23 +120,24 @@ button {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#2f2f30', GradientType=1);
 }
 
-.home-container{
+.home-container {
   background-color: rgba(0, 0, 0, 0.75);
   position: fixed;
   width: 100%;
+  height: 100%;
 }
 
-.home-left{
-  background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%);
+.home-left {
+  background: linear-gradient(to top, rgba(252, 173, 63, 0.85) 22%, rgba(254, 88, 49, 0.85) 100%);
 }
 
-.home-center{
-  background: linear-gradient(to top, rgba(252,173,63, 0.85) 22%,rgba(254,88,49, 0.85) 100%);
+.home-center {
+  background: linear-gradient(to top, rgba(252, 173, 63, 0.85) 22%, rgba(254, 88, 49, 0.85) 100%);
   clip-path: polygon(0% 100%, 100% 0%, -5% 0%);
   -webkit-clip-path: polygon(0% 100%, 100% 0%, -5% 0%);
 }
 
-.home-right{
+.home-right {
   height: 100%;
 }
 
@@ -198,7 +183,7 @@ button {
     width: 60vw;
   }
   #main {
-    top: calc(100vh - 60px)
+    top: calc(100vh - 61px)
   }
 }
 
