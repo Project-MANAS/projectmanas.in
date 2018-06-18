@@ -5,11 +5,12 @@ pages:
   - cp -r * .public
   - mkdir .gzipped
   - cp -r * .gzipped
-  - gzip -r .gzipped
+  - gzip -r --best .gzipped
   - cp -r .gzipped/* .public
   - mv .public public
   artifacts:
     paths:
     - public
   only:
-  - production
+  - master
+  - development
