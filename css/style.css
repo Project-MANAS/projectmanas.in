@@ -11,6 +11,15 @@
   background: rgb(254, 88, 49);
 }
 
+:target::before {
+  display: block;
+  content: " ";
+  margin-top: -89px;
+  height: 89px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 /* Colors */
 
 .black {
@@ -638,7 +647,7 @@ button {
 
 .contact-information {
   margin: auto;
-  width: 15rem !important;
+  width: 16rem !important;
   margin-bottom: 2rem;
   margin-top: 1rem;
 }

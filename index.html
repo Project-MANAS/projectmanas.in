@@ -26,7 +26,7 @@
 
 <body>
 
-  <div class="jumbotron jumbotron-main" id="home">
+  <div class="jumbotron jumbotron-main" id="home" data-magellan-target="home">
     <div id="particles-js"><canvas class="particles-js-canvas-el"></canvas></div>
     <div class="grid-container full home-container">
       <div class="grid-x">
@@ -81,9 +81,10 @@
             <img src="images/png/project-manas.png" width="100px" alt="Project MANAS" />
           </div>
           <div class="top-bar-right">
-            <ul class="dropdown vertical medium-horizontal menu transparent" data-smooth-scroll data-offset="88" data-threshold="0">
+            <ul class="dropdown vertical medium-horizontal menu transparent" data-magellan data-offset="88" data-threshold="0" data-deep-linking="true">
               <li><a class="nav-link" href="#home">Home</a></li>
               <li><a class="nav-link" href="#about">About Us</a></li>
+              <li><a class="nav-link" href="team.html">Team</a></li>
               <li><a class="nav-link" href="#sponsors">Sponsors</a></li>
               <li><a class="nav-link" href="#projects">Projects</a></li>
               <li><a class="nav-link" href="#contact">Contact Us</a></li>
@@ -95,7 +96,7 @@
 
 
     <!-- About Section -->
-    <div class="cell large-1 bg-white about-section text-center" id="about">
+    <div class="cell large-1 bg-white about-section text-center" id="about" data-magellan-target="about">
       <div class="grid-y grid-padding-y">
         <div class="cell large-2">
           <h1 class="black">About <span class="orange">Us</span></h1>
@@ -117,7 +118,7 @@
 
 
     <!-- Sponsors Section-->
-    <div class="cell large-1 bg-black sponsors-section" id="sponsors">
+    <div class="cell large-1 bg-black sponsors-section" id="sponsors" data-magellan-target="sponsors">
       <div class="grid-y grid-padding-y grid-padding-x text-center">
         <div class="cell large-2 white">
           <h1>Sponsors</h1>
@@ -168,7 +169,7 @@
             <div class="cell large-2 medium-3 small-4 sponsor-logo" id="bossard">
               <a href="https://www.bossard.com/"><img src="images/png/bossard.png" alt="BOSSARD"/></a>
             </div>
-            <div class="cell large-2 medium-3 small-4 sponsor-logo sponsorship-button" data-smooth-scroll data-offset="88" data-threshold="0">
+            <div class="cell large-2 medium-3 small-4 sponsor-logo sponsorship-button" data-magellan>
               <a href="#contact" onclick="sponsorshipContactTemplate();"><h4 class="white">Sponsor Us  <i class="fa fa-angle-right fa-sm"></i></h4></a>
             </div>
           </div>
@@ -178,7 +179,7 @@
 
 
     <!-- Projects Section -->
-    <div class="cell large-1 bg-white projects-section text-center" id="projects">
+    <div class="cell large-1 bg-white projects-section text-center" id="projects" data-magellan-target="projects">
       <div class="grid-y grid-padding-y">
         <div class="cell large-1">
           <h1 class="white"><span class="orange">Projects</span></h1>
@@ -222,7 +223,7 @@
 
 
     <!-- Contact Section -->
-    <div class="cell large-1 contact-section" id="contact">
+    <div class="cell large-1 contact-section" id="contact" data-magellan-target="contact">
       <div class="grid-y grid-padding-y">
         <div class="cell large-1">
           <center>
@@ -309,16 +310,10 @@
 <script src="js/vendor/jquery.min.js"></script>
 <script src="js/vendor/foundation.min.js"></script>
 <script src="js/particles.min.js"></script>
-<script src="js/particles-settings.min.js"></script>
+<!-- <script src="js/particles-settings.min.js"></script> -->
 <script src="js/vendor/what-input.js"></script>
 <script>
   $(document).foundation();
-
-  $('.top-bar').on('sticky.zf.stuckto:top', function() {
-    $(this).addClass('shrink');
-  }).on('sticky.zf.unstuckfrom:top', function() {
-    $(this).removeClass('shrink');
-  })
 
   $(window).on('scroll', function() {
     var pixs = $(document).scrollTop()
@@ -353,6 +348,7 @@
     document.getElementById("contact-subject").value = "Sponsorship";
     document.getElementById("sponsorship-alert").classList.remove("hide");
   }
+
 </script>
 
 </html>
