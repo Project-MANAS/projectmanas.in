@@ -1,119 +1,3 @@
-/* General */
-
-::-moz-selection {
-  /* Code for Firefox */
-  color: white;
-  background: rgb(254, 88, 49);
-}
-
-::selection {
-  color: white;
-  background: rgb(254, 88, 49);
-}
-
-:target::before {
-  display: block;
-  content: " ";
-  margin-top: -89px;
-  height: 89px;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-/* Colors */
-
-.black {
-  color: black;
-}
-
-.white {
-  color: #f0f0f0;
-}
-
-.orange {
-  color: rgb(254, 88, 49);
-}
-
-.bg-black {
-  background-color: black;
-}
-
-.bg-white {
-  background-color: #f0f0f0;
-}
-
-.transparent {
-  background-color: rgba(0, 0, 0, 0) !important;
-}
-
-/* Buttons */
-
-.hollow-black {
-  border: 2px solid #000000;
-  color: #000000;
-}
-
-.hollow-white {
-  border: 2px solid #f0f0f0;
-  color: #f0f0f0;
-}
-
-.button {
-  background-color: transparent;
-  transition: all 0.3s;
-}
-
-.button:hover {
-  background: rgb(254, 88, 49);
-  border: 2px solid rgb(254, 88, 49);
-  color: #ffffff;
-  transform: scale(1.1);
-}
-
-/* Font */
-
-@font-face {
-  font-family: Futura-Medium;
-  src: url(../fonts/Futura-Medium.woff);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: Futura, Futura-Medium, "Trebuchet MS", Arial, sans-serif;
-  font-style: normal;
-  font-variant: small-caps;
-  font-weight: 100;
-}
-
-p {
-  font-family: Futura, Futura-Medium, "Trebuchet MS", Arial, sans-serif;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-}
-
-a {
-  font-family: Futura, Futura-Medium, "Trebuchet MS", Arial, sans-serif;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  color: white;
-}
-
-a:hover {
-  color: white;
-}
-
-a:visited {
-  color: white;
-}
-
-button {
-  font-family: Futura, Futura-Medium, "Trebuchet MS", Arial, sans-serif;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 500;
-}
-
 /* Home */
 
 #particles-js {
@@ -176,20 +60,34 @@ button {
 }
 
 @media screen and (max-width: 63.9375em) {
+  div < #home-logo {
+    padding: 0
+  }
+
   #home-logo {
-    width: 25vw;
+    width: 20vw;
+    margin-left: 40vw;
+    margin-right: 40vw;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
   }
   #home-logo-heading {
     width: 50vw;
+    margin-left: 25vw;
+    margin-right: 25vw;
   }
 }
 
-@media screen and (max-width: 39.9375em) {
+@media screen and (max-width: 29.9375em) {
   #home-logo {
     width: 40vw;
+    margin-left: 30vw;
+    margin-right: 30vw;
   }
   #home-logo-heading {
     width: 60vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
   }
   #main {
     top: calc(100vh - 61px)
@@ -207,94 +105,17 @@ button {
 #main-container {
   position: relative;
   z-index: 2;
-  top: calc(100vh - 100px)
-}
-
-/* Navigation Bar */
-
-#navigation-bar {
-  background-color: rgba(0, 0, 0, 0.0);
-  -webkit-backdrop-filter: blur(0px);
-  backdrop-filter: blur(0px);
-  z-index: 3;
-}
-
-[data-sticky] {
-  width: 100%;
-}
-
-.top-bar {
-  padding: 1rem;
-  transition: padding .25s ease;
-}
-
-.is-stuck .top-bar {
-  padding: 0.5rem 1.5rem;
-  transition: padding .25s ease;
-}
-
-.title-bar {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-.top-bar-title {
-  margin-left: 0.5rem;
-}
-
-.nav-link:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: rgb(254, 88, 49);
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.nav-link {
-  color: #f0f0f0;
-  position: relative;
-  text-decoration: none;
-}
-
-.nav-link:hover {
-  /* color: rgb(254,88,49); */
-  text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
-}
-
-.nav-link:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-.no-js .top-bar {
-  display: none;
-}
-
-@media screen and (min-width: 40em) {
-  .no-js .top-bar {
-    display: block;
-  }
-
-  .no-js .title-bar {
-    display: none;
-  }
+  top: calc(100vh - 70px)
 }
 
 
 /* About Section */
 
-#about {
+.about-section {
   padding-bottom: 2rem;
 }
 
-#about p {
+.about-section p {
   margin: auto;
   width: 75%;
 }
@@ -539,6 +360,10 @@ button {
 
 /* Projects Section */
 
+.projects-section{
+  padding-bottom: 8rem;
+}
+
 .project-card {
   width: 100%;
   border-radius: 10px;
@@ -642,7 +467,7 @@ button {
 
 .contact-section {
   background: url(../images/png/bg/map.jpg);
-  padding-bottom: 0.2rem;
+  padding-bottom: 0.65rem;
 }
 
 .contact-information {
@@ -690,42 +515,4 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 
 #sponsorship-alert a:visited {
   color: rgb(254, 88, 49);
-}
-
-/* Footer */
-
-.social-icons {
-  padding: 0 0.2rem 0 0.2rem;
-}
-
-.fa {
-  transition: all 0.3
-}
-
-.fa:hover {
-  transform: scale(1.5);
-}
-
-.fa-facebook:hover {
-  color: #3B5998;
-}
-
-.fa-instagram:hover {
-  color: #8a3ab9;
-}
-
-.fa-twitter:hover {
-  color: #55acee;
-}
-
-.fa-google-plus:hover {
-  color: #dd4b39;
-}
-
-.fa-youtube-play:hover {
-  color: #ff0000;
-}
-
-.fa-linkedin:hover {
-  color: #007bb5;
 }
