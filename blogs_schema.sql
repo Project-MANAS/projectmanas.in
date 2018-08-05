@@ -1,0 +1,6 @@
+CREATE TABLE Blogs(
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    Title Text NOT NULL,
+    Descri Text NOT NULL,
+    Image Text NOT NULL
+);
