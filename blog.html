@@ -190,7 +190,8 @@
 
   $(document).ready(function() {
   var lines = 20;
-  var textLength = 80;
+  var textLength = $('#main-container').innerWidth() / 16;
+
 
   for (i = 0; i < lines - 1; i++) {
     $(".num").first().clone().insertAfter($(".num").first());
@@ -202,28 +203,28 @@
   function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
-
+  console.log($('#main-container').innerWidth())
   setInterval(function() {
     $(".num").each(function() {
       if ($(this).text().length < textLength) {
         $(this).text(($(this).text() + Math.round(Math.random())));
       } else {
-        $(this).text(Math.round(Math.random()) + $(this).text().substring(0, $(this).text().length - 1))
+        $(this).text(Math.round(Math.random()) + $(this).text().substring(0, textLength - 1))
       }
     });
 
-  }, 75);
+  }, 50);
   setInterval(function() {
     $(".buzz").each(function() {
       if ($(this).text().length < textLength) {
         $(this).text(($(this).text() + buzz[getRandomInt(9)]));
       } else {
         // $(this).text(buzz[getRandomInt(9)] + $(his).text().substring(0, $(this).text().length - 1))
-        $(this).text(buzz[getRandomInt(9)] + $(this).text().substring(0, 500 - 1))
+        $(this).text(buzz[getRandomInt(9)] + $(this).text().substring(0, textLength - 1))
       }
     });
 
-  }, 75);
+  }, 150);
 
 });
 

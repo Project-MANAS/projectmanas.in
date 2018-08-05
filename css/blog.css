@@ -29,8 +29,7 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
 
 }
-.nu
-m {
+.num {
   clear: both;
   transform: rotateY(0deg);
 }
@@ -42,14 +41,14 @@ m {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50vw;
+  width: 50%;
   height: 40vh;
 }
 .buzz-background{
   position: absolute;
   top: 0;
-  left: 50vw;
-  width: 50vw;
+  left: 50%;
+  width: 50%;
   height: 40vh;
 }
 
