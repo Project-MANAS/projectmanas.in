@@ -11,6 +11,7 @@ import (
 	"os"
 	"strconv"
 	"strings"
+	"time"
 
 	"github.com/gorilla/sessions"
 	_ "github.com/mattn/go-sqlite3"
@@ -24,6 +25,8 @@ type Card struct {
 	ID      int
 	Title   string
 	Desc    string
+	Author  string
+	PubDate string
 	ImgName string
 }
 
@@ -111,13 +114,13 @@ func blogUploadForm(w http.ResponseWriter, r *http.Request) {
 			io.Copy(f, file)
 		}
 
-		stmt, err := db.Prepare("INSERT INTO Blogs (Title,Descri,Image) VALUES (?,?,?)")
+		stmt, err := db.Prepare("INSERT INTO Blogs (Title,Descri,Author,PubDate,Image) VALUES (?,?,?,?,?)")
 		if err != nil {
 			fmt.Fprintf(w, "Internal Server Error")
 			fmt.Println("here1")
 			return
 		}
-		_, err = stmt.Exec(r.Form["title"][0], r.Form["desc"][0], handler.Filename)
+		_, err = stmt.Exec(r.Form["title"][0], r.Form["desc"][0], r.Form["author"][0], r.Form["pubDate"][0], handler.Filename)
 		if err != nil {
 			fmt.Fprintf(w, "Internal Server Error")
 			fmt.Println(err)
@@ -207,14 +210,19 @@ func blogLister(w http.ResponseWriter, r *http.Request) {
 	var blogID int
 	var title string
 	var desc string
+	var author string
+	var pubDate string
 	var imageName string
+	layout := "2006-01-02"
 	for rows.Next() {
-		err := rows.Scan(&blogID, &title, &desc, &imageName)
+		err := rows.Scan(&blogID, &title, &desc, &author, &pubDate, &imageName)
 		if err != nil {
 			fmt.Fprintf(w, "Internal server error")
 			return
 		}
-		c := Card{ID: blogID, Title: title, Desc: desc, ImgName: imageName}
+		t, _ := time.Parse(layout, pubDate)
+
+		c := Card{ID: blogID, Title: title, Desc: desc, Author: author, PubDate: t.Format("January 02,2006"), ImgName: imageName}
 		cards = append(cards, c)
 	}
 	// len, err := getCount()
