@@ -9,21 +9,21 @@
   <meta name="author" content="Shrijit Singh">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png">
-  <link rel="manifest" href="/static/favicons/site.webmanifest">
-  <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#fe5831">
-  <link rel="shortcut icon" href="/static/favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="static/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/favicons/favicon-16x16.png">
+  <link rel="manifest" href="static/favicons/site.webmanifest">
+  <link rel="mask-icon" href="static/favicons/safari-pinned-tab.svg" color="#fe5831">
+  <link rel="shortcut icon" href="static/favicons/favicon.ico">
   <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-config" content="/static/favicons/browserconfig.xml">
+  <meta name="msapplication-config" content="static/favicons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 
-  <link type="text/css" rel="stylesheet" href="/static/css/foundation.min.css" />
-  <link type="text/css" rel="stylesheet" href="/static/css/common.css" />
-  <link type="text/css" rel="stylesheet" href="/static/css/navigation.css" />
-  <link type="text/css" rel="stylesheet" href="/static/css/footer.css" />
-  <link type="text/css" rel="stylesheet" href="/static/css/team.css" />
+  <link type="text/css" rel="stylesheet" href="static/css/foundation.min.css" />
+  <link type="text/css" rel="stylesheet" href="static/css/common.css" />
+  <link type="text/css" rel="stylesheet" href="static/css/navigation.css" />
+  <link type="text/css" rel="stylesheet" href="static/css/footer.css" />
+  <link type="text/css" rel="stylesheet" href="static/css/team.css" />
   <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -38,8 +38,8 @@
       <div data-sticky data-margin-top='0' data-sticky-on="small" data-top-anchor="main-container:top">
         <div class="title-bar" data-responsive-toggle="navigation-bar" data-hide-for="medium">
           <div class="title-bar-left">
-            <img src="/static/images/png/manas-logo-gradient.png" width="40px" alt="Project MANAS Logo" />
-            <img src="/static/images/png/project-manas.png" width="100px" alt="Project MANAS" />
+            <img src="static/images/png/manas-logo-gradient.png" width="40px" alt="Project MANAS Logo" />
+            <img src="static/images/png/project-manas.png" width="100px" alt="Project MANAS" />
           </div>
           <div class="title-bar-right">
             <button class="menu-icon right" type="button" data-toggle="navigation-bar"></button>
@@ -47,8 +47,8 @@
         </div>
         <div class="top-bar" id="navigation-bar">
           <div class="top-bar-title show-for-medium">
-            <img src="/static/images/png/manas-logo-gradient.png" width="50px" alt="Project MANAS Logo" />
-            <img src="/static/images/png/project-manas.png" width="100px" alt="Project MANAS" />
+            <img src="static/images/png/manas-logo-gradient.png" width="50px" alt="Project MANAS Logo" />
+            <img src="static/images/png/project-manas.png" width="100px" alt="Project MANAS" />
           </div>
           <div class="top-bar-right">
             <ul class="dropdown vertical medium-horizontal menu transparent" data-magellan data-offset="88" data-threshold="0" data-deep-linking="true">
@@ -74,10 +74,10 @@
         </div>
         <div class="cell large-10">
           <div class="grid-x">
-            <div class="cell large-2 medium-3 small-4">
+            <!-- <div class="cell large-2 medium-3 small-4">
               <div class="card profile">
                   <div class="profile-image">
-                    <img src="/static/images/jpg/profile/dheeraj.jpg">
+                    <img src="static/images/jpg/profile/dheeraj.jpg">
                   </div>
                   <div class="profile-social">
                     <i class="fa fa-facebook social-icons"></i>
@@ -85,7 +85,7 @@
                     <i class="fa fa-linkedin social-icons"></i>
                   </div>
                   <div class="profile-about">
-                    <h5>Dheeraj R. Reddy</h5>
+                    <h5 data-nickname=""><span>Dheeraj R. Reddy</span></h5>
                     <p>Team Leader</p>
                   </div>
               </div>
@@ -93,7 +93,7 @@
             <div class="cell large-2 medium-3 small-4">
               <div class="card profile">
                   <div class="profile-image">
-                    <img src="/static/images/jpg/profile/mukesh.jpg">
+                    <img src="static/images/jpg/profile/mukesh.jpg">
                   </div>
                   <div class="profile-social">
                     <i class="fa fa-facebook social-icons"></i>
@@ -101,7 +101,7 @@
                     <i class="fa fa-linkedin social-icons"></i>
                   </div>
                   <div class="profile-about">
-                    <h5>Mukesh Kumar</h5>
+                    <h5 data-nickname=""><span>Mukesh Kumar</span></h5>
                     <p>Tech Head</p>
                   </div>
               </div>
@@ -109,7 +109,7 @@
             <div class="cell large-2 medium-3 small-4">
               <div class="card profile">
                   <div class="profile-image">
-                    <img src="/static/images/jpg/profile/sanjeev.png">
+                    <img src="static/images/jpg/profile/sanjeev.png">
                   </div>
                   <div class="profile-social">
                     <i class="fa fa-facebook social-icons"></i>
@@ -117,15 +117,14 @@
                     <i class="fa fa-linkedin social-icons"></i>
                   </div>
                   <div class="profile-about">
-                    <h5>Sanjeev Nayak</h5>
+                    <h5 data-nickname=""><span>Sanjeev Nayak</span></h5>
                     <p>Team Manager</p>
                   </div>
               </div>
-            </div>
+            </div> -->
             <div class="cell large-2 medium-3 small-4">
               <div class="card profile">
-                  <div class="profile-image">
-                    <img src="/static/images/jpg/profile/sarthak.jpg">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/10.jpeg)">
                   </div>
                   <div class="profile-social">
                     <i class="fa fa-facebook social-icons"></i>
@@ -133,15 +132,29 @@
                     <i class="fa fa-linkedin social-icons"></i>
                   </div>
                   <div class="profile-about">
-                    <h5>Sarthak Mittal</h5>
+                    <h5 data-nickname="naivehobo"><span>Sarthak Mittal</span></h5>
                     <p>AI Head</p>
                   </div>
               </div>
             </div>
             <div class="cell large-2 medium-3 small-4">
               <div class="card profile">
-                  <div class="profile-image">
-                    <img src="/static/images/jpg/profile/john.png">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/24.jpeg)">
+                </div>
+                  <div class="profile-social">
+                    <i class="fa fa-facebook social-icons"></i>
+                    <i class="fa fa-envelope social-icons"></i>
+                    <i class="fa fa-linkedin social-icons"></i>
+                  </div>
+                  <div class="profile-about">
+                    <h5 data-nickname="McDhee"><span>Dheeraj Mohan</span></h5>
+                    <p>AI Perception Member</p>
+                  </div>
+              </div>
+            </div>
+            <div class="cell large-2 medium-3 small-4">
+              <div class="card profile">
+                  <div class="profile-image" style="background-image: url(static/images/jpg/profile/23.jpeg)">
                   </div>
                   <div class="profile-social">
                     <i class="fa fa-facebook social-icons"></i>
@@ -149,15 +162,14 @@
                     <i class="fa fa-linkedin social-icons"></i>
                   </div>
                   <div class="profile-about">
-                    <h5>John Doe</h5>
+                    <h5 data-nickname="Dasarath S"><span>Dasarath S</span></h5>
                     <p>MANAS Head</p>
                   </div>
               </div>
             </div>
             <div class="cell large-2 medium-3 small-4">
               <div class="card profile">
-                  <div class="profile-image">
-                    <img src="/static/images/jpg/profile/john.png">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/22.jpeg)">
                   </div>
                   <div class="profile-social">
                     <i class="fa fa-facebook social-icons"></i>
@@ -165,15 +177,59 @@
                     <i class="fa fa-linkedin social-icons"></i>
                   </div>
                   <div class="profile-about">
-                    <h5>John Doe</h5>
-                    <p>MANAS Head</p>
+                    <h5 data-nickname="NULL"><span>Chaitanya</span></h5>
+                    <p>AI Perception Member</p>
+                  </div>
+              </div>
+            </div>
+            <div class="cell large-2 medium-3 small-4">
+            <div class="card profile">
+              <div class="profile-image" style="background-image: url(static/images/jpg/profile/21.jpeg)">
+                </div>
+                <div class="profile-social">
+                  <i class="fa fa-facebook social-icons"></i>
+                  <i class="fa fa-envelope social-icons"></i>
+                  <i class="fa fa-linkedin social-icons"></i>
+                </div>
+                <div class="profile-about">
+                  <h5 data-nickname="The Beast"><span>Damodar Nayak</span></h5>
+                  <p>Mech Senior Member</p>
+                </div>
+            </div>
+          </div>
+            <div class="cell large-2 medium-3 small-4">
+            <div class="card profile">
+              <div class="profile-image" style="background-image: url(static/images/jpg/profile/20.jpeg)">
+                </div>
+                <div class="profile-social">
+                  <i class="fa fa-facebook social-icons"></i>
+                  <i class="fa fa-envelope social-icons"></i>
+                  <i class="fa fa-linkedin social-icons"></i>
+                </div>
+                <div class="profile-about">
+                  <h5 data-nickname="Arya Karani"><span>Arya Karani</span></h5>
+                  <p>Mech Mechanics Member</p>
+                </div>
+            </div>
+          </div>
+            <div class="cell large-2 medium-3 small-4">
+              <div class="card profile">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/19.jpeg)">
+                  </div>
+                  <div class="profile-social">
+                    <i class="fa fa-facebook social-icons"></i>
+                    <i class="fa fa-envelope social-icons"></i>
+                    <i class="fa fa-linkedin social-icons"></i>
+                  </div>
+                  <div class="profile-about">
+                    <h5 data-nickname="Yudishthir Lokhande"><span>Yudishthir Lokhande</span></h5>
+                    <p>Management Member</p>
                   </div>
               </div>
             </div>
             <div class="cell large-2 medium-3 small-4">
               <div class="card profile">
-                  <div class="profile-image">
-                    <img src="/static/images/jpg/profile/john.png">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/18.jpeg)">
                   </div>
                   <div class="profile-social">
                     <i class="fa fa-facebook social-icons"></i>
@@ -181,15 +237,14 @@
                     <i class="fa fa-linkedin social-icons"></i>
                   </div>
                   <div class="profile-about">
-                    <h5>John Doe</h5>
-                    <p>MANAS Head</p>
+                    <h5 data-nickname="Papa GAN"><span>Apratim Mukhrjee</span></h5>
+                    <p>AI Perception Head</p>
                   </div>
               </div>
             </div>
             <div class="cell large-2 medium-3 small-4">
               <div class="card profile">
-                  <div class="profile-image">
-                    <img src="/static/images/jpg/profile/john.png">
+                  <div class="profile-image" style="background-image: url(static/images/jpg/profile/17.jpeg)">
                   </div>
                   <div class="profile-social">
                     <i class="fa fa-facebook social-icons"></i>
@@ -197,15 +252,14 @@
                     <i class="fa fa-linkedin social-icons"></i>
                   </div>
                   <div class="profile-about">
-                    <h5>John Doe</h5>
-                    <p>MANAS Head</p>
+                    <h5 data-nickname="Ansel Dias"><span>Ansel Dias</span></h5>
+                    <p>S&A Automation Member</p>
                   </div>
               </div>
             </div>
             <div class="cell large-2 medium-3 small-4">
               <div class="card profile">
-                  <div class="profile-image">
-                    <img src="/static/images/jpg/profile/john.png">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/16.jpeg)">
                   </div>
                   <div class="profile-social">
                     <i class="fa fa-facebook social-icons"></i>
@@ -213,15 +267,14 @@
                     <i class="fa fa-linkedin social-icons"></i>
                   </div>
                   <div class="profile-about">
-                    <h5>John Doe</h5>
-                    <p>MANAS Head</p>
+                    <h5 data-nickname="Aniket Didolkar"><span>Aniket Didolkar</span></h5>
+                    <p>AI Planning Member</p>
                   </div>
               </div>
             </div>
             <div class="cell large-2 medium-3 small-4">
               <div class="card profile">
-                  <div class="profile-image">
-                    <img src="/static/images/jpg/profile/john.png">
+                  <div class="profile-image" style="background-image: url(static/images/jpg/profile/14.jpeg)">
                   </div>
                   <div class="profile-social">
                     <i class="fa fa-facebook social-icons"></i>
@@ -229,15 +282,14 @@
                     <i class="fa fa-linkedin social-icons"></i>
                   </div>
                   <div class="profile-about">
-                    <h5>John Doe</h5>
-                    <p>MANAS Head</p>
+                    <h5 data-nickname="Vibhuti Ravi"><span>Vibhuti Ravi</span></h5>
+                    <p>Sensing Head</p>
                   </div>
               </div>
             </div>
             <div class="cell large-2 medium-3 small-4">
               <div class="card profile">
-                  <div class="profile-image">
-                    <img src="/static/images/jpg/profile/john.png">
+                  <div class="profile-image" style="background-image: url(static/images/jpg/profile/15.jpeg)">
                   </div>
                   <div class="profile-social">
                     <i class="fa fa-facebook social-icons"></i>
@@ -245,15 +297,14 @@
                     <i class="fa fa-linkedin social-icons"></i>
                   </div>
                   <div class="profile-about">
-                    <h5>John Doe</h5>
-                    <p>MANAS Head</p>
+                    <h5 data-nickname="Amit Jindal"><span>Amit Jindal</span></h5>
+                    <p>AI Planning Member</p>
                   </div>
               </div>
             </div>
             <div class="cell large-2 medium-3 small-4">
               <div class="card profile">
-                  <div class="profile-image">
-                    <img src="/static/images/jpg/profile/john.png">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/26.jpeg)">
                   </div>
                   <div class="profile-social">
                     <i class="fa fa-facebook social-icons"></i>
@@ -261,15 +312,14 @@
                     <i class="fa fa-linkedin social-icons"></i>
                   </div>
                   <div class="profile-about">
-                    <h5>John Doe</h5>
-                    <p>MANAS Head</p>
+                    <h5 data-nickname="Johir Suresh"><span>Johir Suresh</span></h5>
+                    <p>Mech Senior Member</p>
                   </div>
               </div>
             </div>
             <div class="cell large-2 medium-3 small-4">
               <div class="card profile">
-                  <div class="profile-image">
-                    <img src="/static/images/jpg/profile/john.png">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/27.jpeg)">
                   </div>
                   <div class="profile-social">
                     <i class="fa fa-facebook social-icons"></i>
@@ -277,15 +327,14 @@
                     <i class="fa fa-linkedin social-icons"></i>
                   </div>
                   <div class="profile-about">
-                    <h5>John Doe</h5>
-                    <p>MANAS Head</p>
+                    <h5 data-nickname="Kaustav Chanda"><span>Kaustav Chanda</span></h5>
+                    <p>AI Perception Member</p>
                   </div>
               </div>
             </div>
             <div class="cell large-2 medium-3 small-4">
               <div class="card profile">
-                  <div class="profile-image">
-                    <img src="/static/images/jpg/profile/john.png">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/28.jpeg)">
                   </div>
                   <div class="profile-social">
                     <i class="fa fa-facebook social-icons"></i>
@@ -293,15 +342,14 @@
                     <i class="fa fa-linkedin social-icons"></i>
                   </div>
                   <div class="profile-about">
-                    <h5>John Doe</h5>
-                    <p>MANAS Head</p>
+                    <h5 data-nickname="Mahima Rao"><span>Mahima Rao</span></h5>
+                    <p>Management PR Head</p>
                   </div>
               </div>
             </div>
             <div class="cell large-2 medium-3 small-4">
               <div class="card profile">
-                  <div class="profile-image">
-                    <img src="/static/images/jpg/profile/john.png">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/29.jpeg)">
                   </div>
                   <div class="profile-social">
                     <i class="fa fa-facebook social-icons"></i>
@@ -309,15 +357,14 @@
                     <i class="fa fa-linkedin social-icons"></i>
                   </div>
                   <div class="profile-about">
-                    <h5>John Doe</h5>
-                    <p>MANAS Head</p>
+                    <h5 data-nickname="Manav Sachdeva"><span>Manav Sachdeva</span></h5>
+                    <p>Mech Design Member</p>
                   </div>
               </div>
             </div>
             <div class="cell large-2 medium-3 small-4">
               <div class="card profile">
-                  <div class="profile-image">
-                    <img src="/static/images/jpg/profile/john.png">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/30.jpeg)">
                   </div>
                   <div class="profile-social">
                     <i class="fa fa-facebook social-icons"></i>
@@ -325,15 +372,14 @@
                     <i class="fa fa-linkedin social-icons"></i>
                   </div>
                   <div class="profile-about">
-                    <h5>John Doe</h5>
-                    <p>MANAS Head</p>
+                    <h5 data-nickname="Narayanan ER"><span>Narayanan ER</span></h5>
+                    <p>AI Planning Member</p>
                   </div>
               </div>
             </div>
             <div class="cell large-2 medium-3 small-4">
               <div class="card profile">
-                  <div class="profile-image">
-                    <img src="/static/images/jpg/profile/john.png">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/31.jpeg)">
                   </div>
                   <div class="profile-social">
                     <i class="fa fa-facebook social-icons"></i>
@@ -341,15 +387,14 @@
                     <i class="fa fa-linkedin social-icons"></i>
                   </div>
                   <div class="profile-about">
-                    <h5>John Doe</h5>
-                    <p>MANAS Head</p>
+                    <h5 data-nickname="Omkar Jhadav"><span>Omkar Jhadav</span></h5>
+                    <p>S&A Sensing Member</p>
                   </div>
               </div>
             </div>
             <div class="cell large-2 medium-3 small-4">
               <div class="card profile">
-                  <div class="profile-image">
-                    <img src="/static/images/jpg/profile/john.png">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/32.jpeg)">
                   </div>
                   <div class="profile-social">
                     <i class="fa fa-facebook social-icons"></i>
@@ -357,8 +402,293 @@
                     <i class="fa fa-linkedin social-icons"></i>
                   </div>
                   <div class="profile-about">
-                    <h5>John Doe</h5>
-                    <p>MANAS Head</p>
+                    <h5 data-nickname="Pranjal Sinha"><span>Pranjal Sinha</span></h5>
+                    <p>S&A Head</p>
+                  </div>
+              </div>
+            </div>
+            <div class="cell large-2 medium-3 small-4">
+              <div class="card profile">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/33.jpeg)">
+                  </div>
+                  <div class="profile-social">
+                    <i class="fa fa-facebook social-icons"></i>
+                    <i class="fa fa-envelope social-icons"></i>
+                    <i class="fa fa-linkedin social-icons"></i>
+                  </div>
+                  <div class="profile-about">
+                    <h5 data-nickname="Rakshit Jain"><span>Rakshit Jain</span></h5>
+                    <p>Mech Design Member</p>
+                  </div>
+              </div>
+            </div>
+            <div class="cell large-2 medium-3 small-4">
+              <div class="card profile">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/34.jpeg)">
+                  </div>
+                  <div class="profile-social">
+                    <i class="fa fa-facebook social-icons"></i>
+                    <i class="fa fa-envelope social-icons"></i>
+                    <i class="fa fa-linkedin social-icons"></i>
+                  </div>
+                  <div class="profile-about">
+                    <h5 data-nickname="Raunaq Kalra"><span>Raunaq Kalra</span></h5>
+                    <p>Mech Mechanics Member</p>
+                  </div>
+              </div>
+            </div>
+            <div class="cell large-2 medium-3 small-4">
+              <div class="card profile">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/35.jpeg)">
+                  </div>
+                  <div class="profile-social">
+                    <i class="fa fa-facebook social-icons"></i>
+                    <i class="fa fa-envelope social-icons"></i>
+                    <i class="fa fa-linkedin social-icons"></i>
+                  </div>
+                  <div class="profile-about">
+                    <h5 data-nickname="Vishnu Menon"><span>Vishnu Menon</span></h5>
+                    <p>Mech Mechanics Head</p>
+                  </div>
+              </div>
+            </div>
+            <div class="cell large-2 medium-3 small-4">
+              <div class="card profile">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/36.jpeg)">
+                  </div>
+                  <div class="profile-social">
+                    <i class="fa fa-facebook social-icons"></i>
+                    <i class="fa fa-envelope social-icons"></i>
+                    <i class="fa fa-linkedin social-icons"></i>
+                  </div>
+                  <div class="profile-about">
+                    <h5 data-nickname="Vishnu Dasu"><span>Vishnu Dasu</span></h5>
+                    <p>AI Perception Member</p>
+                  </div>
+              </div>
+            </div>
+            <div class="cell large-2 medium-3 small-4">
+              <div class="card profile">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/37.jpeg)">
+                  </div>
+                  <div class="profile-social">
+                    <i class="fa fa-facebook social-icons"></i>
+                    <i class="fa fa-envelope social-icons"></i>
+                    <i class="fa fa-linkedin social-icons"></i>
+                  </div>
+                  <div class="profile-about">
+                    <h5 data-nickname="Varudhani Panuganti"><span>Varudhani Panuganti</span></h5>
+                    <p>Mech Design Head</p>
+                  </div>
+              </div>
+            </div>
+            <div class="cell large-2 medium-3 small-4">
+              <div class="card profile">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/38.jpeg)">
+                  </div>
+                  <div class="profile-social">
+                    <i class="fa fa-facebook social-icons"></i>
+                    <i class="fa fa-envelope social-icons"></i>
+                    <i class="fa fa-linkedin social-icons"></i>
+                  </div>
+                  <div class="profile-about">
+                    <h5 data-nickname="Thomas Alex"><span>Thomas Alex</span></h5>
+                    <p>S&A Senior Member</p>
+                  </div>
+              </div>
+            </div>
+            <div class="cell large-2 medium-3 small-4">
+              <div class="card profile">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/39.jpeg)">
+                  </div>
+                  <div class="profile-social">
+                    <i class="fa fa-facebook social-icons"></i>
+                    <i class="fa fa-envelope social-icons"></i>
+                    <i class="fa fa-linkedin social-icons"></i>
+                  </div>
+                  <div class="profile-about">
+                    <h5 data-nickname="Tanuj Agarwal"><span>Tanuj Agarwal</span></h5>
+                    <p>Mech Mechanics Member</p>
+                  </div>
+              </div>
+            </div>
+            <div class="cell large-2 medium-3 small-4">
+              <div class="card profile">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/40.jpeg)">
+                  </div>
+                  <div class="profile-social">
+                    <i class="fa fa-facebook social-icons"></i>
+                    <i class="fa fa-envelope social-icons"></i>
+                    <i class="fa fa-linkedin social-icons"></i>
+                  </div>
+                  <div class="profile-about">
+                    <h5 data-nickname="Tanaya Mandke"><span>Tanaya Mandke</span></h5>
+                    <p>Mech Mechanics Member</p>
+                  </div>
+              </div>
+            </div>
+            <div class="cell large-2 medium-3 small-4">
+              <div class="card profile">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/41.jpeg)">
+                  </div>
+                  <div class="profile-social">
+                    <i class="fa fa-facebook social-icons"></i>
+                    <i class="fa fa-envelope social-icons"></i>
+                    <i class="fa fa-linkedin social-icons"></i>
+                  </div>
+                  <div class="profile-about">
+                    <h5 data-nickname="Snehal Singh Tomar"><span>Snehal Singh Tomar</span></h5>
+                    <p>S&A Senior Member</p>
+                  </div>
+              </div>
+            </div>
+            <div class="cell large-2 medium-3 small-4">
+              <div class="card profile">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/42.jpeg)">
+                  </div>
+                  <div class="profile-social">
+                    <i class="fa fa-facebook social-icons"></i>
+                    <i class="fa fa-envelope social-icons"></i>
+                    <i class="fa fa-linkedin social-icons"></i>
+                  </div>
+                  <div class="profile-about">
+                    <h5 data-nickname="Rahul S"><span>Rahul S</span></h5>
+                    <p>AI Perception Member</p>
+                  </div>
+              </div>
+            </div>
+            <div class="cell large-2 medium-3 small-4">
+              <div class="card profile">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/43.jpeg)">
+                  </div>
+                  <div class="profile-social">
+                    <i class="fa fa-facebook social-icons"></i>
+                    <i class="fa fa-envelope social-icons"></i>
+                    <i class="fa fa-linkedin social-icons"></i>
+                  </div>
+                  <div class="profile-about">
+                    <h5 data-nickname="Siddarth Venkatraman"><span>Siddarth Venkatraman</span></h5>
+                    <p>AI Perception Member</p>
+                  </div>
+              </div>
+            </div>
+            <div class="cell large-2 medium-3 small-4">
+              <div class="card profile">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/44.jpeg)">
+                  </div>
+                  <div class="profile-social">
+                    <i class="fa fa-facebook social-icons"></i>
+                    <i class="fa fa-envelope social-icons"></i>
+                    <i class="fa fa-linkedin social-icons"></i>
+                  </div>
+                  <div class="profile-about">
+                    <h5 data-nickname="haha.launch"><span>Shreyas Kumar Sharma</span></h5>
+                    <p>AI Planning Head</p>
+                  </div>
+              </div>
+            </div>
+            <div class="cell large-2 medium-3 small-4">
+              <div class="card profile">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/45.jpeg)">
+                  </div>
+                  <div class="profile-social">
+                    <i class="fa fa-facebook social-icons"></i>
+                    <i class="fa fa-envelope social-icons"></i>
+                    <i class="fa fa-linkedin social-icons"></i>
+                  </div>
+                  <div class="profile-about">
+                    <h5 data-nickname="Khaitan Mapping"><span>Shivesh Khaitan</span></h5>
+                    <p>AI Planning Member</p>
+                  </div>
+              </div>
+            </div>
+            <div class="cell large-2 medium-3 small-4">
+              <div class="card profile">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/46.jpeg)">
+                  </div>
+                  <div class="profile-social">
+                    <i class="fa fa-facebook social-icons"></i>
+                    <i class="fa fa-envelope social-icons"></i>
+                    <i class="fa fa-linkedin social-icons"></i>
+                  </div>
+                  <div class="profile-about">
+                    <h5 data-nickname="Shivanshu Agarwal"><span>Shivanshu Agarwal</span></h5>
+                    <p>S&A Sensing Member</p>
+                  </div>
+              </div>
+            </div>
+            <div class="cell large-2 medium-3 small-4">
+              <div class="card profile">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/47.jpeg)">
+                  </div>
+                  <div class="profile-social">
+                    <i class="fa fa-facebook social-icons"></i>
+                    <i class="fa fa-envelope social-icons"></i>
+                    <i class="fa fa-linkedin social-icons"></i>
+                  </div>
+                  <div class="profile-about">
+                    <h5 data-nickname="Sanjay S"><span>Sanjay S</span></h5>
+                    <p>S&A Sensing Member</p>
+                  </div>
+              </div>
+            </div>
+            <div class="cell large-2 medium-3 small-4">
+              <div class="card profile">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/48.jpeg)">
+                  </div>
+                  <div class="profile-social">
+                    <i class="fa fa-facebook social-icons"></i>
+                    <i class="fa fa-envelope social-icons"></i>
+                    <i class="fa fa-linkedin social-icons"></i>
+                  </div>
+                  <div class="profile-about">
+                    <h5 data-nickname="Rohan Sakhuja"><span>Rohan Sakhuja</span></h5>
+                    <p>AI Perception Member</p>
+                  </div>
+              </div>
+            </div>
+            <div class="cell large-2 medium-3 small-4">
+              <div class="card profile">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/13.jpeg)">
+                  </div>
+                  <div class="profile-social">
+                    <i class="fa fa-facebook social-icons"></i>
+                    <i class="fa fa-envelope social-icons"></i>
+                    <i class="fa fa-linkedin social-icons"></i>
+                  </div>
+                  <div class="profile-about">
+                    <h5 data-nickname="Ludicrous Mode"><span>Sarathkrishnan Ramesh</span></h5>
+                    <p>AI Planning Member</p>
+                  </div>
+              </div>
+            </div>
+            <div class="cell large-2 medium-3 small-4">
+              <div class="card profile">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/12.jpeg)">
+                  </div>
+                  <div class="profile-social">
+                    <i class="fa fa-facebook social-icons"></i>
+                    <i class="fa fa-envelope social-icons"></i>
+                    <i class="fa fa-linkedin social-icons"></i>
+                  </div>
+                  <div class="profile-about">
+                    <h5 data-nickname="Shrijit Singh"><span>Shrijit Singh</span></h5>
+                    <p>AI Planning Member</p>
+                  </div>
+              </div>
+            </div>
+            <div class="cell large-2 medium-3 small-4">
+              <div class="card profile">
+                <div class="profile-image" style="background-image: url(static/images/jpg/profile/11.jpeg)">
+                  </div>
+                  <div class="profile-social">
+                    <i class="fa fa-facebook social-icons"></i>
+                    <i class="fa fa-envelope social-icons"></i>
+                    <i class="fa fa-linkedin social-icons"></i>
+                  </div>
+                  <div class="profile-about">
+                    <h5 data-nickname="Aditya V Parmar"><span>Aditya V Parmar</span></h5>
+                    <p>S&A Senior Member</p>
                   </div>
               </div>
             </div>
@@ -392,11 +722,9 @@
   </div>
 
 </body>
-<script src="/static/js/vendor/jquery.min.js"></script>
-<script src="/static/js/vendor/foundation.min.js"></script>
-<script src="/static/js/particles.min.js"></script>
-<script src="/static/js/particles-settings.min.js"></script>
-<script src="/static/js/vendor/what-input.js"></script>
+<script src="static/js/vendor/jquery.min.js"></script>
+<script src="static/js/vendor/foundation.min.js"></script>
+<script src="static/js/vendor/what-input.js"></script>
 <script>
   $(document).foundation();
 
@@ -441,6 +769,7 @@
     document.getElementById("contact-subject").value = "Sponsorship";
     document.getElementById("sponsorship-alert").classList.remove("hide");
   }
+
 </script>
 
 </html>

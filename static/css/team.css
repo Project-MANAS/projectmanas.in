@@ -207,11 +207,36 @@ button {
   padding: 0.0rem 0 0.5rem 0;
 }
 
-.profile-image img{
-  border-radius: 1000px;
+.profile-image{
+ display: block;
+ /* overflow: hidden;
+ text-indent: -9999px;
+ text-align: left; */
+ margin: 0 auto;
+  border-radius: 100px;
   width: 7rem;
   height: 7rem;
-  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% 200%;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .profile-image{
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+.profile-image:hover{
+  background-position: 0 100%;
+}
+
+.profile-image:hover ~ .profile-about h5 span{
+  display: none;
+}
+.profile-image:hover ~ .profile-about h5::after{
+  content: attr(data-nickname);
 }
 
 .profile-social{
