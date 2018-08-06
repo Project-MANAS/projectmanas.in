@@ -31,7 +31,7 @@ func init() {
 	var err error
 	store.Options = &sessions.Options{
 		Path:     "/",
-		MaxAge:   20 * 60 * 1000,
+		MaxAge:   20 * 60,
 		HttpOnly: true,
 	}
 	db, err = sql.Open("sqlite3", "./blog.db")
@@ -133,7 +133,7 @@ func blogUploadForm(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "Upload success")
 		return
 	}
-	fmt.Fprintf(w, "Error uploading")
+	fmt.Fprintf(w, "Unauthorized access")
 }
 
 func blogAdminLogin(w http.ResponseWriter, r *http.Request) {
