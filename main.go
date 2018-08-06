@@ -263,7 +263,6 @@ func main() {
 	http.HandleFunc("/blogAdminLogin/", blogAdminLogin)
 	http.HandleFunc("/adminBlogForm/", blogUploadForm)
 	http.HandleFunc("/blogs/", blogViewer)
-	http.HandleFunc("/blogs", blogViewer)
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static/"))))
 	http.HandleFunc("/", indexHandler)
 	http.HandleFunc("/teams/", teamHandler)
