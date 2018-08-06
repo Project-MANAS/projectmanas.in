@@ -2,3 +2,4 @@
 projectmanas.in
 *.db
 blog/*
+vendor/
