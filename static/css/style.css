@@ -474,6 +474,10 @@
   transform: scale(1.1);
 }
 
+.instagram-section .card{
+  box-shadow: 7px 14px 61px -12px rgba(0,0,0,0.60);
+}
+
 .instagram-section p{
   display: block;
  width: 100%;
