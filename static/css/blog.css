@@ -96,6 +96,7 @@
 .blog .card .title{
   font-variant: normal;
   font-weight: bold;
+  margin-bottom: -0.2rem;
 }
 
 .blog .card .author, .blog .card .date{
@@ -109,6 +110,7 @@
 
 .blog p{
   font-family: sans-serif;
+  margin-top: 1rem;
 }
 
 .blog .card:hover{

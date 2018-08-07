@@ -383,7 +383,7 @@ var feed = new Instafeed({
 		userId: 7034747676,
 		accessToken: '7034747676.1677ed0.0f5c068f563c43228e4162fd1fa3a696',
 		target: 'instafeed',
-    template: '<div class="cell"><div class="card"> <div class="card-section"> <img src="{{image}}"> </div> <div class="card-section"><p class="text-center">Caption</p> </div> </div></div>',
+    template: '<a href="{{link}}"<div class="cell"><div class="card"> <div class="card-section"> <img src="{{image}}"> </div> <div class="card-section"><p class="text-center">{{caption}}</p> </div> </div></div></a>',
 		resolution: 'standard_resolution',
     limit: 4,
 		after: function() {

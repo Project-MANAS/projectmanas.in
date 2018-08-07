@@ -468,6 +468,20 @@
   background: url(../images/png/bg/adam.jpg);
 }
 
+/* Instagram Feed */
+
+.instagram-section .card:hover{
+  transform: scale(1.1);
+}
+
+.instagram-section p{
+  display: block;
+ width: 100%;
+ overflow: hidden;
+ white-space: nowrap;
+ text-overflow: ellipsis;
+}
+
 /* Contact Section */
 
 .contact-section {
