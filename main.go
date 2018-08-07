@@ -11,19 +11,22 @@ import (
 	"os"
 	"strconv"
 	"strings"
+	"time"
 
 	"github.com/gorilla/sessions"
 	_ "github.com/mattn/go-sqlite3"
 	"golang.org/x/crypto/bcrypt"
 )
 
-var store = sessions.NewCookieStore([]byte("something-very-secret"))
+var store = sessions.NewCookieStore([]byte(os.Getenv("MANAS")))
 var db *sql.DB
 
 type Card struct {
 	ID      int
 	Title   string
 	Desc    string
+	Author  string
+	PubDate string
 	ImgName string
 }
 
@@ -64,27 +67,16 @@ func authentication(r *http.Request) bool {
 	}
 }
 func blogUploadForm(w http.ResponseWriter, r *http.Request) {
-	// replacer := strings.NewReplacer(",", "&comma;")
+	defer w.Header().Set("Cache-Control", "no-cache, private, max-age=0")
+	defer w.Header().Set("Expires", time.Unix(0, 0).Format(http.TimeFormat))
+	defer w.Header().Set("Pragma", "no-cache")
+	defer w.Header().Set("X-Accel-Expires", "0")
 	if r.Method == "POST" {
 		if !authentication(r) {
-			var output []byte
-			output, err := ioutil.ReadFile("adminLogin.html")
-			if err != nil {
-				fmt.Fprintf(w, "Error 404 page could not be found")
-				return
-			}
-			fmt.Fprintf(w, "%s", output)
+			http.Redirect(w, r, "/blogAdminLogin/", http.StatusNetworkAuthenticationRequired)
 			return
 		}
 		r.ParseMultipartForm(32 << 50)
-		// csvFile, _ := os.OpenFile("blogs.csv", os.O_RDWR|os.O_APPEND, 0660)
-		// defer csvFile.Close()
-		// csvReader := csv.NewReader(bufio.NewReader(csvFile))
-		// csvData, err := csvReader.ReadAll()
-		// if err != nil {
-		// 	fmt.Fprintf(w, "Error while uploading file please try again.")
-		// }
-		// rows := len(csvData)
 		rows, err := getCount()
 		if err != nil {
 			fmt.Fprintf(w, "Internal server error")
@@ -111,29 +103,21 @@ func blogUploadForm(w http.ResponseWriter, r *http.Request) {
 			io.Copy(f, file)
 		}
 
-		stmt, err := db.Prepare("INSERT INTO Blogs (Title,Descri,Image) VALUES (?,?,?)")
+		stmt, err := db.Prepare("INSERT INTO Blogs (Title,Descri,Author,PubDate,Image) VALUES (?,?,?,?,?)")
 		if err != nil {
 			fmt.Fprintf(w, "Internal Server Error")
-			fmt.Println("here1")
 			return
 		}
-		_, err = stmt.Exec(r.Form["title"][0], r.Form["desc"][0], handler.Filename)
+		_, err = stmt.Exec(r.Form["title"][0], r.Form["desc"][0], r.Form["author"][0], r.Form["pubDate"][0], handler.Filename)
 		if err != nil {
 			fmt.Fprintf(w, "Internal Server Error")
 			fmt.Println(err)
 			return
 		}
-		// vals := []string{strconv.Itoa(rows + 1), replacer.Replace(r.Form["title"][0]), replacer.Replace(r.Form["desc"][0]), replacer.Replace(handler.Filename)}
-		// csvData = append(csvData, vals)
-		// writer := csv.NewWriter(csvFile)
-		// defer writer.Flush()
-		// for _, val := range csvData {
-		// 	_ = writer.Write(val)
-		// }
 		fmt.Fprintf(w, "Upload success")
 		return
 	}
-	fmt.Fprintf(w, "Unauthorized access")
+	http.Redirect(w, r, "/blogAdminLogin/", http.StatusNetworkAuthenticationRequired)
 }
 
 func blogAdminLogin(w http.ResponseWriter, r *http.Request) {
@@ -207,23 +191,22 @@ func blogLister(w http.ResponseWriter, r *http.Request) {
 	var blogID int
 	var title string
 	var desc string
+	var author string
+	var pubDate string
 	var imageName string
+	layout := "2006-01-02"
 	for rows.Next() {
-		err := rows.Scan(&blogID, &title, &desc, &imageName)
+		err := rows.Scan(&blogID, &title, &desc, &author, &pubDate, &imageName)
 		if err != nil {
 			fmt.Fprintf(w, "Internal server error")
 			return
 		}
-		c := Card{ID: blogID, Title: title, Desc: desc, ImgName: imageName}
+		t, _ := time.Parse(layout, pubDate)
+
+		c := Card{ID: blogID, Title: title, Desc: desc, Author: author, PubDate: t.Format("January 02,2006"), ImgName: imageName}
 		cards = append(cards, c)
 	}
-	// len, err := getCount()
-	// fmt.Println(len, err)
-	// if err != nil {
-	// 	fmt.Fprintf(w, "Internal server error")
-	// }
 	t, _ := template.ParseFiles("template/blog.html")
-	// fmt.Fprintf(w, "%s", strconv.Itoa(len))
 	t.Execute(w, cards)
 }
 
@@ -263,7 +246,6 @@ func main() {
 	http.HandleFunc("/blogAdminLogin/", blogAdminLogin)
 	http.HandleFunc("/adminBlogForm/", blogUploadForm)
 	http.HandleFunc("/blogs/", blogViewer)
-	http.HandleFunc("/blogs", blogViewer)
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static/"))))
 	http.HandleFunc("/", indexHandler)
 	http.HandleFunc("/teams/", teamHandler)
