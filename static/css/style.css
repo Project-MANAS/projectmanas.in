@@ -100,6 +100,11 @@
   }
 }
 
+/* Navigation Bar */
+.top-bar-title{
+  opacity: 0;
+}
+
 /* Main Container */
 
 #main-container {
@@ -467,6 +472,7 @@
 
 .contact-section {
   background: url(../images/png/bg/map.jpg);
+  margin-top: 0;
   padding-bottom: 0.65rem;
 }
 
