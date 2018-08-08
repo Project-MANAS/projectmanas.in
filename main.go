@@ -3,7 +3,6 @@ package main
 import (
 	"database/sql"
 	"fmt"
-	"html/template"
 	"io"
 	"io/ioutil"
 	"log"
@@ -11,6 +10,7 @@ import (
 	"os"
 	"strconv"
 	"strings"
+	"text/template"
 	"time"
 
 	"github.com/gorilla/sessions"
@@ -82,14 +82,14 @@ func blogUploadForm(w http.ResponseWriter, r *http.Request) {
 			fmt.Fprintf(w, "Internal server error")
 			return
 		}
-		err = os.MkdirAll("blog/blog_"+strconv.Itoa(rows), os.ModePerm)
+		err = os.MkdirAll("blog/blog_"+strconv.Itoa(rows+1), os.ModePerm)
 		if err != nil {
 			fmt.Fprintf(w, "Error while uploading file please try again.")
 			return
 		}
 		file, _, _ := r.FormFile("markdown")
 		defer file.Close()
-		f, _ := os.OpenFile("blog/blog_"+strconv.Itoa(rows)+"/body.md", os.O_WRONLY|os.O_CREATE, 0666)
+		f, _ := os.OpenFile("blog/blog_"+strconv.Itoa(rows+1)+"/body.md", os.O_WRONLY|os.O_CREATE, 0666)
 		defer f.Close()
 		io.Copy(f, file)
 		_, handler, _ := r.FormFile("image0")
@@ -211,17 +211,46 @@ func blogLister(w http.ResponseWriter, r *http.Request) {
 }
 
 func blogViewer(w http.ResponseWriter, r *http.Request) {
-	title := r.URL.Path[len("/blogs/"):]
-	if len(title) == 0 {
+	layout := "2006-01-02"
+	id := r.URL.Path[len("/blogs/"):]
+	if len(id) == 0 {
 		blogLister(w, r)
 		return
 	}
-	p, err := loadPage(title)
+	iID, err := strconv.Atoi(id)
 	if err != nil {
-		fmt.Fprintf(w, "<h1>%s</h1>", "Error 404 unable to find the blog")
-	} else {
-		fmt.Fprintf(w, "%s", p.Body)
+		http.Redirect(w, r, "/blogs/", http.StatusBadRequest)
+		return
 	}
+	stmt, err := db.Prepare("SELECT Title,Author,PubDate,Image FROM Blogs WHERE ID = ?")
+	if err != nil {
+		http.Redirect(w, r, "/blogs/", http.StatusBadRequest)
+		return
+	}
+	rows, err := stmt.Query(iID)
+	var title string
+	var author string
+	var pubDate string
+	var image string
+	for rows.Next() {
+
+		err := rows.Scan(&title, &author, &pubDate, &image)
+		if err != nil {
+			http.Redirect(w, r, "/blogs/", http.StatusNotFound)
+			return
+		}
+		tTime, _ := time.Parse(layout, pubDate)
+		p, err := loadPage(iID, title, image, tTime.Format("January 02,2006"), author)
+		if err != nil {
+			http.Redirect(w, r, "/blogs/", http.StatusNotFound)
+			return
+		}
+		t, _ := template.ParseFiles("template/post.html")
+		// fmt.Fprintf(w, "%s", p.Body)
+		t.Execute(w, p)
+
+	}
+
 }
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
