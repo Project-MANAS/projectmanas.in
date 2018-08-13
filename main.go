@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"database/sql"
 	"fmt"
 	"io"
@@ -18,7 +19,7 @@ import (
 	"golang.org/x/crypto/bcrypt"
 )
 
-var store = sessions.NewCookieStore([]byte(os.Getenv("MANAS")))
+var store = sessions.NewCookieStore([]byte("dheeraj-mcdhee"))
 var db *sql.DB
 
 type Card struct {
@@ -42,6 +43,20 @@ func init() {
 		os.Exit(1)
 	}
 }
+func getUserAndPasswd()(string, string){
+	file, err:=os.Open("sensitive.txt")
+	if err !=nil {
+		fmt.Println("Sensitive info cannot be reached.")
+	}
+	defer file.Close()
+	scanner := bufio.NewScanner(file)
+	scanner.Scan()
+	user:=scanner.Text()
+	scanner.Scan()
+	pass:=scanner.Text()
+	return user,pass
+}
+
 func authentication(r *http.Request) bool {
 	session, err := store.Get(r, "session-name")
 	if err != nil {
@@ -58,8 +73,7 @@ func authentication(r *http.Request) bool {
 		return false
 	}
 	fmt.Println(pass)
-	userVerify := os.Getenv("USER")
-	passVerify := os.Getenv("PASS")
+	userVerify, passVerify :=getUserAndPasswd()
 	if strings.Compare(user, userVerify) == 0 && strings.Compare(pass, passVerify) == 0 {
 		return true
 	} else {
@@ -134,8 +148,7 @@ func blogAdminLogin(w http.ResponseWriter, r *http.Request) {
 		r.ParseForm()
 		pass := r.Form["password"][0]
 		username := r.Form["username"][0]
-		userVerify := os.Getenv("USER")
-		passVerify := os.Getenv("PASS")
+		userVerify, passVerify :=getUserAndPasswd()
 		passErr := bcrypt.CompareHashAndPassword([]byte(passVerify), []byte(pass))
 		userErr := bcrypt.CompareHashAndPassword([]byte(userVerify), []byte(username))
 		if passErr == nil && userErr == nil {
