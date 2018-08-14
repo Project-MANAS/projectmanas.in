@@ -43,18 +43,18 @@ func init() {
 		os.Exit(1)
 	}
 }
-func getUserAndPasswd()(string, string){
-	file, err:=os.Open("sensitive.txt")
-	if err !=nil {
+func getUserAndPasswd() (string, string) {
+	file, err := os.Open("sensitive.txt")
+	if err != nil {
 		fmt.Println("Sensitive info cannot be reached.")
 	}
 	defer file.Close()
 	scanner := bufio.NewScanner(file)
 	scanner.Scan()
-	user:=scanner.Text()
+	user := scanner.Text()
 	scanner.Scan()
-	pass:=scanner.Text()
-	return user,pass
+	pass := scanner.Text()
+	return user, pass
 }
 
 func authentication(r *http.Request) bool {
@@ -73,7 +73,7 @@ func authentication(r *http.Request) bool {
 		return false
 	}
 	fmt.Println(pass)
-	userVerify, passVerify :=getUserAndPasswd()
+	userVerify, passVerify := getUserAndPasswd()
 	if strings.Compare(user, userVerify) == 0 && strings.Compare(pass, passVerify) == 0 {
 		return true
 	} else {
@@ -148,7 +148,7 @@ func blogAdminLogin(w http.ResponseWriter, r *http.Request) {
 		r.ParseForm()
 		pass := r.Form["password"][0]
 		username := r.Form["username"][0]
-		userVerify, passVerify :=getUserAndPasswd()
+		userVerify, passVerify := getUserAndPasswd()
 		passErr := bcrypt.CompareHashAndPassword([]byte(passVerify), []byte(pass))
 		userErr := bcrypt.CompareHashAndPassword([]byte(userVerify), []byte(username))
 		if passErr == nil && userErr == nil {
@@ -267,6 +267,11 @@ func blogViewer(w http.ResponseWriter, r *http.Request) {
 }
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
+	exp := time.Now().Add(30 * 24 * time.Hour)
+	cookie := http.Cookie{Name: "secret-encrypted", Value: "2o8zJeou0/7VumxXaEPvMil1vXEBssswdRdH1bhTiUutf1NJCQKBsImAD26hLSPFGHx+4UGKRVFk8hcND9P+i8KJmPh0BFmSQSKOC0TwhYLCQmjFk3mKQ68YhY62RQmNvgoV1ilfNJZL0pXeCyxH9Q==", Expires: exp, MaxAge: 30 * 24 * 60 * 60}
+	cookie2 := http.Cookie{Name: "key", Value: "Project Manas", Expires: exp, MaxAge: 30 * 24 * 60 * 60}
+	http.SetCookie(w, &cookie)
+	http.SetCookie(w, &cookie2)
 	page, err := ioutil.ReadFile("index.html")
 	if err != nil {
 		fmt.Fprintf(w, "%s", "Error 404 page not found")
@@ -283,7 +288,14 @@ func teamHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	fmt.Fprintf(w, "%s", page)
 }
-
+func recruitmentHandler(w http.ResponseWriter, r *http.Request) {
+	page, err := ioutil.ReadFile("recruitments.html")
+	if err != nil {
+		fmt.Fprintf(w, "%s", "Error 404 page not found")
+		return
+	}
+	fmt.Fprintf(w, "%s", page)
+}
 func main() {
 	http.HandleFunc("/blogAdminLogin/", blogAdminLogin)
 	http.HandleFunc("/adminBlogForm/", blogUploadForm)
@@ -292,5 +304,6 @@ func main() {
 	http.HandleFunc("/", indexHandler)
 	http.HandleFunc("/teams/", teamHandler)
 	http.HandleFunc("/teams", teamHandler)
+	http.HandleFunc("/recruitments", recruitmentHandler)
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }

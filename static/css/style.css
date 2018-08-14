@@ -27,6 +27,7 @@
 .home-center {
   background: linear-gradient(to top, rgba(252, 173, 63, 0.85) 22%, rgba(254, 88, 49, 0.85) 100%);
   clip-path: polygon(0% 100%, 100% 0%, -5% 0%);
+  -moz-`clip-path: polygon(0% 100%, 100% 0%, -5% 0%);
   -webkit-clip-path: polygon(0% 100%, 100% 0%, -5% 0%);
 }
 
@@ -44,6 +45,39 @@
     filter: drop-shadow(0px 0px 10px #f0f0f0);
   }
 }
+
+
+@media screen and (max-width: 63.9375em) {
+  #home-container {
+    width: 100vw;
+  }
+}
+
+/* Navigation Bar */
+.top-bar-title{
+  opacity: 0;
+}
+
+/* Main Container */
+
+#main-container {
+  position: relative;
+  z-index: 2;
+  top: calc(100vh - 70px)
+}
+
+
+/* About Section */
+
+.about-section {
+  padding-bottom: 2rem;
+}
+
+.about-section p {
+  margin: auto;
+  width: 75%;
+}
+
 
 #home-logo {
   animation-name: breathe;
@@ -89,46 +123,14 @@
     margin-left: 20vw;
     margin-right: 20vw;
   }
-  #main {
+  #main-container {
     top: calc(100vh - 61px)
   }
 }
 
-@media screen and (max-width: 63.9375em) {
-  #home-container {
-    width: 100vw;
-  }
-}
-
-/* Navigation Bar */
-.top-bar-title{
-  opacity: 0;
-}
-
-/* Main Container */
-
-#main-container {
-  position: relative;
-  z-index: 2;
-  top: calc(100vh - 70px)
-}
-
-
-/* About Section */
-
-.about-section {
-  padding-bottom: 2rem;
-}
-
-.about-section p {
-  margin: auto;
-  width: 75%;
-}
-
-
 /* Sponsor Section */
 
-.sponsor-logo {
+.spnsr-logo {
   width: 100%;
   height: 6rem;
   background-repeat: no-repeat;
@@ -136,7 +138,7 @@
   transition: all 0.3s;
 }
 
-.sponsor-logo:hover {
+.spnsr-logo:hover {
   background-repeat: no-repeat;
   background-size: cover;
   transform: scale(1.1);
@@ -420,28 +422,13 @@
   }
 }
 
-@media screen and (min-width: 33em) and (max-width: 39.9375em) {
-  .project-card {
-    height: 16rem;
-  }
-}
 
-@media screen and (min-width: 28em) and (max-width: 32.9375em) {
+@media screen and (max-width: 39.9375em) {
   .project-card {
-    height: 13rem;
-  }
-}
-
-@media screen and (min-width: 26em) and (max-width: 32.9375em) {
-  .project-card {
-    height: 12rem;
-  }
-}
-
-@media screen and (max-width: 25.9375em) {
-  .project-card {
-    height: 22vh;
-  }
+    height: 18rem;
+    width: 18rem;
+    margin: 1rem auto;
+    }
 }
 
 #wall-e {
