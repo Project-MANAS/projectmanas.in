@@ -45,6 +45,39 @@
   }
 }
 
+
+@media screen and (max-width: 63.9375em) {
+  #home-container {
+    width: 100vw;
+  }
+}
+
+/* Navigation Bar */
+.top-bar-title{
+  opacity: 0;
+}
+
+/* Main Container */
+
+#main-container {
+  position: relative;
+  z-index: 2;
+  top: calc(100vh - 70px)
+}
+
+
+/* About Section */
+
+.about-section {
+  padding-bottom: 2rem;
+}
+
+.about-section p {
+  margin: auto;
+  width: 75%;
+}
+
+
 #home-logo {
   animation-name: breathe;
   animation-duration: 2s;
@@ -89,42 +122,10 @@
     margin-left: 20vw;
     margin-right: 20vw;
   }
-  #main {
-    top: calc(100vh - 60.89px)
+  #main-container {
+    top: calc(100vh - 61px)
   }
 }
-
-@media screen and (max-width: 63.9375em) {
-  #home-container {
-    width: 100vw;
-  }
-}
-
-/* Navigation Bar */
-.top-bar-title{
-  opacity: 0;
-}
-
-/* Main Container */
-
-#main-container {
-  position: relative;
-  z-index: 2;
-  top: calc(100vh - 70px)
-}
-
-
-/* About Section */
-
-.about-section {
-  padding-bottom: 2rem;
-}
-
-.about-section p {
-  margin: auto;
-  width: 75%;
-}
-
 
 /* Sponsor Section */
 
