@@ -288,7 +288,14 @@ func teamHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	fmt.Fprintf(w, "%s", page)
 }
-
+func recruitmentHandler(w http.ResponseWriter, r *http.Request) {
+	page, err := ioutil.ReadFile("recruitments.html")
+	if err != nil {
+		fmt.Fprintf(w, "%s", "Error 404 page not found")
+		return
+	}
+	fmt.Fprintf(w, "%s", page)
+}
 func main() {
 	http.HandleFunc("/blogAdminLogin/", blogAdminLogin)
 	http.HandleFunc("/adminBlogForm/", blogUploadForm)
@@ -297,5 +304,6 @@ func main() {
 	http.HandleFunc("/", indexHandler)
 	http.HandleFunc("/teams/", teamHandler)
 	http.HandleFunc("/teams", teamHandler)
+	http.HandleFunc("/recruitments", recruitmentHandler)
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
