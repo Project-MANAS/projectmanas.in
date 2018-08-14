@@ -11,8 +11,9 @@
 /* Recruitment Challenge */
 .divisions{
 	margin: auto;
-	width: 90%;
+	width: 75%;
 }
+
 .intro{
 	padding-top: 0rem;
   margin: auto;
@@ -31,12 +32,15 @@
 .ai a, .ai a:link, .ai a:visited, .ai a:hover, .ai a:active{
 	color: rgb(254, 88, 49);
 }
+.mech a, .mech a:link, .mech a:visited, .mech a:hover, .mech a:active{
+	color: rgb(254, 88, 49);
+}
 
 .note {
 	font-weight: bold;
 }
 
-.sna-scoring {
+.sna-scoring, .mech-scoring {
 	margin: auto;
 	padding-left: 2rem;
 }
