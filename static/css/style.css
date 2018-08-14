@@ -129,7 +129,7 @@
 
 /* Sponsor Section */
 
-.sponsor-logo {
+.spnsr-logo {
   width: 100%;
   height: 6rem;
   background-repeat: no-repeat;
@@ -137,7 +137,7 @@
   transition: all 0.3s;
 }
 
-.sponsor-logo:hover {
+.spnsr-logo:hover {
   background-repeat: no-repeat;
   background-size: cover;
   transform: scale(1.1);
