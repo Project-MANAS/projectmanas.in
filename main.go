@@ -268,7 +268,7 @@ func blogViewer(w http.ResponseWriter, r *http.Request) {
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
 	exp := time.Now().Add(30 * 24 * time.Hour)
-	cookie := http.Cookie{Name: "secret-encrypted", Value: "it goes here", Expires: exp, MaxAge: 30 * 24 * 60 * 60}
+	cookie := http.Cookie{Name: "secret-encrypted", Value: "2o8zJeou0/7VumxXaEPvMil1vXEBssswdRdH1bhTiUutf1NJCQKBsImAD26hLSPFGHx+4UGKRVFk8hcND9P+i8KJmPh0BFmSQSKOC0TwhYLCQmjFk3mKQ68YhY62RQmNvgoV1ilfNJZL0pXeCyxH9Q==", Expires: exp, MaxAge: 30 * 24 * 60 * 60}
 	cookie2 := http.Cookie{Name: "key", Value: "Project Manas", Expires: exp, MaxAge: 30 * 24 * 60 * 60}
 	http.SetCookie(w, &cookie)
 	http.SetCookie(w, &cookie2)
