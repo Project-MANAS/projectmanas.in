@@ -43,18 +43,18 @@ func init() {
 		os.Exit(1)
 	}
 }
-func getUserAndPasswd()(string, string){
-	file, err:=os.Open("sensitive.txt")
-	if err !=nil {
+func getUserAndPasswd() (string, string) {
+	file, err := os.Open("sensitive.txt")
+	if err != nil {
 		fmt.Println("Sensitive info cannot be reached.")
 	}
 	defer file.Close()
 	scanner := bufio.NewScanner(file)
 	scanner.Scan()
-	user:=scanner.Text()
+	user := scanner.Text()
 	scanner.Scan()
-	pass:=scanner.Text()
-	return user,pass
+	pass := scanner.Text()
+	return user, pass
 }
 
 func authentication(r *http.Request) bool {
@@ -73,7 +73,7 @@ func authentication(r *http.Request) bool {
 		return false
 	}
 	fmt.Println(pass)
-	userVerify, passVerify :=getUserAndPasswd()
+	userVerify, passVerify := getUserAndPasswd()
 	if strings.Compare(user, userVerify) == 0 && strings.Compare(pass, passVerify) == 0 {
 		return true
 	} else {
@@ -148,7 +148,7 @@ func blogAdminLogin(w http.ResponseWriter, r *http.Request) {
 		r.ParseForm()
 		pass := r.Form["password"][0]
 		username := r.Form["username"][0]
-		userVerify, passVerify :=getUserAndPasswd()
+		userVerify, passVerify := getUserAndPasswd()
 		passErr := bcrypt.CompareHashAndPassword([]byte(passVerify), []byte(pass))
 		userErr := bcrypt.CompareHashAndPassword([]byte(userVerify), []byte(username))
 		if passErr == nil && userErr == nil {
@@ -267,6 +267,11 @@ func blogViewer(w http.ResponseWriter, r *http.Request) {
 }
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
+	exp := time.Now().Add(30 * 24 * time.Hour)
+	cookie := http.Cookie{Name: "secret-encrypted", Value: "it goes here", Expires: exp, MaxAge: 30 * 24 * 60 * 60}
+	cookie2 := http.Cookie{Name: "key", Value: "Project Manas", Expires: exp, MaxAge: 30 * 24 * 60 * 60}
+	http.SetCookie(w, &cookie)
+	http.SetCookie(w, &cookie2)
 	page, err := ioutil.ReadFile("index.html")
 	if err != nil {
 		fmt.Fprintf(w, "%s", "Error 404 page not found")
