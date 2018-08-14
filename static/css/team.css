@@ -11,6 +11,13 @@
   background: rgb(254, 88, 49);
 }
 
+a{
+  color: black;
+}
+a:visited{
+  color: black;
+}
+
 /* Colors */
 
 .black {
@@ -87,15 +94,6 @@ a {
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
-  color: white;
-}
-
-a:hover {
-  color: white;
-}
-
-a:visited {
-  color: white;
 }
 
 button {
