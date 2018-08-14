@@ -11,8 +11,9 @@
 /* Recruitment Challenge */
 .divisions{
 	margin: auto;
-	width: 90%;
+	width: 75%;
 }
+
 .intro{
 	padding-top: 0rem;
   margin: auto;
@@ -24,7 +25,14 @@
   margin: auto;
 }
 
-a, a:visited {
+.contact a, .contact a:link, .contact a:visited, .contact a:hover, .contact a:active{
+	color: rgb(254, 88, 49);
+}
+
+.ai a, .ai a:link, .ai a:visited, .ai a:hover, .ai a:active{
+	color: rgb(254, 88, 49);
+}
+.mech a, .mech a:link, .mech a:visited, .mech a:hover, .mech a:active{
 	color: rgb(254, 88, 49);
 }
 
@@ -32,3 +40,21 @@ a, a:visited {
 	font-weight: bold;
 }
 
+.sna-scoring, .mech-scoring {
+	margin: auto;
+	padding-left: 2rem;
+}
+
+.embedded2-img, .pcb-img {
+	width: 75%;
+}
+
+#sna-table {
+	text-align: center;
+	width: cover;
+}
+
+.contact td{
+	text-align: center;
+	font-family: futura;
+}
