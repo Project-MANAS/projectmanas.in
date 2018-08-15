@@ -1,1 +1,82 @@
-#main-container{position:relative;z-index:2;background-color:#000}#navigation-bar{background-color:rgba(0,0,0,.8)}.divisions{margin:auto;width:75%}.intro{padding-top:0;margin:auto}.ai,.mech,.sna{padding-top:1rem;margin:auto}.ai a,.ai a:active,.ai a:hover,.ai a:link,.ai a:visited,.contact a,.contact a:active,.contact a:hover,.contact a:link,.contact a:visited,.mech a,.mech a:active,.mech a:hover,.mech a:link,.mech a:visited{color:#fe5831}.note{font-weight:700}.mech-scoring,.sna-scoring{margin:auto;padding-left:2rem}.embedded2-img,.pcb-img{width:75%}#sna-table{text-align:center;width:cover}.contact td{text-align:center;font-family:futura}
+#main-container {
+    position: relative;
+    z-index: 2;
+    background-color: #000
+}
+
+#navigation-bar {
+    background-color: rgba(0, 0, 0, .8)
+}
+
+.challenge-content, .challenge-intro {
+    margin: auto;
+    width: 75%;
+}
+
+.challenge-intro{
+  padding: 1em 0 1rem 0;
+}
+.challenge-intro h1{
+  padding: 0rem 0 1rem 0;
+}
+
+
+.challenge-content{
+  padding: 1rem 0 1rem 0;
+}
+.challenge-content h2{
+  padding: 1rem 0 1rem 0;
+}
+.contact{
+  text-align: center;
+}
+.contact span{
+  text-align: right;
+}
+
+.contact p{
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 3rem 0 3rem;
+}
+
+.intro {
+    padding-top: 0;
+    margin: auto
+}
+
+
+.challenges a {
+    color: #fe5831;
+}
+.challenges a:visited {
+    color: #fe5831;
+}
+.challenges a:hover{
+  color: #fe5831;
+  font-weight: 600;
+}
+
+.note {
+    font-weight: 700
+}
+
+.embedded2-img,
+.pcb-img {
+    width: 75%
+}
+#mech-challenge img{
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+#sna-table {
+    text-align: center;
+}
+
+/* .contact td {
+    text-align: center;
+    font-family: futura
+} */
