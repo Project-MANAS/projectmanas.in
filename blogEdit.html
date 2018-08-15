@@ -21,9 +21,7 @@
 </script>
 
 <body>
-    <a href="/editBlogs/"><button>Delete Existing</button></a>
-    <br/>
-    <form action="/adminBlogForm/" method="POST" enctype="multipart/form-data" id="uploadForm">
+    <form action="/editBlogs/{{.ID}}" method="POST" enctype="multipart/form-data" id="uploadForm">
         <label>
             Title:
             <input type="text" name="title" />
