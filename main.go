@@ -30,6 +30,10 @@ type Card struct {
 	PubDate string
 	ImgName string
 }
+type List struct {
+	ID    int
+	Title string
+}
 
 func init() {
 	var err error
@@ -72,13 +76,12 @@ func authentication(r *http.Request) bool {
 	if !ok {
 		return false
 	}
-	fmt.Println(pass)
 	userVerify, passVerify := getUserAndPasswd()
 	if strings.Compare(user, userVerify) == 0 && strings.Compare(pass, passVerify) == 0 {
 		return true
-	} else {
-		return false
 	}
+	return false
+
 }
 func blogUploadForm(w http.ResponseWriter, r *http.Request) {
 	defer w.Header().Set("Cache-Control", "no-cache, private, max-age=0")
@@ -91,22 +94,32 @@ func blogUploadForm(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 		r.ParseMultipartForm(32 << 50)
-		rows, err := getCount()
+		_, handler, _ := r.FormFile("image0")
+		stmt, err := db.Prepare("INSERT INTO Blogs (Title,Descri,Author,PubDate,Image) VALUES (?,?,?,?,?)")
+		if err != nil {
+			fmt.Fprintf(w, "Internal Server Error")
+			return
+		}
+		res, err := stmt.Exec(r.Form["title"][0], r.Form["desc"][0], r.Form["author"][0], r.Form["pubDate"][0], handler.Filename)
+		if err != nil {
+			fmt.Fprintf(w, "Internal Server Error")
+			return
+		}
+		rows, err := res.LastInsertId()
 		if err != nil {
 			fmt.Fprintf(w, "Internal server error")
 			return
 		}
-		err = os.MkdirAll("blog/blog_"+strconv.Itoa(rows+1), os.ModePerm)
+		err = os.MkdirAll("blog/blog_"+strconv.FormatInt(rows, 10), os.ModePerm)
 		if err != nil {
 			fmt.Fprintf(w, "Error while uploading file please try again.")
 			return
 		}
 		file, _, _ := r.FormFile("markdown")
 		defer file.Close()
-		f, _ := os.OpenFile("blog/blog_"+strconv.Itoa(rows+1)+"/body.md", os.O_WRONLY|os.O_CREATE, 0666)
+		f, _ := os.OpenFile("blog/blog_"+strconv.FormatInt(rows, 10)+"/body.md", os.O_WRONLY|os.O_CREATE, 0666)
 		defer f.Close()
 		io.Copy(f, file)
-		_, handler, _ := r.FormFile("image0")
 		imageLen, _ := strconv.Atoi(r.Form["imageCount"][0])
 		for i := 0; i < imageLen; i++ {
 			file, handler, err := r.FormFile("image" + strconv.Itoa(i))
@@ -116,26 +129,68 @@ func blogUploadForm(w http.ResponseWriter, r *http.Request) {
 			f, _ := os.OpenFile("static/"+handler.Filename, os.O_WRONLY|os.O_CREATE, 0666)
 			io.Copy(f, file)
 		}
-
-		stmt, err := db.Prepare("INSERT INTO Blogs (Title,Descri,Author,PubDate,Image) VALUES (?,?,?,?,?)")
-		if err != nil {
-			fmt.Fprintf(w, "Internal Server Error")
-			return
-		}
-		_, err = stmt.Exec(r.Form["title"][0], r.Form["desc"][0], r.Form["author"][0], r.Form["pubDate"][0], handler.Filename)
-		if err != nil {
-			fmt.Fprintf(w, "Internal Server Error")
-			fmt.Println(err)
-			return
-		}
 		fmt.Fprintf(w, "Upload success")
 		return
 	}
 	http.Redirect(w, r, "/blogAdminLogin/", http.StatusNetworkAuthenticationRequired)
 }
+func editBlogs(w http.ResponseWriter, r *http.Request) {
+	if !authentication(r) {
+		http.Redirect(w, r, "/blogAdminLogin/", http.StatusNetworkAuthenticationRequired)
+		return
+	}
+	ID := r.URL.Path[len("/editBlogs/"):]
+	if len(ID) == 0 {
+		rows, err := db.Query("SELECT ID,Title FROM Blogs;")
+		if err != nil {
+			http.Redirect(w, r, "/blogAdminLogin/", http.StatusBadRequest)
+			return
+		}
+		if rows != nil {
+			var id int
+			var title string
+			list := make([]List, 0)
+			for rows.Next() {
+				err := rows.Scan(&id, &title)
+				if err != nil {
+					http.Redirect(w, r, "/blogAdminLogin/", http.StatusNotFound)
+					return
+				}
+				if err != nil {
+					http.Redirect(w, r, "/blogAdminLogin/", http.StatusNotFound)
+					return
+				}
+				l := List{ID: id, Title: title}
+				list = append(list, l)
+				t, err := template.ParseFiles("editList.html")
+				t.Execute(w, list)
+
+			}
+		}
+		return
+	}
+	stmt, err := db.Prepare("DELETE FROM Blogs WHERE ID=?;")
+	id, err := strconv.Atoi(ID)
+	if err != nil {
+		fmt.Fprintf(w, "Stop snooping around.")
+		return
+	}
+	_, err = stmt.Exec(id)
+	if err != nil {
+		fmt.Fprintf(w, "Internal server error")
+		return
+	}
+
+	err = os.RemoveAll("blog/blog_" + ID)
+	if err != nil {
+		fmt.Fprintf(w, "Internal server error")
+		return
+	}
+	fmt.Fprintf(w, "Successfully deleted the post.")
+	return
+}
 
 func blogAdminLogin(w http.ResponseWriter, r *http.Request) {
-	fmt.Println(r.Method)
 	if r.Method == "GET" {
 		var output []byte
 		output, err := ioutil.ReadFile("adminLogin.html")
@@ -178,20 +233,6 @@ func blogAdminLogin(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
-}
-func getCount() (int, error) {
-	rows, err := db.Query("SELECT count(*) AS count FROM Blogs")
-	defer rows.Close()
-	if err != nil {
-		return 0, err
-	}
-	rows.Next()
-	var len int
-	err = rows.Scan(&len)
-	if err != nil {
-		return 0, err
-	}
-	return len, nil
 }
 func blogLister(w http.ResponseWriter, r *http.Request) {
 	cards := make([]Card, 0)
@@ -299,6 +340,7 @@ func recruitmentHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/blogAdminLogin/", blogAdminLogin)
 	http.HandleFunc("/adminBlogForm/", blogUploadForm)
+	http.HandleFunc("/editBlogs/", editBlogs)
 	http.HandleFunc("/blogs/", blogViewer)
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static/"))))
 	http.HandleFunc("/", indexHandler)
