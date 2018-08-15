@@ -32,11 +32,12 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107451406-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'UA-107451406-1');
 </script>
+
 <body>
 
   <!-- Navigation Bar -->
@@ -58,13 +59,30 @@
         </div>
         <div class="top-bar-right">
           <ul class="dropdown vertical medium-horizontal menu transparent" data-magellan data-options="animationEasing: linear; animationDuration: 500; threshold: 0;">
-            <li><a class="nav-link" href="/">Home</a></li>
-            <li><a class="nav-link" href="/#about">About Us</a></li>
-            <li><a class="nav-link" href="/teams">Team</a></li>
-            <li><a class="nav-link" href="/#sponsors">Sponsors</a></li>
-            <li><a class="nav-link" href="/#projects">Projects</a></li>
-            <li><a class="nav-link" href="/blogs">Blog</a></li>
-            <li><a class="nav-link" href="/#contact">Contact Us</a></li>
+            <li>
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li>
+              <a class="nav-link" href="/#about">About Us</a>
+            </li>
+            <li>
+              <a class="nav-link" href="/teams">Team</a>
+            </li>
+            <li>
+              <a class="nav-link" href="/#sponsors">Sponsors</a>
+            </li>
+            <li>
+              <a class="nav-link" href="/#projects">Projects</a>
+            </li>
+            <li>
+              <a class="nav-link" href="/recruitments">Recruitments</a>
+            </li>
+            <li>
+              <a class="nav-link" href="/blogs">Blog</a>
+            </li>
+            <li>
+              <a class="nav-link" href="/#contact">Contact Us</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -76,43 +94,44 @@
     <!-- Header -->
     <section class="header text-center">
       <div class="header-content">
-      <div class="site-title-content">
-        <div class="blog-title">
+        <div class="site-title-content">
+          <div class="blog-title">
             <h1 class="black">MANAS BLOG</h1>
-        </div>
-        <div class="blog-description">
+          </div>
+          <div class="blog-description">
             <h4>Decoding bits for you</h4>
+          </div>
+        </div>
+        <div class="binary-backround">
+          <div class="num">01001001010001010100001101010011010001010101001101110101011000110110101101110011</div>
+        </div>
+        <div class="buzz-background">
+          <div class="buzz">ProjectManasArtificialIntelligenceRoboticsAutonomusBotIGVCSelfDrivingCar</div>
         </div>
       </div>
-      <div class="binary-backround">
-        <div class="num">01001001010001010100001101010011010001010101001101110101011000110110101101110011</div>
-      </div>
-      <div class="buzz-background">
-        <div class="buzz">ProjectManasArtificialIntelligenceRoboticsAutonomusBotIGVCSelfDrivingCar</div>
-      </div>
-    </div>
     </section>
 
 
     <section class="blog">
-        <div class="grid-x small-up-1 medium-up-2 large-up-3">
-          {{range .}}
-            <div class="cell">
-              <a href="/blogs/{{.ID}}">
-              <div class="card">
-                <img src="/static/{{.ImgName}}">
-                <div class="card-section">
-                  <h5 class="title">{{.Title}}</h5>
-                <span class="author">{{.Author}}</span><span class="date">{{.PubDate}}</span>
-                  <p>
-                    {{.Desc}}
-                  </p>
-                </div>
+      <div class="grid-x small-up-1 medium-up-2 large-up-3">
+        {{range .}}
+        <div class="cell">
+          <a href="/blogs/{{.ID}}">
+            <div class="card">
+              <img src="/static/{{.ImgName}}">
+              <div class="card-section">
+                <h5 class="title">{{.Title}}</h5>
+                <span class="author">{{.Author}}</span>
+                <span class="date">{{.PubDate}}</span>
+                <p>
+                  {{.Desc}}
+                </p>
               </div>
-            </a>
             </div>
-          {{end}}
+          </a>
         </div>
+        {{end}}
+      </div>
     </section>
 
     <!-- Footer -->
@@ -129,10 +148,10 @@
         </div>
         <div class="cell large-4 text-right">
           <small>
-                &copy;
-                <span id="year"></span>
-                Project MANAS
-              </small>
+            &copy;
+            <span id="year"></span>
+            Project MANAS
+          </small>
         </div>
       </div>
     </div>
@@ -147,7 +166,7 @@
 
   $(document).foundation();
 
-  $(window).on('scroll', function() {
+  $(window).on('scroll', function () {
     var pixs = $(document).scrollTop()
     pixs = pixs / 100;
     if (pixs / 4 > 0.8) {
@@ -166,8 +185,8 @@
     });
   });
 
-  $(function() {
-    $('.nav-link').on('click', function() {
+  $(function () {
+    $('.nav-link').on('click', function () {
       if (!Foundation.MediaQuery.atLeast('large')) {
         $("#navigation-bar").css({
           "display": "none"
@@ -176,45 +195,45 @@
     });
   });
 
-  $(document).ready(function() {
-  var lines = 20;
-  var textLength = $('#main-container').innerWidth() / 16;
+  $(document).ready(function () {
+    var lines = 20;
+    var textLength = $('#main-container').innerWidth() / 16;
 
 
-  for (i = 0; i < lines - 1; i++) {
-    $(".num").first().clone().insertAfter($(".num").first());
-    $(".buzz").first().clone().insertAfter($(".buzz").first());
-  }
+    for (i = 0; i < lines - 1; i++) {
+      $(".num").first().clone().insertAfter($(".num").first());
+      $(".buzz").first().clone().insertAfter($(".buzz").first());
+    }
 
-  buzz =["Cryptography", "AritificialIntelligence", "Robotics", "Blockchain", "DeepMind", "NeuralNetwork", "BackPropogation", "Convolution", "Tensorflow"]
+    buzz = ["Cryptography", "AritificialIntelligence", "Robotics", "Blockchain", "DeepMind", "NeuralNetwork", "BackPropogation", "Convolution", "Tensorflow"]
 
-  function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
-}
-  console.log($('#main-container').innerWidth())
-  setInterval(function() {
-    $(".num").each(function() {
-      if ($(this).text().length < textLength) {
-        $(this).text(($(this).text() + Math.round(Math.random())));
-      } else {
-        $(this).text(Math.round(Math.random()) + $(this).text().substring(0, textLength - 1))
-      }
-    });
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * Math.floor(max));
+    }
+    console.log($('#main-container').innerWidth())
+    setInterval(function () {
+      $(".num").each(function () {
+        if ($(this).text().length < textLength) {
+          $(this).text(($(this).text() + Math.round(Math.random())));
+        } else {
+          $(this).text(Math.round(Math.random()) + $(this).text().substring(0, textLength - 1))
+        }
+      });
 
-  }, 50);
-  setInterval(function() {
-    $(".buzz").each(function() {
-      if ($(this).text().length < textLength) {
-        $(this).text(($(this).text() + buzz[getRandomInt(9)]));
-      } else {
-        // $(this).text(buzz[getRandomInt(9)] + $(his).text().substring(0, $(this).text().length - 1))
-        $(this).text(buzz[getRandomInt(9)] + $(this).text().substring(0, textLength - 1))
-      }
-    });
+    }, 50);
+    setInterval(function () {
+      $(".buzz").each(function () {
+        if ($(this).text().length < textLength) {
+          $(this).text(($(this).text() + buzz[getRandomInt(9)]));
+        } else {
+          // $(this).text(buzz[getRandomInt(9)] + $(his).text().substring(0, $(this).text().length - 1))
+          $(this).text(buzz[getRandomInt(9)] + $(this).text().substring(0, textLength - 1))
+        }
+      });
 
-  }, 150);
+    }, 150);
 
-});
+  });
 
 
   var today = new Date()
@@ -223,4 +242,5 @@
 </script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/languages/go.min.js"></script>
+
 </html>
