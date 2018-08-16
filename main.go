@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"crypto/tls"
 	"database/sql"
 	"fmt"
 	"io"
@@ -16,6 +17,7 @@ import (
 
 	"github.com/gorilla/sessions"
 	_ "github.com/mattn/go-sqlite3"
+	"golang.org/x/crypto/acme/autocert"
 	"golang.org/x/crypto/bcrypt"
 )
 
@@ -338,14 +340,27 @@ func recruitmentHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "%s", page)
 }
 func main() {
+	certManager := autocert.Manager{
+		Prompt:     autocert.AcceptTOS,
+		HostPolicy: autocert.HostWhitelist("projectmanas.in"), //Your domain here
+		Cache:      autocert.DirCache("certs"),                //Folder for storing certificates
+	}
+	server := &http.Server{
+		Addr: ":https",
+		TLSConfig: &tls.Config{
+			GetCertificate: certManager.GetCertificate,
+		},
+	}
 	http.HandleFunc("/blogAdminLogin/", blogAdminLogin)
 	http.HandleFunc("/adminBlogForm/", blogUploadForm)
 	http.HandleFunc("/editBlogs/", editBlogs)
 	http.HandleFunc("/blogs/", blogViewer)
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static/"))))
+	http.Handle("/.well-known/", http.StripPrefix("/.well-known/", http.FileServer(http.Dir(".well-known/"))))
 	http.HandleFunc("/", indexHandler)
 	http.HandleFunc("/teams/", teamHandler)
 	http.HandleFunc("/teams", teamHandler)
 	http.HandleFunc("/recruitments", recruitmentHandler)
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	go http.ListenAndServe(":80", certManager.HTTPHandler(nil))
+	log.Fatal(server.ListenAndServeTLS("", ""))
 }
