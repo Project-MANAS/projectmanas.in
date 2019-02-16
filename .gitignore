@@ -3,3 +3,4 @@ projectmanas.in
 *.db
 blog/*
 vendor/
+_site/
