@@ -8,14 +8,13 @@ pages:
   script:
   - bundle install
   - bundle exec jekyll build -d public
-  # script:
-  # - mkdir .public
-  # - cp -r * .public
-  # - mkdir .gzipped
-  # - cp -r * .gzipped
-  # - gzip -r --best .gzipped
-  # - cp -r .gzipped/* .public
-  # - mv .public public
+  - mkdir .public
+  - cp -r * .public
+  - mkdir .gzipped
+  - cp -r * .gzipped
+  - gzip -r --best .gzipped
+  - cp -r .gzipped/* .public
+  - mv .public public
   artifacts:
     paths:
     - public

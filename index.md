@@ -1,5 +1,5 @@
 ---
-title: My page
+title: Project MANAS
 layout: index
 permalink: /
 ---

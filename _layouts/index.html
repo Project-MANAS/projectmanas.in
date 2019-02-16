@@ -172,13 +172,14 @@
             <span class="orange">Projects</span>
           </h1>
         </div>
+        {% for project in site.data.projects %}
         <div class="cell large-10">
           <div class="grid-x grid-padding-x align-center">
             <div class="cell large-3 medium-4 small-12">
               <a data-open="wall-e-popup">
                 <div class="card project-card" id="wall-e">
                   <div class="card-section">
-                    <h2 class="white">Wall-E</h2>
+                    <h2 class="white">{{ project.name }}</h2>
                   </div>
                 </div>
               </a>
@@ -186,12 +187,12 @@
             <div class="reveal" id="wall-e-popup" data-reveal>
               <h1>Wall-E</h1>
               <p class="lead">Overview</p>
-              <p>Our first stride into the autonomous robots started with Wall-E. It was built as a proof of
-                concept. Wall-E is where the journey and dream began.</p>
+              <p>{{ project.overview }}</p>
               <button class="close-button" data-close aria-label="Close modal" type="button">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
+            {% endfor %}
 
             <div class="cell large-3 medium-4 small-12">
               <a data-open="rise-prize-popup">
@@ -256,10 +257,10 @@
           <h1 class="white">
             <span class="white">Recruitments</span>
           </h1>
-          <h4 class="white">We have a
-            <a href="/recruitments">
+          <h4 class="white">Recruitments are over for 2019. Try next year.
+            <!-- <a href="/recruitments">
               <span class="orange">challenge</span>
-            </a> for you. Are you up for it?</h4>
+            </a> for you. Are you up for it?</h4> -->
         </div>
         <div class="cell large-11">
         </div>
@@ -371,7 +372,7 @@
     userId: 7034747676,
     accessToken: '7034747676.1677ed0.0f5c068f563c43228e4162fd1fa3a696',
     target: 'instafeed',
-    template: '<a href="{{link}}"<div class="cell"><div class="card"> <div class="card-section"> <img src="{{image}}"> </div> <div class="card-section"><p class="text-center">{{caption}}</p> </div> </div></div></a>',
+    template: '<a href="{% raw %} {{link}} {% endraw %}"<div class="cell"><div class="card"> <div class="card-section"> <img src="{% raw %} {{image}} {% endraw %}"> </div> <div class="card-section"><p class="text-center">{% raw %} {{caption}} {% endraw %}</p> </div> </div></div></a>',
     resolution: 'standard_resolution',
     limit: 4,
     after: function () {

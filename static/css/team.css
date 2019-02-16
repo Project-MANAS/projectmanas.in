@@ -187,7 +187,7 @@ button {
   box-shadow: inset 15px 10px 22px 0 rgba(0, 0, 0, .46)
 }
 
-#mentor .profile-image, #alumini .profile-image {
+#mentor .profile-image, #alumni .profile-image {
   background-repeat: round;
 }
 
@@ -218,11 +218,11 @@ button {
   content: attr(data-title)
 }
 
-#alumini .profile-image:hover~.profile-about p span {
+#alumni .profile-image:hover~.profile-about p span {
   display: none
 }
 
-#alumini .profile-image:hover~.profile-about p::after {
+#alumni .profile-image:hover~.profile-about p::after {
   content: attr(data-title)
 }
 

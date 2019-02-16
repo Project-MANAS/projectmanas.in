@@ -1,5 +1,5 @@
 ---
-title: My page
+title: Team
 layout: team
-permalink: /team
+permalink: /team.html
 ---
