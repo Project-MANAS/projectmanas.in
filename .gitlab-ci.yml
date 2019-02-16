@@ -14,3 +14,4 @@ pages:
   only:
   - master
   - development
+  - production

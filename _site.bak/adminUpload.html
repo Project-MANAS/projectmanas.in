@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="author" content="Shrijit Singh">
+    <meta name="powered-by" content="Dheeraj Mohan">
+    <meta name="design" content="Sarathkrishnan Ramesh">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Upload</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107451406-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-107451406-1');
+</script>
+
+<body>
+    <a href="/editBlogs/"><button>Delete Existing</button></a>
+    <br/>
+    <form action="/adminBlogForm/" method="POST" enctype="multipart/form-data" id="uploadForm">
+        <label>
+            Title:
+            <input type="text" name="title" />
+        </label>
+        <br/>
+        <br/>
+        <label>
+            Description:
+            <textarea name="desc" style="height:400px; width:400px"></textarea>
+        </label>
+        <br/>
+        <br/>
+        <label>
+            Author Name:
+            <input type="text" name="author" />
+        </label>
+        <br/>
+        <br/>
+        <label>
+            Publish Date
+            <input type="date" name="pubDate" />
+        </label>
+        <br/>
+        <br/>
+        <label>
+            Upload the markdown file:
+            <input type="file" name="markdown" />
+        </label>
+        <br/>
+        <br/>
+        <input type="hidden" name="imageCount" value="0" id="imageCount" />
+        <br/>
+        <br/>
+        <input type="button" value="Add Image" id="imgBtn" />
+        <input type="submit" value="Submit" id="submitBtn" />
+        <br/>
+    </form>
+    <script>
+        formElem = document.getElementById("uploadForm");
+        hiddenElem = document.getElementById("imageCount");
+        imgBtn = document.getElementById("imgBtn");
+        var imgCounter = 0;
+        function handleImgClick() {
+
+            label = document.createElement('label');
+            input = document.createElement('input');
+            label.innerHTML = "Image " + this.imgCounter;
+            input.type = "file";
+            input.setAttribute("name", "image" + this.imgCounter);
+            br = document.createElement('br');
+            label.appendChild(input);
+            this.hiddenElem.setAttribute("value", ++(this.imgCounter));
+            this.formElem.insertBefore(label, this.imgBtn);
+            this.formElem.insertBefore(br, this.imgBtn);
+        }
+        this.handleImgClick = this.handleImgClick.bind(this);
+        imgBtn.addEventListener('click', this.handleImgClick);
+    </script>
+</body>
+
+</html>

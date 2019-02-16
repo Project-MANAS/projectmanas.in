@@ -1,0 +1,54 @@
+<script src="{{ "/static/js/vendor/jquery.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/static/js/vendor/foundation.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/static/js/particles.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/static/js/particles-settings.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/static/js/vendor/what-input.js" | prepend: site.baseurl }}"></script>
+<script>
+
+  $(document).foundation();
+  $('.nav-sticky').on('sticky.zf.stuckto:top', function () {
+    $(".top-bar-title").css({
+      "opacity": 1,
+    });
+  }).on('sticky.zf.unstuckfrom:top', function () {
+    $(".top-bar-title").css({
+      "opacity": 0,
+    });
+  })
+
+
+  // $(window).on('scroll', function () {
+    var pixs = $(document).scrollTop()
+  //   pixs = pixs / 100;
+  //   if (pixs / 4 > 0.8) {
+      trans = 0.8;
+  //   } else {
+  //     trans = pixs / 4;
+  //   }
+    $("#navigation-bar").css({
+      "-webkit-backdrop-filter": "blur(" + pixs + "px)",
+      "backdrop-filter": "blur(" + pixs + "px)"
+    });
+    $("#navigation-bar").css({
+      "background-color": "rgba(0, 0, 0, " + trans
+    });
+  // });
+
+  $(function () {
+    $('.nav-link').on('click', function () {
+      if (!Foundation.MediaQuery.atLeast('large')) {
+        $("#navigation-bar").css({
+          "display": "none"
+        });
+      }
+    });
+  });
+  var today = new Date()
+  var year = today.getFullYear()
+  document.getElementById("year").innerHTML = year
+  function sponsorshipContactTemplate() {
+    document.getElementById("contact-subject").value = "Sponsorship";
+    document.getElementById("sponsorship-alert").classList.remove("hide");
+  }
+
+</script>
