@@ -172,20 +172,21 @@
             <span class="orange">Projects</span>
           </h1>
         </div>
-        {% for project in site.data.projects %}
         <div class="cell large-10">
           <div class="grid-x grid-padding-x align-center">
+
+            {% for project in site.data.projects %}
             <div class="cell large-3 medium-4 small-12">
-              <a data-open="wall-e-popup">
-                <div class="card project-card" id="wall-e">
+              <a data-open="{{ project.id }}-popup">
+                <div class="card project-card" id="{{ project.id }}">
                   <div class="card-section">
                     <h2 class="white">{{ project.name }}</h2>
                   </div>
                 </div>
               </a>
             </div>
-            <div class="reveal" id="wall-e-popup" data-reveal>
-              <h1>Wall-E</h1>
+            <div class="reveal" id="{{ project.id }}-popup" data-reveal>
+              <h1>{{ project.name }}</h1>
               <p class="lead">Overview</p>
               <p>{{ project.overview }}</p>
               <button class="close-button" data-close aria-label="Close modal" type="button">
@@ -194,55 +195,6 @@
             </div>
             {% endfor %}
 
-            <div class="cell large-3 medium-4 small-12">
-              <a data-open="rise-prize-popup">
-                <div class="card project-card" id="mahindra">
-                  <div class="card-section">
-                    <h2 class="white">Mahindra Rise Prize</h2>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="reveal" id="rise-prize-popup" data-reveal>
-              <h1>Mahindra Rise Prize challenge</h1>
-              <p class="lead">Overview</p>
-              <p>Eve is our entry into the $1 million challenge. It's the culmination of years of hard work
-                and the very best of what our team can offer. It's packed with cutting edge technologies
-                and techniques, made even more impressive as we're the youngest team to qualify for the finals.</p>
-              <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-
-            <div class="cell large-3 medium-4 small-12">
-              <a data-open="igvc-popup">
-                <div class="card project-card" id="igvc">
-                  <div class="card-section">
-                    <h2 class="white">IGVC</h2>
-                  </div>
-                </div>
-              </a>
-
-              <div class="reveal" id="igvc-popup" data-reveal>
-                <h1>IGVC</h1>
-                <p class="lead">Overview</p>
-                <p>Adam, as its name sake, is the very first of its kind -- our first ever entry into IGVC.
-                  Built rapidly over a course of a few months, Adam showcases our team's rapid prototyping
-                  and development abilities. Fortunately, our sleepless night paid off as Adam placed 9th
-                  in the world, and 2nd in India. Adam was also 2nd in the IOP Challenge.</p>
-                <button class="close-button" data-close aria-label="Close modal" type="button">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-
-            </div>
-            <!-- <div class="cell large-3 medium-4 small-6">
-              <div class="card project-card">
-                <div class="card-section">
-                </div>
-              </div>
-            </div> -->
           </div>
           <div class="cell large-1">
             <!-- <button class="hollow-black button" id="projects-button">View More</button> -->
