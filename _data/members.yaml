@@ -79,15 +79,6 @@
   linkedin:
   github:
 
-- name: Saksham Banga
-  nickname: Saksham Banga
-  designation: Management Sponsorship Head
-  image: saksham.png
-  facebook:
-  mail:
-  linkedin:
-  github:
-
 - name: Shardul Purohit
   nickname: Shardul Purohit
   designation: Management Admin Head
@@ -113,6 +104,15 @@
   facebook: https://www.facebook.com/Agarwal.Rishab.99
   mail: mailto:rishabgrwl121@gmail.com
   linkedin: https://www.linkedin.com/in/rishab-agarwal-8a959216a
+  github:
+
+- name: Rakshit Jain
+  nickname: Rakshit Jain
+  designation: S&A Automation Head
+  image: rakshit.png
+  facebook: https://www.facebook.com/rakshit.jain.378
+  mail: mailto:rakshitjain003@gmail.com
+  linkedin:
   github:
 
 - name: Damodar Nayak
