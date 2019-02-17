@@ -336,6 +336,16 @@
     }
   });
   feed.run();
+  $(document).foundation();
+  $('.nav-sticky').on('sticky.zf.stuckto:top', function () {
+    $(".top-bar-title").css({
+      "opacity": 1,
+    });
+  }).on('sticky.zf.unstuckfrom:top', function () {
+    $(".top-bar-title").css({
+      "opacity": 0,
+    });
+  })
 </script>
 
 </html>
