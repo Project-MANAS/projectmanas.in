@@ -1,5 +1,5 @@
 ---
 title: Team
 layout: team
-permalink: /team.html
+permalink: /team
 ---
