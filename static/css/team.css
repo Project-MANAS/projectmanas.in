@@ -206,7 +206,7 @@ button {
   display: none
 }
 
-.profile-image:hover~.profile-about h5::after {
+#team .profile-image:hover~.profile-about h5::after {
   content: attr(data-nickname)
 }
 
