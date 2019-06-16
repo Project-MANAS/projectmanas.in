@@ -1,7 +1,7 @@
 - name: Wall-E
   image: wall-e.jpg
   id: wall-e
-  overview: Our first stride into the autonomous robots started with Wall-E. It was built as a proof of concept. Wall-E is where the journey and dream began.
+  overview: Our first stride into the autonomous robots started with Wall-W. It was built as a proof of concept. Wall-E is where the journey and dream began.
 
 - name: Mahindra Rise Prize
   image: eve.jpg
