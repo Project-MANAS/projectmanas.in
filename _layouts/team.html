@@ -25,27 +25,27 @@
             {% for member in site.data.members %}
               <div class="cell large-2 medium-3 small-4">
                 <div class="card profile">
-                  {% unless member.image == empty %}
-                  <div class="profile-image" style="background-image: url(/static/images/profile/{{ member.image }})">
+                  {% unless member.image == nil %}
+                  <div class="profile-image" style="background-image: url(/static/images/profile/{{member.image}})">
                   </div>
                   {% endunless %}
                   <div class="profile-social">
-                    {% unless member.facebook == empty %}
-                    <a href="{{ member.github }}">
+                    {% unless member.facebook == nil %}
+                    <a href="{{ member.facebook }}">
                       <i class="fa fa-facebook social-icons"></i>
                     </a>
                     {% endunless %}
-                    {% unless member.mail == empty %}
+                    {% unless member.mail == nil %}
                     <a href="{{ member.mail }}">
                       <i class="fa fa-envelope social-icons"></i>
                     </a>
                     {% endunless %}
-                    {% unless member.linkedin == empty %}
+                    {% unless member.linkedin == nil %}
                     <a href="{{ member.linkedin }}">
                       <i class="fa fa-linkedin social-icons"></i>
                     </a>
                     {% endunless %}
-                    {% unless member.github == "" %}
+                    {% unless member.github == nil %}
                     <a href="{{ member.github }}">
                       <i class="fa fa-github social-icons"></i>
                     </a>
@@ -295,27 +295,27 @@
             {% for mentor in site.data.mentors %}
               <div class="cell large-2 medium-3 small-4">
                 <div class="card profile">
-                  {% unless mentor.image == empty %}
-                  <div class="profile-image" style="background-image: url(/static/images/profile/{{ mentor.image }}); background-repeat: no-repeat;">
+                  {% unless mentor.image == nil %}
+                  <div class="profile-image" style="background-image: url(/static/images/profile/{{mentor.image}}); background-repeat: no-repeat;">
                   </div>
                   {% endunless %}
                   <div class="profile-social">
-                    {% unless mentor.facebook == empty %}
-                    <a href="{{ mentor.github }}">
+                    {% unless mentor.facebook == nil %}
+                    <a href="{{ mentor.facebook }}">
                       <i class="fa fa-facebook social-icons"></i>
                     </a>
                     {% endunless %}
-                    {% unless mentor.mail == empty %}
+                    {% unless mentor.mail == nil %}
                     <a href="{{ mentor.mail }}">
                       <i class="fa fa-envelope social-icons"></i>
                     </a>
                     {% endunless %}
-                    {% unless mentor.linkedin == empty %}
+                    {% unless mentor.linkedin == nil %}
                     <a href="{{ mentor.linkedin }}">
                       <i class="fa fa-linkedin social-icons"></i>
                     </a>
                     {% endunless %}
-                    {% unless mentor.github == "" %}
+                    {% unless mentor.github == nil %}
                     <a href="{{ mentor.github }}">
                       <i class="fa fa-github social-icons"></i>
                     </a>
