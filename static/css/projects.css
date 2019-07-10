@@ -1,0 +1,123 @@
+@font-face{
+	font-family:'Astrobia Regular';
+    src: url("/home/anton/Desktop/hor_slide/fonts/Astrobia.ttf") format("truetype");
+}
+
+
+body
+{
+	margin:0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.container{
+	position:fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	display:flex;
+}
+section{
+	min-width:100%;
+	height: auto;
+	display:flex;
+}
+
+section .ProjImage
+{
+	position: relative;
+	min-width: 50%;
+	height:100vh;	
+}
+
+section .ProjImage img
+{
+	position: absolute;
+	top:20%;
+	bottom:20%;
+	left: 0;
+	/*
+	width: 60%;
+	height:60%;
+	*/
+	object-fit: cover;
+}
+section .ProjDesc
+{
+	padding: 100px 60px;
+}
+section .ProjDesc h1
+{
+	font-family:"Astrobia Regular";
+}
+section .ProjDesc h2
+{
+	margin:0 0 20px;
+	padding: 0;
+	font-size:48px;
+}
+section .ProjDesc p
+{
+	margin: 0;
+	padding:0;
+	font-size:2px;
+	text-align:justify;
+
+}
+
+.mainImg 
+{
+	width = 460;
+	height: 560;
+}
+
+/*
+.dotstyle-tooltip li {
+	border: 2px solid #fff;
+	border-radius: 50%;
+	z-index: 1;
+	-webkit-transition: border-color 0.3s ease;
+	transition: border-color 0.3s ease;
+}
+
+.dotstyle ul {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	cursor: default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.dotstyle li {
+	position: relative;
+	display: block;
+	float: left;
+	margin: 0 16px;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+.dotstyle li a {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border-radius: 50%;
+	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.3);
+	text-indent: -999em; /* make the text accessible to screen readers
+	cursor: pointer;
+	position: absolute;
+}
+
+*/
