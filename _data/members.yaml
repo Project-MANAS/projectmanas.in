@@ -9,7 +9,7 @@
 
 - name: Shrijit Singh
   nickname: Shrijit Singh
-  designation: Tech Head
+  designation: Technical Head
   image: 12.jpeg
   facebook: https://www.facebook.com/shrijitsingh99
   mail: mailto:tech_head@projectmanas.in
@@ -45,7 +45,7 @@
 
 - name: Arya Karani
   nickname: Arya Karani
-  designation: Mech Head
+  designation: Mechanical Head
   image: 20.jpeg
   facebook:
   mail: mailto:karani.arya@gmail.com
@@ -72,7 +72,7 @@
 
 - name: Shivanshu Agarwal
   nickname: Shivanshu Agarwal
-  designation: S&A Sensing Head
+  designation: Sensing Head
   image: 46.jpeg
   facebook: https://w ww.facebook.com/shivanshu.agarwal.965
   mail: mailto:agarwalshivanshu00@gmail.com
@@ -81,7 +81,7 @@
 
 - name: Dasarath S
   nickname: Dasarath S
-  designation: S&A Autoation Head
+  designation: Automation Head
   image: 23.jpeg
   facebook: https://facebook.com/dasarath.selvakumar
   mail: mailto:dasarathselvakumar@gmail.com
@@ -90,7 +90,7 @@
 
 - name: Raunaq Kalra
   nickname: Raunaq kalra
-  designation: Mech Mechanics Head
+  designation: Mechanics Head
   image: raunaq.png
   facebook: https://www.facebook.com/raunaq.kalra.58
   mail: mailto:raunaqkalra99@gmail.com
@@ -115,6 +115,15 @@
   linkedin:
   github: https://github.com/HyperPotatoNeo
 
+- name: Chaitanya
+  nickname: Chaitanya
+  designation: AI Perception Member
+  image: 22.jpeg
+  facebook: https://www.facebook.com/chaitanya.shyamaraj.37
+  mail: mailto:chaitanya2.1999@gmail.com
+  linkedin: https://www.linkedin.com/in/chaitanya21999
+  github: https://github.com/Chaitanya-git
+
 - name: Ansel Dias
   nickname: Ansel Dias
   designation: S&A Sensing Member
@@ -123,6 +132,17 @@
   mail: mailto:thegreatanseldias@gmail.com
   linkedin: https://www.linkedin.com/in/ansel-dias-a7993215b/
   github:
+
+- name: Vibhuti Ravi
+  nickname: Vibhuti Ravi
+  designation: S&A Sensing Member
+  image: 14.jpeg
+  facebook: https://www.facebook.com/vibhuti.ravi
+  mail: mailto:vibhutiravi@gmail.com
+  linkedin: https://www.linkedin.com/in/vibhuti-ravi-2b8184160/
+  github:
+
+
 
 - name: Omkar Jhadav
   nickname: Omkar Jhadav
@@ -144,7 +164,7 @@
 
 - name: Tanaya Mandke
   nickname: Tanaya Mandke
-  designation: Mech Mechanics Member
+  designation: Mechanics Member
   image: 40.jpeg
   facebook: https://www.facebook.com/profile.php?id=100000862089390
   mail: mailto:Tanaya.mandke9299@gmail.com
@@ -153,7 +173,7 @@
 
 - name: Gaurav Thakur
   nickname: Gaurav Thakur
-  designation: Mech Mechanics Member
+  designation: Mechanics Member
   image: gaurav.png
   facebook: https://www.facebook.com/papadopoulos69
   mail: mailto:gthakur2907@gmail.com
