@@ -16,66 +16,142 @@
 
 
 
-  <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" /> -->
+  <link rel="stylesheet" type="text/css" href="/static/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="/static/slick/slick-theme.css" />
 
 
 </head>
 
 <body>
+  <div class='horizontal-scroll'>
 
-  <div id="landing_container">
-    <div id="solo-box-text">
-      <p id="solo-logo">SOLO</p>
+  <div class="grid-container full">
+    <div class="grid-y large-grid-frame" id="landing_container">
+      <div class="cell large-2"></div>
+      <div class="cell large-4 float-left">
+        <div class="grid-x ">
+          <div class="cell large-1  medium-1 small-1"></div>
+          <div class="cell large-6 medium-6 small-6" id="solo-box-text">
+            <h1 id="solo-logo">SOLO</h1>
+          </div>
+
+
+
+        <div class="cell large-auto medium-auto small-auto">
+          <div id="solo-image"><img src="/static/images/png/solo_devel_pics/sample-no-bg.png"></div>
+        </div>
+        </div>
+      </div>
+
+
+
+      <div class="cell large-1">
+        <div class="grid-x">
+          <div class="cell large-1  medium-1 small-1"></div>
+          <div class="cell large-5 medium-5 small-5" id="solo-box-caption">
+            <p id="solo-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cell large-1">
+        <div class="grid-x grid-margin-x">
+          <div class="cell large-1 medium-1 small-1" style="margin-left: 2px"></div>
+
+
+          <div id="spec-img-height" class="cell shrink animated fadeInUp">
+            <div class="card">
+              <img src="/static/images/png/solo_devel_pics/height.png">
+              <div class="card-section solo-img-height-text">
+                <p class="text-center" style="margin: 0px; padding: 0px; border: 0px;">1.21</p>
+                <p class="text-center" style="margin: 0px; padding: 0px; border: 0px;">meters</p>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- </div> -->
+
+
+          <div id="spec-img-weight" class="cell shrink animated fadeInUp">
+            <div class="card">
+              <img src="/static/images/png/solo_devel_pics/weight.png">
+              <div class="card-section solo-img-height-text">
+                <p class="text-center" style="margin: 0px; padding: 0px; border: 0px;">66</p>
+                <p class="text-center" style="margin: 0px; padding: 0px; border: 0px;">KGs</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="spec-img-payload" class="cell shrink animated fadeInUp">
+            <div class="card">
+              <img src="/static/images/png/solo_devel_pics/payload.png">
+              <div class="card-section solo-img-payload-text">
+                <p class="text-center" style="margin: 0px; padding: 0px; border: 0px;">20</p>
+                <p class="text-center" style="margin: 0px; padding: 0px; border: 0px;">KGs</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="spec-img-zed" class="cell shrink animated fadeInUp">
+            <div class="card">
+              <img src="/static/images/png/solo_devel_pics/stereocam.png">
+              <div class="card-section solo-img-zed-text">
+                <p class="text-center" style="margin: 0px; padding: 0px; border: 0px;">ZED</p>
+                <p class="text-center" style="margin: 0px; padding: 0px; border: 0px;">stereocam</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="spec-img-ins" class="cell shrink animated fadeInUp">
+            <div class="card">
+              <img src="/static/images/png/solo_devel_pics/imu.png">
+              <div class="card-section solo-img-imu-text">
+                <p class="text-center" style="margin: 0px; padding: 0px; border: 0px;">IMU</p>
+                <!-- <p class="text-center" style="margin: 0px; padding: 0px; border: 0px;">meters</p> -->
+              </div>
+            </div>
+          </div>
+
+          <div id="spec-img-gps" class="cell shrink animated fadeInUp">
+            <div class="card">
+              <img src="/static/images/png/solo_devel_pics/gps.png">
+              <div class="card-section solo-img-gps-text">
+                <p class="text-center" style="margin: 0px; padding: 0px; border: 0px;">GPS</p>
+                <!-- <p class="text-center" style="margin: 0px; padding: 0px; border: 0px;">meters</p> -->
+              </div>
+            </div>
+          </div>
+          <div id="spec-img-lidar" class="cell shrink animated fadeInUp">
+            <div class="card">
+              <img src="/static/images/png/solo_devel_pics/lidar.png">
+              <div class="card-section solo-img-lidar-text">
+                <p class="text-center" style="margin: 0px; padding: 0px; border: 0px;">3D</p>
+                <p class="text-center" style="margin: 0px; padding: 0px; border: 0px;">Lidar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cell large-1"></div>
+      <div class="cell large-1"></div>
+      <div class="grid-x">
+        <div class="cell large-2  medium-2 small-2"></div>
+        <button class="button animated fadeIn"><a href="https://shrijitsingh.com/manas-demos/" target="_blank">INTERACTIVE MODE</a></button>
+      </div>
+
     </div>
-    <div id="solo-box-caption">
-      <p id="solo-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
-    </div>
-    <div id="spec-img-height" class="animated fadeInUp">
-      <img src="/static/images/png/solo_devel_pics/height.png">
-    </div>
-
-    <div id="spec-img-weight" class="animated fadeInUp">
-      <img src="/static/images/png/solo_devel_pics/weight.png">
-    </div>
-
-    <div id="spec-img-payload" class="animated fadeInUp">
-      <img src="/static/images/png/solo_devel_pics/payload.png">
-    </div>
-
-    <div id="spec-img-zed" class="animated fadeInUp">
-      <img src="/static/images/png/solo_devel_pics/stereocam.png">
-    </div>
-
-    <div id="spec-img-ins" class="animated fadeInUp">
-      <img src="/static/images/png/solo_devel_pics/imu.png">
-    </div>
-
-    <div id="spec-img-gps" class="animated fadeInUp">
-      <img src="/static/images/png/solo_devel_pics/gps.png">
-    </div>
-
-    <div id="spec-img-lidar" class="animated fadeInUp">
-      <img src="/static/images/png/solo_devel_pics/lidar.png">
-    </div>
 
 
-    <span id="spec-img-height-text" class="animated fadeInUp">1.21</span>
-    <span id="spec-img-weight-text" class="animated fadeInUp">66</span>
-    <span id="spec-img-payload-text" class="animated fadeInUp">20</span>
-    <span id="spec-img-zed-text" class="animated fadeInUp">ZED</span>
-    <span id="spec-img-ins-text" class="animated fadeInUp">IMU </span>
-    <span id="spec-img-gps-text" class="animated fadeInUp">GPS</span>
-    <span id="spec-img-lidar-text" class="animated fadeInUp">3D</span>
-    <span id="spec-img-height-text2" class="animated fadeInUp">meters</span>
-    <span id="spec-img-weight-text2" class="animated fadeInUp">kgs</span>
-    <span id="spec-img-payload-text2" class="animated fadeInUp">kgs</span>
-    <span id="spec-img-zed-text2" class="animated fadeInUp">stereocam</span>
-    <span id="spec-img-lidar-text2" class="animated fadeInUp">lidar</span>
+  </div>
 
-    <button class="button animated fadeIn"><a href="https://shrijitsingh.com/manas-demos/" target="_blank">INTERACTIVE MODE</a></button>
 
-    <!-- <div id="solo-image"> <img src="/static/images/png/solo_devel_pics/001.png" width="500px" height="500px"
+
+
+
+  <!-- <div id="solo-image"> <img src="/static/images/png/solo_devel_pics/001.png" width="500px" height="500px"
       class="reel"
       data-images="solo_temp/###.png"
       data-speed=0.3
@@ -84,9 +160,9 @@
       data-directional="true"
       data-responsive="false"></div> -->
 
-      <div id="solo-image"><img src="/static/images/png/solo_devel_pics/sample-no-bg.png"></div>
 
-  </div>
+
+
   <!-- <script>
     function updateDiv() {
       $("#solo-image").load(window.location.href + " #solo-image");
@@ -96,7 +172,7 @@
     });
   </script> -->
 
-  <!-- <div id="about_container">
+  <div id="about_container">
     <div id="igvc-container">
       <h2>What's IGVC?</h2>
       <br>
@@ -109,28 +185,31 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
         aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
-    <div id="solo-image"><img src="images/assests/sample-no-bg@2x.png"></div>
-    <div class="news-headlines">
+    <!-- <div id="solo-image"><img src="images/assests/sample-no-bg@2x.png"></div> -->
+    <!-- <div class="news-headlines">
       <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</div>
       <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</div>
-    </div>
+    </div> -->
 
 
   </div>
+</div>
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript" src="/static/slick/slick.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
-      $('.news-headlines').slick({
-        sslidesToShow: 2,
+      $('.horizontal-scroll').slick({
+        slidesToShow: 1,
+        dots: true,
+        draggable: false,
         // slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
         // nextArrow: '<button class= "button">INTERACTIVE</button>',
       });
     });
-  </script> -->
+  </script>
 
 </body>
 
