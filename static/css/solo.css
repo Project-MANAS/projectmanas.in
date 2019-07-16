@@ -9,10 +9,11 @@
 /* Main Background */
 body {
   overflow-x: hidden;
+  overflow-y:hidden
 }
 
 h1{
-  font-size: calc(117px + (300 - 117) * ((100vw - 800px) / (2048 - 800)));
+   font-size: 16vmax; /*calc(117px + (300 - 117) * ((100vw - 800px) / (2048 - 800))); */
 }
 /* Properties of Container */
 #landing_container {
@@ -51,11 +52,12 @@ h1{
 #solo-box-caption {
   /* padding-left: 6vw;
   padding-top: ; */
-  /* padding-top: 7vh */ */
+  /* padding-top: 7vh */
 }
 
 #solo-caption {
-  /* font-size: 2vh; */
+  text-align: center;
+  font-size: 2vh;
 }
 
 #spec-img-height {
@@ -234,6 +236,8 @@ button:focus {
   -moz-transform-origin: 0 0; */
   /* padding-left: 5vw;
   padding-top: 16vh; */
+  width: 80%;
+  height: 80%;
 }
 
 /* @media screen and (min-device-width: 1280px) {
@@ -249,7 +253,7 @@ button:focus {
 
 
 
-#about_container{
+.about_container{
   display: grid;
   grid-auto-columns: 5vw;
   grid-auto-rows: 5vh;
@@ -267,7 +271,7 @@ button:focus {
   grid-row-start: 3;
   grid-column-start: 2;
   grid-column-end: 10;
-  color: black;
+  color: white;
   justify-content: center;
 }
 
@@ -276,7 +280,7 @@ button:focus {
   grid-row-start: 3;
   grid-column-start: 12;
   grid-column-end: 20;
-  color: black;
+  color: white;
   justify-content: center;
 }
 
@@ -329,4 +333,46 @@ button:focus {
   flex: 1 0 auto;
   padding: 0rem;
   margin: 0rem;
+}
+
+
+.slick-dots{
+position: absolute;
+bottom: 20px;
+display: block;
+width: 100%;
+/* padding: 10; */
+margin: 0;
+list-style: none;
+text-align: center;
+}
+.slick-dots li.slick-active button:before{
+  font-size:5vw;
+  color:blue;
+}
+
+.spec-fix{
+  width: auto;
+  height: auto;
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+
+  #solo-logo {
+  text-align: center;
+  font-size: 30rem;
+
+  }
+  .pic-fix{
+    display: none;
+  }
+
+  #solo-box-logo{
+    text-align: center;
+    font-size: 10rem;
+  }
+  #solo-caption{
+    text-align: center;
+  }
+
 }
