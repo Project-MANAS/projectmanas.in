@@ -57,7 +57,7 @@ h1{
 
 #solo-caption {
   text-align: center;
-  font-size: 2vh;
+  font-size: 1vmax;
 }
 
 #spec-img-height {
@@ -236,8 +236,8 @@ button:focus {
   -moz-transform-origin: 0 0; */
   /* padding-left: 5vw;
   padding-top: 16vh; */
-  width: 80%;
-  height: 80%;
+  width: 85%;
+  height: 85%;
 }
 
 /* @media screen and (min-device-width: 1280px) {
@@ -373,6 +373,13 @@ text-align: center;
   }
   #solo-caption{
     text-align: center;
+
   }
 
+}
+
+@media screen and (min-width: 1280px) {
+  .solo-caption{
+    margin-top: 10vh;
+  }
 }
