@@ -12,54 +12,35 @@ body {
   overflow-y:hidden
 }
 
+/* The SOLO Logo */
 h1{
-   font-size: 16vmax; /*calc(117px + (300 - 117) * ((100vw - 800px) / (2048 - 800))); */
+   font-size: 14.5em;
 }
+
+
 /* Properties of Container */
 #landing_container {
-  /* display: grid; */
-  /* grid-template-columns: [left-offset] 5vw [solo-logo-column] 37vw [lower-nav-col] 20vw [solo-image-col] 35vw;
-  grid-template-rows: [top-offset] 16.4vh [spec-buttons] 38.4vh [interactive-button] 20vh;
-*/
-
-  /* grid-auto-columns: 5vw;
-  grid-auto-rows: 5vh;
-  justify-content: start; */
   background-image: url('../images/png/solo_devel_pics/memphis-mini@2x.png');
   background-position: absolute;
   z-index: 1;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-
-}
-
-/* Properties of the Box of Text Logo */
-#solo-box-text {
-  /* padding-left: 5vmax;
-  padding-top: 16vh; */
-  /* padding-left: 5vw;
-  padding-top: 16vh; */
-
 }
 
 /* Properties of the Text Logo */
 #solo-logo {
   font-family: 'Astrobia Regular';
+  display: block;
 }
 
-/* Properties of the Solo box Caption */
-#solo-box-caption {
-  /* padding-left: 6vw;
-  padding-top: ; */
-  /* padding-top: 7vh */
-}
-
+/* Properties of the caption */
 #solo-caption {
   text-align: center;
-  font-size: 1vmax;
+  font-size: 1em;
 }
 
+/* Animation properties of the Spec-images */
 #spec-img-height {
 
   animation-delay: 0s;
@@ -356,30 +337,85 @@ text-align: center;
   height: auto;
 }
 
-@media screen and (min-width: 320px) and (max-width: 800px) {
+.small-screen-enable{
+  display: none;
+}
+
+.font-fix{
+  font-size: 1vw;
+}
+
+#mobile-view{
+  display: none;
+}
+
+#desktop-view{
+  display: block;
+}
+
+
+
+@media screen and (max-width: 39.9375em) {
 
   #solo-logo {
   text-align: center;
-  font-size: 30rem;
+  font-size: 10vh;
+  padding-top: 6vh;
 
   }
   .pic-fix{
     display: none;
   }
 
-  #solo-box-logo{
-    text-align: center;
-    font-size: 10rem;
-  }
   #solo-caption{
     text-align: center;
+    font-size: 1.4vh;
 
   }
 
+  .fluid{
+    margin: 0px;
+    padding: 0px;
+    border: 0px
+  }
+
+  .small-screen-enable{
+    display: block;
+  }
+
+  #solo-image{
+    margin-left: auto;
+    margin-right: auto;
+    width: 45vh;
+    height: 45vh
+
+  }
+
+  .font-fix{
+    font-size: 2vh
+  }
+
+  .card{
+
+  }
+  .second-row-fix{
+    margin-top: 2vh;
+  }
+  .first-row-fix{
+    margin-top: 2vh;
+  }
+
+  #mobile-view{
+    display: block;
+  }
+
+  #desktop-view{
+    display: none;
+  }
 }
 
-@media screen and (min-width: 1280px) {
-  .solo-caption{
-    margin-top: 10vh;
+@media screen and (min-width: 1920px) {
+  .h1{
+    font-size: 20em;
   }
 }

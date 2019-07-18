@@ -25,14 +25,21 @@
 <body>
   <div class='horizontal-scroll'>
 
-    <div class="grid-container fluid">
+    <div class="grid-container full">
 
 
 
       <div class="grid-y" id="landing_container">
-        <div class="cell large-1 medium-1 small-1"></div>
-        <div class="cell large-4 medium-4 small-3">
+
+        <div class="cell large-1 medium-1"></div>
+        <div class="cell medium-auto small-shrink small-screen-enable float-center">
+          <div id="solo-image"><img style="" src="/static/images/png/solo_devel_pics/sample-no-bg@2x.png"></div>
+        </div>
+
+
+        <div class="cell large-4 medium-4 small-2">
           <div class="grid-x ">
+
             <div class="cell large-1 medium-1"></div>
             <div class="cell large-5 medium-auto small-12" id="solo-box-text">
               <h1 id="solo-logo">SOLO</h1>
@@ -43,21 +50,25 @@
             <div class="cell large-auto medium-auto">
               <div id="solo-image" class="pic-fix"><img style="" src="/static/images/png/solo_devel_pics/sample-no-bg@2x.png"></div>
             </div>
+
           </div>
         </div>
 
 
-
-
-        <div class="cell large-1 medium-1 small-2">
+        <!-- <div class="cell small-1"></div> -->
+        <div class="cell large-1 medium-1 small-1">
           <div class="grid-x">
             <div class="cell large-1 medium-1 small-1"></div>
-            <div class="cell large-5 medium-5 small-10" id="solo-box-caption">
+            <div class="cell large-5 medium-5 small-10">
               <p id="solo-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
             </div>
           </div>
         </div>
-        <div class"cell large-1"></div>
+
+        <div class"cell large-1 small-3 float-center"></div>
+
+        <div id="desktop-view">
+          <div class"cell large-1"></div>
         <div class="cell large-1">
 
           <div class="grid-x">
@@ -142,16 +153,106 @@
             <div class="cell large-6"></div>
           </div>
         </div>
+          </div>
+        <div id="mobile-view">
+          <div class="cell large-1 small-auto ">
+
+            <div class="grid-x grid-margin-x ">
+              <div class="cell large-1 small-2"></div>
+              <!-- <div class="cell large-1 medium-1 small-1" style="margin-left: 2px"></div> -->
 
 
-        <div class="cell large-1  "></div>
+              <!-- <div class="grid-container"> -->
+              <div id="spec-img-height" class="cell large-auto small-2 animated fadeInUp first-row-fix">
+                <div class="card">
+                  <img width="100%" height="100%" src="/static/images/png/solo_devel_pics/height@2x.png">
+                  <div class="card-section solo-img-height-text">
+                    <p class="text-center font-fix" style="margin: 0px; padding: 0px; border: 0px; font-size: 1.5vmax"><strong>1.21</strong></p>
+                    <p class="text-center font-fix" style="margin: 0px; padding: 0px; border: 0px; font-size: 1.5vmax;">meters</p>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- </div> -->
+
+
+              <div id="spec-img-weight" class="cell large-auto  small-2 animated fadeInUp first-row-fix">
+                <div class="card">
+                  <img width="100%" height="100%" src="/static/images/png/solo_devel_pics/weight@2x.png">
+                  <div class="card-section solo-img-height-text">
+                    <p class="text-center font-fix" style="margin: 0px; padding: 0px; border: 0px; font-size: 1.5vmax"><strong>66</strong></p>
+                    <p class="text-center font-fix" style="margin: 0px; padding: 0px; border: 0px; font-size: 1.5vmax">KGs</p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div id="spec-img-payload" class="cell large-auto small-2 animated fadeInUp first-row-fix">
+                <div class="card">
+                  <img width="100%" height="100%" src="/static/images/png/solo_devel_pics/payload@2x.png">
+                  <div class="card-section solo-img-payload-text">
+                    <p class="text-center font-fix" style="margin: 0px; padding: 0px; border: 0px; font-size: 1.5vmax"><strong>20</strong></p>
+                    <p class="text-center font-fix" style="margin: 0px; padding: 0px; border: 0px; font-size: 1.5vmax">KGs</p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="spec-img-zed" class="cell large-auto small-2 animated fadeInUp first-row-fix">
+                <div class="card">
+                  <img width="100%" height="100%" src="/static/images/png/solo_devel_pics/stereocam@2x.png">
+                  <div class="card-section solo-img-zed-text">
+                    <p class="text-center font-fix" style="margin: 0px; padding: 0px; border: 0px; font-size: 1.5vmax"><strong>ZED</strong></p>
+                    <p class="text-center font-fix" style="margin: 0px; padding: 0px; border: 0px; font-size: 1.2vmax">stereocam</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cell small-2"></div>
+
+
+              <div class="cell small-3"></div>
+              <div id="spec-img-ins" class="cell large-auto small-2 animated fadeInUp second-row-fix">
+                <div class="card">
+                  <img width="100%" height="100%" src="/static/images/png/solo_devel_pics/imu@2x.png">
+                  <div class="card-section solo-img-imu-text">
+                    <p class="text-center font-fix" style="margin: 0px; padding: 0px; border: 0px; font-size: 1.5vmax"><strong>IMU</strong></p>
+                    <!-- <p class="text-center" style="margin: 0px; padding: 0px; border: 0px;">meters</p> -->
+                  </div>
+                </div>
+              </div>
+
+              <div id="spec-img-gps" class="cell large-auto small-2 animated fadeInUp second-row-fix">
+                <div class="card">
+                  <img width="100%" height="100%" src="/static/images/png/solo_devel_pics/gps@2x.png">
+                  <div class="card-section solo-img-gps-text">
+                    <p class="text-center font-fix" style="margin: 0px; padding: 0px; border: 0px; font-size: 1.5vmax"><strong>GPS</strong></p>
+                    <!-- <p class="text-center" style="margin: 0px; padding: 0px; border: 0px;">meters</p> -->
+                  </div>
+                </div>
+              </div>
+              <div id="spec-img-lidar" class="cell large-auto small-2 animated fadeInUp second-row-fix">
+                <div class="card">
+                  <img width="100%" height="100%" src="/static/images/png/solo_devel_pics/lidar@2x.png">
+                  <div class="card-section solo-img-lidar-text">
+                    <p class="text-center font-fix" style="margin: 0px; padding: 0px; border: 0px; font-size: 1.5vmax"><strong>3D</strong></p>
+                    <p class="text-center font-fix" style="margin: 0px; padding: 0px; border: 0px; font-size: 1.5vmax">Lidar</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cell small-2"></div>
+              <!-- <div class="cell large-6"></div> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="cell large-1 "></div>
         <div class="cell large-1"></div>
         <div class="grid-x">
-          <div class="cell large-2 medium-2 small-2"></div>
+          <div class="cell large-2 medium-2"></div>
           <div class="cell shrink">
-          <button class="button animated fadeIn" style="margin-left: 3vw; "><a href="https://shrijitsingh.com/manas-demos/" target="_blank">INTERACTIVE MODE</a></button>
+            <button class="button animated fadeIn pic-fix" style="margin-left: 3vw; "><a href="https://shrijitsingh.com/manas-demos/" target="_blank">INTERACTIVE MODE</a></button>
+          </div>
         </div>
-      </div>
 
       </div>
 
