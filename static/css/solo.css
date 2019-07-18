@@ -14,7 +14,7 @@ body {
 
 /* The SOLO Logo */
 h1{
-   font-size: 14.5em;
+   font-size: 15vw;
 }
 
 
@@ -37,7 +37,7 @@ h1{
 /* Properties of the caption */
 #solo-caption {
   text-align: center;
-  font-size: 1em;
+  font-size: 1vw;
 }
 
 /* Animation properties of the Spec-images */
@@ -181,6 +181,9 @@ h1{
 
 }
 
+.pic-fix{
+  display: none;
+}
 .button {
   background-color: #FF5700;
   border: none;
@@ -193,12 +196,12 @@ h1{
   display: inline-block;
   /* margin: 4px 2px; */
   cursor: pointer;
-  border-radius: 32px;
+  border-radius: 5vh;
   grid-row-start: 18;
   grid-column-start: 4;
   justify-content: center;
   animation-delay: 1.4s;
-  font-size: 1.5vw;
+  font-size: 1.5vmax;
 }
 
 button:focus {
@@ -355,7 +358,7 @@ text-align: center;
 
 
 
-@media screen and (max-width: 39.9375em) {
+@media screen and (max-width: 32em){
 
   #solo-logo {
   text-align: center;
@@ -414,8 +417,76 @@ text-align: center;
   }
 }
 
-@media screen and (min-width: 1920px) {
-  .h1{
-    font-size: 20em;
+
+/* Medium only */
+/* @media screen and (min-width: 52em) and (max-width: 63.9375em) {
+  #mobile-view{
+    display: block;
+  }
+
+  #desktop-view{
+    display: none;
+  }
+  #solo-logo {
+  text-align: center;
+  font-size: 15vh;
+  padding-top: 6vh;
+
+  }
+  .pic-fix{
+    display: none;
+  }
+
+  #solo-caption{
+    text-align: center;
+    font-size: 1.4vh;
+
+  }
+
+  .fluid{
+    margin: 0px;
+    padding: 0px;
+    border: 0px
+  }
+
+  .small-screen-enable{
+    display: block;
+  }
+
+  #solo-image{
+    margin-left: auto;
+    margin-right: auto;
+    width: 45vh;
+    height: 45vh
+
+  }
+
+  .font-fix{
+    font-size: 2vh
+  }
+
+  .card{
+
+  }
+  .second-row-fix{
+    margin-top: 2vh;
+  }
+  .first-row-fix{
+    margin-top: 2vh;
+  }
+
+  #mobile-view{
+    display: block;
+  }
+
+  #desktop-view{
+    display: none;
+  }
+}
+ */
+
+@media screen and (min-width: 1280px) {
+  .pic-fix{
+    display: block;
   }
 }
