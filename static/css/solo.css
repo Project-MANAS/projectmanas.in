@@ -15,7 +15,7 @@ body {
 
 /* The SOLO Logo */
 h1{
-   font-size: 16vmax;
+   font-size: 28vmin;
 }
 
 /* Properties of Container */
@@ -32,12 +32,13 @@ h1{
 #solo-logo {
   font-family: 'Astrobia Regular';
   display: block;
+
 }
 
 /* Properties of the caption */
 #solo-caption {
   text-align: center;
-  font-size: 1vmax;
+  font-size: 2vmin;
 }
 
 /* Animation properties of the Spec-images */
