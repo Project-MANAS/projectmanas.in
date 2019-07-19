@@ -9,14 +9,14 @@
 /* Main Background */
 body {
   overflow-x: hidden;
-  overflow-y:hidden
+  overflow-y:hidden;
+
 }
 
 /* The SOLO Logo */
 h1{
-   font-size: 15vw;
+   font-size: 16vmax;
 }
-
 
 /* Properties of Container */
 #landing_container {
@@ -37,7 +37,7 @@ h1{
 /* Properties of the caption */
 #solo-caption {
   text-align: center;
-  font-size: 1vw;
+  font-size: 1vmax;
 }
 
 /* Animation properties of the Spec-images */
@@ -220,8 +220,8 @@ button:focus {
   -moz-transform-origin: 0 0; */
   /* padding-left: 5vw;
   padding-top: 16vh; */
-  width: 85%;
-  height: 85%;
+  width: 70%;
+  height: 70%;
 }
 
 /* @media screen and (min-device-width: 1280px) {
@@ -358,7 +358,7 @@ text-align: center;
 
 
 
-@media screen and (max-width: 32em){
+@media screen and (max-width: 39.9375em){
 
   #solo-logo {
   text-align: center;
