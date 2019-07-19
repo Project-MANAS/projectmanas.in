@@ -416,6 +416,9 @@ text-align: center;
   #desktop-view{
     display: none;
   }
+  .pic-fix{
+    display: none;
+  }
 }
 
 
@@ -486,7 +489,7 @@ text-align: center;
 }
  */
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 900px) {
   .pic-fix{
     display: block;
   }
