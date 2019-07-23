@@ -29,14 +29,14 @@ h1{
 }
 
 /* Properties of the Text Logo */
-#solo-logo {
+#endevours-logo {
   font-family: 'Astrobia Regular';
   display: block;
 
 }
 
 /* Properties of the caption */
-#solo-caption {
+#endevours-caption {
   text-align: center;
   font-size: 2vmin;
 }
@@ -209,7 +209,7 @@ button:focus {
   outline: none;
 }
 
-#solo-image{
+#endevours-image{
   /* grid-column-start: 13;
   grid-row-start: 4; */
   /* grid-column-end: 20; */
@@ -260,7 +260,7 @@ button:focus {
   justify-content: center;
 }
 
-#solo-text-container{
+#endevours-text-container{
   font-size: 1.5vw;
   grid-row-start: 3;
   grid-column-start: 12;
@@ -361,7 +361,7 @@ text-align: center;
 
 @media screen and (max-width: 39.9375em){
 
-  #solo-logo {
+  #endevours-logo {
   text-align: center;
   font-size: 10vh;
   padding-top: 6vh;
@@ -371,7 +371,7 @@ text-align: center;
     display: none;
   }
 
-  #solo-caption{
+  #endevours-caption{
     text-align: center;
     font-size: 1.4vh;
 
@@ -387,7 +387,7 @@ text-align: center;
     display: block;
   }
 
-  #solo-image{
+  #endevours-image{
     margin-left: auto;
     margin-right: auto;
     width: 45vh;
@@ -421,73 +421,6 @@ text-align: center;
   }
 }
 
-
-/* Medium only */
-/* @media screen and (min-width: 52em) and (max-width: 63.9375em) {
-  #mobile-view{
-    display: block;
-  }
-
-  #desktop-view{
-    display: none;
-  }
-  #solo-logo {
-  text-align: center;
-  font-size: 15vh;
-  padding-top: 6vh;
-
-  }
-  .pic-fix{
-    display: none;
-  }
-
-  #solo-caption{
-    text-align: center;
-    font-size: 1.4vh;
-
-  }
-
-  .fluid{
-    margin: 0px;
-    padding: 0px;
-    border: 0px
-  }
-
-  .small-screen-enable{
-    display: block;
-  }
-
-  #solo-image{
-    margin-left: auto;
-    margin-right: auto;
-    width: 45vh;
-    height: 45vh
-
-  }
-
-  .font-fix{
-    font-size: 2vh
-  }
-
-  .card{
-
-  }
-  .second-row-fix{
-    margin-top: 2vh;
-  }
-  .first-row-fix{
-    margin-top: 2vh;
-  }
-
-  #mobile-view{
-    display: block;
-  }
-
-  #desktop-view{
-    display: none;
-  }
-}
- */
 
 @media screen and (min-width: 900px) {
   .pic-fix{

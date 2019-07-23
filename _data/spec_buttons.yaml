@@ -1,0 +1,41 @@
+- name: height
+  image: /static/images/png/solo_devel_pics/height@2x.png
+  value: "1.21"
+  unit: metres
+  delay: "0s"
+
+- name: weight
+  image: /static/images/png/solo_devel_pics/weight@2x.png
+  value: "66"
+  unit: KGs
+  delay: "0.2s"
+
+- name: payload
+  image: /static/images/png/solo_devel_pics/payload@2x.png
+  value: "20"
+  unit: KGs
+  delay: "0.4s"
+
+- name: stereocam
+  image: /static/images/png/solo_devel_pics/stereocam@2x.png
+  value: ZED
+  unit: stereocam
+  delay: "0.6s"
+
+- name: IMU
+  image: /static/images/png/solo_devel_pics/imu@2x.png
+  value: IMU
+  unit:
+  delay: "0.8s"
+
+- name: GPS
+  image: /static/images/png/solo_devel_pics/gps@2x.png
+  value: GPS
+  unit:
+  delay: "1.0s"
+
+- name: lidar
+  image: /static/images/png/solo_devel_pics/lidar@2x.png
+  value: 3D
+  unit: Lidar
+  delay: "1.2s"

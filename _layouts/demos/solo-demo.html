@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+  {% include header.html %}
+  <title>Project MANAS | Solo - Demo</title>
+  <style type="text/css">
+    body {
+        margin: 0px;
+        overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="/solo" class="button" style="position: fixed;">Back</a>
+</body>
+
+<script src="{{ "/static/js/three.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/static/js/jszip.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/static/js/collada-loader.js" | prepend: site.baseurl }}"></script>
+
+<script>
+    var camera;
+    var scene;
+    var renderer;
+    var geometry;
+    var material;
+    var mesh;
+    var model;
+    var skin;
+
+    var loader = new THREE.ColladaArchiveLoader();
+    loader.load("{{ "/static/models/solo.zae" | prepend: site.baseurl }}", function(collada) {
+        model = collada.scene;
+        model.scale.x = model.scale.y = model.scale.z = 15;
+        model.position.x = -1500;
+        model.updateMatrix();
+        kinematics = collada.kinematics;
+
+        init();
+        render();
+    });
+
+    function init() {
+        scene = new THREE.Scene();
+        addCamera();
+        addFloor();
+        addSkyBox();
+        addLight();
+        addBuildings();
+
+        scene.add(model);
+
+        renderer = new THREE.WebGLRenderer( { antialias: true } );
+        renderer.gammaOutput = true;
+        renderer.setPixelRatio( window.devicePixelRatio );
+        renderer.setSize(window.innerWidth, window.innerHeight);
+
+        document.body.appendChild(renderer.domElement);
+    }
+
+
+    function addCamera() {
+        camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 1, 100000);
+        camera.position.set( 1000, 600, 2500);
+    }
+
+    function addLight() {
+       scene.add( new THREE.AmbientLight( 0x1b1b1b ) );
+       var light = new THREE.DirectionalLight( 0xdfebff, 1 );
+       light.position.set( 50, 200, 100 );
+       light.position.multiplyScalar( 1.3 );
+       light.castShadow = true;
+       light.shadow.mapSize.width = 1024;
+       light.shadow.mapSize.height = 1024;
+       var d = 300;
+       light.shadow.camera.left = - d;
+       light.shadow.camera.right = d;
+       light.shadow.camera.top = d;
+       light.shadow.camera.bottom = - d;
+       light.shadow.camera.far = 1000;
+       scene.add( light );
+    }
+
+    function addFloor() {
+      scene.fog = new THREE.FogExp2( 0xffffff, 0.0000175 );
+      var loader = new THREE.TextureLoader();
+
+      var groundTexture = loader.load( "{{ "/static/images/textures/grass.jpg" | prepend: site.baseurl }}" );
+				groundTexture.wrapS = groundTexture.wrapT = THREE.RepeatWrapping;
+				groundTexture.repeat.set( 25, 25 );
+				groundTexture.anisotropy = 16;
+				var groundMaterial = new THREE.MeshLambertMaterial( { map: groundTexture } );
+				var mesh = new THREE.Mesh( new THREE.PlaneBufferGeometry( 100000, 100000 ), groundMaterial );
+				mesh.position.y = - 250;
+				mesh.rotation.x = - Math.PI / 2;
+				mesh.receiveShadow = true;
+				scene.add( mesh );
+
+      var grid = new THREE.GridHelper( 100000, 20, 0x000000, 0x000000 );
+      grid.material.opacity = 0.2;
+      grid.material.depthWrite = false;
+      grid.material.transparent = true;
+      scene.add( grid );
+    }
+
+    function addSkyBox() {
+  				sky = new THREE.Sky();
+  				sky.scale.setScalar( 450000 );
+  				scene.add( sky );
+
+  				sunSphere = new THREE.Mesh(
+  					new THREE.SphereBufferGeometry( 20000, 16, 8 ),
+  					new THREE.MeshBasicMaterial( { color: 0xffffff } )
+  				);
+  				sunSphere.position.y = - 700000;
+  				sunSphere.visible = false;
+  				scene.add( sunSphere );
+  				/// GUI
+  				var effectController = {
+  					turbidity: 1,
+  					rayleigh: 0.469,
+  					mieCoefficient: 0.005,
+  					mieDirectionalG: 0.8,
+  					luminance: 1,
+  					inclination: 0.0,
+  					azimuth: 0.25,
+  					sun: ! true
+  				};
+  				var distance = 400000;
+  				function guiChanged() {
+  					var uniforms = sky.material.uniforms;
+  					uniforms[ "turbidity" ].value = effectController.turbidity;
+  					uniforms[ "rayleigh" ].value = effectController.rayleigh;
+  					uniforms[ "luminance" ].value = effectController.luminance;
+  					uniforms[ "mieCoefficient" ].value = effectController.mieCoefficient;
+  					uniforms[ "mieDirectionalG" ].value = effectController.mieDirectionalG;
+  					var theta = Math.PI * ( effectController.inclination - 0.5 );
+  					var phi = 2 * Math.PI * ( effectController.azimuth - 0.5 );
+  					sunSphere.position.x = distance * Math.cos( phi );
+  					sunSphere.position.y = distance * Math.sin( phi ) * Math.sin( theta );
+  					sunSphere.position.z = distance * Math.sin( phi ) * Math.cos( theta );
+  					sunSphere.visible = effectController.sun;
+  					uniforms[ "sunPosition" ].value.copy( sunSphere.position );
+  				}
+  				guiChanged();
+    }
+
+    function addBuildings() {
+        var loader = new THREE.TextureLoader();
+        loader.setCrossOrigin("anonymous");
+        var texture = loader.load("{{ "/static/images/textures/barrel.png" | prepend: site.baseurl }}");
+        texture.wrapS = THREE.RepeatWrapping;
+        texture.wrapT = THREE.RepeatWrapping;
+        texture.repeat.set( 1,1 );
+        var geometry = new THREE.CylinderGeometry( 200, 200, 500, 32 );
+        var materials = [];
+            materials.push( new THREE.MeshBasicMaterial( {
+              side: THREE.DoubleSide,
+            map: texture
+        } ) );
+
+        var numpoints = 50;
+
+        for (var i = 0 ; i < numpoints ; i++) {
+            var x = Math.random() * (50000) - 6000
+            var y = Math.random() * (80 - 1) + 1
+            var z = Math.random() * (50000) - 6000
+            var cylinder = new THREE.Mesh( geometry, materials );
+            scene.add( cylinder );
+            cylinder.position.set(-x, 100, -z);
+        }
+
+
+    }
+
+    function render() {
+        requestAnimationFrame(render);
+
+        if (keyDown[38]) {
+            if (speed < 130)
+                speed += 1;
+        } else if (keyDown[40]) {
+            if (speed > -60)
+              speed -= 1;
+        } else {
+          if (speed > 0)
+            speed -= 1;
+          else if (speed < 0)
+            speed += 1
+        }
+          if (keyDown[37]) model.rotation.z += 0.05;
+          if (keyDown[39]) model.rotation.z -= 0.05;
+
+        model.position.x += speed * Math.sin(model.rotation.z);
+        model.position.z += speed * Math.cos(model.rotation.z);
+
+        camera.lookAt(model.position);
+        renderer.render(scene, camera);
+    }
+
+    speed = 0;
+    keyDown = new Array();
+    for (i = 0; i < 300; i++) {
+        keyDown[i] = false;
+    }
+
+    document.onkeydown = function(event) {
+        keyDown[event.keyCode] = true;
+    }
+
+    document.onkeyup = function(event) {
+        keyDown[event.keyCode] = false;
+    }
+</script>
+</html>

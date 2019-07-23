@@ -1,5 +1,5 @@
 ---
-title: Solo
+title: SOLO
 layout: solo
 permalink: /solo
 ---
