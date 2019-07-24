@@ -2,13 +2,26 @@
   image: wall-e.jpg
   id: wall-e
   overview: Our first stride into the autonomous robots started with Wall-W. It was built as a proof of concept. Wall-E is where the journey and dream began.
+  hyperlink:
+  hypertext:
 
 - name: Mahindra Rise Prize
   image: eve.jpg
   id: mahindra
   overview: Eve is our entry into the $1 million challenge. It's the culmination of years of hard work and the very best of what our team can offer. It's packed with cutting edge technologies and techniques, made even more impressive as we're the youngest team to qualify for the finals.
+  hyperlink:
+  hypertext:
 
 - name: IGVC
   image: adam.jpg
   id: igvc
   overview: Adam, as its name sake, is the very first of its kind -- our first ever entry into IGVC. Built rapidly over a course of a few months, Adam showcases our team's rapid prototyping and development abilities. Fortunately, our sleepless night paid off as Adam placed 9th in the world, and 2nd in India. Adam was also 2nd in the IOP Challenge.
+  hyperlink:
+  hypertext:
+
+- name: IGVC - 2019
+  image: solo.png
+  id: solo
+  overview: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  hyperlink: /solo
+  hypertext: Click here to know more.

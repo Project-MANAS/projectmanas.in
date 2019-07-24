@@ -20,7 +20,7 @@ h1{
 
 /* Properties of Container */
 #landing_container {
-  background-image: url('../images/png/solo_devel_pics/memphis-mini@2x.png');
+  background-image: url('../images/png/projects/solo/memphis-mini@2x.png');
   background-position: absolute;
   z-index: 1;
   width: 100vw;
