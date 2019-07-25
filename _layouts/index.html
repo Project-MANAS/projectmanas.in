@@ -18,7 +18,7 @@
           <div class="grid-y text-right" style="height: 100vh;">
             <div class="cell large-4"></div>
             <div class="cell large-2 large-offset-3">
-              <img src="/static/images/png/manas-logo-transparent.png" width="85%" height="85%" alt "Project MANAS Logo"/>
+              <img src="/static/images/png/manas-logo-transparent.png" width="85%" height="85%" alt "Project MANAS Logo" />
             </div>
             <div class="cell large-6"></div>
           </div>
@@ -187,6 +187,18 @@
 
             {% for project in site.data.projects %}
             <div class="cell large-3 medium-4 small-12">
+              {% unless project.hyperlink == nil %}
+              <a href="{{ project.hyperlink }}" target="_blank">
+                <div class="card project-card" id="{{ project.id }}">
+                  <div class="card-section">
+                    <h2 class="white">{{ project.hypertext}}</h2>
+                  </div>
+                </div>
+              </a>
+              {% endunless %}
+
+
+              {% unless project.hyperlink != nil %}
               <a data-open="{{ project.id }}-popup">
                 <div class="card project-card" id="{{ project.id }}">
                   <div class="card-section">
@@ -194,12 +206,14 @@
                   </div>
                 </div>
               </a>
+              {% endunless %}
+
             </div>
             <div class="reveal" id="{{ project.id }}-popup" data-reveal>
               <h1>{{ project.name }}</h1>
               <p class="lead">Overview</p>
               <p>{{ project.overview }}</p>
-              <a href=" {{ project.hyperlink }} " target="_blank" style="color: #FF5700;" class="lead">{{ project.hypertext}}</a>
+
               <button class="close-button" data-close aria-label="Close modal" type="button">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -314,7 +328,7 @@
                   </label>
                   <input type="submit" class="button hollow-white float-right" id="submit" value="Submit">
                 </div>
-		<input type="hidden" name="_next" value="projectmanas.in"/>
+                <input type="hidden" name="_next" value="projectmanas.in" />
               </form>
             </div>
             <div class="cell large-3">
@@ -339,7 +353,7 @@
     template: '<a href="{% raw %} {{link}} {% endraw %}"<div class="cell"><div class="card"> <div class="card-section"> <img src="{% raw %} {{image}} {% endraw %}"> </div> <div class="card-section"><p class="text-center">{% raw %} {{caption}} {% endraw %}</p> </div> </div></div></a>',
     resolution: 'standard_resolution',
     limit: 4,
-    after: function () {
+    after: function() {
       var el = document.getElementById('instafeed');
       if (el.classList)
         el.classList.add('show');
@@ -349,11 +363,11 @@
   });
   feed.run();
   $(document).foundation();
-  $('.nav-sticky').on('sticky.zf.stuckto:top', function () {
+  $('.nav-sticky').on('sticky.zf.stuckto:top', function() {
     $(".top-bar-title").css({
       "opacity": 1,
     });
-  }).on('sticky.zf.unstuckfrom:top', function () {
+  }).on('sticky.zf.unstuckfrom:top', function() {
     $(".top-bar-title").css({
       "opacity": 0,
     });
