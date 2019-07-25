@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Futura Md BT';
+  src: url("../fonts/Futura-Medium.ttf") format("truetype");
+}
+
+html body{
+    padding:10px;
+    background:black;
+}
+
+#robonation-img{
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    width: 15vw;
+    height: 10vh;
+}
+
+#laurel{
+    position:relative;
+    display:inline-block;
+    height:150px;
+    width:150px;
+
+}
+#laurel-texts{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5em;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.orbit-container{
+    font-size:20px;
+}
+
+.igvc-heading{
+    margin-top:4vh;
+    margin-left:50px;
+    margin-bottom:15vh;
+    height:10vh;
+    text-align: left;
+    font-family: 'Futura Md BT' !important;
+}
+
+.igvc-info{
+    font-size:4vh;
+    height:60vh;
+    color:white;
+    width:50%;
+    margin-left:50px;
+    margin-top:5vh;
+    font-family:'Futura Md BT'!important;   
+}
+
+.laurel-line{
+    margin-top:5vh;
+    margin-left:27%;
+}
+
+.orbit{
+    margin-left:300px;
+    margin-top:120px;
+    color:white;
+
+}
+
+
+.cell {
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+}
