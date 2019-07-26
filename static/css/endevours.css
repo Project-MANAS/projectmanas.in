@@ -324,7 +324,7 @@ button:focus {
 .slick-dots{
 position: absolute;
 bottom: 20px;
-display: block;
+display: inline-block;
 width: 100%;
 /* padding: 10; */
 margin: 0;
