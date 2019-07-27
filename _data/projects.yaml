@@ -12,16 +12,16 @@
   hyperlink:
   hypertext:
 
-- name: ADAM
+- name: Adam
   image: adam.jpg
   id: igvc
   overview: Adam, as its name sake, is the very first of its kind -- our first ever entry into IGVC. Built rapidly over a course of a few months, Adam showcases our team's rapid prototyping and development abilities. Fortunately, our sleepless night paid off as Adam placed 9th in the world, and 2nd in India. Adam was also 2nd in the IOP Challenge.
   hyperlink:
   hypertext:
 
-- name: SOLO
+- name: Solo
   image: solo.png
   id: solo
   overview:
   hyperlink: /solo
-  hypertext: SOLO
+  hypertext: Solo
