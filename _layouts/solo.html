@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/static/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#fe5831">
+  <link rel="shortcut icon" href="/static/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/static/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <link type="text/css" rel="stylesheet" href="/static/css/foundation.min.css" />
+  <link type="text/css" rel="stylesheet" href="/static/css/common.css" />
+  <link type="text/css" rel="stylesheet" href="{{ "/static/css/endevours.css" | prepend: site.baseurl }}" />
+  <link type="text/css" rel='stylesheet' href="{{ "/static/css/animations.css" | prepend: site.baseurl }}" />
+  <script src="/static/js/vendor/jquery.min.js"></script>
+  <script src="/static/js/vendor/reel.min.js" type="text/javascript"></script>
+
+
+
+  <link rel="stylesheet" type="text/css" href="/static/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="/static/slick/slick-theme.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+  <div id="desktop-view">
+    <div class='horizontal-scroll'>
+      <div class="grid-container full" id="landing_container">
+        <div class="grid-x">
+          <div class="cell large-5 medium-5 small-5 large-offset-1 medium-offset-1 small-offset-1">
+            <div class="grid-y" style="height: 100vh;">
+              <div class="cell large-1 medium-1 small-1"></div>
+              <div class="cell large-4 medium-4 small-4 float-center" id="endevours-box-text">
+                <h1 id="endevours-logo">{{ site.data.solo[0].name }}</h1>
+              </div>
+              <script src="/static/js/vendor/fittext.js"></script>
+              <script>
+                jQuery("#endevours-box-text").fitText();
+              </script>
+              <div class="cell large-1 medium-1 small-1">
+                <p id="endevours-caption">{{ site.data.solo[0].caption }} </p>
+              </div>
+              <div class="cell large-2 medium-2 small-2">
+                <div class="grid-x" style="width: 40vw;">
+                  {% for button in site.data.spec_buttons %}
+                  <div style="animation-delay: {{ button.delay }}" class="cell large-auto medium-auto small-auto animated fadeInUp">
+                    <div class="card" style="padding: 10%; padding-bottom: 0px;">
+                      <img width="100%" height="100%" src={{ button.image }}>
+                      <div class="card-section endevours-img-height-text">
+                        <p class="text-center" style="margin: 0px; padding: 0px; border: 0px; font-size: 1vw"><strong>{{ button.value }}</strong></p>
+                        <p class="text-center" style="margin: 0px; padding: 0px; border: 0px; font-size: 1vw;">{{ button.unit }}</p>
+                      </div>
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+              <div class="cell large-1 medium-1 small-1"></div>
+              <div class="grid-x" style="width: 40vw">
+                <div class="cell large-2 medium-2"></div>
+                <div class="cell shrink pic-fix">
+                  <button class="button animated fadeIn " style="margin-left: 3vw; "><a href="/demo/solo" target="_blank">INTERACTIVE MODE</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cell large-auto medium-auto small-auto float-right large-offset-1 medium-offset-1">
+            <div class="grid-y" style="height: 50vh">
+              <div class="cell large-3 medium-3 small-3"></div>
+              <div id="endevours-image"><img style="" src="{{ site.data.solo[0].image }}"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-view">
+    <div class='horizontal-scroll'>
+      <div class="grid-container full">
+        <div class="grid-y" id="landing_container">
+          <div class="cell medium-shrink small-shrink small-screen-enable float-center">
+            <div id="endevours-image"><img style="" src="{{ site.data.solo[0].image }}"></div>
+          </div>
+          <div class="cell large-4 medium-2 small-2">
+            <div class="grid-x ">
+              <div class="cell medium-12 small-12" id="endevours-box-text">
+                <h1 id="endevours-logo">{{ site.data.solo[0].name }}</h1>
+              </div>
+            </div>
+          </div>
+          <div class="cell medium-1 small-1">
+            <div class="grid-x">
+              <div class="cell medium-1 small-1"></div>
+              <div class="cell medium-10 small-10">
+                <p id="endevours-caption">{{ site.data.solo[0].caption }} </p>
+              </div>
+            </div>
+          </div>
+          <div class"cell medium-3 small-3"></div>
+          <div class="cell small-auto medium-auto ">
+            <div class="grid-x grid-margin-x">
+              <div class="cell medium-2 small-2"></div>
+              <div id="spec-img-height" class="cell medium-2 small-2 animated fadeInUp first-row-fix">
+                <div class="card">
+                  <img width="100%" height="100%" src="/static/images/png/projects/solo/height@2x.png">
+                  <div class="card-section solo-img-height-text">
+                    <p class="text-center font-fix" style="margin: 0px; padding: 0px; border: 0px; font-size: 1.5vmax"><strong>1.21</strong></p>
+                    <p class="text-center font-fix" style="margin: 0px; padding: 0px; border: 0px; font-size: 1.5vmax;">meters</p>
+                  </div>
+                </div>
+              </div>
+              <div id="spec-img-weight" class="cell medium-2 small-2 animated fadeInUp first-row-fix">
+                <div class="card">
+                  <img width="100%" height="100%" src="/static/images/png/projects/solo/weight@2x.png">
+                  <div class="card-section solo-img-height-text">
+                    <p class="text-center font-fix" style="margin: 0px; padding: 0px; border: 0px; font-size: 1.5vmax"><strong>66</strong></p>
+                    <p class="text-center font-fix" style="margin: 0px; padding: 0px; border: 0px; font-size: 1.5vmax">KGs</p>
+                  </div>
+                </div>
+              </div>
+              <div id="spec-img-payload" class="cell medium-2 small-2 animated fadeInUp first-row-fix">
+                <div class="card">
+                  <img width="100%" height="100%" src="/static/images/png/projects/solo/payload@2x.png">
+                  <div class="card-section solo-img-payload-text">
+                    <p class="text-center font-fix" style="margin: 0px; padding: 0px; border: 0px; font-size: 1.5vmax"><strong>20</strong></p>
+                    <p class="text-center font-fix" style="margin: 0px; padding: 0px; border: 0px; font-size: 1.5vmax">KGs</p>
+                  </div>
+                </div>
+              </div>
+              <div id="spec-img-zed" class="cell medium-2 small-2 animated fadeInUp first-row-fix">
+                <div class="card">
+                  <img width="100%" height="100%" src="/static/images/png/projects/solo/stereocam@2x.png">
+                  <div class="card-section solo-img-zed-text">
+                    <p class="text-center font-fix" style="margin: 0px; padding: 0px; border: 0px; font-size: 1.5vmax"><strong>ZED</strong></p>
+                    <p class="text-center font-fix" style="margin: 0px; padding: 0px; border: 0px; font-size: 1.2vmax">stereocam</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cell medium-2 small-2"></div>
+              <div class="cell medium-3 small-3"></div>
+              <div id="spec-img-ins" class="cell medium-2 small-2 animated fadeInUp second-row-fix">
+                <div class="card">
+                  <img width="100%" height="100%" src="/static/images/png/projects/solo/imu@2x.png">
+                  <div class="card-section solo-img-imu-text">
+                    <p class="text-center font-fix" style="margin: 0px; padding: 0px; border: 0px; font-size: 1.5vmax"><strong>IMU</strong></p>
+                  </div>
+                </div>
+              </div>
+              <div id="spec-img-gps" class="cell medium-2 small-2 animated fadeInUp second-row-fix">
+                <div class="card">
+                  <img width="100%" height="100%" src="/static/images/png/projects/solo/gps@2x.png">
+                  <div class="card-section solo-img-gps-text">
+                    <p class="text-center font-fix" style="margin: 0px; padding: 0px; border: 0px; font-size: 1.5vmax"><strong>GPS</strong></p>
+                  </div>
+                </div>
+              </div>
+              <div id="spec-img-lidar" class="cell medium-2 small-2 animated fadeInUp second-row-fix">
+                <div class="card">
+                  <img width="100%" height="100%" src="/static/images/png/projects/solo/lidar@2x.png">
+                  <div class="card-section solo-img-lidar-text">
+                    <p class="text-center font-fix" style="margin: 0px; padding: 0px; border: 0px; font-size: 1.5vmax"><strong>3D</strong></p>
+                    <p class="text-center font-fix" style="margin: 0px; padding: 0px; border: 0px; font-size: 1.5vmax">Lidar</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cell small-2 medium-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

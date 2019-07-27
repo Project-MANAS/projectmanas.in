@@ -1,0 +1,429 @@
+/* Solo custom font */
+@font-face {
+  font-family: 'Astrobia Regular';
+  src: url("../fonts/Astrobia.ttf") format("truetype");
+  font-family: 'Futura Md BT'
+  src: url("../fonts/Futura-Medium.ttf") format("truetype");
+}
+
+/* Main Background */
+body {
+  overflow-x: hidden;
+  overflow-y:hidden;
+
+}
+
+/* The SOLO Logo */
+h1{
+   font-size: 28vmin;
+}
+
+/* Properties of Container */
+#landing_container {
+  background-image: url('../images/png/projects/solo/memphis-mini@2x.png');
+  background-position: absolute;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Properties of the Text Logo */
+#endevours-logo {
+  font-family: 'Astrobia Regular';
+  display: block;
+
+}
+
+/* Properties of the caption */
+#endevours-caption {
+  text-align: center;
+  font-size: 2vmin;
+}
+
+/* Animation properties of the Spec-images */
+#spec-img-height {
+
+  animation-delay: 0s;
+
+}
+
+#spec-img-weight {
+
+  animation-delay: 0.2s;
+
+}
+
+#spec-img-payload {
+
+  animation-delay: 0.4s;
+
+}
+
+#spec-img-zed {
+
+  animation-delay: 0.6s;
+
+}
+
+#spec-img-ins {
+
+  animation-delay: 0.8s;
+
+}
+
+#spec-img-gps {
+
+  animation-delay: 1.0s;
+
+}
+
+#spec-img-lidar {
+
+  animation-delay: 1.2s;
+
+}
+
+#spec-img-height-text {
+
+  font-weight: bold;
+  animation-delay: 0s;
+  font-size: 2.5vh;
+  justify-content: center;
+
+
+}
+
+#spec-img-weight-text {
+  /* padding-top: 2vw; */
+  font-weight: bold;
+
+  animation-delay: 0.2s;
+  font-size: 2.5vh;
+
+}
+
+#spec-img-payload-text {
+
+  font-weight: bold;
+
+  animation-delay: 0.4s;
+  font-size: 2.5vh;
+
+}
+
+#spec-img-zed-text {
+
+  font-weight: bold;
+
+  animation-delay: 0.6s;
+  font-size: 2.5vh;
+
+}
+
+#spec-img-ins-text {
+
+  font-weight: bold;
+
+  animation-delay: 0.8s;
+  font-size: 2.5vh;
+
+}
+
+#spec-img-gps-text {
+
+  font-weight: bold;
+
+  animation-delay: 1.0s;
+  font-size: 2.5vh;
+}
+
+#spec-img-lidar-text {
+
+  font-weight: bold;
+
+  animation-delay: 1.2s;
+  font-size: 2.5vh;
+
+}
+
+#spec-img-height-text2 {
+
+  animation-delay: 0s;
+  font-size: 2.5vh;
+
+}
+
+#spec-img-weight-text2 {
+
+  animation-delay: 0.2s;
+  font-size: 2.5vh;
+
+}
+
+#spec-img-payload-text2 {
+
+  animation-delay: 0.4s;
+  font-size: 2.5vh;
+
+}
+
+#spec-img-zed-text2 {
+
+  animation-delay: 0.6s;
+  font-size: 2.5vh;
+
+}
+
+#spec-img-lidar-text2 {
+
+  animation-delay: 1.2s;
+  font-size: 2.5vh;
+
+}
+
+.pic-fix{
+  display: none;
+}
+.button {
+  background-color: #FF5700;
+  border: none;
+  color: white;
+  width: 20vw;
+  height: 7vh;
+  padding: 1vh 1vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /* margin: 4px 2px; */
+  cursor: pointer;
+  border-radius: 5vh;
+  grid-row-start: 18;
+  grid-column-start: 4;
+  justify-content: center;
+  animation-delay: 1.4s;
+  font-size: 1.5vmax;
+}
+
+button:focus {
+  outline: none;
+}
+
+#endevours-image{
+  /* grid-column-start: 13;
+  grid-row-start: 4; */
+  /* grid-column-end: 20; */
+  /* grid-row-end: 20; */
+  /* width: 30vw;
+  height: 50vw; */
+  /* zoom: 0.5; */
+  /* -moz-transform: scale(0.5);
+  -moz-transform-origin: 0 0; */
+  /* padding-left: 5vw;
+  padding-top: 16vh; */
+  width: 70%;
+  height: 70%;
+}
+
+/* @media screen and (min-device-width: 1280px) {
+  #solo-image{
+
+    -moz-transform: scale(0.5);
+  } */
+
+  /* body{
+    background-color: red;
+  } */
+
+
+
+
+.about_container{
+  display: grid;
+  grid-auto-columns: 5vw;
+  grid-auto-rows: 5vh;
+  justify-content: start;
+  /* background-color: black; */
+  background-image: url('../images/png/solo_devel_pics/Group 4.png');
+  background-position: absolute;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+}
+
+#igvc-container{
+  font-size: 1.5vw;
+  grid-row-start: 3;
+  grid-column-start: 2;
+  grid-column-end: 10;
+  color: white;
+  justify-content: center;
+}
+
+#endevours-text-container{
+  font-size: 1.5vw;
+  grid-row-start: 3;
+  grid-column-start: 12;
+  grid-column-end: 20;
+  color: white;
+  justify-content: center;
+}
+
+.news-headlines{
+  font-size: 1.5vw;
+  grid-row-start: 17;
+  grid-column-start: 5;
+  color: white;
+  grid-column-end: 17;
+}
+
+.spec{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+.spec-image{
+  padding: 0 0 0 0;
+  display: block;
+  background-color: transparent;
+  margin: 0 0 0 0;
+
+  /* border-radius: 100px; */
+  width: 5vw;
+  height: 5vw;
+  background-repeat: no-repeat;
+  background-position: 0 0 0 0;
+  background-size: 100% 100%;
+  /* box-shadow: inset 15px 10px 22px 0 rgba(0, 0, 0, .46) */
+}
+.card {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  /* margin-bottom: 1rem;
+  border: 1px solid #e6e6e6; */
+  border-radius: 0;
+  background:;
+  box-shadow: none;
+  overflow: hidden;
+  color: #0a0a0a;
+  justify-content:center;
+}
+.card-section {
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  padding: 0rem;
+  margin: 0rem;
+}
+
+
+.slick-dots{
+position: absolute;
+bottom: 20px;
+display: inline-block;
+width: 100%;
+/* padding: 10; */
+margin: 0;
+list-style: none;
+text-align: center;
+}
+.slick-dots li.slick-active button:before{
+  font-size:5vw;
+  color:blue;
+}
+
+.spec-fix{
+  width: auto;
+  height: auto;
+}
+
+.small-screen-enable{
+  display: none;
+}
+
+.font-fix{
+  font-size: 1vw;
+}
+
+#mobile-view{
+  display: none;
+}
+
+#desktop-view{
+  display: block;
+}
+
+
+
+@media screen and (max-width: 39.9375em){
+
+  #endevours-logo {
+  text-align: center;
+  font-size: 10vh;
+  padding-top: 6vh;
+
+  }
+  .pic-fix{
+    display: none;
+  }
+
+  #endevours-caption{
+    text-align: center;
+    font-size: 1.4vh;
+
+  }
+
+  .fluid{
+    margin: 0px;
+    padding: 0px;
+    border: 0px
+  }
+
+  .small-screen-enable{
+    display: block;
+  }
+
+  #endevours-image{
+    margin-left: auto;
+    margin-right: auto;
+    width: 45vh;
+    height: 45vh
+
+  }
+
+  .font-fix{
+    font-size: 2vh
+  }
+
+  .card{
+
+  }
+  .second-row-fix{
+    margin-top: 2vh;
+  }
+  .first-row-fix{
+    margin-top: 2vh;
+  }
+
+  #mobile-view{
+    display: block;
+  }
+
+  #desktop-view{
+    display: none;
+  }
+  .pic-fix{
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 900px) {
+  .pic-fix{
+    display: block;
+  }
+}

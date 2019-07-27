@@ -362,6 +362,10 @@
   background: url(../images/png/bg/adam.jpg)
 }
 
+#solo, #solo:hover {
+    background: url(../images/png/bg/solo.jpg)
+}
+
 .instagram-section .card:hover {
   transform: scale(1.1)
 }
