@@ -390,8 +390,8 @@ text-align: center;
   #endevours-image{
     margin-left: auto;
     margin-right: auto;
-    width: 45vh;
-    height: 45vh
+    width: 40vh;
+    height: 40vh
 
   }
 
@@ -426,4 +426,5 @@ text-align: center;
   .pic-fix{
     display: block;
   }
+
 }
