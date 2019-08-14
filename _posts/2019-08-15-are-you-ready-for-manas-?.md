@@ -52,14 +52,26 @@ The task phase is an extensive training program that helps us to identify the pe
 Whether or not you make it into the team, it will be a good learning experience and you would gain a fair amount of knowledge on robotics.
 
 ### Frequently Asked questions
-Q. Where will the recruitments be held? A. The interviews will be held in the Project MANAS workshop, outside Kamat Circle.
+Q. Where will the recruitments be held?
+<br/>
+A. The interviews will be held in the Project MANAS workshop, outside Kamath Circle.
 
-Q. What is the GBM? What will be covered? A. GBM is our General Body Meeting where we will be providing detailed information about the working of each subsystem to give you a complete insight into the working of Project MANAS.
+Q. What is the GBM? What will be covered?
+<br/>
+A. GBM is our General Body Meeting where we will be providing detailed information about the working of each subsystem to give you a complete insight into the working of Project MANAS.
 
-Q. Can I attend interview without attending GBM? A. Yes. The GBM is only to give you full details about the club. But we would like to see you at the GBM too.
+Q. Can I attend interview without attending GBM?
+<br/>
+A. Yes. The GBM is only to give you full details about the club. But we would like to see you at the GBM too.
 
-Q. Can I be a part of multiple divisions? A. No, but you can contribute to them. In fact, it’s crucial that members help others so as to finish tasks on time.
+Q. Can I be a part of multiple divisions?
+<br/>
+A. No, but you can contribute to them. In fact, it’s crucial that members help others so as to finish tasks on time.
 
-Q. What are the working hours? A. Until you get the perm, team members are expected to work 6:00 PM to 9:00 PM in the case of first years and 6:00 PM to 10:30 PM. After getting perm extension, first years will have to work till 10:30 PM and second years till 1:00 AM.
+Q. What are the working hours?
+<br/>
+A. Until you get the perm, team members are expected to work 6:00 PM to 9:00 PM in the case of first years and 6:00 PM to 10:30 PM. After getting perm extension, first years will have to work till 10:30 PM and second years till 1:00 AM.
 
-Q. Will I have to stay back in the vacation? A. Once you get into the team, you will have to stay back for about 2 months in the summer and 20 days in the winter. People who wish to stay back during this winter vacation are free to do so, its not mandatory.
+Q. Will I have to stay back in the vacation?
+<br/>
+A. Once you get into the team, you will have to stay back for about 2 months in the summer and 20 days in the winter. People who wish to stay back during this winter vacation are free to do so, its not mandatory.
