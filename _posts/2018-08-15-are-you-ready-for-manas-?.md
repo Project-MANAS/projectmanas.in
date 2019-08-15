@@ -29,22 +29,16 @@ A robot at the end of the day is a mechanical entity. The mechanical division en
 The Management Division ensures that all the Divisions & Sub-divisions work in synchronization. It facilitates intercommunication between the various Divisions. The PR and Design team makes sure Project MANAS is active on various social media platforms like Facebook, Twitter and Instagram. The Admin and Sponsorship team acts as the connecting link between the sponsorers and Project MANAS. It is responsible for procuring funds, and also handles the logistics.
 
 ### Recruitment
-Every year, we take in new recuits from the first and second years to keep our team strength up. This year, we’re using our tried and tested methodology that’s given below.
-
-But to add a new twist, we’ve also hidden some clues on our (new) website. If you can find them, you’ll get a direct entry into the task phase, and a ton of brownie points. Only the first three finders are eligible for direct entry.
-
-We’ll also be conducting our General Body Meeting (GBM) on the 6th of September, where we’ll brief you about our team, so please do join us. We’ll announce the venue later.
+Every year, we take in new recuits from the first and second years to keep our team strength up. This year, we’re using our tried and tested methodology.
 
 ### Challenge
 The challenge is a chance for students in Manipal to skip the interview round and get a direct entry into the Project MANAS AI Task phase. The challenge is open to all first and second year students. We will not only be looking at whether you get a perfect solution but your approach as well. Creative and innovative approaches will be awarded brownie points because at MANAS we value out-of-the-box thinking. There will be two separate leaderboards for first and second years. It is necessary for second year students to solve all of the questions to be considered successful. The hard challenges are optional for first year students, solving them will give you extra points, and street cred. We’ll finally pick the top performers from first and second years.
 
-The duration of the challenge is from 15th August to 5th September, and the selected candidates will be announced during the GBM.
+The duration of the challenge is from 15th August to 6th September, and the selected candidates will be announced during the GBM.
 
 
 ### Interviews
 The recruitment into Project MANAS is a two-step process. First round is an interview round in which we will test your logical and technical skills. You should have good analytical and creative skills. For AI, you should know basic data structures and algorithms. Machine learning is a plus. For SnA, you will be tested on eletrical and electronics concepts. Arduino is a plus. For Mech, you will need to brush up on basic mechanics, math and physics. Engineering Graphics is a plus. For Management, we’ll be looking at your people skills and how well you can adminstrate a team like Project MANAS. Usually the questions asked are bearing in mind your age and inexperience so you need not stress about them. If you have previously worked on a project related to any of the above sub-divisions, you can bring it to the interview. Should you clear the interview round, you will be given a chance to enter the Task Phase.
-
-The interview rounds will be held on 7th September at the Project MANAS workshop.
 
 ### Task Phase
 The task phase is an extensive training program that helps us to identify the people who are right for the job. It will last for about two months. It’s like a preview of being a part of the team. You will be working with a team on a single project, either within divisions or for the more ambitious folks, you can team up with people from other divisions as well. At the end of the Task Phase, you will go through more rigorous interviews testing not only your technical competence, but also how well you can work in a team. If we think you’re a valuable addition to our team, you’ll officially be part of Project MANAS.
