@@ -124,6 +124,16 @@
   linkedin: https://www.linkedin.com/in/chaitanya21999
   github: https://github.com/Chaitanya-git
 
+
+- name: Shivam Agarwal
+  nickname: Shivam Agarwal
+  designation: AI Perception Member
+  image: 9.png
+  facebook: 
+  mail: mailto:shivamag99@gmail.com
+  linkedin: https://www.linkedin.com/in/shivam-agarwal-136833180
+  github: 
+
 - name: Baidyanath Kundu
   nickname: sudo-panda
   designation: AI Planning Member
@@ -187,14 +197,6 @@
   linkedin: https://www.linkedin.com/in/garima-singh-392856189/
   github: https://github.com/grimmmyshini
 
-- name: Shivam Agarwal
-  nickname: Shivam Agarwal
-  designation: AI Planning Member
-  image: 9.png
-  facebook: 
-  mail: mailto:shivamag99@gmail.com
-  linkedin: https://www.linkedin.com/in/shivam-agarwal-136833180
-  github: 
  
 
 - name: Ansel Dias
@@ -206,16 +208,15 @@
   linkedin: https://www.linkedin.com/in/ansel-dias-a7993215b/
   github:
 
-- name: Vibhuti Ravi
-  nickname: Vibhuti Ravi
-  designation: S&A Sensing Member
-  image: 14.jpeg
-  facebook: https://www.facebook.com/vibhuti.ravi
-  mail: mailto:vibhutiravi@gmail.com
-  linkedin: https://www.linkedin.com/in/vibhuti-ravi-2b8184160/
-  github:
 
-
+- name: Yagya Malik
+  nickname: Yagya Malik
+  designation:  Sensing Member
+  image: 37.png
+  facebook:  
+  mail: mailto:yagyamalik1812@gmail.com
+  linkedin: https://www.linkedin.com/in/yagya-malik-8a4aa0155
+  github: https://github.com/Nymeria18
 
 - name: Omkar Jhadav
   nickname: Omkar Jhadav
@@ -264,7 +265,7 @@
 
 - name: Shreesh Tripathi
   nickname: Shreesh Tripathi
-  designation:  Automation Member
+  designation:  Sensing Member
   image: 33.png
   facebook: 
   mail: 
@@ -280,14 +281,6 @@
   linkedin: https://www.linkedin.com/in/akhil-bonagiri-2569b9181
   github: 
 
-- name: Yagya Malik
-  nickname: Yagya Malik
-  designation:  Sensing Member
-  image: 37.png
-  facebook:  
-  mail: mailto:yagyamalik1812@gmail.com
-  linkedin: https://www.linkedin.com/in/yagya-malik-8a4aa0155
-  github: https://github.com/Nymeria18
 
 - name: Ritwik Agarwal
   nickname: Ritwik Agarwal
