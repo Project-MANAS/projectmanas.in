@@ -1,12 +1,3 @@
-- name: Avirat Varma
-  nickname: Avirat Varma
-  designation: Team Leader
-  image: avirat.png
-  facebook: https://facebook.com/avirat.varma
-  mail: mailto:team_leader@projectmanas.in
-  linkedin:
-  github:  #Team Leader
-
 - name: Shrijit Singh
   nickname: Shrijit Singh
   designation: Technical Head
@@ -129,10 +120,10 @@
   nickname: Shivam Agarwal
   designation: AI Perception Member
   image: 9.png
-  facebook: 
+  facebook:
   mail: mailto:shivamag99@gmail.com
   linkedin: https://www.linkedin.com/in/shivam-agarwal-136833180
-  github: 
+  github:
 
 - name: Baidyanath Kundu
   nickname: sudo-panda
@@ -165,7 +156,7 @@
   nickname: helium_balloons
   designation: AI Perception Member
   image: 4.png
-  facebook: 
+  facebook:
   mail: mailto:dhruvjoshi1007@gmail.com
   linkedin: https://www.linkedin.com/in/dhruv-joshi-b65a6b16a
   github: https://github.com/dhruvjoshi1007
@@ -183,7 +174,7 @@
   nickname: aneesh404
   designation: AI Perception Member
   image: 6.png
-  facebook: 
+  facebook:
   mail: mailto:aneeshchawla404@gmail.com
   linkedin: https://www.linkedin.com/in/aneesh-chawla-986165171
   github: https://github.com/aneesh404
@@ -192,12 +183,12 @@
   nickname: grimmyshini
   designation: AI Planning Member
   image: 7.png
-  facebook: 
+  facebook:
   mail: mailto:garimasingh0028@gmail.com
   linkedin: https://www.linkedin.com/in/garima-singh-392856189/
   github: https://github.com/grimmmyshini
 
- 
+
 
 - name: Ansel Dias
   nickname: Ansel Dias
@@ -213,7 +204,7 @@
   nickname: Yagya Malik
   designation:  Sensing Member
   image: 37.png
-  facebook:  
+  facebook:
   mail: mailto:yagyamalik1812@gmail.com
   linkedin: https://www.linkedin.com/in/yagya-malik-8a4aa0155
   github: https://github.com/Nymeria18
@@ -249,7 +240,7 @@
   nickname: Gokul P
   designation:  Sensing Member
   image: 31.png
-  facebook: 
+  facebook:
   mail: mailto:gokulgns@gmail.com
   linkedin: https://www.linkedin.com/in/gokul-p-38b22b154
   github: https://github.com/gokulgns
@@ -258,28 +249,19 @@
   nickname: Kishore K
   designation:  Sensing Member
   image: 32.png
-  facebook: 
-  mail: 
-  linkedin: 
+  facebook:
+  mail: mailto:klk.kishore5@gmail.com
+  linkedin: https://www.linkedin.com/in/kishorek31/
   github:
-
-- name: Shreesh Tripathi
-  nickname: Shreesh Tripathi
-  designation:  Sensing Member
-  image: 33.png
-  facebook: 
-  mail: 
-  linkedin: 
-  github: 
 
 - name: Akhil Bonagiri
   nickname: Akhil Bonagiri
   designation:  Automation Member
   image: 34.png
-  facebook:  
+  facebook:
   mail: mailto:bonagiri_akhil@yahoo.com
   linkedin: https://www.linkedin.com/in/akhil-bonagiri-2569b9181
-  github: 
+  github:
 
 
 - name: Ritwik Agarwal
@@ -352,7 +334,7 @@
   facebook:
   mail: mailto:harshbarde51@gmail.com
   linkedin: https://www.linkedin.com/in/harsh-barde-646304169
-  github: 
+  github:
 
 
 - name: Parthesh Savla
@@ -413,25 +395,17 @@
 - name: Rishi Raj
   nickname: Rishi Raj
   designation: Management Member
-  image: 14.png 
+  image: 14.png
   facebook: https://www.facebook.com/profile.php?id=100002519509426
   mail: mailto:rajrishi0399@gmail.com
   linkedin: https://www.linkedin.com/in/rishi-raj-772525149
   github:
 
-- name: Akshat Rawat
-  nickname: Akshat Rawat
-  designation: Management Member
-  image: 17.png 
-  facebook: https://www.facebook.com/akshat.rawat
-  mail: mailto:akshatrawat51@gmail.com
-  linkedin: https://www.linkedin.com/in/akshat-rawat-463221166
-  github: 
 
 - name: Nikhil George Savio
   nickname: Nikhil George Savio
   designation: Management Member
-  image: 15.png 
+  image: 15.png
   facebook: https://www.facebook.com/nikhil.savio.92
   mail: mailto:nikhilperumana@gmail.com
   linkedin: https://www.linkedin.com/in/nikhil-savio-6087b6151
@@ -440,7 +414,7 @@
 - name: Manikya Sahai
   nickname: Manikya Sahai
   designation: Management Member
-  image: 12.png 
+  image: 12.png
   facebook: https://www.facebook.com/manikya.sahai
   mail: mailto:manikya.sahai06@gmail.com
   linkedin: https://www.linkedin.com/in/manikya-sahai-348685150

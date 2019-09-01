@@ -279,6 +279,36 @@
   background: linear-gradient(to top, rgba(252, 173, 63, .85) 22%, rgba(254, 88, 49, .85) 100%), url(../images/png/bg/mahindra.jpg)
 }
 
+#veekay_impex {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),url(../images/png/bg/Image.jpg);
+  padding-top: 1.0rem;
+  padding-right: 2.8rem;
+}
+
+#veekay_impex img {
+  height: 5rem
+}
+
+#veekay_impex:hover {
+  background: linear-gradient(to top, rgba(252, 173, 63, .85) 22%, rgba(254, 88, 49, .85) 100%), url(../images/png/bg/Image.jpg)
+}
+
+#simscale {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../images/png/bg/simscale.jpg);
+  padding-top: 2.5rem;
+  padding-right: 1.5rem;
+}
+
+#simscale img {
+  height: 1.6rem
+}
+
+#simscale:hover {
+  background-image: linear-gradient(to top, rgba(252, 173, 63, .85) 22%, rgba(254, 88, 49, .85) 100%), url(../images/png/bg/simscale.jpg)
+}
+
+
+
 .project-card, .project-card:hover {
   background-repeat: no-repeat;
   background-size: cover !important
