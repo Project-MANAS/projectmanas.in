@@ -1,3 +1,7 @@
 name: Project MANAS
 baseurl: ""
 url: ""
+plugins:
+  - jekyll-redirect-from
+whitelist:
+  - jekyll-redirect-from
