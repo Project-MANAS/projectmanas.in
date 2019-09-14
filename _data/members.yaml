@@ -97,6 +97,26 @@
   linkedin:
   github:
 
+- name: Aditya Veerabahu
+  nickname: Aditya Veerabahu
+  designation: Admin Head
+  image: 13.png
+  facebook: https://www.facebook.com/profile.php?id=100008935382776
+  mail: mailto:adityaveerabahu@gmail.com
+  linkedin: https://www.linkedin.com/in/aditya-veerabahu
+  github: https://github.com/adityaveera17
+
+- name: Rishi Raj
+  nickname: Rishi Raj
+  designation: Publicity and Graphics Head
+  image: 14.png
+  facebook: https://www.facebook.com/profile.php?id=100002519509426
+  mail: mailto:rajrishi0399@gmail.com
+  linkedin: https://www.linkedin.com/in/rishi-raj-772525149
+  github:
+
+
+
 - name: Siddarth Venkatraman
   nickname: Siddarth Venkatraman
   designation: AI Planning Member
@@ -381,24 +401,6 @@
   facebook: https://www.facebook.com/siri.rajanahally
   mail: mailto:sirirv@gmail.com
   linkedin: https://www.linkedin.com/in/siri-r-499ab8140
-  github:
-
-- name: Aditya Veerabahu
-  nickname: Aditya Veerabahu
-  designation: Management Member
-  image: 13.png
-  facebook: https://www.facebook.com/profile.php?id=100008935382776
-  mail: mailto:adityaveerabahu@gmail.com
-  linkedin: https://www.linkedin.com/in/aditya-veerabahu
-  github: https://github.com/adityaveera17
-
-- name: Rishi Raj
-  nickname: Rishi Raj
-  designation: Management Member
-  image: 14.png
-  facebook: https://www.facebook.com/profile.php?id=100002519509426
-  mail: mailto:rajrishi0399@gmail.com
-  linkedin: https://www.linkedin.com/in/rishi-raj-772525149
   github:
 
 
