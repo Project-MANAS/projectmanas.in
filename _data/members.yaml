@@ -62,6 +62,15 @@
   linkedin: https://www.linkedin.com/in/anish-biswas
   github: https://github.com/anish0x2a
 
+- name: Akhil Bonagiri
+  nickname: Akhil Bonagiri
+  designation:  Automation Head
+  image: 34.png
+  facebook:
+  mail: mailto:bonagiri_akhil@yahoo.com
+  linkedin: https://www.linkedin.com/in/akhil-bonagiri-2569b9181
+  github:  
+
 - name: Gokul P
   nickname: Gokul P
   designation:  Sensing Head
@@ -135,16 +144,6 @@
   linkedin: https://www.linkedin.com/in/raj-tulluri-165977145/
   github:
 
-
-- name: Omkar Jhadav
-  nickname: Omkar Jhadav
-  designation:  Sensing Member
-  image: 35.png
-  facebook:
-  mail: mailto:jadhavomkar37.oj@gmail.com
-  linkedin:
-  github:
-
 - name: Achintya Dutta
   nickname: Achintya Dutta
   designation:  Automation Member
@@ -154,7 +153,6 @@
   linkedin: achintyadutta2000@gmail.com
   github:
 
-
 - name: Kishore K
   nickname: Kishore K
   designation:  Sensing Member
@@ -162,15 +160,6 @@
   facebook:
   mail: mailto:klk.kishore5@gmail.com
   linkedin: https://www.linkedin.com/in/kishorek31/
-  github:
-
-- name: Akhil Bonagiri
-  nickname: Akhil Bonagiri
-  designation:  Automation Member
-  image: 34.png
-  facebook:
-  mail: mailto:bonagiri_akhil@yahoo.com
-  linkedin: https://www.linkedin.com/in/akhil-bonagiri-2569b9181
   github:
 
 - name: Shoumik Dey
