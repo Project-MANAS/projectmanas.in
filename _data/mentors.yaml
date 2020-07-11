@@ -3,10 +3,10 @@
   nickname: Squadrick
   designation: Team Leader (March, 2018 - March, 2019)
   image: dheeraj.png
-  facebook: https://www.facebook.com/dheeraj.r.reddy
+  facebook:
   mail: mailto:dheeraj98reddy@gmail.com
-  linkedin: https://www.linkedin.com/in/dheeraj-rajaram-reddy-91ba93120/
-  github: https://squadrick.github.io
+  linkedin: https://www.linkedin.com/in/dheeraj-rajaram-reddy/
+  github: https://squadrick.dev
 
 - name: Mukesh Kumar
   nickname: Mukesh Kumar
