@@ -1,0 +1,245 @@
+- name: Kumar Ranjan
+  title: Co-Founder
+  designation: team leader (March, 2014 - July, 2015)
+  image: kumar-ranjan.jpg
+  facebook: https://www.facebook.com/thelostmechanic
+  mail: 
+  linkedin: 
+  github: 
+
+- name: Roshan Prakash
+  title: Co-Founder
+  designation: Team leader (July, 2015 - April, 2016)
+  image: roshan-prakash.jpg
+  facebook: 
+  mail: 
+  linkedin: https://in.linkedin.com/in/roshan-prakash-042ab9b1
+  github: 
+
+#title=position they held in the team
+#designation=place/designation of their work
+
+- name: Shubham Verma
+  title: AI Head (March, 2014 - December, 2015)
+  designation: SDE-2 at Microsoft
+  image: subham-verma.jpg
+  facebook: 
+  mail: 
+  linkedin: https://in.linkedin.com/in/shubhamvrm
+  github: 
+
+- name: Tushar Sinha
+  title: Team Managar (July, 2015 - April, 2016)
+  designation: Team Managar (July, 2015 - April, 2016)
+  image: tushar-sinha.jpg
+  facebook: 
+  mail: 
+  linkedin: https://www.linkedin.com/in/tushar-sinha-7ba08258/
+  github: 
+
+- name: Akash Deep
+  title: S&A Division Head (July, 2015 - April, 2016)
+  designation: Technical Lead at Statiq
+  image: akash-deep.jpg
+  facebook: 
+  mail: 
+  linkedin: https://www.linkedin.com/in/akash-deep-tyagi-394ab7106/
+  github: 
+
+- name: Kaushik Nath
+  title: Perception Head (September, 2015 - August, 2016)
+  designation: Software Engineer 2 at Microsoft (Azure Core)
+  image: kaushik-nath.jpg
+  facebook: 
+  mail: 
+  linkedin: https://www.linkedin.com/in/kaushikmit/
+  github: 
+
+- name: Surya Phatak
+  title: Team Manager (April, 2016 - March, 2017)
+  designation: Team Manager (April, 2016 - March, 2017)
+  image: surya-phatak.jpg
+  facebook: 
+  mail: 
+  linkedin: https://www.linkedin.com/in/surya-phatak-a35b80118/
+  github: 
+
+- name: Karthik Chari
+  title: S&A Head (April, 2016 - March, 2017)
+  designation: Graduate Student at KTH
+  image: karthik-chari.jpg
+  facebook: 
+  mail: 
+  linkedin: https://www.linkedin.com/in/kartikchari/
+  github: 
+
+- name: Tanay Verma
+  title: Mechanical Head (April, 2016 - March, 2017)
+  designation: Engineer at Bell Flight
+  image: tanay-verma.jpg
+  facebook: 
+  mail: 
+  linkedin: https://www.linkedin.com/in/tanayvarma123/
+  github: 
+
+- name: Yash Bansod
+  title: Automation Head (April, 2016 March, 2017)
+  designation: Machine Learning Researcher | Tubaldi Labs
+  image: yash-bansod.jpg
+  facebook: 
+  mail: 
+  linkedin: https://www.linkedin.com/in/yashbansod/
+  github: 
+
+- name: Phanikrishna Kalluri
+  title: Mechanics Head (April, 2016 March, 2017)
+  designation: Consultant at Deloitte USI
+  image: phanikrishna-kalluri.jpg
+  facebook: 
+  mail: 
+  linkedin: https://www.linkedin.com/in/phanikrishna-kalluri-6b5b45118/
+  github: 
+
+- name: Debang Sharma
+  title: S&A Member (April, 2016 - March, 2017)
+  designation: Senior Analyst at Goldman Sachs
+  image: debang-sharma.jpg
+  facebook: 
+  mail: 
+  linkedin: https://www.linkedin.com/in/dbngshrma/
+  github: 
+
+- name: Reuben John
+  title: Tech Head (April, 2016 - March, 2017)
+  designation: Goldman Sachs Technology Analyst
+  image: reuben-john.jpg
+  facebook: 
+  mail: 
+  linkedin: https://www.linkedin.com/in/reubenmvjohn/
+  github: 
+
+- name: Ashish Mehta
+  title: Team Leader (April, 2016 - March, 2017)
+  designation: Research Engineer, Qualcomm
+  image: ashish-mehta.jpg
+  facebook: 
+  mail: 
+  linkedin: https://www.linkedin.com/in/ashishmehta95/
+  github: 
+
+- name: Sarthake Choudhary
+  title: Team Leader (March, 2017 - March, 2018)
+  designation: Masters Student at Ira A. Fulton Schools of Engineering at Arizona State University
+  image: sarthake-choudary.jpg
+  facebook: 
+  mail: 
+  linkedin: https://www.linkedin.com/in/sarthake-choudhary-028808138/
+  github: 
+
+- name: Pranav Jain
+  title: Mechanical Head (March, 2017 - March, 2018)
+  designation: M Eng. Mechatronics Design at The University of British Columbia
+  image: pranav-jain.jpg
+  facebook: 
+  mail: 
+  linkedin: https://www.linkedin.com/in/pranav110
+  github: 
+
+- name: Kartikey Agarwal
+  title: S&A Head (March, 2017 - March, 2018)
+  designation: Developer at Continental
+  image: kartikey-agarwal.jpg
+  facebook: 
+  mail: 
+  linkedin: https://www.linkedin.com/in/kartikey-agrawal-0842a013a/
+  github: 
+
+- name: Sanjeev Nayak
+  title: Team Manager (March, 2018 - March, 2019)
+  designation: Team Manager (March, 2018 - March, 2019)
+  image: sanjeev.png
+  facebook: https://www.facebook.com/sanjeev.nayak.39545
+  mail: mailto:sanjeevnayak9@gmail.com
+  linkedin: https://www.linkedin.com/mwlite/me
+  github:
+
+- name: Pranjal Sinha
+  title: S&A Head (March, 2018 - March, 2019)
+  designation: S&A Head (March, 2018 - March, 2019)
+  image: 32.jpeg
+  facebook:
+  mail:
+  linkedin: https://www.linkedin.com/in/pranjal-sinha-457114138/
+  github:
+
+- name: Ansh Verma
+  title: Mechanical Head (March, 2018 - March, 2019)
+  designation: Engineering Intern at IOT-unifyAI Tech
+  image: ansh.png
+  facebook: https://www.facebook.com/vermaansh135
+  mail:
+  linkedin: https://www.linkedin.com/in/ansh-verma-b5607713a/
+  github:
+
+- name: Shreyas Sharma
+  title: AI Planning Head (March, 2018 - March, 2019)
+  designation: Voice Intelligence Intern at Samsung
+  image: 44.jpeg
+  facebook:
+  mail: mailto:shreyas.rox101@gmail.com
+  linkedin: https://www.linkedin.com/in/shreyas-sharma-443680130/
+  github: https://github.com/shreyashub
+
+- name: Vishnu Menon
+  title: Mech Mechanics Head (March, 2018 - March, 2019)
+  designation: Intern at Volvo
+  image: 35.jpeg
+  facebook: https://m.facebook.com/vishnu.menon.946
+  mail: mailto:vishnumenon9898@gmail.com
+  linkedin:
+  github:
+
+# - name: Shardul Purohit
+#   title: Shardul Purohit
+#   designation: Management Admin Head
+#   image: shardul.png
+#   facebook:
+#   mail:
+#   linkedin:
+#   github:
+
+- name: Damodar Nayak
+  title: Mech Senior Member (March, 2018 - March, 2019)
+  designation: Engineer at Bosch
+  image: 21.jpeg
+  facebook:
+  mail:
+  linkedin: https://www.linkedin.com/in/damodar-nayak-1b4a22183/
+  github:
+
+- name: Johir Suresh
+  title: Mech Senior Member (March, 2018 - March, 2019)
+  designation: Race Car Driver | Engineer
+  image: 26.jpeg
+  facebook: https://www.facebook.com/johir.suresh
+  mail: mailto:johirsuresh1998@gmail.com
+  linkedin: https://www.linkedin.com/in/johir-suresh-59252a129/
+  github:
+
+- name: Tanuj Agarwal
+  title: Mechanics Member (March, 2018 - March, 2019)
+  designation: Mechanics Member (March, 2018 - March, 2019)
+  image: tanuj.png
+  facebook:
+  mail: mailto:tanujma99@gmail.com
+  linkedin: https://www.linkedin.com/in/tanuj-agrawal-88a149139
+  github:
+
+# - name: Thomas Alex
+#   title: Thomas Alex
+#   designation: S&A Senior Member
+#   image: 38.jpeg
+#   facebook: https://www.facebook.com/thomas.alex2
+#   mail: https://www.facebook.com/thomas.alex2
+#   linkedin: https://www.linkedin.com/in/thomas-alex-b6b93a13a/
+#   github:

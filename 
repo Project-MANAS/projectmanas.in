@@ -1,0 +1,642 @@
+[1mdiff --git a/_data/members.yaml b/_data/members.yaml[m
+[1mindex ec21eab..39edd0f 100644[m
+[1m--- a/_data/members.yaml[m
+[1m+++ b/_data/members.yaml[m
+[36m@@ -1,171 +1,94 @@[m
+[31m-- name: Shrijit Singh[m
+[31m-  nickname: Shrijit Singh[m
+[32m+[m[32m- name: Harsh Barde[m
+[32m+[m[32m  nickname: HUB[m
+   designation: Technical Head[m
+[31m-  image: 12.jpeg[m
+[31m-  facebook: https://www.facebook.com/shrijitsingh99[m
+[31m-  mail: mailto:tech_head@projectmanas.in[m
+[31m-  linkedin: https://www.linkedin.com/in/shrijit-singh-81b86a145/[m
+[31m-  github: https://github.com/shrijitsingh99 #Tech Head[m
+[32m+[m[32m  image: 18.png[m
+[32m+[m[32m  facebook:[m
+[32m+[m[32m  mail: mailto:harshbarde51@gmail.com[m
+[32m+[m[32m  linkedin: https://www.linkedin.com/in/harsh-barde-646304169[m
+[32m+[m[32m  github:[m
+ [m
+[31m-- name: Tanaya Mandke[m
+[31m-  nickname: Tanaya Mandke[m
+[32m+[m[32m- name: Ritwik Agarwal[m
+[32m+[m[32m  nickname: Ritwik Agarwal[m
+   designation: Team Manager[m
+[31m-  image: 26.png[m
+[31m-  facebook: https://www.facebook.com/tana.mandke[m
+[31m-  mail: mailto:Tanaya.mandke9299@gmail.com[m
+[31m-  linkedin: http://linkedin.com/in/tanaya-mandke-885b24165[m
+[31m-  github: #Team Manager[m
+[32m+[m[32m  image: 40.png[m
+[32m+[m[32m  facebook: https://www.facebook.com/ritwik.agarwal.94[m
+[32m+[m[32m  mail: mailto:ritwikagarwal44@gmail.com[m
+[32m+[m[32m  linkedin: https://www.linkedin.com/in/ritwik-agarwal[m
+[32m+[m[32m  github: https://github.com/ritwik25[m
+ [m
+[31m-- name: Shivesh Khaitan[m
+[31m-  nickname: Shivesh Khaitan[m
+[31m-  designation: Head of Robotics[m
+[31m-  image: 45.jpeg[m
+[31m-  facebook: https://www.facebook.com/shivesh.khaitan[m
+[31m-  mail: mailto:shiveshkhaitan@gmail.com[m
+[31m-  linkedin: https://www.linkedin.com/in/shivesh-khaitan-b48225159/[m
+[31m-  github: https://github.com/shiveshkhaitan #Head of Robotics[m
+[32m+[m[32m- name: Dhruv Joshi[m
+[32m+[m[32m  nickname: helium_balloons[m
+[32m+[m[32m  designation: AI Head[m
+[32m+[m[32m  image: 4.png[m
+[32m+[m[32m  facebook:[m
+[32m+[m[32m  mail: mailto:dhruvjoshi1007@gmail.com[m
+[32m+[m[32m  linkedin: https://www.linkedin.com/in/dhruv-joshi-b65a6b16a[m
+[32m+[m[32m  github: https://github.com/dhruvjoshi1007[m
+ [m
+[31m-- name: Rishab Agarwal[m
+[31m-  nickname: Rishab Agarwal[m
+[31m-  designation: S&A Head[m
+[31m-  image: 38.png[m
+[31m-  facebook: https://www.facebook.com/Agarwal.Rishab.99[m
+[31m-  mail: mailto:rishabgrwl121@gmail.com[m
+[31m-  linkedin: https://www.linkedin.com/in/rishab-agarwal-8a959216a[m
+[31m-  github: #SnA Head[m
+[32m+[m[32m- name: Arpit Chauhan[m
+[32m+[m[32m  nickname: Arpit Chauhan[m
+[32m+[m[32m  designation:  S&A Head[m
+[32m+[m[32m  image: 30.png[m
+[32m+[m[32m  facebook: https://www.facebook.com/profile.php?id=100026317991091[m
+[32m+[m[32m  mail: mailto:carpit680@gmail.com[m
+[32m+[m[32m  linkedin: https://www.linkedin.com/in/arpit-chauhan-bb84bb145[m
+[32m+[m[32m  github: https://github.com/carpit680[m
+ [m
+[31m-- name: Arya Karani[m
+[31m-  nickname: Arya Karani[m
+[31m-  designation: Mechanical Head[m
+[31m-  image: 20.jpeg[m
+[32m+[m[32m- name: Rohit Natu[m
+[32m+[m[32m  nickname: Rohit Natu[m
+[32m+[m[32m  designation: Mech Head[m
+[32m+[m[32m  image: 20.png[m
+   facebook:[m
+[31m-  mail: mailto:karani.arya@gmail.com[m
+[31m-  linkedin: https://www.linkedin.com/in/arya-karani-78424514a[m
+[31m-  github: #Mech Head[m
+[32m+[m[32m  mail: mailto:rohit.grandson@gmail.com[m
+[32m+[m[32m  linkedin: https://www.linkedin.com/in/rohit-natu-42b005180[m
+[32m+[m[32m  github: https://www.github.com/75072107[m
+ [m
+[31m-- name: Dheeraj Mohan[m
+[31m-  nickname: Dheeraj Mohan[m
+[32m+[m[32m- name: Abhineet Choudhary[m
+[32m+[m[32m  nickname: Abhineet Choudhary[m
+   designation: AI Perception Head[m
+[31m-  image: 24.jpeg[m
+[31m-  facebook: https://facebook.com/dheeraj.McDhee[m
+[31m-  mail: mailto:dheeraj.98@outlook.com[m
+[31m-  linkedin: https://www.linkedin.com/in/dheeraj-mcdhee[m
+[31m-  github: https://www.github.com/dheeraj-coding[m
+[32m+[m[32m  image: 3.png[m
+[32m+[m[32m  facebook:[m
+[32m+[m[32m  mail: mailto:abhi.chou4@gmail.com[m
+[32m+[m[32m  linkedin: https://www.linkedin.com/in/abhineet-c-344967bb/[m
+[32m+[m[32m  github: https://github.com/Abhineet-Choudhary[m
+ [m
+[31m-- name: Sarathkrishnan Ramesh[m
+[31m-  nickname: Sarathkrishnan Ramesh[m
+[31m-  designation: AI Planning Head[m
+[31m-  image: 13.jpeg[m
+[31m-  facebook: https://www.facebook.com/sarathkrishnan.ramesh[m
+[31m-  mail: mailto:sarathkrishnan99@gmail.com[m
+[31m-  linkedin: https://www.linkedin.com/in/sarathkrishnan-ramesh-0a75a315b[m
+[31m-  github: https://www.github.com/Sarath18[m
+ [m
+[31m-- name: Shivanshu Agarwal[m
+[31m-  nickname: Shivanshu Agarwal[m
+[31m-  designation: Sensing Head[m
+[31m-  image: 39.png[m
+[31m-  facebook: https://w ww.facebook.com/shivanshu.agarwal.965[m
+[31m-  mail: mailto:agarwalshivanshu00@gmail.com[m
+[31m-  linkedin: https://www.linkedin.com/in/shivansu-agarwal-53b625136[m
+[31m-  github: https://github.com/shic15[m
+[32m+[m[32m- name: Anish Biswas[m
+[32m+[m[32m  nickname: anish0x2A[m
+[32m+[m[32m  designation: AI Planning Head[m
+[32m+[m[32m  image: 5.png[m
+[32m+[m[32m  facebook: https://www.facebook.com/theAnishBiswas[m
+[32m+[m[32m  mail: mailto:anish.biswas0x2a@gmail.com[m
+[32m+[m[32m  linkedin: https://www.linkedin.com/in/anish-biswas[m
+[32m+[m[32m  github: https://github.com/anish0x2a[m
+ [m
+[31m-- name: Dasarath S[m
+[31m-  nickname: Dasarath S[m
+[31m-  designation: Automation Head[m
+[31m-  image: 23.jpeg[m
+[31m-  facebook: https://facebook.com/dasarath.selvakumar[m
+[31m-  mail: mailto:dasarathselvakumar@gmail.com[m
+[31m-  linkedin: https://www.linkedin.com/in/dasarath-s-66525b157[m
+[31m-  github:[m
+[32m+[m[32m- name: Gokul P[m
+[32m+[m[32m  nickname: Gokul P[m
+[32m+[m[32m  designation:  Sensing Head[m
+[32m+[m[32m  image: 31.png[m
+[32m+[m[32m  facebook:[m
+[32m+[m[32m  mail: mailto:gokulgns@gmail.com[m
+[32m+[m[32m  linkedin: https://www.linkedin.com/in/gokul-p-38b22b154[m
+[32m+[m[32m  github: https://github.com/gokulgns[m
+ [m
+[31m-- name: Raunaq Kalra[m
+[31m-  nickname: Raunaq kalra[m
+[32m+[m[32m- name: Aniket Bhawe[m
+[32m+[m[32m  nickname: Aniket Bhawe[m
+   designation: Mechanics Head[m
+[31m-  image: 42.png[m
+[31m-  facebook: https://www.facebook.com/raunaq.kalra.58[m
+[31m-  mail: mailto:raunaqkalra99@gmail.com[m
+[31m-  linkedin: https://www.linkedin.com/in/raunaqkalra99[m
+[32m+[m[32m  image: 22.png[m
+[32m+[m[32m  facebook: https://www.facebook.com/aniket.bhawe.3[m
+[32m+[m[32m  mail: mailto:kiwiani99@gmail.com[m
+[32m+[m[32m  linkedin: http://linkedin.com/in/aniket-bhawe[m
+   github:[m
+ [m
+[31m-- name: Rakshit Jain[m
+[31m-  nickname: Rakshit Jain[m
+[32m+[m[32m- name: Debayan Deb[m
+[32m+[m[32m  nickname: Devayern[m
+   designation: Design Head[m
+[31m-  image: 27.png[m
+[31m-  facebook: https://www.facebook.com/rakshit.jain.378[m
+[31m-  mail: mailto:rakshitjain003@gmail.com[m
+[31m-  linkedin:[m
+[31m-  github:[m
+[31m-[m
+[31m-- name: Aditya Veerabahu[m
+[31m-  nickname: Aditya Veerabahu[m
+[31m-  designation: Admin Head[m
+[31m-  image: 13.png[m
+[31m-  facebook: https://www.facebook.com/profile.php?id=100008935382776[m
+[31m-  mail: mailto:adityaveerabahu@gmail.com[m
+[31m-  linkedin: https://www.linkedin.com/in/aditya-veerabahu[m
+[31m-  github: https://github.com/adityaveera17[m
+[31m-[m
+[31m-- name: Rishi Raj[m
+[31m-  nickname: Rishi Raj[m
+[31m-  designation: Publicity and Graphics Head[m
+[31m-  image: 14.png[m
+[31m-  facebook: https://www.facebook.com/profile.php?id=100002519509426[m
+[31m-  mail: mailto:rajrishi0399@gmail.com[m
+[31m-  linkedin: https://www.linkedin.com/in/rishi-raj-772525149[m
+[31m-  github:[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-- name: Siddarth Venkatraman[m
+[31m-  nickname: Siddarth Venkatraman[m
+[31m-  designation: AI Planning Member[m
+[31m-  image: 43.jpeg[m
+[31m-  facebook:[m
+[31m-  mail: mailto:siddarthegreat@gmail.com[m
+[31m-  linkedin:[m
+[31m-  github: https://github.com/HyperPotatoNeo[m
+[31m-[m
+[31m-- name: Chaitanya[m
+[31m-  nickname: Chaitanya[m
+[31m-  designation: AI Perception Member[m
+[31m-  image: 8.png[m
+[31m-  facebook: https://www.facebook.com/chaitanya.shyamaraj.37[m
+[31m-  mail: mailto:chaitanya2.1999@gmail.com[m
+[31m-  linkedin: https://www.linkedin.com/in/chaitanya21999[m
+[31m-  github: https://github.com/Chaitanya-git[m
+[31m-[m
+[31m-[m
+[31m-- name: Shivam Agarwal[m
+[31m-  nickname: Shivam Agarwal[m
+[31m-  designation: AI Perception Member[m
+[31m-  image: 9.png[m
+[31m-  facebook:[m
+[31m-  mail: mailto:shivamag99@gmail.com[m
+[31m-  linkedin: https://www.linkedin.com/in/shivam-agarwal-136833180[m
+[32m+[m[32m  image: 28.png[m
+[32m+[m[32m  facebook: https://www.facebook.com/profile.php?id=100008758214121[m
+[32m+[m[32m  mail: mailto:devion008@gmail.com[m
+[32m+[m[32m  linkedin: https://www.linkedin.com/in/debayan-deb-10311617b[m
+   github:[m
+ [m
+[31m-[m
+[31m-- name: Anurag Borkar[m
+[31m-  nickname: Anurag Borkar[m
+[31m-  designation: AI Perception Member[m
+[31m-  image: 49.jpeg[m
+[31m-  facebook: https://www.facebook.com/anurag.borkar.376[m
+[31m-  mail: mailto:anuragvborkar@gmail.com[m
+[31m-  linkedin: https://www.linkedin.com/in/anurag-borkar-9b3645166[m
+[31m-  github: https://github.com/anuragvborkar[m
+[31m-[m
+[31m-[m
+[31m-- name: Adheesh[m
+[31m-  nickname: Adheesh[m
+[31m-  designation: AI Perception Member[m
+[31m-  image: 51.jpeg[m
+[31m-  facebook:[m
+[31m-  mail: mailto:adheesh1010@gmail.com[m
+[31m-  linkedin: https://www.linkedin.com/in/adheesh-h-m-14283912b[m
+[31m-  github: [m
+[31m-[m
+[31m-[m
+ - name: Baidyanath Kundu[m
+   nickname: sudo-panda[m
+   designation: AI Planning Member[m
+[36m@@ -184,32 +107,6 @@[m
+   linkedin: https://www.linkedin.com/in/sahil-khose-20a621166/[m
+   github: https://github.com/sahilkhose[m
+ [m
+[31m-- name: Abhineet Choudhary[m
+[31m-  nickname: Abhineet Choudhary[m
+[31m-  designation: AI Perception Member[m
+[31m-  image: 3.png[m
+[31m-  facebook:[m
+[31m-  mail: mailto:abhi.chou4@gmail.com[m
+[31m-  linkedin: https://www.linkedin.com/in/abhineet-c-344967bb/[m
+[31m-  github: https://github.com/Abhineet-Choudhary[m
+[31m-[m
+[31m-- name: Dhruv Joshi[m
+[31m-  nickname: helium_balloons[m
+[31m-  designation: AI Perception Member[m
+[31m-  image: 4.png[m
+[31m-  facebook:[m
+[31m-  mail: mailto:dhruvjoshi1007@gmail.com[m
+[31m-  linkedin: https://www.linkedin.com/in/dhruv-joshi-b65a6b16a[m
+[31m-  github: https://github.com/dhruvjoshi1007[m
+[31m-[m
+[31m-- name: Anish Biswas[m
+[31m-  nickname: anish0x2A[m
+[31m-  designation: AI Planning Member[m
+[31m-  image: 5.png[m
+[31m-  facebook: https://www.facebook.com/theAnishBiswas[m
+[31m-  mail: mailto:anish.biswas0x2a@gmail.com[m
+[31m-  linkedin: https://www.linkedin.com/in/anish-biswas[m
+[31m-  github: https://github.com/anish0x2a[m
+ [m
+ - name: Aneesh Chawla[m
+   nickname: aneesh404[m
+[36m@@ -238,24 +135,6 @@[m
+   linkedin: https://www.linkedin.com/in/raj-tulluri-165977145/[m
+   github:[m
+ [m
+[31m-- name: Ansel Dias[m
+[31m-  nickname: Ansel Dias[m
+[31m-  designation: S&A Sensing Member[m
+[31m-  image: 36.png[m
+[31m-  facebook: https://www.facebook.com/profile.php?id=100010693602083&ref=br_rs[m
+[31m-  mail: mailto:thegreatanseldias@gmail.com[m
+[31m-  linkedin: https://www.linkedin.com/in/ansel-dias-a7993215b/[m
+[31m-  github:[m
+[31m-[m
+[31m-[m
+[31m-- name: Yagya Malik[m
+[31m-  nickname: Yagya Malik[m
+[31m-  designation:  Sensing Member[m
+[31m-  image: 37.png[m
+[31m-  facebook:[m
+[31m-  mail: mailto:yagyamalik1812@gmail.com[m
+[31m-  linkedin: https://www.linkedin.com/in/yagya-malik-8a4aa0155[m
+[31m-  github: https://github.com/Nymeria18[m
+ [m
+ - name: Omkar Jhadav[m
+   nickname: Omkar Jhadav[m
+[36m@@ -275,23 +154,6 @@[m
+   linkedin: achintyadutta2000@gmail.com[m
+   github:[m
+ [m
+[31m-- name: Arpit Chauhan[m
+[31m-  nickname: Arpit Chauhan[m
+[31m-  designation:  Automation Member[m
+[31m-  image: 30.png[m
+[31m-  facebook: https://www.facebook.com/profile.php?id=100026317991091[m
+[31m-  mail: mailto:carpit680@gmail.com[m
+[31m-  linkedin: https://www.linkedin.com/in/arpit-chauhan-bb84bb145[m
+[31m-  github: https://github.com/carpit680[m
+[31m-[m
+[31m-- name: Gokul P[m
+[31m-  nickname: Gokul P[m
+[31m-  designation:  Sensing Member[m
+[31m-  image: 31.png[m
+[31m-  facebook:[m
+[31m-  mail: mailto:gokulgns@gmail.com[m
+[31m-  linkedin: https://www.linkedin.com/in/gokul-p-38b22b154[m
+[31m-  github: https://github.com/gokulgns[m
+ [m
+ - name: Kishore K[m
+   nickname: Kishore K[m
+[36m@@ -311,17 +173,6 @@[m
+   linkedin: https://www.linkedin.com/in/akhil-bonagiri-2569b9181[m
+   github:[m
+ [m
+[31m-[m
+[31m-- name: Ritwik Agarwal[m
+[31m-  nickname: Ritwik Agarwal[m
+[31m-  designation:  Sensing Member[m
+[31m-  image: 40.png[m
+[31m-  facebook: https://www.facebook.com/ritwik.agarwal.94[m
+[31m-  mail: mailto:ritwikagarwal44@gmail.com[m
+[31m-  linkedin: https://www.linkedin.com/in/ritwik-agarwal[m
+[31m-  github: https://github.com/ritwik25[m
+[31m-[m
+[31m-[m
+ - name: Shoumik Dey[m
+   nickname: Shoumik Dey[m
+   designation: Sensing Member[m
+[36m@@ -331,14 +182,6 @@[m
+   linkedin: http://linkedin.com/in/shoumik-dey-53b69b16a[m
+   github: https://github.com/shoumikdey[m
+ [m
+[31m-- name: Manav Sachdeva[m
+[31m-  nickname: Manav Sachdeva[m
+[31m-  designation: Design Member[m
+[31m-  image: 24.png[m
+[31m-  facebook:[m
+[31m-  mail: mailto:sachdevamanav03@gmal.com[m
+[31m-  linkedin:[m
+[31m-  github:[m
+ [m
+ - name: Gaurav Thakur[m
+   nickname: Gaurav Thakur[m
+[36m@@ -349,14 +192,6 @@[m
+   linkedin: https://www.linkedin.com/in/gst2a9a0a7a[m
+   github:[m
+ [m
+[31m-- name: Aniket Bhawe[m
+[31m-  nickname: Aniket Bhawe[m
+[31m-  designation: Mechanics Member[m
+[31m-  image: 22.png[m
+[31m-  facebook: https://www.facebook.com/aniket.bhawe.3[m
+[31m-  mail: mailto:kiwiani99@gmail.com[m
+[31m-  linkedin: http://linkedin.com/in/aniket-bhawe[m
+[31m-  github:[m
+ [m
+ - name: Sai Manish[m
+   nickname: Sai Manish[m
+[36m@@ -367,24 +202,6 @@[m
+   linkedin: https://www.linkedin.com/in/sai-manish-107368169[m
+   github:[m
+ [m
+[31m-- name: Rohit Natu[m
+[31m-  nickname: Rohit Natu[m
+[31m-  designation: Design Member[m
+[31m-  image: 20.png[m
+[31m-  facebook:[m
+[31m-  mail: mailto:rohit.grandson@gmail.com[m
+[31m-  linkedin: https://www.linkedin.com/in/rohit-natu-42b005180[m
+[31m-  github: https://www.github.com/75072107[m
+[31m-[m
+[31m-- name: Harsh Barde[m
+[31m-  nickname: HUB[m
+[31m-  designation: Mechanics Member[m
+[31m-  image: 18.png[m
+[31m-  facebook:[m
+[31m-  mail: mailto:harshbarde51@gmail.com[m
+[31m-  linkedin: https://www.linkedin.com/in/harsh-barde-646304169[m
+[31m-  github:[m
+[31m-[m
+ [m
+ - name: Parthesh Savla[m
+   nickname: Parthesh Savla[m
+[36m@@ -395,15 +212,6 @@[m
+   linkedin: https://www.linkedin.com/in/parthesh-savla327322163[m
+   github:[m
+ [m
+[31m-- name: Debayan Deb[m
+[31m-  nickname: Devayern[m
+[31m-  designation: Design Member[m
+[31m-  image: 28.png[m
+[31m-  facebook: https://www.facebook.com/profile.php?id=100008758214121[m
+[31m-  mail: mailto:devion008@gmail.com[m
+[31m-  linkedin: https://www.linkedin.com/in/debayan-deb-10311617b[m
+[31m-  github:[m
+[31m-[m
+ - name: Asish Boggavarapu[m
+   nickname: Asish Boggavarapu[m
+   designation: Design Member[m
+[36m@@ -413,11 +221,3 @@[m
+   linkedin: https://www.linkedin.com/in/asish-boggavarapu-09bba2166[m
+   github:[m
+ [m
+[31m-- name: Nikhil George Savio[m
+[31m-  nickname: Nikhil George Savio[m
+[31m-  designation: Management Member[m
+[31m-  image: 15.png[m
+[31m-  facebook: https://www.facebook.com/nikhil.savio.92[m
+[31m-  mail: mailto:nikhilperumana@gmail.com[m
+[31m-  linkedin: https://www.linkedin.com/in/nikhil-savio-6087b6151[m
+[31m-  github:[m
+[1mdiff --git a/_data/mentors.yaml b/_data/mentors.yaml[m
+[1mindex b51275d..5cd072f 100644[m
+[1m--- a/_data/mentors.yaml[m
+[1m+++ b/_data/mentors.yaml[m
+[36m@@ -116,6 +116,206 @@[m
+   linkedin: https://www.linkedin.com/in/tanuj-agrawal-88a149139[m
+   github:[m
+ [m
+[32m+[m[32m- name: Shrijit Singh[m
+[32m+[m[32m  nickname: Shrijit Singh[m
+[32m+[m[32m  designation: Tech Head (March,2019- March,2020)[m
+[32m+[m[32m  image: 12.jpeg[m
+[32m+[m[32m  facebook: https://www.facebook.com/shrijitsingh99[m
+[32m+[m[32m  mail: mailto:tech_head@projectmanas.in[m
+[32m+[m[32m  linkedin: https://www.linkedin.com/in/shrijit-singh-81b86a145/[m
+[32m+[m[32m  github: https://github.com/shrijitsingh99 #Tech Head[m
+[32m+[m
+[32m+[m[32m- name: Tanaya Mandke[m
+[32m+[m[32m  nickname: Tanaya Mandke[m
+[32m+[m[32m  designation: Team Manager (March,2019- March,2020)[m
+[32m+[m[32m  image: 26.png[m
+[32m+[m[32m  facebook: https://www.facebook.com/tana.mandke[m
+[32m+[m[32m  mail: mailto:Tanaya.mandke9299@gmail.com[m
+[32m+[m[32m  linkedin: http://linkedin.com/in/tanaya-mandke-885b24165[m
+[32m+[m[32m  github: #Team Manager[m
+[32m+[m
+[32m+[m[32m- name: Shivesh Khaitan[m
+[32m+[m[32m  nickname: Shivesh Khaitan[m
+[32m+[m[32m  designation: Robotics Head (March,2019- March,2020)[m
+[32m+[m[32m  image: 45.jpeg[m
+[32m+[m[32m  facebook: https://www.facebook.com/shivesh.khaitan[m
+[32m+[m[32m  mail: mailto:shiveshkhaitan@gmail.com[m
+[32m+[m[32m  linkedin: https://www.linkedin.com/in/shivesh-khaitan-b48225159/[m
+[32m+[m[32m  github: https://github.com/shiveshkhaitan #Head of Robotics[m
+[32m+[m
+[32m+[m[32m- name: Rishab Agarwal[m
+[32m+[m[32m  nickname: Rishab Agarwal[m
+[32m+[m[32m  designation: S&A Head (March,2019- March,2020)[m
+[32m+[m[32m  image: 38.png[m
+[32m+[m[32m  facebook: https://www.facebook.com/Agarwal.Rishab.99[m
+[32m+[m[32m  mail: mailto:rishabgrwl121@gmail.com[m
+[32m+[m[32m  linkedin: https://www.linkedin.com/in/rishab-agarwal-8a959216a[m
+[32m+[m[32m  github: #SnA Head[m
+[32m+[m
+[32m+[m[32m- name: Arya Karani[m
+[32m+[m[32m  nickname: Arya Karani[m
+[32m+[m[32m  designation: Mech Mechanics Head (March,2019- March,2020)[m
+[32m+[m[32m  image: 20.jpeg[m
+[32m+[m[32m  facebook:[m
+[32m+[m[32m  mail: mailto:karani.arya@gmail.com[m
+[32m+[m[32m  linkedin: https://www.linkedin.com/in/arya-karani-78424514a[m
+[32m+[m[32m  github: #Mech Head[m
+[32m+[m
+[32m+[m[32m- name: Dheeraj Mohan[m
+[32m+[m[32m  nickname: Dheeraj Mohan[m
+[32m+[m[32m  designation: AI Perception Head (March,2019- March,2020)[m
+[32m+[m[32m  image: 24.jpeg[m
+[32m+[m[32m  facebook: https://facebook.com/dheeraj.McDhee[m
+[32m+[m[32m  mail: mailto:dheeraj.98@outlook.com[m
+[32m+[m[32m  linkedin: https://www.linkedin.com/in/dheeraj-mcdhee[m
+[32m+[m[32m  github: https://www.github.com/dheeraj-coding[m
+[32m+[m
+[32m+[m[32m- name: Sarathkrishnan Ramesh[m
+[32m+[m[32m  nickname: Sarathkrishnan Ramesh[m
+[32m+[m[32m  designation: AI Planning Head (March,2019- March,2020)[m
+[32m+[m[32m  image: 13.jpeg[m
+[32m+[m[32m  facebook: https://www.facebook.com/sarathkrishnan.ramesh[m
+[32m+[m[32m  mail: mailto:sarathkrishnan99@gmail.com[m
+[32m+[m[32m  linkedin: https://www.linkedin.com/in/sarathkrishnan-ramesh-0a75a315b[m
+[32m+[m[32m  github: https://www.github.com/Sarath18[m
+[32m+[m
+[32m+[m[32m- name: Shivanshu Agarwal[m
+[32m+[m[32m  nickname: Shivanshu Agarwal[m
+[32m+[m[32m  designation: Sensing Head (March,2019- March,2020)[m
+[32m+[m[32m  image: 39.png[m
+[32m+[m[32m  facebook: https://w ww.facebook.com/shivanshu.agarwal.965[m
+[32m+[m[32m  mail: mailto:agarwalshivanshu00@gmail.com[m
+[32m+[m[32m  linkedin: https://www.linkedin.com/in/shivansu-agarwal-53b625136[m
+[32m+[m[32m  github: https://github.com/shic15[m
+[32m+[m
+[32m+[m[32m- name: Dasarath S[m
+[32m+[m[32m  nickname: Dasarath S[m
+[32m+[m[32m  designation: Automation Head (March,2019- March,2020)[m
+[32m+[m[32m  image: 23.jpeg[m
+[32m+[m[32m  facebook: https://facebook.com/dasarath.selvakumar[m
+[32m+[m[32m  mail: mailto:dasarathselvakumar@gmail.com[m
+[32m+[m[32m  linkedin: https://www.linkedin.com/in/dasarath-s-66525b157[m
+[32m+[m[32m  github:[m
+[32m+[m
+[32m+[m[32m- name: Raunaq Kalra[m
+[32m+[m[32m  nickname: Raunaq kalra[m
+[32m+[m[32m  designation: Mech Mechanics Head (March,2019- March,2020)[m
+[32m+[m[32m  image: 42.png[m
+[32m+[m[32m  facebook: https://www.facebook.com/raunaq.kalra.58[m
+[32m+[m[32m  mail: mailto:raunaqkalra99@gmail.com[m
+[32m+[m[32m  linkedin: https://www.linkedin.com/in/raunaqkalra99[m
+[32m+[m[32m  github:[m
+[32m+[m
+[32m+[m[32m- name: Rakshit Jain[m
+[32m+[m[32m  nickname: Rakshit Jain[m
+[32m+[m[32m  designation: Mech Design Head (March,2019- March,2020)[m
+[32m+[m[32m  image: 27.png[m
+[32m+[m[32m  facebook: https://www.facebook.com/rakshit.jain.378[m
+[32m+[m[32m  mail: mailto:rakshitjain003@gmail.com[m
+[32m+[m[32m  linkedin:[m
+[32m+[m[32m  github:[m
+[32m+[m
+[32m+[m[32m- name: Aditya Veerabahu[m
+[32m+[m[32m  nickname: Aditya Veerabahu[m
+[32m+[m[32m  designation: Management, Admin Head (March,2019- March,2020)[m
+[32m+[m[32m  image: 13.png[m
+[32m+[m[32m  facebook: https://www.facebook.com/profile.php?id=100008935382776[m
+[32m+[m[32m  mail: mailto:adityaveerabahu@gmail.com[m
+[32m+[m[32m  linkedin: https://www.linkedin.com/in/aditya-veerabahu[m
+[32m+[m[32m  github: https://github.com/adityaveera17[m
+[32m+[m
+[32m+[m[32m- name: Rishi Raj[m
+[32m+[m[32m  nickname: Rishi Raj[m
+[32m+[m[32m  designation: Publicity and Graphics Head (March,2019- March,2020)[m
+[32m+[m[32m  image: 14.png[m
+[32m+[m[32m  facebook: https://www.facebook.com/profile.php?id=100002519509426[m
+[32m+[m[32m  mail: mailto:rajrishi0399@gmail.com[m
+[32m+[m[32m  linkedin: https://www.linkedin.com/in/rishi-raj-772525149[m
+[32m+[m[32m  github:[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m- name: Siddarth Venkatraman[m
+[32m+[m[32m  nickname: Siddarth Venkatraman[m
+[32m+[m[32m  designation: AI Member[m
+[32m+[m[32m  image: 43.jpeg[m
+[32m+[m[32m  facebook:[m
+[32m+[m[32m  mail: mailto:siddarthegreat@gmail.com[m
+[32m+[m[32m  linkedin:[m
+[32m+[m[32m  github: https://github.com/HyperPotatoNeo[m
+[32m+[m
+[32m+[m[32m- name: Chaitanya[m
+[32m+[m[32m  nickname: Chaitanya[m
+[32m+[m[32m  designation: AI Member[m
+[32m+[m[32m  image: 8.png[m
+[32m+[m[32m  facebook: https://www.facebook.com/chaitanya.shyamaraj.37[m
+[32m+[m[32m  mail: mailto:chaitanya2.1999@gmail.com[m
+[32m+[m[32m  linkedin: https://www.linkedin.com/in/chaitanya21999[m
+[32m+[m[32m  github: https://github.com/Chaitanya-git[m
+[32m+[m
+[32m+[m
+[32m+[m[32m- name: Shivam Agarwal[m
+[32m+[m[32m  nickname: Shivam Agarwal[m
+[32m+[m[32m  designation: AI Member[m
+[32m+[m[32m  image: 9.png[m
+[32m+[m[32m  facebook:[m
+[32m+[m[32m  mail: mailto:shivamag99@gmail.com[m
+[32m+[m[32m  linkedin: https://www.linkedin.com/in/shivam-agarwal-136833180[m
+[32m+[m[32m  github:[m
+[32m+[m
+[32m+[m
+[32m+[m[32m- name: Anurag Borkar[m
+[32m+[m[32m  nickname: Anurag Borkar[m
+[32m+[m[32m  designation: AI Member[m
+[32m+[m[32m  image: 49.jpeg[m
+[32m+[m[32m  facebook: https://www.facebook.com/anurag.borkar.376[m
+[32m+[m[32m  mail: mailto:anuragvborkar@gmail.com[m
+[32m+[m[32m  linkedin: https://www.linkedin.com/in/anurag-borkar-9b3645166[m
+[32m+[m[32m  github: https://github.com/anuragvborkar[m
+[32m+[m
+[32m+[m
+[32m+[m[32m- name: Adheesh[m
+[32m+[m[32m  nickname: Adheesh[m
+[32m+[m[32m  designation: AI Member[m
+[32m+[m[32m  image: 51.jpeg[m
+[32m+[m[32m  facebook:[m
+[32m+[m[32m  mail: mailto:adheesh1010@gmail.com[m
+[32m+[m[32m  linkedin: https://www.linkedin.com/in/adheesh-h-m-14283912b[m
+[32m+[m[32m  github:[m[41m [m
+[32m+[m[32m- name: Ansel Dias[m
+[32m+[m[32m  nickname: Ansel Dias[m
+[32m+[m[32m  designation: S&A Member[m
+[32m+[m[32m  image: 36.png[m
+[32m+[m[32m  facebook: https://www.facebook.com/profile.php?id=100010693602083&ref=br_rs[m
+[32m+[m[32m  mail: mailto:thegreatanseldias@gmail.com[m
+[32m+[m[32m  linkedin: https://www.linkedin.com/in/ansel-dias-a7993215b/[m
+[32m+[m[32m  github:[m
+[32m+[m[32m- name: Manav Sachdeva[m
+[32m+[m[32m  nickname: Manav Sachdeva[m
+[32m+[m[32m  designation: Mechanical Member[m
+[32m+[m[32m  image: 24.png[m
+[32m+[m[32m  facebook:[m
+[32m+[m[32m  mail: mailto:sachdevamanav03@gmal.com[m
+[32m+[m[32m  linkedin:[m
+[32m+[m[32m  github:[m[41m  [m
+[32m+[m
+[32m+[m[32m- name: Yagya Malik[m
+[32m+[m[32m  nickname: Yagya Malik[m
+[32m+[m[32m  designation:  S&A Member[m
+[32m+[m[32m  image: 37.png[m
+[32m+[m[32m  facebook:[m
+[32m+[m[32m  mail: mailto:yagyamalik1812@gmail.com[m
+[32m+[m[32m  linkedin: https://www.linkedin.com/in/yagya-malik-8a4aa0155[m
+[32m+[m[32m  github: https://github.com/Nymeria18[m
+[32m+[m
+[32m+[m[32m- name: Nikhil George Savio[m
+[32m+[m[32m  nickname: Nikhil George Savio[m
+[32m+[m[32m  designation: Management Member[m
+[32m+[m[32m  image: 15.png[m
+[32m+[m[32m  facebook: https://www.facebook.com/nikhil.savio.92[m
+[32m+[m[32m  mail: mailto:nikhilperumana@gmail.com[m
+[32m+[m[32m  linkedin: https://www.linkedin.com/in/nikhil-savio-6087b6151[m
+[32m+[m[32m  github:[m
+ # - name: Thomas Alex[m
+ #   nickname: Thomas Alex[m
+ #   designation: S&A Senior Member[m
