@@ -3,5 +3,7 @@ baseurl: ""
 url: ""
 plugins:
   - jekyll-redirect-from
+  - jekyll-regex-replace
 whitelist:
   - jekyll-redirect-from
+  - jekyll-regex-replace
