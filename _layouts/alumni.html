@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+  {% include header.html %}
+  <link type="text/css" rel="stylesheet" href="{{ "/static/css/team.css" | prepend: site.baseurl }}" />
+</head>
+
+<body>
+  {% include navigation.html %}
+
+  <!-- Main Container -->
+  <div class="grid-y" id="main-container">
+
+    <!-- Team Section -->
+    <div class="cell large-12 bg-white team-section text-center" id="team" data-magellan-target="about">
+      <div class="grid-y grid-padding-y float-center">
+        <div class="cell large-2">
+          <h1 class="black">Team of
+            <span class="orange">{{ page.name | regex_replace: '.md', '' }}</span>
+          </h1>
+        </div>
+        <div class="cell large-10">
+          <div class="grid-x">
+            {% for member in site.data.alumni %}
+            {% if member.year ==  page.year %}
+            <div class="cell large-2 medium-3 small-4">
+              <div class="card profile">
+                {% unless member.image == nil %}
+                <div class="profile-image" style="background-image: url({{ site.baseurl }}/static/images/profile/{{member.image}})">
+                </div>
+                {% endunless %}
+                <div class="profile-social">
+                  {% unless member.facebook == nil %}
+                  <a href="{{ member.facebook }}">
+                    <i class="fa fa-facebook social-icons"></i>
+                  </a>
+                  {% endunless %}
+                  {% unless member.mail == nil %}
+                  <a href="{{ member.mail }}">
+                    <i class="fa fa-envelope social-icons"></i>
+                  </a>
+                  {% endunless %}
+                  {% unless member.linkedin == nil %}
+                  <a href="{{ member.linkedin }}">
+                    <i class="fa fa-linkedin social-icons"></i>
+                  </a>
+                  {% endunless %}
+                  {% unless member.github == nil %}
+                  <a href="{{ member.github }}">
+                    <i class="fa fa-github social-icons"></i>
+                  </a>
+                  {% endunless %}
+                </div>
+                <div class="profile-about">
+                  <h5 data-nickname="{{ member.nickname }}">
+                    <span>{{ member.name }}</span>
+                  </h5>
+                  <p>{{ member.designation }}</p>
+                </div>
+              </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  {% include footer.html %}
+
+</body>
+{% include script.html %}
+
+</html>

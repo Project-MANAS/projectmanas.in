@@ -1,7 +1,9 @@
 name: Project MANAS
-baseurl: ""
+baseurl: /projectmanas.in
 url: ""
 plugins:
   - jekyll-redirect-from
+  - jekyll-regex-replace
 whitelist:
   - jekyll-redirect-from
+  - jekyll-regex-replace

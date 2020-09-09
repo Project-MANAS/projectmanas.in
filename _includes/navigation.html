@@ -2,8 +2,8 @@
   <div class="nav-sticky" data-sticky data-margin-top='0' data-sticky-on="small" data-top-anchor="main-container:top" data-stick-to="top">
     <div class="title-bar" data-responsive-toggle="navigation-bar" data-hide-for="medium">
       <div class="title-bar-left">
-        <img src="/static/images/png/manas-logo-gradient.png" width="40px" alt="Project MANAS Logo" />
-        <img src="/static/images/png/project-manas.png" width="100px" alt="Project MANAS" />
+        <img src="{{ '/static/images/png/manas-logo-gradient.png' | relative_url }}" width="40px" alt="Project MANAS Logo" />
+        <img src="{{ '/static/images/png/project-manas.png' | relative_url }}" width="100px" alt="Project MANAS" />
       </div>
       <div class="title-bar-right">
         <button class="menu-icon right" type="button" data-toggle="navigation-bar"></button>
@@ -11,31 +11,31 @@
     </div>
     <div class="top-bar" id="navigation-bar">
       <div class="top-bar-title show-for-medium">
-        <img src="/static/images/png/manas-logo-gradient.png" width="40px" alt="Project MANAS Logo" />
-        <img src="/static/images/png/project-manas.png" width="90px" alt="Project MANAS" />
+        <img src="{{ '/static/images/png/manas-logo-gradient.png' | relative_url }}" width="40px" alt="Project MANAS Logo" />
+        <img src="{{ '/static/images/png/project-manas.png' | relative_url }}" width="90px" alt="Project MANAS" />
       </div>
       <div class="top-bar-right">
         <ul class="dropdown vertical medium-horizontal menu transparent" data-magellan data-options="animationEasing: linear; animationDuration: 500; threshold: 0;">
           <li>
-            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="{{ '/' | relative_url }}">Home</a>
           </li>
           <li>
-            <a class="nav-link" href="/#about">About Us</a>
+            <a class="nav-link" href="{{ '/#about' | relative_url }}">About Us</a>
           </li>
           <li>
-            <a class="nav-link" href="/team">Team</a>
+            <a class="nav-link" href="{{ '/team' | relative_url }}">Team</a>
           </li>
           <li>
-            <a class="nav-link" href="/#sponsors">Sponsors</a>
+            <a class="nav-link" href="{{ '/#sponsors' | relative_url }}">Sponsors</a>
           </li>
           <li>
-            <a class="nav-link" href="/#projects">Projects</a>
+            <a class="nav-link" href="{{ '/#projects' | relative_url }}">Projects</a>
           </li>
           <li>
-            <a class="nav-link" href="/blog">Blog</a>
+            <a class="nav-link" href="{{ '/blog' | relative_url }}">Blog</a>
           </li>
           <li>
-            <a class="nav-link" href="/#contact">Contact Us</a>
+            <a class="nav-link" href="{{ '/#contact' | relative_url }}">Contact Us</a>
           </li>
         </ul>
       </div>
