@@ -198,7 +198,6 @@
         </div>
         <div class="cell large-10">
           <div class="grid-x">
-<<<<<<< HEAD
             <div class="cell large-2 medium-3 small-4">
               <div class="card profile">
                 <div class="profile-image" style="background-image: url(static/images/jpg/profile/kumar-ranjan.jpg)">
@@ -425,48 +424,8 @@
                   <p data-title="SnA Member (April, 2016 - March, 2017)">
                     <span>SnA Member (April, 2016 - March, 2017)</span>
                   </p>
-=======
-            <!--go to _data / alumnis.yaml to edit list-->
-            {% for alumni in site.data.alumnis %}
-              <div class="cell large-2 medium-3 small-4">
-                <div class="card profile">
-                  {% unless alumni.image == nil %}
-                  <div class="profile-image" style="background-image: url(/static/images/profile/{{alumni.image}}); background-repeat: no-repeat;">
-                  </div>
-                  {% endunless %}
-                  <div class="profile-social">
-                    {% unless alumni.facebook == nil %}
-                    <a href="{{ alumni.facebook }}">
-                      <i class="fa fa-facebook social-icons"></i>
-                    </a>
-                    {% endunless %}
-                    {% unless alumni.mail == nil %}
-                    <a href="{{ alumni.mail }}">
-                      <i class="fa fa-envelope social-icons"></i>
-                    </a>
-                    {% endunless %}
-                    {% unless alumni.linkedin == nil %}
-                    <a href="{{ alumni.linkedin }}">
-                      <i class="fa fa-linkedin social-icons"></i>
-                    </a>
-                    {% endunless %}
-                    {% unless alumni.github == nil %}
-                    <a href="{{ alumni.github }}">
-                      <i class="fa fa-github social-icons"></i>
-                    </a>
-                    {% endunless %}
-                  </div>
-                  <div class="profile-about">
-                    <h5 >
-                      <span>{{ alumni.name }}</span>
-                    </h5>
-                    <p data-title="{{ alumni.designation }}">
-                      <span>{{ alumni.title }}</span>
-                  </div>
->>>>>>> cc059f96a5b9a227ae22589d491317a5dce2a6ac
                 </div>
               </div>
-            {% endfor %}
           </div>
         </div>
       </div>

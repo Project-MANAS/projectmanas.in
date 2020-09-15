@@ -1,23 +1,23 @@
+#title=position they held in the team
+#<POSITION/DESIGNATION> at <UNIVERSITY/COMPANY/ORGANIZATION>
+
 - name: Kumar Ranjan
   title: Co-Founder
-  designation: team leader (March, 2014 - July, 2015)
+  designation: Team Leader (March, 2014 - July, 2015)
   image: kumar-ranjan.jpg
-  facebook: https://www.facebook.com/thelostmechanic
+  facebook:
   mail: 
-  linkedin: 
+  linkedin: https://www.linkedin.com/in/kumarranjan1991/
   github: 
 
 - name: Roshan Prakash
   title: Co-Founder
-  designation: Team leader (July, 2015 - April, 2016)
+  designation: Team Leader (July, 2015 - April, 2016)
   image: roshan-prakash.jpg
   facebook: 
   mail: 
   linkedin: https://in.linkedin.com/in/roshan-prakash-042ab9b1
   github: 
-
-#title=position they held in the team
-#designation=place/designation of their work
 
 - name: Shubham Verma
   title: AI Head (March, 2014 - December, 2015)
@@ -57,7 +57,7 @@
 
 - name: Surya Phatak
   title: Team Manager (April, 2016 - March, 2017)
-  designation: Team Manager (April, 2016 - March, 2017)
+  designation: 
   image: surya-phatak.jpg
   facebook: 
   mail: 
@@ -111,7 +111,7 @@
 
 - name: Reuben John
   title: Tech Head (April, 2016 - March, 2017)
-  designation: Goldman Sachs Technology Analyst
+  designation: Technology Analyst at Goldman Sachs 
   image: reuben-john.jpg
   facebook: 
   mail: 
@@ -120,7 +120,7 @@
 
 - name: Ashish Mehta
   title: Team Leader (April, 2016 - March, 2017)
-  designation: Research Engineer, Qualcomm
+  designation: Research Engineer at Qualcomm
   image: ashish-mehta.jpg
   facebook: 
   mail: 
@@ -156,7 +156,7 @@
 
 - name: Sanjeev Nayak
   title: Team Manager (March, 2018 - March, 2019)
-  designation: Team Manager (March, 2018 - March, 2019)
+  designation: 
   image: sanjeev.png
   facebook: https://www.facebook.com/sanjeev.nayak.39545
   mail: mailto:sanjeevnayak9@gmail.com
@@ -165,7 +165,7 @@
 
 - name: Pranjal Sinha
   title: S&A Head (March, 2018 - March, 2019)
-  designation: S&A Head (March, 2018 - March, 2019)
+  designation: 
   image: 32.jpeg
   facebook:
   mail:
@@ -228,7 +228,7 @@
 
 - name: Tanuj Agarwal
   title: Mechanics Member (March, 2018 - March, 2019)
-  designation: Mechanics Member (March, 2018 - March, 2019)
+  designation: 
   image: tanuj.png
   facebook:
   mail: mailto:tanujma99@gmail.com
