@@ -84,7 +84,12 @@
 
 - name: Yash Bansod
   title: Automation Head (April, 2016 March, 2017)
+<<<<<<< HEAD
   designation: Machine Learning Researcher | Tubaldi Labs
+=======
+  designation: Machine Learning Researcher at Tubaldi Labs
+
+>>>>>>> cc059f96a5b9a227ae22589d491317a5dce2a6ac
   image: yash-bansod.jpg
   facebook: 
   mail: 

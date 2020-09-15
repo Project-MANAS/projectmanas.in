@@ -280,7 +280,11 @@
   github:
 
 - name: Ashwin Disa 
+<<<<<<< HEAD
   nickname: AshD
+=======
+  nickname: Aswinin
+>>>>>>> cc059f96a5b9a227ae22589d491317a5dce2a6ac
   designation:   Mechanical Member
   image: 2015.png
   facebook: https://m.facebook.com/ashwin.disa

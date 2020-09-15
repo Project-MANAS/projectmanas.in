@@ -1,16 +1,23 @@
 #title=place/designation of their work
 #designation=position they held in the team
 - name: Dheeraj R. Reddy
-  nickname: Squadrick
+  title: Member of Technical Staff at ThoughtSpot
   designation: Team Leader (March, 2018 - March, 2019)
   image: dheeraj.png
+<<<<<<< HEAD
   facebook: 
   mail: mailto:dheeraj98reddy@gmail.com
   linkedin: https://www.linkedin.com/in/dheeraj-rajaram-reddy
   github: https://squadrick.dev
+=======
+  facebook: https://www.facebook.com/dheeraj.r.reddy
+  mail: mailto:dheeraj98reddy@gmail.com
+  linkedin: https://www.linkedin.com/in/dheeraj-rajaram-reddy-91ba93120/
+  github: https://squadrick.github.io
+>>>>>>> cc059f96a5b9a227ae22589d491317a5dce2a6ac
 
-- name: Mukesh Kumar
-  nickname: Mukesh Kumar
+- name: Mukesh Kumar 
+  title: SanDisk
   designation: Tech Head (March, 2018 - March, 2019)
   image: mukesh.jpg
   facebook: https://www.facebook.com/dheeraj.r.reddy
@@ -18,105 +25,133 @@
   linkedin:
   github:
 
-- name: Sanjeev Nayak
-  nickname: Sanjeev Nayak
-  designation: Team Manager (March, 2018 - March, 2019)
-  image: sanjeev.png
-  facebook: https://www.facebook.com/sanjeev.nayak.39545
-  mail: mailto:sanjeevnayak9@gmail.com
-  linkedin: https://www.linkedin.com/mwlite/me
-  github:
-
-- name: Sarthak Mittal
-  nickname: naivehobo
+- name: Sarthak Mittal 
+  title: Robotics Engineer at Polybee
   designation: AI Head (March, 2018 - March, 2019)
   image: 10.gif
   facebook: https://www.facebook.com/sarthak.mittal2
   mail: mailto:sarthakmittal2608@gmail.com
-  linkedin:
+  linkedin: https://www.linkedin.com/in/sarthak-mittal/
   github: https://github.com/naiveHobo
 
-- name: Pranjal Sinha
-  nickname: Pranjal Sinha
-  designation: SnA Head (March, 2018 - March, 2019)
-  image: 32.jpeg
-  facebook:
-  mail:
-  linkedin:
-  github:
-
-- name: Ansh Verma
-  nickname: Ansh Verma
-  designation: Mechanical Head (March, 2018 - March, 2019)
-  image: ansh.png
-  facebook: https://www.facebook.com/vermaansh135
-  mail:
-  linkedin: https://www.linkedin.com/in/ansh-verma-b5607713a/
-  github:
-
-- name: Apratim Mukhrjee
-  nickname: Apratim Mukhrjee
+- name: Apratim Mukhrjee 
+  title: Research Intern at Indian Institute of Science, Bangalore
   designation: AI Perception Head (March, 2018 - March, 2019)
   image: 18.jpeg
   facebook: https://www.facebook.com/opletts
   mail: mailto:apratim101@gmail.com
   linkedin: https://www.linkedin.com/in/apratim-mukherjee/
   github: https://opletts.github.io
+#for everyone below the title and designation will remain the same
+- name: Shrijit Singh
+  title:  Tech Head (March, 2019 - March, 2020)
+  designation: Tech Head (March, 2019 - March, 2020)
+  image: 12.jpeg
+  facebook: https://www.facebook.com/shrijitsingh99
+  mail: mailto:tech_head@projectmanas.in
+  linkedin: https://www.linkedin.com/in/shrijit-singh-81b86a145/
+  github: https://github.com/shrijitsingh99 
 
-- name: Shreyas Sharma
-  nickname: Shreyas Sharma
-  designation: AI Planning Head (March, 2018 - March, 2019)
-  image: 44.jpeg
+- name: Tanaya Mandke
+  title: Team Manager (March, 2019 - March, 2020)
+  designation: Team Manager (March, 2019 - March, 2020)
+  image: 26.png
+  facebook: https://www.facebook.com/tana.mandke
+  mail: mailto:Tanaya.mandke9299@gmail.com
+  linkedin: http://linkedin.com/in/tanaya-mandke-885b24165
+  github:
+
+- name: Shivesh Khaitan
+  title: Head of Robotics (March, 2019 - March, 2020)
+  designation: Head of Robotics (March, 2019 - March, 2020)
+  image: 45.jpeg
+  facebook: https://www.facebook.com/shivesh.khaitan
+  mail: mailto:shiveshkhaitan@gmail.com
+  linkedin: https://www.linkedin.com/in/shivesh-khaitan-b48225159/
+  github: https://github.com/shiveshkhaitan #Head of Robotics
+
+- name: Rishab Agarwal
+  title: S&A Head (March, 2019 - March, 2020)
+  designation: S&A Head (March, 2019 - March, 2020)
+  image: 38.png
+  facebook: https://www.facebook.com/Agarwal.Rishab.99
+  mail: mailto:rishabgrwl121@gmail.com
+  linkedin: https://www.linkedin.com/in/rishab-agarwal-8a959216a
+  github: #SnA Head
+
+- name: Arya Karani
+  title: Mechanical Head (March, 2019 - March, 2020)
+  designation: Mechanical Head (March, 2019 - March, 2020)
+  image: 20.jpeg
   facebook:
-  mail: mailto:shreyas.rox101@gmail.com
-  linkedin: https://www.linkedin.com/in/shreyas-sharma-443680130/
-  github: https://github.com/shreyashub
+  mail: mailto:karani.arya@gmail.com
+  linkedin: https://www.linkedin.com/in/surampalli-rakesh-450213160/
+  github: #Mech Head
 
-- name: Vishnu Menon
-  nickname: Vishnu Menon
-  designation: Mech Mechanics Head (March, 2018 - March, 2019)
-  image: 35.jpeg
-  facebook: https://m.facebook.com/vishnu.menon.946
-  mail: mailto:vishnumenon9898@gmail.com
-  linkedin:
+- name: Sarathkrishnan Ramesh
+  title: AI Planning Head (March, 2019 - March, 2020)
+  designation: AI Planning Head (March, 2019 - March, 2020)
+  image: 13.jpeg
+  facebook: https://www.facebook.com/sarathkrishnan.ramesh
+  mail: mailto:sarathkrishnan99@gmail.com
+  linkedin: https://www.linkedin.com/in/sarathkrishnan-ramesh-0a75a315b
+  github: https://www.github.com/Sarath18
+
+- name: Shivanshu Agarwal
+  title: Sensing Head (March, 2019 - March, 2020)
+  designation: Sensing Head (March, 2019 - March, 2020)
+  image: 39.png
+  facebook: https://w ww.facebook.com/shivanshu.agarwal.965
+  mail: mailto:agarwalshivanshu00@gmail.com
+  linkedin: https://www.linkedin.com/in/shivansu-agarwal-53b625136
+  github: https://github.com/shic15
+
+- name: Dheeraj Mohan
+  title: AI Perception Head (March, 2019 - March, 2020)
+  designation: AI Perception Head (March, 2019 - March, 2020)
+  image: 24.jpeg
+  facebook: https://facebook.com/dheeraj.McDhee
+  mail: mailto:dheeraj.98@outlook.com
+  linkedin: https://www.linkedin.com/in/dheeraj-mcdhee
+  github: https://www.github.com/dheeraj-coding
+
+- name: Dasarath S
+  title: Automation Head (March, 2019 - March, 2020)
+  designation: Automation Head (March, 2019 - March, 2020)
+  image: 23.jpeg
+  facebook: https://facebook.com/dasarath.selvakumar
+  mail: mailto:dasarathselvakumar@gmail.com
+  linkedin: https://www.linkedin.com/in/dasarath-s-66525b157
   github:
 
-# - name: Shardul Purohit
-#   nickname: Shardul Purohit
-#   designation: Management Admin Head
-#   image: shardul.png
-#   facebook:
-#   mail:
-#   linkedin:
-#   github:
-
-- name: Damodar Nayak
-  nickname: Damodar Nayak
-  designation: Mech Senior Member (March, 2018 - March, 2019)
-  image: 21.jpeg
+- name: Siddarth Venkatraman
+  title: AI Planning Member (Feb, 2018 - March, 2020)
+  designation: AI Planning Member (Feb, 2018 - March, 2020)
+  image: 43.jpeg
   facebook:
-  mail:
-  linkedin:
+  mail: mailto:siddarthegreat@gmail.com
+  linkedin: https://www.linkedin.com/in/siddarth-venkatraman-59b863157/
+  github: https://github.com/HyperPotatoNeo
+
+- name: Ansel Dias
+  title: S&A Sensing Member (Feb, 2018 - March, 2020)
+  designation: S&A Sensing Member (Feb, 2018 - March, 2020)
+  image: 36.png
+  facebook: https://www.facebook.com/profile.php?id=100010693602083&ref=br_rs
+  mail: mailto:thegreatanseldias@gmail.com
+  linkedin: https://www.linkedin.com/in/ansel-dias-a7993215b/
   github:
 
-- name: Johir Suresh
-  nickname: Johir Suresh
-  designation: Mech Senior Member (March, 2018 - March, 2019)
-  image: 26.jpeg
-  facebook: https://www.facebook.com/johir.suresh
-  mail: mailto:johirsuresh1998@gmail.com
-  linkedin: https://www.linkedin.com/in/johir-suresh-59252a129/
-  github:
-
-- name: Tanuj Agarwal
-  nickname: Tanuj Agarwal
-  designation: Mech Mechanics Member (March, 2018 - March, 2019)
-  image: tanuj.png
+- name: Raj Tulluri
+  title: S&A Automation Member (Jan, 2019 - March, 2020)
+  designation: S&A Automation Member (Jan, 2019 - March, 2020)
+  image: 43.png
   facebook:
-  mail: mailto:tanujma99@gmail.com
-  linkedin: https://www.linkedin.com/in/tanuj-agrawal-88a149139
+  mail: mailto:mail@rajabbastulluri.com
+  linkedin: https://www.linkedin.com/in/raj-tulluri-165977145/
   github:
 
+<<<<<<< HEAD
 # - name: Thomas Alex
 #   nickname: Thomas Alex
 #   designation: S&A Senior Member
@@ -134,3 +169,40 @@
   mail: mailto:shiveshkhaitan@gmail.com
   linkedin: https://www.linkedin.com/in/shivesh-khaitan-b48225159/
   github: https://github.com/shiveshkhaitan #Head of Robotics
+=======
+- name: Chaitanya S
+  title: AI Perception Member (Feb, 2018 - March, 2020)
+  designation: AI Perception Member (Feb, 2018 - March, 2020)
+  image: 8.png
+  facebook: https://www.facebook.com/chaitanya.shyamaraj.37
+  mail: mailto:chaitanya2.1999@gmail.com
+  linkedin: https://www.linkedin.com/in/chaitanya21999
+  github: https://github.com/Chaitanya-git
+
+- name: Anurag Borkar
+  title: AI Perception Member (Feb, 2019 - March, 2020)
+  designation: AI Perception Member (Feb, 2019 - March, 2020)
+  image: 49.jpeg
+  facebook: https://www.facebook.com/anurag.borkar.376
+  mail: mailto:anuragvborkar@gmail.com
+  linkedin: https://www.linkedin.com/in/anurag-borkar-9b3645166
+  github: https://github.com/anuragvborkar
+
+- name: Parthesh Savla
+  title: Mechanics Member (Feb, 2018 - March, 2020)
+  designation: Mechanics Member (Feb, 2018 - March, 2020)
+  image: 25.png
+  facebook: https://www.facebook.com/prince.savla.9
+  mail: mailto:parthesh.savla@gmail.com
+  linkedin: https://www.linkedin.com/in/parthesh-savla327322163
+  github:
+
+- name: Adheesh H M
+  title: AI Perception Member (Feb, 2018 - March, 2020)
+  designation: AI Perception Member (Feb, 2018 - March, 2020)
+  image: 51.jpeg
+  facebook:
+  mail: mailto:adheesh1010@gmail.com
+  linkedin: https://www.linkedin.com/in/adheesh-h-m-14283912b
+  github: 
+>>>>>>> cc059f96a5b9a227ae22589d491317a5dce2a6ac
