@@ -213,254 +213,169 @@
 					Deadline is 10th September.
 				</p>
 				<h3 class="">
-					<li>Embedded Systems Challenge</li>
+					<li>Hardware and PCB Designing Challenge</li>
 				</h3>
 				<p>
-					You are provided with 5 LEDs, 1 microcontroller, 3 push buttons and 1 potentiometer (250 ohms). Simulate a circuit wherein:
+					Design a Buck Converter Circuit with LM2596 IC (use datasheet for reference)and the following specifications:
 				</p>
 				<!-- <p>
-					For eg if the INPUT button is pressed 2 times then the LED array will show 0000, 0001, 0010 and reverse to 0 until the RESET
+					For eg if the INPUT button is pressed 2 times then the LED array will show 0000, 0001, 0010 and reverse to 0 until the <b>RESET</b>
 					button is pressed.
 				</p> -->
 				<ul>
 					<li>
-						<p> 1st pushbutton represents Mode Switch </p>
+						<p> Input Voltage: 18V to 25.2V </p>
 					</li>
 					<li>
-						<p> 2nd pushbutton represents Start Switch </p>
+						<p> Output Voltage: 5V </p>
 					</li>
 					<li>
-						<p> 3rd pushbutton represents Reset Switch </p>
+						<p> Max Output Current: 3A </p>
+					</li>
+					<li>
+						<p> Appropriate connectors for I/O </p>
+					</li>
+					<li>
+						<p> Suitable protection features as applicable </p>
 					</li>
 				</ul>
 				<p>
-					The number of times the MODE button is pressed is equivalent to the mode. For example, if he presses the button twice the mode is set as 2.</p>
-
-				<p>Once the mode is set, the user has to press the START button to start the experiment.</p>
-				<p>There are three modes:</p>
+					Design a single layer PCB along with schematic using Autodesk Eagle.</p>
+				
+				<h5><span class="orange">Judging Criteria</span></h5>
 				<ul>
 					<li>
-						<p> Volume_bar: In this mode when the potentiometer is turned clockwise the LED’s start glowing from left to right i.e. the LED on the left (1st) would glow first then the one on its right while the 1st one is still on and this would
-							go on till the potentiometer has turned completely and all the LEDs are on.</p>
-						<div class="grid-x">
-							<!-- <div class="cell large-4 small-6">
-							<img style="width:100%;height:100%" src="/static/images/jpg/challenges/embedded.jpg" />
-						</div>
-						<div class="cell large-2 small-6 float-center">
-							<img style="width:75%;height:75%;"src="/static/images/jpg/challenges/arrow-right-solid.svg" />
-						</div> -->
-							<div class="cell large-auto medium-auto small-auto"></div>
-							<div class="cell large-6 medium-10 small-12">
-								<img style="width:100%;height:100%" src="/static/images/jpg/challenges/stitched.png" />
-							</div>
-							<div class="cell large-auto medium-auto small-auto"></div>
-
-						</div>
-						<p>Now the potentiometer will be turned anticlockwise thus the LEDs should start switching off from right to left.</p>
-						<div class="grid-x">
-							<!-- <div class="cell large-4 small-6">
-						<img style="width:100%;height:100%" src="/static/images/jpg/challenges/embedded.jpg" />
-					</div>
-					<div class="cell large-2 small-6 float-center">
-						<img style="width:75%;height:75%;"src="/static/images/jpg/challenges/arrow-right-solid.svg" />
-					</div> -->
-							<div class="cell large-auto medium-auto small-auto"></div>
-							<div class="cell large-6 medium-10 small-12">
-								<img style="width:100%;height:100%" src="/static/images/jpg/challenges/stitched2.png" />
-							</div>
-							<div class="cell large-auto medium-auto small-auto"></div>
-
-						</div>
-					</li>
-					<br>
-					<li>
-						<p> Levels: The initial condition (when the potentiometer is at it at its left most end) is that LED1 is lit up while all the other LEDs are off. Now turning the potentiometer clockwise at a certain angle would make the LED1 turn off
-							while lighting up LED2 and thus this would go on with the specific rotation of the pot.
-						</p>
-						<div class="grid-x">
-							<!-- <div class="cell large-4 small-6">
-						<img style="width:100%;height:100%" src="/static/images/jpg/challenges/embedded.jpg" />
-					</div>
-					<div class="cell large-2 small-6 float-center">
-						<img style="width:75%;height:75%;"src="/static/images/jpg/challenges/arrow-right-solid.svg" />
-					</div> -->
-							<div class="cell large-auto medium-auto small-auto"></div>
-							<div class="cell large-10 medium-10 small-12">
-								<img style="width:100%;height:100%" src="/static/images/jpg/challenges/stitched3.png" />
-							</div>
-							<div class="cell large-auto medium-auto small-auto"></div>
-
-						</div>
-						<br>
-						<p>Turning the potentiometer anticlockwise would reverse the process.</p>
-						<div class="grid-x">
-							<!-- <div class="cell large-4 small-6">
-						<img style="width:100%;height:100%" src="/static/images/jpg/challenges/embedded.jpg" />
-					</div>
-					<div class="cell large-2 small-6 float-center">
-						<img style="width:75%;height:75%;"src="/static/images/jpg/challenges/arrow-right-solid.svg" />
-					</div> -->
-							<div class="cell large-auto medium-auto small-auto"></div>
-							<div class="cell large-10 medium-10 small-12">
-								<img style="width:100%;height:100%" src="/static/images/jpg/challenges/stitched4.png" />
-							</div>
-							<div class="cell large-auto medium-auto small-auto"></div>
-
-						</div>
+						<p> Efficiency of the Circuit and PCB </p>
 					</li>
 					<li>
-						<p>Pulse_generator: The initial condition (when the pot is at it at its left_most end) is that the LEDs would light up as a pulse, i.e., the first LED would light up and then turn off and the 2nd one would light up and then it would turn
-							off and so on. Thus we would see a pulse go across from LED1 to LED5.
-						</p>
-
-						<p>Now turning the potentiometer clockwise would increase the frequency of this pulse and turning it anticlockwise would decrease it. </p>
-						<p>When any mode is being executed the reset button can be pressed thus resetting the entire circuit and waiting for input at the MODE pushbutton.
-						</p>
-						<br>
+						<p> Appropriate Component Selection (price and availability) </p>
+					</li>
+					<li>
+						<p> Minimum size of PCB </p>
 					</li>
 				</ul>
-				<h5><span class="orange">HINTS:</span></h5>
+				<h5><span class="orange">Bonus Task</span></h5>
+				<p>Additionally, you can simulate the above designed circuit in any simulation software, it is optional, but extra points would be awarded.</p>
+
+				<br>
+				
+				<h3 class="">
+					<li>Embedded Systems Challenge</li>
+				</h3>
+				
+				<p>You have 7 pushbuttons, 1 potentiometer (250 ohms), 4 <b>LEDs</b>, 1 microcontroller.</p>
+				<p>Arrange the above components and simulate a circuit wherein:</p>
+
 				<ul>
 					<li>
-						<p>Potentiometer (pot): It gives analog values ranging from 0 to 1023. The programmer has to divide these values accordingly among the 5 LEDs for the respective Modes.</p>
+						<p>Pushbuttons 1-4 represent <b>TOGGLE</b> buttons</p>
 					</li>
 					<li>
-						<p>Using Arduino Uno is preferred for the question. Simulating Arduino Uno is easy on <a href="https://www.tinkercad.com" target="_blank"> Tinkercad</a> .</p>
+						<p>Pushbutton 5 represents <b>ALL_ON</b> button</p>
+					</li>
+					<li>
+						<p>Pushbutton 6 represents <b>ALL_OFF</b> button</p>
+					</li>
+					<li>
+						<p>Pushbutton 7 represents <b>MODE</b>  button</p>
+					</li>
+					<li>
+						<p>Pushbutton 8 represents <b>RESET</b> button</p>
 					</li>
 				</ul>
-				<p> The simulation link is to be sent to the mail-id given below </p>
+
+				<p>
+					The number of times the <b>MODE</b> button is pressed is the mode of operation. For example, if the <b>MODE</b> button is pressed twice, the mode should be set as 2. Once the mode is set, the circuit should execute the desired functions.
+				</p>
+
+				<p>
+					The press of the <b>RESET</b> button should reset the entire system (while possibly still in operation), allowing the user to input the mode again.
+				</p>
+
+				<p>
+					There are 3 modes to be developed:
+				</p>
+				
+				<ul>
+					<li>
+						<p><span class="orange">Toggle:</span> In this mode, the press of any of the <b>TOGGLE</b> buttons should cause a corresponding <b>LED</b> to start glowing, maintaining its state. When a second <b>TOGGLE</b> button is pressed, the corresponding <b>LED</b> to that button should start glowing along with the previous <b>LED</b>. If a <b>TOGGLE</b> button to an already lit <b>LED</b> is pressed, the corresponding <b>LED</b> should stop glowing, leaving the state of the other <b>LEDs</b> unchanged. Please note that when an <b>LED</b> is made to glow, it should stay glowing till its state is toggled. The press of the <b>ALL_ON</b> button should cause all the <b>LEDs</b> to glow, and the press of the <b>ALL_OFF</b> button should cause all <b>LEDs</b> to stop glowing.</p>
+					</li>
+					<li>
+						<p><span class="orange">Pulse:</span> In this mode, all the <b>LEDs</b> must pulsate (start glowing and stop glowing in a cycle) with a frequency based on the input from the potentiometer. Turning the potentiometer clockwise should increase the frequency, turning it anticlockwise should decrease it. Pushing of any pushbuttons 1-7 should not affect the pulse executed in this mode.</p>
+					</li>
+					<li>
+						<p><span class="orange">Memory:</span> In this mode, the <b>LEDs</b> must glow in the order decided by the sequence with which the pushbuttons are pressed. For example, take the following sequence:</p>
+						<ul>
+							<li>
+								<p>1 &rArr; 3 &rArr; 1 &rArr; <b>ALL_ON</b></p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+				<p>
+					After taking any such sequence as input, the pressing of the <b>ALL_OFF</b> button should cause the <b>LEDs</b> to glow in the same sequence, with the speed of change to the next state being decided by the input from the potentiometer, similar to <span class="orange">Pulse</span> mode.
+				</p>
+
+				<p>
+					<span class="orange">Hints:</span> Use of arrays may help design the above system. The use of Arduino is preferred for this question. Simulating is easy on Tinkercad. Name all variables in the code appropriately for more readability and easy debugging.
+				</p>
 
 
 				<br>
 				<h3 class="">
-					<li>Planning and Control System</li>
+					<li>Planning and Control System Challenges</li>
 				</h3>
 				<p>
-					Write the arduino code for a 2 wheel differential drive mobile robot to traverse and map its surroundings in a bounded room. It should be able to generate a crude map of all the obstacles along with their positions in the room using an
-					ultrasonic sensor to detect the obstacles. The map should be in the form of a 20*20 array in which each element represents each move of the robot. When the robot does not detect any object the element in the array should be assigned “0”
-					whereas if an object is detected, “1” should be assigned to the element. The object sizes will be defined by us. Consider the size of the mobile robot be equal to one cell.
-					An example is given below.
+					You are building an intelligent robotic spy to spy on an alleged criminal. The robot spy is equipped with many sensors utilizing which it would relay important information regarding the alleged to you. The base of the robot is a 2-wheeled differential drive robot with 5 ultrasonic sensors arranged as shown.
 
 				</p>
 				<div class="grid-x grid-margin-x">
-					<div class="cell large-6 small-6 medium-6">
+					<div class="cell large-12 small-12 medium-12">
 						<center>
-							<img class="embedded2-img" src="/static/images/jpg/challenges/Map1.jpg" /> </center>
-					</div>
-					<div class="cell large-6 small-6 medium-6">
-						<center>
-							<img class="embedded2-img" style="width: 65%; height: 65%" src="/static/images/jpg/challenges/Solution1.jpg" /> </center>
+							<img class="embedded2-img" style="width: 40%; height: 40%" src="/static/images/png/recruitments/pc_1.png" /> </center>
 					</div>
 				</div>
-				<!-- <p>
-					Starting with any one of the vertices, navigate through the graph to find a set of edges which connects all the vertices
-					and whose sum of weights is the least. Display the set of edges. (For example, {EA, AB, CB, DF})
-				</p>
-				<p>
-					Also, implement a led array with 4 LED’s, displaying the code of each vertex in the string with regular intervals between
-					each display. (1 sec between each vertex).
-				</p>
-				<p>
-					Following are the codes for the vertices to be represented in binary on the LED array.
-				</p> -->
-				<center>
-					<table id="sna-table">
-
-						<tr>
-							<td> Red Block </td>
-							<td> 2*4 </td>
-							<td> Dark Blue Block </td>
-							<td> 5*4</td>
-						</tr>
-						<tr>
-							<td> Grey Block </td>
-							<td> 3*2</td>
-							<td> Brown Block </td>
-							<td> 2*2 </td>
-						</tr>
-						<tr>
-							<td> Pink Block </td>
-							<td> 5*4 </td>
-							<td> Green Block </td>
-							<td> 2*7 </td>
-						</tr>
-						<tr>
-							<td> Light Blue Block </td>
-							<td> 4*4 </td>
-							<td> Purple Block </td>
-							<td> 2*5 </td>
-						</tr>
-
-					</table>
-				</center>
-
-				<br>
-				<p>This should be done for the following map: </p>
-				<center> <img class="embedded2-img" style="width: 60%; height: 60%" src="/static/images/jpg/challenges/Quesiton Map.jpg" /> </center>
-				<br>
-				<center>
-					<table id="sna-table">
-
-						<tr>
-							<td> Black Block </td>
-							<td> 5*5 </td>
-							<td> Pink Block </td>
-							<td> 2*5</td>
-						</tr>
-						<tr>
-							<td> Red Block </td>
-							<td> 3*9</td>
-							<td> Grey Block </td>
-							<td> 6*6 </td>
-						</tr>
-						<tr>
-							<td> Blue Block </td>
-							<td> 4*2 </td>
-							<td> Yellow Block </td>
-							<td> 3*3 </td>
-						</tr>
-
-					</table>
-				</center>
-				<!-- <center><strong>The solution should be mailed to the e-mail id provided.</strong></center> -->
-				<h4>
-					<br>
+				
+				<h4><span class="orange">LEVEL-1 TASK</span></h4>
+				<p>Design an approach and write code to program the robot to follow the suspect in a bounded unknown environment with only rectangular obstacles. The robot must also avoid the obstacles as it tries to follow the target. The constraint is to stay close to the target but not too close to avoid getting caught. The ideal radius to spy on is between 1m to 2m.</p>
+				<h5><span class="orange">Assumptions:</span></h5>
+				<ul>
 					<li>
-						PCB CHALLENGE
-					</li>
-				</h4>
-				<p>
-					This is a challenge in which you have to design a single layered PCB on EAGLE EDA. In this challenge you are required to make a single layered PCB in the maximum dimensions of 15x15mm.
-
-					You have to build your on schematic with the help of the image attached below and also design the printed circuit board of this schematic.
-
-				</p>
-				<center>
-					<img class="pcb-img" src="/static/images/jpg/challenges/pcb_ques.png" /> </center>
-				<br>
-
-				<br>
-				<p>If the dimension of the final PCB is within:</p>
-				<ul class="sna-scoring">
-					<li>
-						<p>32x32mm you will be awarded with 1/4 of the max points. </p>
+						<p>
+							Assume that you receive the position of the target from the command center in the form of (x, y) coordinates w.r.t the bottom left of the bounded field which is to be considered the origin I.e., (0, 0).
+						</p>
 					</li>
 					<li>
-						<p>25x25mm size you will be awarded 1/2 of the max points. </p>
+						<p>
+							Also assume that you know your global position (x,y,theta) in the field (w.r.t the origin) from an in-built positioning system.
+						</p>
 					</li>
 					<li>
-						<p>17x17mm size you will awarded the max points.</p>
+						<p>
+							Robot always starts from origin(0,0,0).
+						</p>
 					</li>
 				</ul>
-				<p>
-					If any component is missing from EAGLE, do make sure to download the specific libraries from SnapEDA.
-					You should attach both the schematic file and the board file in your mail.
-				</p>
-				<p>
-					<a href="http://www.cadsoftusa.com/download-eagle/?language=en" target="_blank">
-						<center> Click here to download the Eagle EDA </center>
-					</a>
-				</p>
+
+				<h4><span class="orange">LEVEL-2 TASK</span></h4>
+				<p>The robotic spy was working according to the expectations but now the in-built positioning system has failed, now you can’t expect the robot to know its current position(x,y,theta).</p>
+				<p>Modify the approach in order to make this system work satisfactorily. The assumption that robot always starts from origin still holds.</p>
+				
+				<p>An example environment is given below with the differential drive robot</p>
+
+				<div class="grid-x grid-margin-x">
+					<div class="cell large-12 small-12 medium-12">
+						<center>
+							<img class="embedded2-img" style="width: 40%; height: 40%" src="/static/images/png/recruitments/pc_2.png" /> </center>
+					</div>
+				</div>
+
+				<p><span class="orange"> Hint:</span> How would the robot be able to keep track of its position?</p>
+
+				<h5><span class="orange">Judging Criteria</span></h5>
+				<p> The approach to solve the problem would be given more importance. An abstract (but detailed) code to solve the problem would suffice (Programming language of your choice).</p>
+				
 				<br>
 
 				<p> The solutions need to be submitted along with your details via email to the SnA Head at: <a href="mailto:sna_head@projectmanas.in"> sna_head@projectmanas.in </a> </p>
@@ -580,47 +495,43 @@
 					</div>
 			</div>
 		</section>
+
+		<!-- Instructions: Question 3 is compulsory for everyone 
+Answer either 1 or 2 or both 
+
+1. Make a (max 2 min) product promotional video of any electronic gadget of your choice and include how you use it in an entire day 
+2. Design a poster for a machine learning workshop hosted by Project MANAS. 
+Venue: NLH 
+Make up other details on your own 
+3. For our bot we need to use an INS. Project MANAS uses vectornav but since it is military grade we cannot take it outside the country, find a way to get permission to ship it.
+Write a letter to our faculty advisor about the same -->
 		<section id="management-challenge" style="background-color: white; color: black;">
 			<div class="challenge-content">
 				<h2 class="orange text-center">
 					Management
 				</h2>
 				<p>
-					You are the Head of Management for a new club started this year. Considering the vast number of clubs in Manipal, it is important for a club to differentiate itself from the rest. Here are a couple of situations you would have to manage:
-
-
+					<span class="orange">Instructions:</span> Answer either Q1 or Q2 or both, however Q3 is compulsory for everyone. 
 				</p>
-				<!-- <p>
-					An ideal candidate for the division would be someone who possesses one or more of the following skills:
-				</p> -->
-
-				<!-- <h3 class=""> -->
-				<ul>
+				
+				<ol>
 					<li>
-						<p>Creating a brand for your club and publicising it is essential for recruitment and the general functioning of the club. How do you plan on spreading the word about your club, building a brand and attracting prospective members with the
-							very limited resources that you have as a new club?</p>
+						<p>Make a (max 2 min) product promotional video of any electronic gadget of your choice and include how you use it in an entire day</p>
 					</li>
 				<!-- </h3> -->
 				<li>
 					<p>
-						<p>You believe that your club has a unique selling point - one that you do not share with the other organizations of Manipal. How do you plan on marketing and validating this Unique Selling Point to prospective members?</p>
-					</p></li>
+						Design a poster for a machine learning workshop hosted by Project MANAS which is going to be held at NLH. Make up the other details on your own. </p>
 				</li>
 				<li>
-					<p>You are a one-person army - with nobody else to help you to finish your tasks. These tasks include building a brand, marketing and publicity, recruitment and the general administration of your club. Rank these tasks in order of your priority and explain why you chose them. How do you plan on implementing the plans for these tasks efficiently?</p>
+					<p>For our bot we need to use an INS. Project MANAS uses vectornav but since it is military grade we cannot take it outside the country, find a way to get the permission to ship it.
+						Write a letter to our faculty advisor about the same.</p>
 				</li>
-				<li>
-					<p> During recruitment, what are you looking for in a prospective member? How will you assess one's skills in a short interview/ recruitment phase?</p>
-				</li>
+			</ol>
 
-
-			</ul>
-					<p><strong><span class="orange">Graphics challenge question</span></strong></p>
-					<p>Make a logo related to AI Robotics which could be related to work we do at Project MANAS. </p>
-					<p>(For help you can refer to our website or social media)</p>
 
 				<p>
-					Email your design/case study to <a href="mailto:tanaya.mandke9299@gmail.com"> tanaya.mandke9299@gmail.com</a>. Kindly attach a copy of your resumé to the email as well.
+					Email your answers and videos to <a href="mailto:tanaya.mandke9299@gmail.com"> tanaya.mandke9299@gmail.com</a>. Kindly attach a copy of your resumé to the email as well.
 				</p>
 				<div class="contact">
 					<p>
