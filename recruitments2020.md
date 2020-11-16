@@ -1,5 +1,5 @@
 ---
 title: Project MANAS 2019 Recruitment Form
-redirect_to: #TODO: Remember to update this later with the new form
+redirect_to: https://docs.google.com/forms/d/e/1FAIpQLScH9CqU65ZHc-AsQkrEk2DJLFnzihiF9K5-5WcO8s05B0YLGA/viewform
 permalink: /recruitments2020
 ---
