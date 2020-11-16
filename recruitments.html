@@ -346,23 +346,23 @@
 						<p><span class="orange">Memory:</span> In this mode, the <b>LEDs</b> must glow in the order
 							decided by the sequence with which the pushbuttons are pressed. For example, take the
 							following sequence:</p>
-							<div class="grid-x grid-margin-x">
-								<div class="cell small-12 large-12 medium-12">
-									<div class="hide-for-small-only">
-										<center>
-											<img class="embedded2-img" style="width: 50%; height: 50%"
-												src="/static/images/png/recruitments/pc_5.png" /> </center>
-									</div>
-								</div>
-			
-								<div class="cell small-12">
-									<div class="show-for-small-only">
-										<center>
-											<img class="embedded2-img" style="width: 100%; height: 100%"
-												src="/static/images/png/recruitments/pc_5.png" /> </center>
-									</div>
+						<div class="grid-x grid-margin-x">
+							<div class="cell small-12 large-12 medium-12">
+								<div class="hide-for-small-only">
+									<center>
+										<img class="embedded2-img" style="width: 50%; height: 50%"
+											src="/static/images/png/recruitments/pc_5.png" /> </center>
 								</div>
 							</div>
+
+							<div class="cell small-12">
+								<div class="show-for-small-only">
+									<center>
+										<img class="embedded2-img" style="width: 100%; height: 100%"
+											src="/static/images/png/recruitments/pc_5.png" /> </center>
+								</div>
+							</div>
+						</div>
 					</li>
 				</ul>
 
@@ -386,9 +386,9 @@
 				</h3>
 				<p>
 					You are building an intelligent robotic spy to spy on an alleged criminal. The robot spy is equipped
-					with many sensors utilizing which it would relay important information regarding the alleged to you.
-					The base of the robot is a 2-wheeled differential drive robot with 5 ultrasonic sensors arranged as
-					shown.
+					with 5 ultrasonic sensors using which you can obtain information regarding obstacles in the
+					environment. The base of the robot is a 2-wheeled differential drive robot with 5 ultrasonic sensors
+					arranged as shown. (45 degrees with respect to each other)
 
 				</p>
 				<div class="grid-x grid-margin-x">
@@ -410,17 +410,18 @@
 				</div>
 
 				<h4><span class="orange">LEVEL-1 TASK</span></h4>
-				<p>Design an approach and write code to program the robot to follow the suspect in a bounded unknown
-					environment with only rectangular obstacles. The robot must also avoid the obstacles as it tries to
-					follow the target. The constraint is to stay close to the target but not too close to avoid getting
-					caught. The ideal radius to spy on is between 1m to 2m.</p>
+				<p>Design an approach and write pseudo code to program the robot to follow the suspect in a
+					bounded unknown environment with only rectangular obstacles. The robot must also avoid the
+					obstacles as it tries to follow the target. The constraint is to stay close to the target but not
+					too
+					close to avoid getting caught. The ideal radius to spy on is between 4m to 5m.</p>
 				<h5><span class="orange">Assumptions:</span></h5>
 				<ul>
 					<li>
 						<p>
-							Assume that you receive the position of the target from the command center in the form of
-							(x, y) coordinates w.r.t the bottom left of the bounded field which is to be considered the
-							origin I.e., (0, 0).
+							Assume that you receive the position of the target from the command center in the form
+							of (x, y) coordinates w.r.t the bottom left of the bounded field which is to be considered
+							the origin I.e., (0, 0) in meters every timestep.
 						</p>
 					</li>
 					<li>
@@ -434,13 +435,29 @@
 							Robot always starts from origin(0,0,0).
 						</p>
 					</li>
+					<li>
+						<p>
+							Max speed of the robot: 5 m/s
+						</p>
+					</li>
 				</ul>
+
+				<p>Expected Output: You must output the control commands i.e., speeds of the left and right wheels
+					of the bot in m/s every timestep.</p>
 
 				<h4><span class="orange">LEVEL-2 TASK</span></h4>
 				<p>The robotic spy was working according to the expectations but now the in-built positioning system has
 					failed, now you can’t expect the robot to know its current position(x,y,theta).</p>
+				<p>Since, the positioning system has failed, add additional sensor(s) to the robot which would help in
+					keeping track of its global position. [Hint: An example sensor which can be added is Rotary
+					Encoder, feel free to use any other sensor of your choice.]</p>
+
 				<p>Modify the approach in order to make this system work satisfactorily. The assumption that robot
 					always starts from origin still holds.</p>
+				<p>Expected Output: Same as Level 1.</p>
+				<p><span class="orange">Note:</span> The approach to solve the problem would be given more importance.
+					An abstract (but
+					detailed) pseudo code to solve the problem would suffice (Programming language of your choice).</p>
 
 				<p>An example environment is given below with the differential drive robot</p>
 
