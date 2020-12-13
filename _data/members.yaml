@@ -1,175 +1,133 @@
-- name: Shrijit Singh
-  nickname: Shrijit Singh
+- name: Harsh Barde
+  nickname: HUB
   designation: Technical Head
-  image: 12.jpeg
-  facebook: https://www.facebook.com/shrijitsingh99
-  mail: mailto:tech_head@projectmanas.in
-  linkedin: https://www.linkedin.com/in/shrijit-singh-81b86a145/
-  github: https://github.com/shrijitsingh99 #Tech Head
+  image: https://i.imgur.com/wReSEs8.png
+  facebook:
+  mail: mailto:harshbarde51@gmail.com
+  linkedin: https://www.linkedin.com/in/harsh-barde-646304169
+  github:
 
-- name: Tanaya Mandke
-  nickname: Tanaya Mandke
+- name: Ritwik Agarwal
+  nickname: Ritwik Agarwal
   designation: Team Manager
-  image: 26.png
-  facebook: https://www.facebook.com/tana.mandke
-  mail: mailto:Tanaya.mandke9299@gmail.com
-  linkedin: http://linkedin.com/in/tanaya-mandke-885b24165
-  github: #Team Manager
-
-- name: Shivesh Khaitan
-  nickname: Shivesh Khaitan
-  designation: Head of Robotics
-  image: 45.jpeg
-  facebook: https://www.facebook.com/shivesh.khaitan
-  mail: mailto:shiveshkhaitan@gmail.com
-  linkedin: https://www.linkedin.com/in/shivesh-khaitan-b48225159/
-  github: https://github.com/shiveshkhaitan #Head of Robotics
-
-- name: Rishab Agarwal
-  nickname: Rishab Agarwal
-  designation: S&A Head
-  image: 38.png
-  facebook: https://www.facebook.com/Agarwal.Rishab.99
-  mail: mailto:rishabgrwl121@gmail.com
-  linkedin: https://www.linkedin.com/in/rishab-agarwal-8a959216a
-  github: #SnA Head
-
-- name: Arya Karani
-  nickname: Arya Karani
-  designation: Mechanical Head
-  image: 20.jpeg
+  image: https://i.imgur.com/ezzTmTm.png
   facebook:
-  mail: mailto:karani.arya@gmail.com
-  linkedin: https://www.linkedin.com/in/arya-karani-78424514a
-  github: #Mech Head
+  mail: mailto:ritwikagarwal44@gmail.com
+  linkedin: https://www.linkedin.com/in/ritwik-agarwal
+  github: https://github.com/ritwik25
 
-- name: Dheeraj Mohan
-  nickname: Dheeraj Mohan
+- name: Dhruv Joshi
+  nickname: helium_balloons
+  designation: AI Head
+  image: https://i.imgur.com/FKT7lSK.png
+  facebook:
+  mail: mailto:dhruvjoshi1007@gmail.com
+  linkedin: https://www.linkedin.com/in/dhruv-joshi-b65a6b16a
+  github: https://github.com/dhruvjoshi1007
+
+- name: Arpit Chauhan
+  nickname: Arpit Chauhan
+  designation:  S&A Head
+  image: https://i.imgur.com/WYJwAGh.png
+  facebook: https://www.facebook.com/profile.php?id=100026317991091
+  mail: mailto:carpit680@gmail.com
+  linkedin: https://www.linkedin.com/in/arpit-chauhan-bb84bb145
+  github: https://github.com/carpit680
+
+- name: Rohit Natu
+  nickname: Rohit Natu
+  designation: Mech Head
+  image: https://i.imgur.com/e79KSbS.png
+  facebook:
+  mail: mailto:rohit.grandson@gmail.com
+  linkedin: https://www.linkedin.com/in/rohit-natu-42b005180
+  github: https://www.github.com/75072107
+  
+- name: Dhaval Machhar
+  nickname: kRma
+  designation: Management Head
+  image: https://i.imgur.com/DvqDaz0.png
+  facebook: 
+  mail: mailto:dhavalmchhr@gmail.com
+  linkedin: https://www.linkedin.com/in/dhaval-machhar-ba03191a0
+  github: https://github.com/dhaval-machhar
+
+- name: Abhineet Choudhary
+  nickname: Abhineet Choudhary
   designation: AI Perception Head
-  image: 24.jpeg
-  facebook: https://facebook.com/dheeraj.McDhee
-  mail: mailto:dheeraj.98@outlook.com
-  linkedin: https://www.linkedin.com/in/dheeraj-mcdhee
-  github: https://www.github.com/dheeraj-coding
+  image: https://i.imgur.com/Q2QXOZo.png
+  facebook:
+  mail: mailto:abhi.chou4@gmail.com
+  linkedin: https://www.linkedin.com/in/abhineet-c-344967bb/
+  github: https://github.com/abhichou4
 
-- name: Sarathkrishnan Ramesh
-  nickname: Sarathkrishnan Ramesh
+- name: Anish Biswas
+  nickname: trickarcher 
   designation: AI Planning Head
-  image: 13.jpeg
-  facebook: https://www.facebook.com/sarathkrishnan.ramesh
-  mail: mailto:sarathkrishnan99@gmail.com
-  linkedin: https://www.linkedin.com/in/sarathkrishnan-ramesh-0a75a315b
-  github: https://www.github.com/Sarath18
+  image: https://i.imgur.com/ncBT26s.png
+  facebook: https://www.facebook.com/theAnishBiswas
+  mail: mailto:anishbiswas271@gmail.com
+  linkedin: https://www.linkedin.com/in/anish-biswas
+  github: https://github.com/trickarcher
 
-- name: Shivanshu Agarwal
-  nickname: Shivanshu Agarwal
-  designation: Sensing Head
-  image: 39.png
-  facebook: https://w ww.facebook.com/shivanshu.agarwal.965
-  mail: mailto:agarwalshivanshu00@gmail.com
-  linkedin: https://www.linkedin.com/in/shivansu-agarwal-53b625136
-  github: https://github.com/shic15
+- name: Akhil Bonagiri
+  nickname: Akhil Bonagiri
+  designation:  Automation Head
+  image: https://i.imgur.com/4O52Y9p.png
+  facebook:
+  mail: mailto:bonagiri_akhil@yahoo.com
+  linkedin: https://www.linkedin.com/in/akhil-bonagiri-2569b9181
+  github:  
 
-- name: Dasarath S
-  nickname: Dasarath S
-  designation: Automation Head
-  image: 23.jpeg
-  facebook: https://facebook.com/dasarath.selvakumar
-  mail: mailto:dasarathselvakumar@gmail.com
-  linkedin: https://www.linkedin.com/in/dasarath-s-66525b157
-  github:
+- name: Gokul P
+  nickname: Gokul P
+  designation:  Sensing Head
+  image: https://i.imgur.com/4iTw3VF.png
+  facebook:
+  mail: mailto:gokulgns@gmail.com
+  linkedin: https://www.linkedin.com/in/gokul-p-38b22b154
+  github: https://github.com/gokulp01
 
-- name: Raunaq Kalra
-  nickname: Raunaq kalra
+- name: Aniket Bhawe
+  nickname: Aniket Bhawe
   designation: Mechanics Head
-  image: 42.png
-  facebook: https://www.facebook.com/raunaq.kalra.58
-  mail: mailto:raunaqkalra99@gmail.com
-  linkedin: https://www.linkedin.com/in/raunaqkalra99
+  image: https://i.imgur.com/HZ3lGYi.png
+  facebook: https://www.facebook.com/aniket.bhawe.3
+  mail: mailto:kiwiani99@gmail.com
+  linkedin: http://linkedin.com/in/aniket-bhawe
   github:
 
-- name: Rakshit Jain
-  nickname: Rakshit Jain
+- name: Debayan Deb
+  nickname: Devayern
   designation: Design Head
-  image: 27.png
-  facebook: https://www.facebook.com/rakshit.jain.378
-  mail: mailto:rakshitjain003@gmail.com
-  linkedin:
+  image: https://i.imgur.com/E2V9Mr2.png
+  facebook: https://www.facebook.com/profile.php?id=100008758214121
+  mail: mailto:devion008@gmail.com
+  linkedin: https://www.linkedin.com/in/debayan-deb-10311617b
   github:
 
-- name: Aditya Veerabahu
-  nickname: Aditya Veerabahu
-  designation: Admin Head
-  image: 13.png
-  facebook: https://www.facebook.com/profile.php?id=100008935382776
-  mail: mailto:adityaveerabahu@gmail.com
-  linkedin: https://www.linkedin.com/in/aditya-veerabahu
-  github: https://github.com/adityaveera17
+- name: Naman Joshi
+  nickname: NimWilliams
+  designation:  Admin and Finance Head
+  image: https://i.imgur.com/5TowzD3.png
+  facebook: 
+  mail: mailto:joshinaman14@gmail.com
+  linkedin: https://www.linkedin.com/in/naman-joshi-476a07195/
+  github: https://github.com/JoshiNaman
 
-- name: Rishi Raj
-  nickname: Rishi Raj
-  designation: Publicity and Graphics Head
-  image: 14.png
-  facebook: https://www.facebook.com/profile.php?id=100002519509426
-  mail: mailto:rajrishi0399@gmail.com
-  linkedin: https://www.linkedin.com/in/rishi-raj-772525149
-  github:
-
-
-
-- name: Siddarth Venkatraman
-  nickname: Siddarth Venkatraman
-  designation: AI Planning Member
-  image: 43.jpeg
-  facebook:
-  mail: mailto:siddarthegreat@gmail.com
-  linkedin:
-  github: https://github.com/HyperPotatoNeo
-
-- name: Chaitanya
-  nickname: Chaitanya
-  designation: AI Perception Member
-  image: 8.png
-  facebook: https://www.facebook.com/chaitanya.shyamaraj.37
-  mail: mailto:chaitanya2.1999@gmail.com
-  linkedin: https://www.linkedin.com/in/chaitanya21999
-  github: https://github.com/Chaitanya-git
-
-
-- name: Shivam Agarwal
-  nickname: Shivam Agarwal
-  designation: AI Perception Member
-  image: 9.png
-  facebook:
-  mail: mailto:shivamag99@gmail.com
-  linkedin: https://www.linkedin.com/in/shivam-agarwal-136833180
-  github:
-
-
-- name: Anurag Borkar
-  nickname: Anurag Borkar
-  designation: AI Perception Member
-  image: 49.jpeg
-  facebook: https://www.facebook.com/anurag.borkar.376
-  mail: mailto:anuragvborkar@gmail.com
-  linkedin: https://www.linkedin.com/in/anurag-borkar-9b3645166
-  github: https://github.com/anuragvborkar
-
-
-- name: Adheesh
-  nickname: Adheesh
-  designation: AI Perception Member
-  image: 51.jpeg
-  facebook:
-  mail: mailto:adheesh1010@gmail.com
-  linkedin: https://www.linkedin.com/in/adheesh-h-m-14283912b
+- name: Sridurga Krithivasan 
+  nickname: Durgzzz
+  designation: PR and Publicity Head
+  image: https://i.imgur.com/YXrNo29.png
+  facebook: https://www.facebook.com/sridurga.krithivasan
+  mail: mailto:sridurga.krithi@gmail.com
+  linkedin: http://linkedin.com/in/sridurga-krithivasan-b49075190
   github: 
-
 
 - name: Baidyanath Kundu
   nickname: sudo-panda
-  designation: AI Planning Member
-  image: 1.png
+  designation: Senior AI Member
+  image: https://i.imgur.com/3jk2tWU.png
   facebook: https://www.facebook.com/Baidya99
   mail: mailto:kundubaidya99@gmail.com
   linkedin: https://www.linkedin.com/in/baidyanath-kundu-025b41142
@@ -177,44 +135,18 @@
 
 - name: Sahil Khose
   nickname: Sahil Khose
-  designation: AI Perception Member
-  image: 2.png
+  designation: Senior AI Member
+  image: https://i.imgur.com/BGWJQae.png
   facebook: https://www.facebook.com/sahil.khose.3
   mail: mailto:sahilkhose18@gmail.com
   linkedin: https://www.linkedin.com/in/sahil-khose-20a621166/
   github: https://github.com/sahilkhose
 
-- name: Abhineet Choudhary
-  nickname: Abhineet Choudhary
-  designation: AI Perception Member
-  image: 3.png
-  facebook:
-  mail: mailto:abhi.chou4@gmail.com
-  linkedin: https://www.linkedin.com/in/abhineet-c-344967bb/
-  github: https://github.com/Abhineet-Choudhary
-
-- name: Dhruv Joshi
-  nickname: helium_balloons
-  designation: AI Perception Member
-  image: 4.png
-  facebook:
-  mail: mailto:dhruvjoshi1007@gmail.com
-  linkedin: https://www.linkedin.com/in/dhruv-joshi-b65a6b16a
-  github: https://github.com/dhruvjoshi1007
-
-- name: Anish Biswas
-  nickname: anish0x2A
-  designation: AI Planning Member
-  image: 5.png
-  facebook: https://www.facebook.com/theAnishBiswas
-  mail: mailto:anish.biswas0x2a@gmail.com
-  linkedin: https://www.linkedin.com/in/anish-biswas
-  github: https://github.com/anish0x2a
 
 - name: Aneesh Chawla
   nickname: aneesh404
-  designation: AI Perception Member
-  image: 6.png
+  designation: Senior AI Member
+  image: https://i.imgur.com/mJmdgi0.png
   facebook:
   mail: mailto:aneeshchawla404@gmail.com
   linkedin: https://www.linkedin.com/in/aneesh-chawla-986165171
@@ -222,202 +154,208 @@
 
 - name: Garima Singh
   nickname: grimmyshini
-  designation: AI Planning Member
-  image: 7.png
+  designation: Senior AI Member
+  image: https://i.imgur.com/rMf4Pxo.png
   facebook:
   mail: mailto:garimasingh0028@gmail.com
   linkedin: https://www.linkedin.com/in/garima-singh-392856189/
   github: https://github.com/grimmmyshini
 
-- name: Raj Tulluri
-  nickname: Raj Tulluri
-  designation: S&A Automation Member
-  image: 43.png
-  facebook:
-  mail: mailto:mail@rajabbastulluri.com
-  linkedin: https://www.linkedin.com/in/raj-tulluri-165977145/
-  github:
+- name: Anshumaan Singh
+  nickname: Anshu-man567
+  designation:   AI Member
+  image: https://i.imgur.com/2sYn2L8.png
+  facebook: 
+  mail: mailto:anshumaan567@gmail.com
+  linkedin: https://www.linkedin.com/in/anshumaan-singh-ab1ba91b3/
+  github: https://github.com/Anshu-man567
 
-- name: Ansel Dias
-  nickname: Ansel Dias
-  designation: S&A Sensing Member
-  image: 36.png
-  facebook: https://www.facebook.com/profile.php?id=100010693602083&ref=br_rs
-  mail: mailto:thegreatanseldias@gmail.com
-  linkedin: https://www.linkedin.com/in/ansel-dias-a7993215b/
-  github:
+- name: Aryan Roy
+  nickname: Le_King
+  designation:   AI Member
+  image: https://i.imgur.com/wKDGeVf.png
+  facebook: 
+  mail: mailto:aryanroy5678@gmail.com
+  linkedin: https://www.linkedin.com/in/aryan-roy-914458189
+  github: 
 
+- name: Atula Tejaswi
+  nickname: atutej
+  designation:   AI Member
+  image: https://i.imgur.com/7wZOvRc.png
+  facebook: 
+  mail: mailto:atulatejaswi@gmail.com
+  linkedin: https://www.linkedin.com/in/atula-tejaswi-neerkaje-4b989b157
+  github: https://github.com/atutej
 
-- name: Yagya Malik
-  nickname: Yagya Malik
-  designation:  Sensing Member
-  image: 37.png
-  facebook:
-  mail: mailto:yagyamalik1812@gmail.com
-  linkedin: https://www.linkedin.com/in/yagya-malik-8a4aa0155
-  github: https://github.com/Nymeria18
+- name: Ishika Jaiswal 
+  nickname: cinnamonroll
+  designation:   AI Member
+  image: https://i.imgur.com/D4ocMi3.png
+  facebook: 
+  mail: mailto:jaiswalishikacrystal@gmail.com 
+  linkedin: https://www.linkedin.com/in/ishika-jaiswal-720b10193
+  github: https://github.com/Ishikajaiswal
 
-- name: Omkar Jhadav
-  nickname: Omkar Jhadav
-  designation:  Sensing Member
-  image: 35.png
-  facebook:
-  mail: mailto:jadhavomkar37.oj@gmail.com
-  linkedin:
-  github:
+- name: Shivansh Bakshi
+  nickname: Worpe
+  designation:   AI Member
+  image: https://i.imgur.com/V8pyV5q.png
+  facebook: https://www.facebook.com/shivansh.baks
+  mail: mailto:shivansh.bakshi@gmail.com
+  linkedin: https://www.linkedin.com/in/shivansh-bakshi/
+  github: https://github.com/Shivansh-Bakshi
 
-- name: Achintya Dutta
-  nickname: Achintya Dutta
-  designation:  Automation Member
-  image: 29.png
-  facebook:
-  mail: mailto:achintyadutta2000@gmail.com
-  linkedin: achintyadutta2000@gmail.com
-  github:
-
-- name: Arpit Chauhan
-  nickname: Arpit Chauhan
-  designation:  Automation Member
-  image: 30.png
-  facebook: https://www.facebook.com/profile.php?id=100026317991091
-  mail: mailto:carpit680@gmail.com
-  linkedin: https://www.linkedin.com/in/arpit-chauhan-bb84bb145
-  github: https://github.com/carpit680
-
-- name: Gokul P
-  nickname: Gokul P
-  designation:  Sensing Member
-  image: 31.png
-  facebook:
-  mail: mailto:gokulgns@gmail.com
-  linkedin: https://www.linkedin.com/in/gokul-p-38b22b154
-  github: https://github.com/gokulgns
+- name: Shruti Jain 
+  nickname: Shruti Jain 
+  designation:   AI Member
+  image: https://i.imgur.com/4aO2fSI.png
+  facebook: 
+  mail: mailto:shrutipraveenjain@gmail.com
+  linkedin: https://www.linkedin.com/in/shruti-jain-81a7581b4/
+  github: 
 
 - name: Kishore K
   nickname: Kishore K
-  designation:  Sensing Member
-  image: 32.png
+  designation:  Senior S&A Member
+  image: https://i.imgur.com/r8igsCa.png
   facebook:
   mail: mailto:klk.kishore5@gmail.com
   linkedin: https://www.linkedin.com/in/kishorek31/
   github:
 
-- name: Akhil Bonagiri
-  nickname: Akhil Bonagiri
-  designation:  Automation Member
-  image: 34.png
-  facebook:
-  mail: mailto:bonagiri_akhil@yahoo.com
-  linkedin: https://www.linkedin.com/in/akhil-bonagiri-2569b9181
-  github:
-
-
-- name: Ritwik Agarwal
-  nickname: Ritwik Agarwal
-  designation:  Sensing Member
-  image: 40.png
-  facebook: https://www.facebook.com/ritwik.agarwal.94
-  mail: mailto:ritwikagarwal44@gmail.com
-  linkedin: https://www.linkedin.com/in/ritwik-agarwal
-  github: https://github.com/ritwik25
-
-
 - name: Shoumik Dey
   nickname: Shoumik Dey
-  designation: Sensing Member
-  image: 50.jpeg
+  designation: Senior S&A Member
+  image: https://i.imgur.com/EgxRbaP.jpg
   facebook: http://facebook.com/shoumik.shonai
   mail: mailto:shoumikdey123@gmail.com
   linkedin: http://linkedin.com/in/shoumik-dey-53b69b16a
   github: https://github.com/shoumikdey
 
-- name: Manav Sachdeva
-  nickname: Manav Sachdeva
-  designation: Design Member
-  image: 24.png
-  facebook:
-  mail: mailto:sachdevamanav03@gmal.com
-  linkedin:
-  github:
+- name: Aditya Nirmale
+  nickname: Crazzy
+  designation:   S&A Member
+  image: https://i.imgur.com/SgVXoVd.png
+  facebook: 
+  mail: mailto:adityanirmaleofficial@gmail.com
+  linkedin: https://www.linkedin.com/in/aditya-nirmale/
+  github: 
 
-- name: Gaurav Thakur
-  nickname: Gaurav Thakur
-  designation: Mechanics Member
-  image: 41.png
-  facebook: https://www.facebook.com/papadopoulos69
-  mail: mailto:gthakur2907@gmail.com
-  linkedin: https://www.linkedin.com/in/gst2a9a0a7a
-  github:
+- name: Akshat Pandey
+  nickname: 0wL
+  designation:   S&A Member
+  image: https://i.imgur.com/RcovnKg.png
+  facebook: https://www.facebook.com/akshat.pandey.35175633
+  mail: mailto:akshat.darkmatter@gmail.com
+  linkedin: https://www.linkedin.com/in/akshat-pandey-011b811a2/
+  github: https://github.com/akshatowl
 
-- name: Aniket Bhawe
-  nickname: Aniket Bhawe
-  designation: Mechanics Member
-  image: 22.png
-  facebook: https://www.facebook.com/aniket.bhawe.3
-  mail: mailto:kiwiani99@gmail.com
-  linkedin: http://linkedin.com/in/aniket-bhawe
-  github:
+- name: Prakhar Goel
+  nickname: Prakhs01
+  designation:   S&A Member
+  image: https://i.imgur.com/HEhW5Pn.png
+  facebook: https://www.facebook.com/prakhar.goel.01
+  mail: mailto:prakhs00@gmail.com
+  linkedin: https://www.linkedin.com/in/Prakhar-Goel-4616501a5
+  github: https://github.com/prakharg01
+
+- name: Raghav Thakar
+  nickname: Tunak
+  designation:   S&A Member
+  image: https://i.imgur.com/GlPYtER.png
+  facebook: 
+  mail: mailto:raghavthakar12@gmail.com
+  linkedin: https://www.linkedin.com/in/raghavthakar/
+  github: https://github.com/raghavthakar
+
+- name: Yatharth Agarwal
+  nickname: Yatharth Agarwal
+  designation:   S&A Member
+  image: https://i.imgur.com/k7Kcw09.png
+  facebook: 
+  mail: mailto:yatharthrpi@gmail.com
+  linkedin: https://www.linkedin.com/in/yatharth-agarwal-5123911a5
+  github: 
 
 - name: Sai Manish
   nickname: Sai Manish
-  designation: Design Member
-  image: 19.png
+  designation: Senior Mechanical Member
+  image: https://i.imgur.com/AT42Cls.png
   facebook: https://www.facebook.com/sai.manish.1270
   mail: mailto:saimanish12@gmail.com
   linkedin: https://www.linkedin.com/in/sai-manish-107368169
   github:
 
-- name: Rohit Natu
-  nickname: Rohit Natu
-  designation: Design Member
-  image: 20.png
-  facebook:
-  mail: mailto:rohit.grandson@gmail.com
-  linkedin: https://www.linkedin.com/in/rohit-natu-42b005180
-  github: https://www.github.com/75072107
-
-- name: Harsh Barde
-  nickname: HUB
-  designation: Mechanics Member
-  image: 18.png
-  facebook:
-  mail: mailto:harshbarde51@gmail.com
-  linkedin: https://www.linkedin.com/in/harsh-barde-646304169
-  github:
-
-
-- name: Parthesh Savla
-  nickname: Parthesh Savla
-  designation: Mechanics Member
-  image: 25.png
-  facebook: https://www.facebook.com/prince.savla.9
-  mail: mailto:parthesh.savla@gmail.com
-  linkedin: https://www.linkedin.com/in/parthesh-savla327322163
-  github:
-
-- name: Debayan Deb
-  nickname: Devayern
-  designation: Design Member
-  image: 28.png
-  facebook: https://www.facebook.com/profile.php?id=100008758214121
-  mail: mailto:devion008@gmail.com
-  linkedin: https://www.linkedin.com/in/debayan-deb-10311617b
-  github:
-
 - name: Asish Boggavarapu
   nickname: Asish Boggavarapu
-  designation: Design Member
-  image: 21.png
+  designation: Senior Mechanical Member
+  image: https://i.imgur.com/LLHjjM1.png
   facebook: https://www.facebook.com/asish.boggavarapu
   mail: mailto:asishb212@gmail.com
   linkedin: https://www.linkedin.com/in/asish-boggavarapu-09bba2166
   github:
 
-- name: Nikhil George Savio
-  nickname: Nikhil George Savio
-  designation: Management Member
-  image: 15.png
-  facebook: https://www.facebook.com/nikhil.savio.92
-  mail: mailto:nikhilperumana@gmail.com
-  linkedin: https://www.linkedin.com/in/nikhil-savio-6087b6151
-  github:
+- name: Ashwin Disa 
+  nickname: AshD
+  designation:   Mechanical Member
+  image: https://i.imgur.com/adcYV1b.png
+  facebook: https://m.facebook.com/ashwin.disa
+  mail: mailto:ashwin.disa@gmail.com 
+  linkedin: https://in.linkedin.com/in/ashwin-disa-725827180
+  github: 
+
+- name: Bhanu Prasad A J
+  nickname: RedStreak18
+  designation:   Mechanical Member
+  image: https://i.imgur.com/HHieh6m.png
+  facebook: 
+  mail: mailto:ajbbhanu@gmail.com
+  linkedin: https://www.linkedin.com/in/bhanu-prasad-a-j-79591a1b1
+  github: 
+
+- name: Kallol Saha
+  nickname: Failed_Mesh
+  designation:   Mechanical Member
+  image: https://i.imgur.com/cBCXYfY.png
+  facebook: 
+  mail: mailto:kallolsaha1752001@gmail.com
+  linkedin: https://www.linkedin.com/in/kallol-saha-45b5a41a3/
+  github: https://github.com/FailedMesh
+
+- name: Srujan Kulkarni
+  nickname: Srujan Kulkarni
+  designation:   Mechanical Member
+  image: https://i.imgur.com/TBVvMXt.png
+  facebook: https://www.facebook.com/srujan.kulkarni.7/
+  mail: mailto:kulkarnisrujan77@gmail.com
+  linkedin: http://www.linkedin.com/in/srujan-kulkarni-3378351b2
+  github: 
+
+- name: Tanaya Gupte
+  nickname: Sin(aya)/Cos(aya)
+  designation:   Mechanical Member
+  image: https://i.imgur.com/lMh0Jpr.png
+  facebook: 
+  mail: mailto:tanaya1707@gmail.com
+  linkedin: https://www.linkedin.com/in/tanaya-gupte-4313931a5/
+  github: https://github.com/tanaya1707
+
+- name: Twinkle Goyal
+  nickname: Deadlysalmon99
+  designation: Mechanical Member
+  image: https://i.imgur.com/1LzveHJ.png
+  facebook: 
+  mail: mailto:manigoyal08@gmail.com
+  linkedin: https://www.linkedin.com/in/twinkle-goyal-1236ba154/
+  github: 
+
+- name: Sathvik N K
+  nickname: White Flames
+  designation:  Management Member
+  image: https://i.imgur.com/er6MxYK.png
+  facebook: https://www.facebook.com/sathvik.nk.1
+  mail: mailto:sathviknk14@gmail.com
+  linkedin: https://www.linkedin.com/in/sathvik-nk-4956311a4
+  github: 
+
