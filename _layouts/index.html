@@ -3,7 +3,7 @@
 
 <head>
   {% include header.html %}
-  <link type="text/css" rel="stylesheet" href="{{ "/static/css/style.css" | prepend: site.baseurl }}" />
+  <link type="text/css" rel="stylesheet" href="{{ " /static/css/style.css" | prepend: site.baseurl }}" />
 </head>
 
 <body>
@@ -18,7 +18,8 @@
           <div class="grid-y text-right" style="height: 100vh;">
             <div class="cell large-4"></div>
             <div class="cell large-2 large-offset-3">
-              <img src="/static/images/png/manas-logo-transparent.png" width="85%" height="85%" alt "Project MANAS Logo" />
+              <img src="/static/images/png/manas-logo-transparent.png" width="85%" height="85%"
+                alt "Project MANAS Logo" />
             </div>
             <div class="cell large-6"></div>
           </div>
@@ -32,7 +33,8 @@
               <img src="/static/images/png/mit-logo.png" width="60px" alt="Manipal University Logo" />
             </div>
             <div class="cell large-3 medium-9 small-9" style="color: white; padding: 0; margin: 0 auto;">
-              <img class="hide-for-large" id="home-logo" src="/static/images/png/manas-logo-gradient.png" alt="Project MANAS Logo" />
+              <img class="hide-for-large" id="home-logo" src="/static/images/png/manas-logo-gradient.png"
+                alt="Project MANAS Logo" />
               <img src="/static/images/png/project-manas.png" id="home-logo-heading" alt "Project MANAS">
             </div>
             <div class="cell auto"></div>
@@ -64,14 +66,18 @@
             Project MANAS is the official AI and Robotics team of MAHE, Manipal established in 2014.
           </p>
           <p>
-            We are the Grand Prize winners and won the Lescoe Cup at the Intelligent Ground Vehicle Competition which is held at Michigan.
-            Our aim is to build India’s first driverless car and are among the top 13 participants in the Mahindra’s Rise Prize challenge.
+            We are the Grand Prize winners and won the Lescoe Cup at the Intelligent Ground Vehicle Competition which is
+            held at Michigan.
+            Our aim is to build India’s first driverless car and are among the top 13 participants in the Mahindra’s
+            Rise Prize challenge.
           </p>
           <br><br>
           <h3 class="orange">Vision & Mission</h3>
           <p>
-            Project MANAS aims to inspire advanced research in Artificial Intelligence and oversee its implementation enabling automated systems to be made available to generous populous.
-            Our mission is to uphold the tradition of pushing the limits of Artificial Intelligence and Bringing Bits to Life.
+            Project MANAS aims to inspire advanced research in Artificial Intelligence and oversee its implementation
+            enabling automated systems to be made available to generous populous.
+            Our mission is to uphold the tradition of pushing the limits of Artificial Intelligence and Bringing Bits to
+            Life.
           </p>
         </div>
       </div>
@@ -255,7 +261,8 @@
         <div class="cell large-1">
           <center>
             <h1 class="white">
-              <span class="orange">Contact</span> Us</h1>
+              <span class="orange">Contact</span> Us
+            </h1>
           </center>
         </div>
         <div class="cell large-11">
@@ -265,17 +272,16 @@
                 <div class="cell large-12 medium-6 contact-information">
                   <i class="fa fa-envelope fa-lg orange"></i>
                   <h6 class="white">projectmanas.mit@gmail.com</h6>
-                  <h6 class="white">team_leader@projectmanas.in</h6>
                   <h6 class="white">tech_head@projectmanas.in</h6>
                   <h6 class="white">team_manager@projectmanas.in</h6>
                 </div>
                 <div class="cell large-12 medium-6 contact-information">
                   <i class="fa fa-phone fa-lg orange"></i>
-                  <h6 class="white">Harsh Barde:
-                    <small>+919604396142 </small>
-                  <h6 class="white">Ritwik Agarwal:
-                    <small>+919608155006</small>
-                  </h6>
+                  <h6 class="white">Yatharth Agarwal:
+                    <small>+91 7975602230 </small>
+                    <h6 class="white">Kallol Saha:
+                      <small>+91 9606350096</small>
+                    </h6>
                   </h6>
                 </div>
               </div>
@@ -286,10 +292,12 @@
                 <p>Read our
                   <u>
                     <a class="orange" target="_blank" href="/static/pdf/Project-Manas-Brochure-Web.pdf">brochure</a>
-                  </u> for more information about sponsorship.</p>
+                  </u> for more information about sponsorship.
+                </p>
                 <p>For further details regarding the sponsorship please refer to our
                   <u>
-                    <a class="orange" target="_blank" href="/static/pdf/Terms-and-Conditions-Project-Manas.pdf">terms and conditions</a>
+                    <a class="orange" target="_blank" href="/static/pdf/Terms-and-Conditions-Project-Manas.pdf">terms
+                      and conditions</a>
                   </u>
                 </p>
                 <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
@@ -331,7 +339,7 @@
 
 </body>
 {% include script.html %}
-<script src="{{ "/static/js/instafeed.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ " /static/js/instafeed.min.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript">
   var feed = new Instafeed({
     get: 'user',
@@ -342,7 +350,7 @@
     template: '<a href="{% raw %} {{link}} {% endraw %}"<div class="cell"><div class="card"> <div class="card-section"> <img src="{% raw %} {{image}} {% endraw %}"> </div> <div class="card-section"><p class="text-center">{% raw %} {{caption}} {% endraw %}</p> </div> </div></div></a>',
     resolution: 'standard_resolution',
     limit: 4,
-    after: function() {
+    after: function () {
       var el = document.getElementById('instafeed');
       if (el.classList)
         el.classList.add('show');
@@ -352,11 +360,11 @@
   });
   feed.run();
   $(document).foundation();
-  $('.nav-sticky').on('sticky.zf.stuckto:top', function() {
+  $('.nav-sticky').on('sticky.zf.stuckto:top', function () {
     $(".top-bar-title").css({
       "opacity": 1,
     });
-  }).on('sticky.zf.unstuckfrom:top', function() {
+  }).on('sticky.zf.unstuckfrom:top', function () {
     $(".top-bar-title").css({
       "opacity": 0,
     });
