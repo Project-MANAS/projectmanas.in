@@ -1,4 +1,3 @@
-
 - name: Dheeraj R. Reddy
   nickname: Squadrick
   designation: Team Leader (March, 2018 - March, 2019)
@@ -125,4 +124,254 @@
 #   linkedin: https://www.linkedin.com/in/thomas-alex-b6b93a13a/
 #   github:
 
-  
+- name: Shrijit Singh
+  title: Tech Head (March, 2019 - March, 2020)
+  designation: Tech Head (March, 2019 - March, 2020)
+  image: 12.jpeg
+  facebook: https://www.facebook.com/shrijitsingh99
+  mail: mailto:shrijitsingh99@gmail.com
+  linkedin: https://www.linkedin.com/in/shrijit-singh-81b86a145/
+  github: https://github.com/shrijitsingh99
+
+- name: Tanaya Mandke
+  title: Team Manager (March, 2019 - March, 2020)
+  designation: Team Manager (March, 2019 - March, 2020)
+  image: 26.png
+  facebook: https://www.facebook.com/tana.mandke
+  mail: mailto:Tanaya.mandke9299@gmail.com
+  linkedin: http://linkedin.com/in/tanaya-mandke-885b24165
+  github:
+
+- name: Shivesh Khaitan
+  title: Head of Robotics (March, 2019 - March, 2020)
+  designation: Head of Robotics (March, 2019 - March, 2020)
+  image: 45.jpeg
+  facebook: https://www.facebook.com/shivesh.khaitan
+  mail: mailto:shiveshkhaitan@gmail.com
+  linkedin: https://www.linkedin.com/in/shivesh-khaitan-b48225159/
+  github: https://github.com/shiveshkhaitan #Head of Robotics
+
+- name: Rishab Agarwal
+  title: S&A Head (March, 2019 - March, 2020)
+  designation: S&A Head (March, 2019 - March, 2020)
+  image: 38.png
+  facebook: https://www.facebook.com/Agarwal.Rishab.99
+  mail: mailto:rishabgrwl121@gmail.com
+  linkedin: https://www.linkedin.com/in/rishab-agarwal-8a959216a
+  github: #SnA Head
+
+- name: Arya Karani
+  title: Mechanical Head (March, 2019 - March, 2020)
+  designation: Mechanical Head (March, 2019 - March, 2020)
+  image: 20.jpeg
+  facebook:
+  mail: mailto:karani.arya@gmail.com
+  linkedin: https://www.linkedin.com/in/surampalli-rakesh-450213160/
+  github: #Mech Head
+
+- name: Sarathkrishnan Ramesh
+  title: AI Planning Head (March, 2019 - March, 2020)
+  designation: AI Planning Head (March, 2019 - March, 2020)
+  image: 13.jpeg
+  facebook: https://www.facebook.com/sarathkrishnan.ramesh
+  mail: mailto:sarathkrishnan99@gmail.com
+  linkedin: https://www.linkedin.com/in/sarathkrishnan-ramesh-0a75a315b
+  github: https://www.github.com/Sarath18
+
+- name: Shivanshu Agarwal
+  title: Sensing Head (March, 2019 - March, 2020)
+  designation: Sensing Head (March, 2019 - March, 2020)
+  image: 39.png
+  facebook: https://w ww.facebook.com/shivanshu.agarwal.965
+  mail: mailto:agarwalshivanshu00@gmail.com
+  linkedin: https://www.linkedin.com/in/shivansu-agarwal-53b625136
+  github: https://github.com/shic15
+
+- name: Dheeraj Mohan
+  title: AI Perception Head (March, 2019 - March, 2020)
+  designation: AI Perception Head (March, 2019 - March, 2020)
+  image: 24.jpeg
+  facebook: https://facebook.com/dheeraj.McDhee
+  mail: mailto:dheeraj.98@outlook.com
+  linkedin: https://www.linkedin.com/in/dheeraj-mcdhee
+  github: https://www.github.com/dheeraj-coding
+
+- name: Dasarath S
+  title: Automation Head (March, 2019 - March, 2020)
+  designation: Automation Head (March, 2019 - March, 2020)
+  image: 23.jpeg
+  facebook: https://facebook.com/dasarath.selvakumar
+  mail: mailto:dasarathselvakumar@gmail.com
+  linkedin: https://www.linkedin.com/in/dasarath-s-66525b157
+  github:
+
+- name: Siddarth Venkatraman
+  title: AI Planning Member (Feb, 2018 - March, 2020)
+  designation: AI Planning Member (Feb, 2018 - March, 2020)
+  image: 43.jpeg
+  facebook:
+  mail: mailto:siddarthegreat@gmail.com
+  linkedin: https://www.linkedin.com/in/siddarth-venkatraman-59b863157/
+  github: https://github.com/HyperPotatoNeo
+
+- name: Ansel Dias
+  title: S&A Sensing Member (Feb, 2018 - March, 2020)
+  designation: S&A Sensing Member (Feb, 2018 - March, 2020)
+  image: 36.png
+  facebook: https://www.facebook.com/profile.php?id=100010693602083&ref=br_rs
+  mail: mailto:thegreatanseldias@gmail.com
+  linkedin: https://www.linkedin.com/in/ansel-dias-a7993215b/
+  github:
+
+- name: Raj Tulluri
+  title: S&A Automation Member (Jan, 2019 - March, 2020)
+  designation: S&A Automation Member (Jan, 2019 - March, 2020)
+  image: 43.png
+  facebook:
+  mail: mailto:mail@rajabbastulluri.com
+  linkedin: https://www.linkedin.com/in/raj-tulluri-165977145/
+  github:
+
+- name: Chaitanya S
+  title: AI Perception Member (Feb, 2018 - March, 2020)
+  designation: AI Perception Member (Feb, 2018 - March, 2020)
+  image: 8.png
+  facebook: https://www.facebook.com/chaitanya.shyamaraj.37
+  mail: mailto:chaitanya2.1999@gmail.com
+  linkedin: https://www.linkedin.com/in/chaitanya21999
+  github: https://github.com/Chaitanya-git
+
+- name: Anurag Borkar
+  title: AI Perception Member (Feb, 2019 - March, 2020)
+  designation: AI Perception Member (Feb, 2019 - March, 2020)
+  image: 49.jpeg
+  facebook: https://www.facebook.com/anurag.borkar.376
+  mail: mailto:anuragvborkar@gmail.com
+  linkedin: https://www.linkedin.com/in/anurag-borkar-9b3645166
+  github: https://github.com/anuragvborkar
+
+- name: Parthesh Savla
+  title: Mechanics Member (Feb, 2018 - March, 2020)
+  designation: Mechanics Member (Feb, 2018 - March, 2020)
+  image: 25.png
+  facebook: https://www.facebook.com/prince.savla.9
+  mail: mailto:parthesh.savla@gmail.com
+  linkedin: https://www.linkedin.com/in/parthesh-savla327322163
+  github:
+
+- name: Adheesh H M
+  title: AI Perception Member (Feb, 2018 - March, 2020)
+  designation: AI Perception Member (Feb, 2018 - March, 2020)
+  image: 51.jpeg
+  facebook:
+  mail: mailto:adheesh1010@gmail.com
+  linkedin: https://www.linkedin.com/in/adheesh-h-m-14283912b
+  github:
+
+- name: Aditya Veerabahu
+  nickname: Aditya Veerabahu
+  designation: Admin & Finance Head (2019 - 2020)
+  image: 13.png
+  facebook: https://www.facebook.com/profile.php?id=100008935382776
+  mail: mailto:adityaveerabahu@gmail.com
+  linkedin: https://www.linkedin.com/in/aditya-veerabahu
+  github: https://github.com/adityaveera17
+
+- name: Abhineet Choudhary
+  nickname: Abhineet Choudhary
+  designation: AI Perception Head (March 2020- May 2021)
+  image: https://i.imgur.com/Q2QXOZo.png
+  facebook:
+  mail: mailto:abhi.chou4@gmail.com
+  linkedin: https://www.linkedin.com/in/abhineet-c-344967bb/
+  github: https://github.com/abhichou4
+
+- name: Aniket Bhawe
+  nickname: Aniket Bhawe
+  designation: Mechanics Head (March 2020- May 2021)
+  image: https://i.imgur.com/HZ3lGYi.png
+  facebook: https://www.facebook.com/aniket.bhawe.3
+  mail: mailto:kiwiani99@gmail.com
+  linkedin: http://linkedin.com/in/aniket-bhawe
+  github:
+
+- name: Debayan Deb
+  nickname: Devayern
+  designation: Design Head (March 2020- May 2021)
+  image: https://i.imgur.com/E2V9Mr2.png
+  facebook: https://www.facebook.com/profile.php?id=100008758214121
+  mail: mailto:devion008@gmail.com
+  linkedin: https://www.linkedin.com/in/debayan-deb-10311617b
+  github:
+
+- name: Baidyanath Kundu
+  nickname: sudo-panda
+  designation: Senior AI Member (March 2020- May 2021)
+  image: https://i.imgur.com/3jk2tWU.png
+  facebook: https://www.facebook.com/Baidya99
+  mail: mailto:kundubaidya99@gmail.com
+  linkedin: https://www.linkedin.com/in/baidyanath-kundu-025b41142
+  github: https://github.com/sudo-panda
+
+- name: Sahil Khose
+  nickname: Sahil Khose
+  designation: Senior AI Member (March 2020- May 2021)
+  image: https://i.imgur.com/BGWJQae.png
+  facebook: https://www.facebook.com/sahil.khose.3
+  mail: mailto:sahilkhose18@gmail.com
+  linkedin: https://www.linkedin.com/in/sahil-khose-20a621166/
+  github: https://github.com/sahilkhose
+
+- name: Aneesh Chawla
+  nickname: aneesh404
+  designation: Senior AI Member (March 2020- May 2021)
+  image: https://i.imgur.com/mJmdgi0.png
+  facebook:
+  mail: mailto:aneeshchawla404@gmail.com
+  linkedin: https://www.linkedin.com/in/aneesh-chawla-986165171
+  github: https://github.com/aneesh404
+
+- name: Garima Singh
+  nickname: grimmyshini
+  designation: Senior AI Member (March 2020- May 2021)
+  image: https://i.imgur.com/rMf4Pxo.png
+  facebook:
+  mail: mailto:garimasingh0028@gmail.com
+  linkedin: https://www.linkedin.com/in/garima-singh-392856189/
+  github: https://github.com/grimmmyshini
+
+- name: Kishore K
+  nickname: Kishore K
+  designation: Senior S&A Member (March 2020- May 2021)
+  image: https://i.imgur.com/r8igsCa.png
+  facebook:
+  mail: mailto:klk.kishore5@gmail.com
+  linkedin: https://www.linkedin.com/in/kishorek31/
+  github:
+
+- name: Shoumik Dey
+  nickname: Shoumik Dey
+  designation: Senior S&A Member (March 2020- May 2021)
+  image: https://i.imgur.com/EgxRbaP.jpg
+  facebook: http://facebook.com/shoumik.shonai
+  mail: mailto:shoumikdey123@gmail.com
+  linkedin: http://linkedin.com/in/shoumik-dey-53b69b16a
+  github: https://github.com/shoumikdey
+
+- name: Sai Manish
+  nickname: Sai Manish
+  designation: Senior Mechanical Member (March 2020- May 2021)
+  image: https://i.imgur.com/AT42Cls.png
+  facebook: https://www.facebook.com/sai.manish.1270
+  mail: mailto:saimanish12@gmail.com
+  linkedin: https://www.linkedin.com/in/sai-manish-107368169
+  github:
+
+- name: Asish Boggavarapu
+  nickname: Asish Boggavarapu
+  designation: Senior Mechanical Member (March 2020- May 2021)
+  image: https://i.imgur.com/LLHjjM1.png
+  facebook: https://www.facebook.com/asish.boggavarapu
+  mail: mailto:asishb212@gmail.com
+  linkedin: https://www.linkedin.com/in/asish-boggavarapu-09bba2166
+  github:
