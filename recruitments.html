@@ -621,9 +621,39 @@
 					temperature below it. An inbuilt positioning system gives you Odometry, including position and
 					angular orientation(x, y,
 					z, θ) at any point in time.
-
-
 				</p>
+				<h5><span class="orange">Informations and Assumptions:</span></h5>
+				<ul>
+					<li>
+						<p>
+							Dimensions of the robot: 1 x 1
+						</p>
+					</li>
+					<li>
+						<p>
+							Dimensions of the field: 30 x 20<br>
+							(All dimensions are in meters)
+
+						</p>
+					</li>
+					<li>
+						<p>
+							This robot is deployed in a flat field bounded by walls of the mentioned dimensions, at the
+							bottom-left corner of the
+							field (0, 0, 0 deg). All angles are measured w.r.t the bottom wall. The maximum forward
+							speed of the robot is three m/s.
+
+						</p>
+					</li>
+					<li>
+						<p>
+							The field has a varying surface temperature in integral values, which our IR temperature
+							sensor can record; each block
+							on the grid in the field(1 x 1) has a unique temperature.
+
+						</p>
+					</li>
+				</ul>
 				<div class="grid-x grid-margin-x">
 					<div class="cell small-12 large-12 medium-12">
 						<div class="hide-for-small-only">
@@ -655,10 +685,7 @@
 					time
 					you reach one of these
 					points, the robot stops and deploys a sensor to monitor temperature for Tushar continuously.
-					Design an approach and write pseudocode to complete this task and explain how you can interpret
-					the
-					grid system from the
-					real world.</p>
+				</p>
 
 				<div class="grid-x grid-margin-x">
 					<div class="cell small-12 large-12 medium-12">
@@ -679,37 +706,11 @@
 						</div>
 					</div>
 				</div>
-				<h5><span class="orange">Assumptions:</span></h5>
-				<ul>
-					<li>
-						<p>
-							Assume that you receive the position of the target from the command center in the form
-							of (x, y) coordinates w.r.t the bottom left of the bounded field which is to be
-							considered
-							the origin I.e., (0, 0) in meters every timestep.
-						</p>
-					</li>
-					<li>
-						<p>
-							Also assume that you know your global position (x,y,theta) in the field (w.r.t the
-							origin)
-							from an in-built positioning system.
-						</p>
-					</li>
-					<li>
-						<p>
-							Robot always starts from origin(0,0,0).
-						</p>
-					</li>
-					<li>
-						<p>
-							Max speed of the robot: 5 m/s
-						</p>
-					</li>
-				</ul>
 
-				<p>Expected Output: You must output the control commands i.e., speeds of the left and right wheels
-					of the bot in m/s every timestep.</p>
+
+				<p>Design an approach and write pseudocode to complete this task and explain how you can interpret the
+					grid system from the
+					real world.</p>
 
 				<h4><span class="orange">LEVEL-2 TASK</span></h4>
 				<p>After finishing the first task, there were heavy rains, and our positioning system failed to work
@@ -730,9 +731,6 @@
 					arguments for the choice of
 					sensors.</p>
 
-				<p>Modify the approach in order to make this system work satisfactorily. The assumption that robot
-					always starts from origin still holds.</p>
-				<p>Expected Output: Same as Level 1.</p>
 				<p><span class="orange">Expected answers:</span> A simple pseudo-code in any language will suffice.
 					Along with this, you will need to provide the velocities of each pair
 					of wheels throughout the process with equations. You can also provide some text describing what
