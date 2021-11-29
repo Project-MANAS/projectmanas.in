@@ -421,7 +421,7 @@
 				</p>
 				<h5 class="">
 					Modes
-					</h3>
+					</h5>
 					<p>
 						There will be Three Modes that can be changed using the MODE pushbutton.
 						<br>
@@ -508,15 +508,48 @@
 							</div>
 						</li>
 					</ul>
+					<h5 class="">
+						Potentiometer
+					</h5>
+					<p>
+						Increasing the value on the Potentiometer should decide the Increment and Decrement Angle of the servos in Mode 1 and 2
+						where:
+					</p>
+					<ul>
+						<li><p>0% to 9% of the potentiometer should correspond to a 5° Angle Change</p></li>
+						<li><p>10% to 19% of the potentiometer should correspond to a 10° Angle Change</p></li>
+						<li><p>20% to 29% of the potentiometer should correspond to a 15° Angle Change</p></li>
+					</ul>
+					<p>… and so on</p>
+					<p>In Mode 3 the Potentiometer must decide the sweep speed of the servos.</p>
 
+					<br>
+
+					<h5 class="">
+						Misc
+					</h5>
+					<ul>
+						<li><p>When switching to Mode 3 from Mode 1, the Servos must not reset back to 0° but should continue from the angle they were
+						left at and vice versa.</p></li>
+						<li><p>If switching from Mode 3 from Mode 2</p></li>
+						<li>
+							<p>In Mode 3, BUTTON1 and BUTTON2 should not affect the servos</p>
+						</li>
+						<li>
+							<p>In Mode 1 and 2, only individual presses of a button should work. Holding a button should only register as one
+							individual press and should increment or decrement the angle once.</p>
+						</li>
+						<li>
+							<p>In Mode 1 and 2, if the angle of any servo increments to higher than 180°, then that particular servo must change its
+							angle to 0°. If the angle decrements to lower than 0°, then that servo must warp to 180°.</p>
+						</li>
+					</ul>
 					<p>
 						The answer to the <span class="orange">Embedded Challenge</span> has to be submitted as a link
 						to
 						the <span class="orange">Simulation</span>.
 					</p>
-
 					<br>
-
 					<h3 class="">
 						<li>Embedded Systems Challenge 2</li>
 					</h3>
@@ -555,7 +588,7 @@
 
 					</p>
 					<p>
-						<a href="http://tinkercad.com/" class="orange">
+						<a href="https://pastebin.com/0gBTck3F" class="orange">
 							Click here </a> for the pasteBin file.
 					</p>
 
