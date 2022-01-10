@@ -184,8 +184,8 @@
   image: https://i.imgur.com/69lxIOX.jpeg
   facebook:
   mail: mailto:mallasaianish@gmail.com
-  linkedin:
-  github:
+  linkedin: https://www.linkedin.com/in/sai-anish-malla-504b511a2
+  github: https://github.com/Anish-Malla
 
 - name: Ayush Kumar
   nickname: Alcazar
@@ -304,15 +304,6 @@
   linkedin: https://www.linkedin.com/in/divyam-shah-61bb8a219
   github:
 
-- name: Mukta Kulkarni
-  nickname: Chumma
-  designation: Mechanical Member
-  image: https://i.imgur.com/PZXVpcQ.jpeg
-  facebook:
-  mail: mailto:muktakulkarnimk25@gmail.com
-  linkedin:
-  github:
-
 - name: Shreyas Bhat
   nickname: ＼(ﾟ ｰﾟ＼)
   designation: Mechanical Member
@@ -348,12 +339,3 @@
   mail: mailto:jyothsna1809@gmail.com
   linkedin: https://www.linkedin.com/in/jyothsna-ashok/
   github: https://github.com/JyothsnaAshok
-
-- name: Riya Kalra
-  nickname: Riya Kalra
-  designation: Management Member
-  image: https://i.imgur.com/uBwncGy.png
-  facebook:
-  mail: mailto:riya.kalra135@gmail.com
-  linkedin: https://www.linkedin.com/in/riya-kalra-9bb0361b2/
-  github:
